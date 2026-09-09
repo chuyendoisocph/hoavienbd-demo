@@ -1,0 +1,200 @@
+"use client";
+
+import { useState } from "react";
+import {
+  COLUMBARIA_TYPES,
+  COLUMBARIA_HEADING,
+  type ColumbariaType,
+} from "@/lib/cremation-content";
+import { PlusIcon } from "@/components/icons";
+import { cn } from "@/lib/utils";
+
+function Carousel({
+  images,
+  title,
+  dark,
+  active,
+  onSelect,
+}: {
+  images: string[];
+  title: string;
+  dark: boolean;
+  active: number;
+  onSelect: (index: number) => void;
+}) {
+  return (
+    <div>
+      <div className="relative aspect-[4/3] w-full overflow-hidden">
+        {images.map((src, i) => (
+          <img
+            key={src}
+            src={src}
+            alt={`${title} ${i + 1}`}
+            className={cn(
+              "absolute inset-0 h-full w-full object-cover transition-opacity duration-500",
+              i === active ? "opacity-100" : "opacity-0",
+            )}
+          />
+        ))}
+      </div>
+      {images.length > 1 && (
+        <div className="mt-4 flex items-center justify-center gap-2">
+          {images.map((src, i) => (
+            <button
+              key={src}
+              type="button"
+              aria-label={`Show image ${i + 1}`}
+              aria-current={i === active}
+              onClick={() => onSelect(i)}
+              className={cn(
+                "h-2.5 w-2.5 rounded-full transition-colors",
+                i === active
+                  ? dark
+                    ? "bg-white"
+                    : "bg-brand"
+                  : dark
+                    ? "bg-white/40"
+                    : "bg-black/20",
+              )}
+            />
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
+
+function FeatureBlock({
+  type,
+  active,
+  onSelect,
+}: {
+  type: ColumbariaType;
+  active: number;
+  onSelect: (index: number) => void;
+}) {
+  const { dark, imageLeft } = type;
+
+  const carousel = (
+    <div className={cn(imageLeft ? "lg:order-1" : "lg:order-2")}>
+      <Carousel
+        images={type.images}
+        title={type.title}
+        dark={dark}
+        active={active}
+        onSelect={onSelect}
+      />
+    </div>
+  );
+
+  const text = (
+    <div className={cn(imageLeft ? "lg:order-2" : "lg:order-1")}>
+      <p
+        className={cn(
+          "text-[15px] uppercase tracking-[3px]",
+          dark ? "text-white/85" : "text-[#888]",
+        )}
+      >
+        {type.eyebrow}
+      </p>
+      <h3
+        className={cn(
+          "font-heading mt-4 text-[25px] font-bold",
+          dark ? "text-white" : "text-brand",
+        )}
+      >
+        {type.title}
+      </h3>
+      <p
+        className={cn(
+          "mt-5 text-[15px] leading-[1.8]",
+          dark ? "text-white" : "text-[#666]",
+        )}
+      >
+        {type.body}
+      </p>
+      <div className="mt-7 flex flex-wrap items-center gap-6">
+        {type.buttons.map((button) =>
+          button.label === "TÌM HIỂU THÊM" ? (
+            <a
+              key={button.label}
+              href={button.href}
+              className={cn(
+                "inline-flex items-center gap-3 text-[13px] uppercase tracking-[2px]",
+                dark ? "text-white" : "text-brand-link",
+              )}
+            >
+              {button.label}
+              <span
+                className={cn(
+                  "inline-flex h-8 w-8 items-center justify-center rounded-full border",
+                  dark ? "border-white" : "border-brand-link",
+                )}
+              >
+                <PlusIcon className="h-3.5 w-3.5" />
+              </span>
+            </a>
+          ) : (
+            <a
+              key={button.label}
+              href={button.href}
+              className={cn(
+                "inline-block rounded-none px-[30px] py-[14px] text-[13px] uppercase tracking-[2px]",
+                dark ? "bg-white text-brand" : "bg-brand text-white",
+              )}
+            >
+              {button.label}
+            </a>
+          ),
+        )}
+      </div>
+    </div>
+  );
+
+  const row = (
+    <div className="mx-auto grid max-w-[1200px] grid-cols-1 items-center gap-12 px-6 py-16 lg:grid-cols-2">
+      {carousel}
+      {text}
+    </div>
+  );
+
+  if (dark) {
+    return <div className="bg-brand">{row}</div>;
+  }
+  return row;
+}
+
+export function ColumbariaTypes() {
+  const [active, setActive] = useState<number[]>(() =>
+    COLUMBARIA_TYPES.map(() => 0),
+  );
+
+  const handleSelect = (blockIndex: number, imageIndex: number) => {
+    setActive((prev) => {
+      const next = [...prev];
+      next[blockIndex] = imageIndex;
+      return next;
+    });
+  };
+
+  return (
+    <section>
+      <div className="px-6 py-16 text-center">
+        <p className="text-[15px] uppercase tracking-[6px] text-[#999]">
+          {COLUMBARIA_HEADING.eyebrow}
+        </p>
+        <h2 className="font-heading mt-4 text-[52px] font-medium tracking-[2px] text-brand">
+          {COLUMBARIA_HEADING.title}
+        </h2>
+      </div>
+      {COLUMBARIA_TYPES.map((type, i) => (
+        <FeatureBlock
+          key={type.title}
+          type={type}
+          active={active[i]}
+          onSelect={(imageIndex) => handleSelect(i, imageIndex)}
+        />
+      ))}
+    </section>
+  );
+}

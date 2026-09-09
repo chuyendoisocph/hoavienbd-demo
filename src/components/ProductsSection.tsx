@@ -1,0 +1,56 @@
+import { PRODUCTS } from "@/lib/content";
+import { cn } from "@/lib/utils";
+
+export function ProductsSection() {
+  return (
+    <section className="bg-white lg:min-h-[1018px]">
+      <div className="mx-auto grid max-w-[1200px] grid-cols-1 items-center gap-10 px-[15px] py-[30px] lg:grid-cols-[45%_55%] lg:gap-12 lg:px-6 lg:py-[115px]">
+        <div className="text-center lg:text-left">
+          <h2 className="mb-[15px] font-heading text-[30px] font-semibold leading-[45px] tracking-[2px] text-heading md:text-[52px] md:leading-[78px]">
+            {PRODUCTS.title}
+          </h2>
+          <ul className="inline-block list-disc pl-6 text-left text-[#666]">
+            {PRODUCTS.items.map((item) => (
+              <li
+                key={item.label}
+                className="text-[18px] leading-[38px] text-[#666] md:text-[22px] md:leading-[40px]"
+              >
+                {item.label}
+              </li>
+            ))}
+          </ul>
+          <div className="mx-auto mt-8 flex w-full max-w-[300px] flex-col gap-4 lg:mx-0">
+            <a
+              href="/planning-options/others"
+              className={cn(
+                "border border-black/15 px-[30px] py-[14px] text-center",
+                "text-[18px] tracking-[2px] text-brand-link",
+                "transition-colors hover:bg-neutral-100",
+              )}
+            >
+              TÌM HIỂU THÊM
+            </a>
+            <a
+              href="#tham-quan-360"
+              className={cn(
+                "bg-brand px-[30px] py-[15px] text-center",
+                "text-[18px] font-extrabold tracking-[2px] text-white",
+                "shadow-[0_10px_20px_rgba(65,84,125,0.24)]",
+                "transition-transform hover:-translate-y-0.5",
+              )}
+            >
+              360 SITE VIEW
+            </a>
+          </div>
+        </div>
+        <div>
+          <img
+            src={PRODUCTS.image}
+            alt={PRODUCTS.title}
+            className="h-[300px] w-full object-cover lg:h-[620px]"
+          />
+        </div>
+      </div>
+    </section>
+  );
+}

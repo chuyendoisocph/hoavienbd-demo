@@ -1,0 +1,60 @@
+"use client";
+
+import { useState } from "react";
+import { PARLOURS } from "@/lib/funeral-content";
+import { cn } from "@/lib/utils";
+
+export function FuneralParlours() {
+  const [active, setActive] = useState(0);
+
+  return (
+    <section className="bg-white py-[70px]">
+      <div className="mx-auto grid max-w-[1200px] grid-cols-1 items-center gap-12 px-6 lg:grid-cols-2">
+        {/* Left: gallery carousel */}
+        <div>
+          <div className="relative aspect-[4/3] w-full overflow-hidden">
+            {PARLOURS.slides.map((slide, i) => (
+              // eslint-disable-next-line @next/next/no-img-element
+              <img
+                key={slide.image}
+                src={slide.image}
+                alt={slide.caption}
+                className={cn(
+                  "absolute inset-0 h-full w-full object-cover transition-opacity duration-500",
+                  i === active ? "opacity-100" : "opacity-0",
+                )}
+              />
+            ))}
+          </div>
+          <p className="mt-3 text-[15px] text-[#888]">
+            {PARLOURS.slides[active].caption}
+          </p>
+          <div className="mt-4 flex items-center gap-2">
+            {PARLOURS.slides.map((slide, i) => (
+              <button
+                key={slide.image}
+                type="button"
+                aria-label={`Show ${slide.caption}`}
+                aria-current={i === active}
+                onClick={() => setActive(i)}
+                className={cn(
+                  "h-2.5 w-2.5 rounded-full transition-colors",
+                  i === active ? "bg-brand" : "bg-black/20",
+                )}
+              />
+            ))}
+          </div>
+        </div>
+
+        {/* Right: static description */}
+        <div>
+          <h2 className="font-heading text-[34px] font-medium text-heading md:text-[40px]">
+            {PARLOURS.title}
+          </h2>
+          <p className="mt-6 text-[15px] leading-[1.9] text-[#666]">{PARLOURS.body}</p>
+          <p className="mt-6 text-[15px] text-[#666]">{PARLOURS.note}</p>
+        </div>
+      </div>
+    </section>
+  );
+}
