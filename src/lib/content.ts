@@ -12,6 +12,7 @@ import type {
 export const LOGO = "/images/hvbd/cpha-logo.png";
 
 export const TOP_NAV: NavItem[] = [
+  { label: "Nhìn Lại Đêm Diễn", href: "https://demdientrian.cphaco.vn/" },
   {
     label: "Bắt Đầu",
     href: "#",

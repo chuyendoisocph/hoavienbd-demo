@@ -74,6 +74,8 @@ export function SiteHeader() {
               <div key={item.label} className="group relative">
                 <a
                   href={item.href === "#" ? undefined : item.href}
+                  target={item.href.startsWith("http") ? "_blank" : undefined}
+                  rel={item.href.startsWith("http") ? "noopener noreferrer" : undefined}
                   aria-haspopup={hasChildren ? "menu" : undefined}
                   className={cn(
                     "flex items-center gap-1 rounded-sm font-heading text-[15px] font-normal leading-none text-black transition-colors duration-200 hover:text-brand",
@@ -157,6 +159,8 @@ export function SiteHeader() {
               <div key={item.label} className="border-b border-black/[0.07] last:border-b-0">
                 <a
                   href={item.href === "#" ? undefined : item.href}
+                  target={item.href.startsWith("http") ? "_blank" : undefined}
+                  rel={item.href.startsWith("http") ? "noopener noreferrer" : undefined}
                   className={cn(
                     "block rounded-sm py-3 font-heading text-[15px] font-normal text-black transition-colors duration-200 hover:text-brand",
                     focusRing
