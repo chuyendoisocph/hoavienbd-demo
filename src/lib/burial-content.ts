@@ -100,7 +100,7 @@ export const PLOT_TYPES: PlotType[] = [
 export const MEMORIAL_360 = {
   eyebrow: "XEM VIDEO",
   title: "Hoa Viên Bình Dương",
-  subtitle: "Tham Quan 360°",
+  subtitle: "Video Toàn Cảnh",
   poster: "/images/NV-Lanscaping.jpg",
   video: "/videos/14444444.mp4",
 };

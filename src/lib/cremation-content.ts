@@ -7,7 +7,7 @@ export const CREMATION_HERO = {
 };
 
 export const CREMATION_INTRO = {
-  badge: "THAM QUAN 360°",
+  badge: "VIDEO TOÀN CẢNH",
   title: "Định nghĩa lại sự tôn kính qua kiến trúc tráng lệ",
   body: "Nhà lưu tro cốt đang thay đổi cách chúng ta tưởng niệm và tôn vinh người đã khuất bằng lối kiến trúc tráng lệ vô song. Quỹ đất ngày càng hạn hẹp cùng sự phổ biến của hình thức hỏa táng là nguồn cảm hứng để Hoa Viên Bình Dương kiến tạo những nhà lưu tro cốt như chốn an nghỉ vĩnh hằng nguy nga và đầy tính nghệ thuật.",
   cta: { label: "TÌM HIỂU THÊM", href: "/resources/contact-us-new" },

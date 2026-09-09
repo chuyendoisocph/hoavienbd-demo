@@ -9,7 +9,7 @@ export function CremationIntro() {
   return (
     <section className="bg-white">
       <div className="mx-auto grid max-w-[1200px] grid-cols-1 items-center gap-12 px-6 py-[70px] lg:grid-cols-[58%_42%]">
-        {/* LEFT: video with overlapping 360 badge */}
+        {/* LEFT: video with overlapping badge */}
         <div className="relative">
           <VideoFeature
             poster={CREMATION_INTRO.poster}
@@ -21,8 +21,8 @@ export function CremationIntro() {
               "absolute bottom-6 -left-2 z-10 bg-brand px-7 py-[18px] text-[18px] font-bold uppercase leading-tight tracking-[3px] text-white",
             )}
           >
-            <span className="block">360</span>
-            <span className="block">SITE VIEW</span>
+            <span className="block">VIDEO</span>
+            <span className="block">TOÀN CẢNH</span>
           </div>
         </div>
 

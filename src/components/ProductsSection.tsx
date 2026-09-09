@@ -39,7 +39,7 @@ export function ProductsSection() {
                 "transition-transform hover:-translate-y-0.5",
               )}
             >
-              360 SITE VIEW
+              XEM TOÀN CẢNH
             </a>
           </div>
         </div>

@@ -30,10 +30,10 @@ export function SiteView360() {
           />
           <div className="absolute -bottom-6 left-5 bg-[#4453C4] px-6 py-4 text-white shadow-[0_14px_30px_rgba(49,65,149,0.3)] md:left-10 md:px-8 md:py-5">
             <span className="text-[26px] font-semibold leading-none md:text-[34px]">
-              360°
+              VIDEO
             </span>
             <span className="ml-3 text-[12px] font-bold tracking-[2.5px] md:text-[13px]">
-              SITE VIEW
+              TOÀN CẢNH
             </span>
           </div>
         </div>
