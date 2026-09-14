@@ -1,7 +1,7 @@
 /** Nội dung trang Nhu Cầu Cấp Thiết — Hoa Viên Bình Dương */
 
 export const IMMEDIATE_HERO = {
-  background: "/images/hvbd/care-team.jpg",
+  background: "/images/immediate-need-hero.webp",
   title: "Nhu Cầu Cấp Thiết",
   subtitle: "Chúng tôi sẵn sàng hỗ trợ 24/7",
   cta: { label: "GỌI TỔNG ĐÀI 1800 1118", href: "tel:18001118" },

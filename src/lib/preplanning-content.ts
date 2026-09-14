@@ -1,7 +1,7 @@
 /** Nội dung trang Lập Kế Hoạch Trước — Hoa Viên Bình Dương */
 
 export const PREPLAN_HERO = {
-  background: "/images/hvbd/grave-offering-aodai.jpg",
+  background: "/images/pre-planning-hero.webp",
   title: "Lập Kế Hoạch Trước",
   subtitle: "Để lại di sản của tình yêu thương",
 };

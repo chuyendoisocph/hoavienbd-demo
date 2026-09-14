@@ -2,6 +2,7 @@
 
 export const BURIAL_HERO = {
   image: "/images/hvbd/park-aerial-graves.jpg",
+  video: "/videos/hero-hoa-vien.mp4",
   title: "Phần Mộ",
   subtitle: "Tĩnh lặng tự nhiên, vẻ đẹp an yên",
 };
@@ -101,8 +102,8 @@ export const MEMORIAL_360 = {
   eyebrow: "XEM VIDEO",
   title: "Hoa Viên Bình Dương",
   subtitle: "Video Toàn Cảnh",
-  poster: "/images/NV-Lanscaping.jpg",
-  video: "/videos/14444444.mp4",
+  poster: "/images/poster-toan-canh-hoa-vien-moi.jpg",
+  video: "/videos/toan-canh-hoa-vien.mp4",
 };
 
 export const CONSIDERATIONS = {

@@ -9,6 +9,15 @@ export function BurialHero() {
         alt=""
         className="absolute inset-0 z-0 h-full w-full object-cover"
       />
+      <video
+        src={BURIAL_HERO.video}
+        autoPlay
+        loop
+        muted
+        playsInline
+        aria-hidden="true"
+        className="absolute inset-0 z-0 h-full w-full object-cover motion-reduce:hidden"
+      />
 
       <div className="absolute inset-0 z-[1] bg-black/30" />
 
