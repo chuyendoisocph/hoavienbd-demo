@@ -1,3 +1,4 @@
+import { HeroVideo } from "@/components/HeroVideo";
 import { PhoneIcon } from "@/components/icons";
 import { CARELINE, HERO } from "@/lib/content";
 
@@ -12,13 +13,10 @@ export function HeroSection() {
           alt=""
           className="absolute inset-0 h-full w-full object-cover"
         />
-        <video
-          src={HERO.video}
-          autoPlay
-          loop
-          muted
-          playsInline
-          aria-hidden="true"
+        <HeroVideo
+          mobileSrc={HERO.videoMobile}
+          desktopSrc={HERO.video}
+          poster={HERO.image}
           className="absolute inset-0 h-full w-full object-cover motion-reduce:hidden"
         />
 

@@ -1,3 +1,4 @@
+import { HeroVideo } from "@/components/HeroVideo";
 import { BURIAL_HERO } from "@/lib/burial-content";
 
 export function BurialHero() {
@@ -9,13 +10,10 @@ export function BurialHero() {
         alt=""
         className="absolute inset-0 z-0 h-full w-full object-cover"
       />
-      <video
-        src={BURIAL_HERO.video}
-        autoPlay
-        loop
-        muted
-        playsInline
-        aria-hidden="true"
+      <HeroVideo
+        mobileSrc={BURIAL_HERO.videoMobile}
+        desktopSrc={BURIAL_HERO.video}
+        poster={BURIAL_HERO.image}
         className="absolute inset-0 z-0 h-full w-full object-cover motion-reduce:hidden"
       />
 

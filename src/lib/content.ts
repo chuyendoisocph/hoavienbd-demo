@@ -48,8 +48,9 @@ export const CARELINE = "0818 555 444";
 export const EMAIL = "info@cphaco.vn";
 
 export const HERO = {
-  video: "/videos/hero-dji0305-60-80-web.mp4",
-  image: "/images/hero-dji0305-poster.jpg",
+  video: "/videos/hero-dji0305-1080.mp4",
+  videoMobile: "/videos/hero-dji0305-720.mp4",
+  image: "/images/hero-dji0305-poster.webp",
   title: "Hoa Viên Bình Dương",
   subtitle: "Nơi Cuộc Sống Vĩnh Hằng",
 };

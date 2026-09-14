@@ -2,7 +2,8 @@
 
 export const BURIAL_HERO = {
   image: "/images/hvbd/park-aerial-graves.jpg",
-  video: "/videos/hero-hoa-vien.mp4",
+  video: "/videos/hero-dji0305-1080.mp4",
+  videoMobile: "/videos/hero-dji0305-720.mp4",
   title: "Phần Mộ",
   subtitle: "Tĩnh lặng tự nhiên, vẻ đẹp an yên",
 };
