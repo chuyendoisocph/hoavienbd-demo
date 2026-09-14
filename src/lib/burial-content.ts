@@ -103,8 +103,9 @@ export const MEMORIAL_360 = {
   eyebrow: "XEM VIDEO",
   title: "Hoa Viên Bình Dương",
   subtitle: "Video Toàn Cảnh",
-  poster: "/images/poster-toan-canh-hoa-vien-moi.jpg",
-  video: "/videos/toan-canh-hoa-vien.mp4",
+  poster: "/images/toan-canh-dji0304-poster.webp",
+  video: "/videos/toan-canh-dji0304-1080.mp4",
+  videoMobile: "/videos/toan-canh-dji0304-720.mp4",
 };
 
 export const CONSIDERATIONS = {

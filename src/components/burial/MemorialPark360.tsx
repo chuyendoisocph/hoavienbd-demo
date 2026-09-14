@@ -21,6 +21,7 @@ export function MemorialPark360() {
         <VideoFeature
           poster={MEMORIAL_360.poster}
           video={MEMORIAL_360.video}
+          videoMobile={MEMORIAL_360.videoMobile}
           className="mx-auto aspect-[16/8] max-w-[1180px]"
         />
       </div>

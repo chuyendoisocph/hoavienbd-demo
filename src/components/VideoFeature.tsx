@@ -6,11 +6,13 @@ import { cn } from "@/lib/utils";
 
 interface VideoFeatureProps {
   video: string;
+  /** Bản nhẹ cho điện thoại (tuỳ chọn). */
+  videoMobile?: string;
   poster: string;
   className?: string;
 }
 
-export function VideoFeature({ video, poster, className }: VideoFeatureProps) {
+export function VideoFeature({ video, videoMobile, poster, className }: VideoFeatureProps) {
   const [playing, setPlaying] = useState(false);
 
   return (
@@ -24,12 +26,12 @@ export function VideoFeature({ video, poster, className }: VideoFeatureProps) {
       }}
     >
       {playing ? (
-        <video
-          src={video}
-          controls
-          autoPlay
-          className="w-full h-full object-cover"
-        />
+        <video controls autoPlay playsInline className="w-full h-full object-cover">
+          {videoMobile && (
+            <source src={videoMobile} type="video/mp4" media="(max-width: 767px)" />
+          )}
+          <source src={video} type="video/mp4" />
+        </video>
       ) : (
         <>
           <img src={poster} alt="" className="w-full h-full object-cover" />

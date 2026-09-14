@@ -144,8 +144,9 @@ export const SITE_VIEW_360 = {
   title: "Toàn cảnh Hoa Viên Bình Dương",
   description:
     "Khám phá không gian xanh, cảnh quan và các công trình nổi bật của hoa viên qua góc nhìn toàn cảnh.",
-  video: "/videos/toan-canh-hoa-vien.mp4",
-  poster: "/images/poster-toan-canh-hoa-vien-moi.jpg",
+  video: "/videos/toan-canh-dji0304-1080.mp4",
+  videoMobile: "/videos/toan-canh-dji0304-720.mp4",
+  poster: "/images/toan-canh-dji0304-poster.webp",
 };
 
 export const ADVANTAGES = {

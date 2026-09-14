@@ -25,6 +25,7 @@ export function SiteView360() {
         <div className="relative mt-10 md:mt-12">
           <VideoFeature
             video={SITE_VIEW_360.video}
+            videoMobile={SITE_VIEW_360.videoMobile}
             poster={SITE_VIEW_360.poster}
             className="aspect-video max-h-none shadow-[0_28px_65px_-32px_rgba(35,53,91,0.58)] [&_button]:bg-[#4453C4]/90 [&_button]:shadow-[0_12px_30px_rgba(24,36,86,0.35)]"
           />
