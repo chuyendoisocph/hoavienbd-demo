@@ -7,7 +7,7 @@ import { ArticleGrid } from "@/components/articles/ArticleGrid";
 export const metadata: Metadata = {
   title: "Bài Viết | Hoa Viên Bình Dương",
   description:
-    "Bài viết từ Hoa Viên Bình Dương về lập kế hoạch trước, dịch vụ tang lễ, nghi lễ – văn hóa và những tin tức mới nhất.",
+    "Bài viết từ Hoa Viên Bình Dương về chuẩn bị hậu sự, dịch vụ tang lễ, an táng, hỏa táng, lưu giữ tro cốt và văn hóa tưởng niệm Việt Nam.",
 };
 
 export default function ArticlesPage() {

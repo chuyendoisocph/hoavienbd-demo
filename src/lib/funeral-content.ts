@@ -1,9 +1,9 @@
 /** Nội dung trang Dịch Vụ Tang Lễ — Hoa Viên Bình Dương */
 
 export const FUNERAL_HERO = {
-  image: "/images/hvbd/family-walk.jpg",
+  image: "/images/hvbd/dich-vu-tang-le-3.jpg",
   title: "Dịch Vụ Tang Lễ",
-  subtitle: "Tận Tâm . Chu Toàn .",
+  subtitle: "Tận tâm trong từng nghi thức",
 };
 
 export const FUNERAL_INTRO = {
@@ -12,18 +12,18 @@ export const FUNERAL_INTRO = {
   body: "Lo liệu tang lễ là việc hệ trọng và nhạy cảm. Dù là chuẩn bị trước hay khi hữu sự, việc biết bắt đầu từ đâu và quyết định những gì cần làm có thể khiến nhiều người bối rối, nhất là với những ai chưa từng trực tiếp lo liệu hậu sự. Với bề dày kinh nghiệm trong lĩnh vực dịch vụ tang lễ, Hoa Viên Bình Dương thấu hiểu sâu sắc nỗi trăn trở này.",
   cta: { label: "TÌM HIỂU THÊM", href: "/resources/contact-us-new" },
   services: [
-    "Tư vấn",
-    "Dịch vụ khâm liệm & nhập quan",
-    "Chuẩn bị lễ tưởng niệm",
-    "Điều phối tang lễ & lễ tưởng niệm",
-    "Dịch vụ di quan",
-    "Sản phẩm & dịch vụ bổ sung",
+    "Tư vấn nghi thức & phương án tổ chức",
+    "Khâm liệm & nhập quan",
+    "Chuẩn bị lễ viếng & bàn thờ",
+    "Tang phục & nhạc lễ",
+    "Xe tang & điều phối di quan",
+    "Rạp, bàn ghế & dịch vụ hỗ trợ",
   ],
 };
 
 export const INTRO_WATCH = {
   youtubeId: "msZmffahu1g",
-  poster: "/images/nckl-showroom.jpg",
+  poster: "/images/hvbd/dich-vu-tang-le-1.jpg",
 };
 
 export interface HowStep {
@@ -35,50 +35,50 @@ export interface HowStep {
 export const HOW_IT_WORKS = {
   title: "Quy Trình Thực Hiện",
   intro:
-    "Với gói dịch vụ trọn gói, chúng tôi đảm bảo mọi nhu cầu được lo liệu chu toàn qua bốn bước đơn giản, để bạn và gia đình được trọn vẹn tiễn biệt người thân yêu.",
+    "Đội ngũ Hoa Viên phối hợp cùng gia đình chuẩn bị bốn nghi thức chính một cách trang nghiêm, phù hợp với phong tục, tín ngưỡng và nguyện vọng đã thống nhất.",
   steps: [
     {
       icon: "/images/Icon_1_Artboard-1.png",
-      title: "Bước 1 : Lập kế hoạch",
-      body: "Lựa chọn gói dịch vụ phù hợp. Đội ngũ tư vấn tận tình của chúng tôi sẽ hỗ trợ mọi nhu cầu và thắc mắc của bạn.",
+      title: "Bước 1: Khâm liệm",
+      body: "Chuẩn bị chu đáo cho người đã khuất và các vật dụng cần thiết theo nội dung gia đình đã thống nhất.",
     },
     {
       icon: "/images/Icon_1_Artboard-2.png",
-      title: "Bước 2 : Vận chuyển",
-      body: "Đội ngũ phục vụ chuyên nghiệp sẽ hỗ trợ tiếp nhận và vận chuyển người đã khuất để chuẩn bị cho lễ tang.",
+      title: "Bước 2: Nhập quan",
+      body: "Thực hiện nghi thức nhập quan trang nghiêm, tôn trọng phong tục, tôn giáo và nguyện vọng của gia đình.",
     },
     {
       icon: "/images/Icon_1_Artboard-3.png",
-      title: "Bước 3 : Thủ tục giấy tờ",
-      body: "Để gia đình an lòng, đội ngũ của chúng tôi sẽ hỗ trợ hoàn tất các thủ tục và giấy tờ cần thiết.",
+      title: "Bước 3: Lễ viếng",
+      body: "Chuẩn bị bàn thờ, không gian lễ viếng, tang phục và nhạc lễ để gia đình, thân hữu cùng tưởng niệm.",
     },
     {
       icon: "/images/Icon_1_Artboard-4.png",
-      title: "Bước 4 : Tổ chức tang lễ",
-      body: "Đội ngũ phục vụ chuyên nghiệp sẽ tổ chức tang lễ theo đúng gói dịch vụ đã chọn cùng các yêu cầu khác, với sự tham gia tối thiểu từ tang quyến.",
+      title: "Bước 4: Di quan",
+      body: "Điều phối xe tang và đoàn đưa tiễn đến nơi an táng hoặc hỏa táng theo phương án gia đình đã lựa chọn.",
     },
   ] as HowStep[],
 };
 
 export const PARLOURS = {
-  title: "Đại Sảnh Tang Lễ",
-  body: "Sang trọng và rộng rãi bậc nhất, Đại Sảnh Tang Lễ là nơi tôn vinh và tưởng niệm cuộc đời một cách trang nhã. Được thiết kế để đón tiếp đông đảo quan khách, người thân và bạn bè có thể cùng ôn lại một cuộc đời ý nghĩa trong không gian ấm áp, dịu nhẹ và tiễn biệt một cách trang trọng, vẹn toàn.",
-  note: "* Có thể nâng cấp",
+  title: "Không Gian Nghi Lễ & Tưởng Niệm",
+  body: "Hoa Viên Bình Dương tổ chức và hỗ trợ các nghi lễ tưởng niệm trong không gian trang nghiêm, hài hòa với cảnh quan xanh. Từng khu vực được chuẩn bị chỉn chu để gia đình, thân hữu cùng tiễn biệt người đã khuất theo tín ngưỡng và nguyện vọng đã thống nhất.",
+  note: "Không gian và hình thức nghi lễ được tư vấn theo nhu cầu thực tế của từng gia đình.",
   slides: [
-    { image: "/images/P23_0950_REV-scaled.jpg", caption: "Nhà Tang Lễ VIP" },
-    { image: "/images/nfuguitang-25.jpg", caption: "Nhà Tang Lễ Tiêu Chuẩn" },
-    { image: "/images/nfuguitang-31.jpg", caption: "Nhà Tang Lễ Tiêu Chuẩn" },
-    { image: "/images/nfuguitang-4.jpg", caption: "Đại Sảnh Tang Lễ" },
+    { image: "/images/hvbd/dai-le-cau-sieu-cau-an.jpg", caption: "Không Gian Cầu Siêu – Cầu An" },
+    { image: "/images/hvbd/dai-le-vu-lan.jpg", caption: "Nghi Lễ Tưởng Niệm Trang Nghiêm" },
+    { image: "/images/hvbd/dich-vu-tang-le-2.jpg", caption: "Nghi Thức Di Quan Chỉn Chu" },
+    { image: "/images/hvbd/dich-vu-tang-le-1.jpg", caption: "Đội Ngũ Điều Phối Chuyên Nghiệp" },
   ],
 };
 
 export const CASKETS = {
-  title: "Quan Tài & Hũ Cốt Cao Cấp",
+  title: "Quan Tài & Bình Tro Cốt",
   bodyOne:
     "Trang nghiêm và chất lượng cao, nổi bật với tay nghề thủ công tinh xảo tôn lên dáng vẻ tự nhiên và thanh nhã, được chế tác từ chất liệu thượng hạng.",
   bodyTwo:
     "Được tuyển chọn từ những chất liệu tinh tuyển và chế tác bằng tay nghề thủ công điêu luyện, tạo nên một tác phẩm độc bản với những đường chạm khắc tinh tế, dáng hình và chất lượng vượt trội.",
-  note: "*Trang trí hoa tươi có sẵn khi nâng cấp",
+  note: "Mẫu mã và hạng mục đi kèm được tư vấn theo nhu cầu thực tế.",
   caskets: [
     "/images/nCasket-Honour1.png",
     "/images/nCasket-Harmony1.png",
@@ -87,10 +87,10 @@ export const CASKETS = {
     "/images/nCasket-Blessing1-1.png",
   ],
   urns: [
-    { image: "/images/nUrn-honour-3.png", label: "Hũ Cốt Honour Cao Cấp" },
-    { image: "/images/nUrn-blessing1-1.png", label: "Hũ Cốt Gracious Cao Cấp (Công Giáo)" },
-    { image: "/images/nurn-elegant-C.png", label: "Hũ Cốt Elegant Cao Cấp" },
-    { image: "/images/nurn-harmony.png", label: "Hũ Cốt Harmony Tiêu Chuẩn" },
+    { image: "/images/nUrn-honour-3.png", label: "Bình Tro Cốt Cao Cấp" },
+    { image: "/images/nUrn-blessing1-1.png", label: "Bình Tro Cốt Công Giáo" },
+    { image: "/images/nurn-elegant-C.png", label: "Bình Tro Cốt Hoa Văn Thanh Nhã" },
+    { image: "/images/nurn-harmony.png", label: "Bình Tro Cốt Tiêu Chuẩn" },
   ],
 };
 
@@ -101,41 +101,41 @@ export const CASKET_WATCH = {
 
 export const REASONS = {
   title: "6 Lý Do",
-  subtitle: "để gửi gắm nhu cầu tang lễ của bạn cho Hoa Viên Bình Dương",
+  subtitle: "để gia đình an tâm lựa chọn Hoa Viên Bình Dương",
   items: [
-    "Uy tín với dịch vụ chuyên nghiệp và xuất sắc",
-    "Lựa chọn tốt nhất cho mọi nhu cầu với mức giá hợp lý",
-    "Được đảm bảo bởi quỹ tín thác do bên độc lập quản lý",
-    "Dịch vụ tang lễ trọn gói bởi đội ngũ chuyên nghiệp",
-    "Một tổng đài duy nhất hỗ trợ tức thời",
-    "Linh hoạt trong thanh toán",
+    "Tiếp nhận và tư vấn kịp thời khi gia đình cần",
+    "Phối hợp trọn gói từ khâm liệm đến di quan",
+    "Nghi thức phù hợp phong tục, tôn giáo và nguyện vọng",
+    "Đội ngũ có kinh nghiệm, phục vụ tận tâm và chỉn chu",
+    "Không gian và phương tiện phục vụ trang nghiêm",
+    "Hạng mục dịch vụ được trao đổi rõ ràng trước khi thực hiện",
   ],
 };
 
-export const WHITE_LADIES = {
-  image: "/images/hvbd/care-team.jpg",
-  title: "Đội Ngũ Nữ Phục Vụ",
-  subtitle: "Gìn giữ phẩm giá cho những người thân nữ giới của bạn",
-  body: "Nhằm gìn giữ phẩm giá cho những người phụ nữ đã khuất, Hoa Viên Bình Dương tự hào giới thiệu đội ngũ nữ phục vụ chuyên nghiệp, đảm trách và lo liệu mọi khâu trong dịch vụ tang lễ. Đội ngũ gồm các nữ chuyên viên khâm liệm, trang điểm, điều phối nghi lễ và nhiều vị trí khác, để dành cho các bà, các mẹ và các con gái sự tôn trọng và trang nghiêm cao nhất, mang lại sự an lòng trọn vẹn.",
-  cta: { label: "Dịch Vụ Chăm Sóc & Phục Dựng Di Hài", href: "/resources/contact-us-new" },
+export const CARE_TEAM = {
+  image: "/images/hvbd/dich-vu-tang-le-1.jpg",
+  title: "Đội Ngũ Phục Vụ Tận Tâm",
+  subtitle: "Đồng hành cùng gia đình trong từng nghi thức",
+  body: "Đội ngũ Hoa Viên Bình Dương đồng hành từ khi tiếp nhận nhu cầu, chuẩn bị khâm liệm, nhập quan và lễ viếng đến điều phối xe tang, di quan, an táng hoặc hỏa táng. Mỗi công việc được thực hiện chỉn chu, tôn trọng phong tục, tín ngưỡng và nguyện vọng riêng của từng gia đình.",
+  cta: { label: "LIÊN HỆ TƯ VẤN", href: "/resources/contact-us-new" },
 };
 
 export const PLANS = {
-  title: "GÓI ƯU ĐÃI CÓ THỜI HẠN",
-  introLead: "Khám phá các gói dịch vụ hoặc tìm hiểu thêm về ",
-  introBold: "Gói Ưu Đãi Có Thời Hạn NV Elegant Plus+.",
+  title: "DỊCH VỤ TANG LỄ & HẬU SỰ",
+  introLead: "Hoa Viên Bình Dương tư vấn giải pháp phù hợp với nhu cầu, tín ngưỡng và điều kiện của từng gia đình. ",
+  introBold: "Mọi hạng mục sẽ được trao đổi rõ ràng trước khi thực hiện.",
   buttons: [
-    { label: "GÓI NV ELEGANT PLUS+", href: "/resources/contact-us-new" },
-    { label: "GÓI KHU VỰC PHÍA BẮC", href: "/resources/contact-us-new" },
-    { label: "GÓI KHU VỰC TRUNG TÂM", href: "/resources/contact-us-new" },
-    { label: "GÓI KHU VỰC PHÍA NAM", href: "/resources/contact-us-new" },
+    { label: "NHẬN TƯ VẤN DỊCH VỤ", href: "/resources/contact-us-new" },
+    { label: "DỊCH VỤ AN TÁNG", href: "/planning-options/burial" },
+    { label: "DỊCH VỤ HỎA TÁNG", href: "/planning-options/cremation" },
+    { label: "LƯU GIỮ TRO CỐT", href: "/planning-options/cremation" },
   ],
 };
 
 export const GUIDE = {
-  bannerImage: "/images/1395a.jpg",
+  bannerImage: "/images/hvbd/family-walk.jpg",
   title: "Cẩm nang chọn đơn vị dịch vụ tang lễ",
-  body: "Chọn đúng đơn vị dịch vụ tang lễ không chỉ quan trọng trong việc đảm bảo mọi nhu cầu và mối bận tâm của bạn được đáp ứng, mà còn là sự hỗ trợ không thể thiếu. Một đơn vị uy tín sẽ giúp san sẻ gánh nặng và áp lực khi lo liệu tang lễ, để gia đình bạn tập trung vào điều quan trọng hơn trong thời khắc đau buồn.",
+  body: "Lựa chọn đơn vị dịch vụ tang lễ phù hợp giúp gia đình được hướng dẫn rõ ràng và giảm bớt áp lực khi lo liệu hậu sự. Một đơn vị uy tín cần cung cấp thông tin minh bạch, tôn trọng tín ngưỡng và thực hiện đúng những nội dung đã thống nhất.",
   cta: { label: "TÌM HIỂU THÊM", href: "/resources/contact-us-new" },
   considerTitle: "5 điều cần cân nhắc khi chọn đơn vị dịch vụ tang lễ",
   considerItems: [
@@ -143,7 +143,7 @@ export const GUIDE = {
     "Dịch vụ và sản phẩm",
     "Ngân sách và giá cả",
     "Cơ sở vật chất",
-    "Sự thoải mái của bạn",
+    "Sự an tâm của gia đình",
   ],
   considerCta: { label: "TÌM HIỂU", href: "/resources/contact-us-new" },
 };
@@ -156,11 +156,11 @@ export interface AboutCard {
 
 export const ABOUT = {
   title: "Về Dịch Vụ Tang Lễ & Hậu Sự",
-  background: "/images/outdoor-05.jpg",
+  background: "/images/hvbd/linh-hoa-tue-dan-3.jpg",
   cards: [
-    { title: "Đơn vị dịch vụ tang lễ là gì?", image: "/images/113.jpg", href: "/resources/article" },
-    { title: "Gặp gỡ đơn vị dịch vụ tang lễ", image: "/images/151a.jpg", href: "/resources/article" },
-    { title: "Tang lễ", image: "/images/chinh-le-duc-S9XD0IZ6iZA-unsplash-scaled.jpg", href: "/resources/article" },
-    { title: "An táng hay hỏa táng", image: "/images/158a.jpg", href: "/resources/article" },
+    { title: "Đơn vị dịch vụ tang lễ là gì?", image: "/images/hvbd/dich-vu-tang-le-2.jpg", href: "/resources/article" },
+    { title: "Chuẩn bị một nghi lễ trang nghiêm", image: "/images/hvbd/dai-le-cau-sieu-cau-an.jpg", href: "/resources/article" },
+    { title: "Thăm viếng và tưởng nhớ", image: "/images/hvbd/grave-offering-white.jpg", href: "/resources/article" },
+    { title: "An táng hay hỏa táng", image: "/images/hvbd/thien-phuoc-courtyard.jpg", href: "/resources/article" },
   ] as AboutCard[],
 };

@@ -1,13 +1,16 @@
+import Image from "next/image";
 import { FUNERAL_HERO } from "@/lib/funeral-content";
 
 export function FuneralHero() {
   return (
     <section className="relative h-[520px] md:h-[765px] overflow-hidden bg-black">
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img
+      <Image
         src={FUNERAL_HERO.image}
-        alt=""
-        className="absolute inset-0 z-0 h-full w-full object-cover"
+        alt="Đội ngũ thực hiện nghi lễ tang lễ tại Hoa Viên Bình Dương"
+        fill
+        priority
+        sizes="100vw"
+        className="z-0 object-cover object-center"
       />
 
       <div className="absolute inset-0 z-[1] bg-black/20" />

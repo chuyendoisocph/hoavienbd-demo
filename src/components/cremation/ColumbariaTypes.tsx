@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState } from "react";
 import {
   COLUMBARIA_TYPES,
@@ -26,12 +27,14 @@ function Carousel({
     <div>
       <div className="relative aspect-[4/3] w-full overflow-hidden">
         {images.map((src, i) => (
-          <img
+          <Image
             key={src}
             src={src}
             alt={`${title} ${i + 1}`}
+            fill
+            sizes="(min-width: 1024px) 576px, calc(100vw - 48px)"
             className={cn(
-              "absolute inset-0 h-full w-full object-cover transition-opacity duration-500",
+              "object-cover object-center transition-opacity duration-500",
               i === active ? "opacity-100" : "opacity-0",
             )}
           />
@@ -183,7 +186,7 @@ export function ColumbariaTypes() {
         <p className="text-[15px] uppercase tracking-[6px] text-[#999]">
           {COLUMBARIA_HEADING.eyebrow}
         </p>
-        <h2 className="font-heading mt-4 text-[52px] font-medium tracking-[2px] text-brand">
+        <h2 className="font-heading mt-4 text-[clamp(34px,5vw,52px)] font-medium tracking-[1px] text-brand md:tracking-[2px]">
           {COLUMBARIA_HEADING.title}
         </h2>
       </div>

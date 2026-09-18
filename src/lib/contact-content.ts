@@ -1,11 +1,10 @@
-/** Nội dung trang Liên Hệ — Hoa Viên Bình Dương.
- *  Thông tin liên hệ là placeholder — cập nhật theo số liệu thật của Hoa Viên Bình Dương. */
+/** Nội dung trang Liên Hệ — Hoa Viên Bình Dương. */
 
 export const CONTACT_HERO = {
-  background: "/images/hvbd/entrance-gate.jpg",
+  background: "/images/hvbd/vinh-hoa-mon.jpg",
   title: "Liên Hệ",
   subtitle:
-    "Bạn có thắc mắc hay cần hỗ trợ? Hãy liên hệ với chúng tôi tại chi nhánh gần nhất hoặc điền vào mẫu liên hệ bên dưới.",
+    "Quý khách cần tư vấn hoặc hỗ trợ? Hãy liên hệ với chúng tôi tại văn phòng gần nhất hoặc gửi yêu cầu qua biểu mẫu bên dưới.",
 };
 
 export const CONTACT_INFO = {
@@ -15,15 +14,14 @@ export const CONTACT_INFO = {
     label: "VĂN PHÒNG CHÍNH",
     lines: [
       "Hoa Viên Nghĩa Trang Bình Dương,",
-      "Khu phố Bông Trang,",
+      "Khu phố 1B,",
       "phường Chánh Phú Hòa,",
       "TP. Hồ Chí Minh.",
     ],
   },
   contact: {
-    label: "ĐIỆN THOẠI & EMAIL",
+    label: "ĐIỆN THOẠI",
     hotline: "0818 555 444",
-    email: "info@cphaco.vn",
   },
   hours: "7h30 – 17h00, tất cả các ngày trong tuần (kể cả Chủ nhật và ngày lễ).",
   mapUrl: "https://maps.app.goo.gl/UGsyaCrNZpi6F3yY6",
@@ -47,14 +45,14 @@ export const BRANCHES: Region[] = [
     name: "HỆ THỐNG HOA VIÊN",
     summary: [
       "Hoa Viên Nghĩa Trang Bình Dương",
-      "Khu phố Bông Trang, phường Chánh Phú Hòa, TP. Hồ Chí Minh",
+      "Khu phố 1B, phường Chánh Phú Hòa, TP. Hồ Chí Minh",
     ],
     explore: "https://maps.app.goo.gl/UGsyaCrNZpi6F3yY6",
     locations: [
       {
         name: "HOA VIÊN NGHĨA TRANG BÌNH DƯƠNG",
-        body: `Khu phố Bông Trang, phường Chánh Phú Hòa, TP. Hồ Chí Minh.
-TỔNG ĐÀI : 0818 555 444
+        body: `Khu phố 1B, phường Chánh Phú Hòa, TP. Hồ Chí Minh.
+TỔNG ĐÀI: 0818 555 444
 Giờ làm việc: 7h30 – 17h00, tất cả các ngày trong tuần (kể cả Chủ nhật và ngày lễ).
 Website: cphaco.vn`,
       },
@@ -63,7 +61,7 @@ Website: cphaco.vn`,
   {
     name: "VĂN PHÒNG GIAO DỊCH TP. HỒ CHÍ MINH",
     summary: [
-      "3 văn phòng & điểm giao dịch tại TP. Hồ Chí Minh",
+      "Các văn phòng và điểm giao dịch tại TP. Hồ Chí Minh",
       "Hỗ trợ tư vấn, ký hợp đồng và đưa đón tham quan hoa viên",
     ],
     explore:
@@ -72,24 +70,24 @@ Website: cphaco.vn`,
       {
         name: "VĂN PHÒNG CHI NHÁNH TP.HCM",
         body: `99 Điện Biên Phủ, Phường Gia Định, TP. Hồ Chí Minh.
-TỔNG ĐÀI : 0818 555 444`,
+TỔNG ĐÀI: 0818 555 444`,
       },
       {
-        name: "VĂN PHÒNG CHI NHÁNH 2 – TP.HCM",
-        body: `140C Nguyễn Cư Trinh, Phường Cầu Ông Lãnh, TP. Hồ Chí Minh.
-TỔNG ĐÀI : 0818 555 444`,
+        name: "VĂN PHÒNG GIAO DỊCH",
+        body: `746 Trần Hưng Đạo, Phường Chợ Quán, TP. Hồ Chí Minh.
+TỔNG ĐÀI: 0818 555 444`,
       },
       {
         name: "ĐIỂM GIAO DỊCH 3",
         body: `Số 253D Lương Định Của, Phường Bình Trưng, TP. Hồ Chí Minh.
-TỔNG ĐÀI : 0818 555 444`,
+TỔNG ĐÀI: 0818 555 444`,
       },
     ],
   },
 ];
 
 export const CONTACT_FORM = {
-  title: "Gửi Email Cho Chúng Tôi",
+  title: "Gửi Yêu Cầu Tư Vấn",
   fields: [
     { name: "name", label: "Họ và tên", type: "text" },
     { name: "email", label: "Email", type: "email" },

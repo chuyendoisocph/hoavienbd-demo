@@ -1,6 +1,6 @@
 import type { SVGProps } from "react";
 
-/** Icons used across the Nirvana Asia clone. Sized 1em by default; control via className/font-size. */
+/** Biểu tượng dùng trên website Hoa Viên Bình Dương. Kích thước mặc định là 1em. */
 
 export function SearchIcon(props: SVGProps<SVGSVGElement>) {
   return (

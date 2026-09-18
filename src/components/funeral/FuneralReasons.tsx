@@ -1,4 +1,5 @@
-import { REASONS, WHITE_LADIES } from "@/lib/funeral-content";
+import Image from "next/image";
+import { CARE_TEAM, REASONS } from "@/lib/funeral-content";
 import { PlusIcon } from "@/components/icons";
 
 export function FuneralReasons() {
@@ -29,26 +30,29 @@ export function FuneralReasons() {
           </div>
         </div>
 
-        {/* Right: image + White Ladies */}
+        {/* Right: care team */}
         <div>
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src={WHITE_LADIES.image}
-            alt={WHITE_LADIES.title}
-            className="h-[280px] w-full rounded-sm object-cover shadow-[0_20px_40px_-24px_rgba(0,0,0,0.4)]"
-          />
+          <div className="relative h-[280px] w-full overflow-hidden rounded-sm shadow-[0_20px_40px_-24px_rgba(0,0,0,0.4)]">
+            <Image
+              src={CARE_TEAM.image}
+              alt={CARE_TEAM.title}
+              fill
+              sizes="(min-width: 1024px) 560px, calc(100vw - 48px)"
+              className="object-cover object-center"
+            />
+          </div>
           <h2 className="mt-10 font-heading text-[40px] font-medium leading-tight text-brand md:text-[48px]">
-            {WHITE_LADIES.title}
+            {CARE_TEAM.title}
           </h2>
           <p className="mt-4 text-[22px] leading-snug text-heading">
-            {WHITE_LADIES.subtitle}
+            {CARE_TEAM.subtitle}
           </p>
-          <p className="mt-6 text-[15px] leading-[1.9] text-[#666]">{WHITE_LADIES.body}</p>
+          <p className="mt-6 text-[15px] leading-[1.9] text-[#666]">{CARE_TEAM.body}</p>
           <a
-            href={WHITE_LADIES.cta.href}
+            href={CARE_TEAM.cta.href}
             className="mt-8 inline-block rounded-none border border-brand px-[30px] py-[14px] text-[16px] text-brand transition-colors hover:bg-brand/5"
           >
-            {WHITE_LADIES.cta.label}
+            {CARE_TEAM.cta.label}
           </a>
         </div>
       </div>

@@ -24,7 +24,7 @@ export function WwaIntro() {
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src={WWA_INTRO.map}
-          alt="Nirvana Asia Group locations map"
+          alt="Sơ đồ Hoa Viên Nghĩa Trang Bình Dương"
           className="w-full object-contain"
         />
       </div>

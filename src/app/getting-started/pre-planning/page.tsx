@@ -9,9 +9,9 @@ import { PreplanSteps } from "@/components/pre-planning/PreplanSteps";
 import { PreplanResources } from "@/components/pre-planning/PreplanResources";
 
 export const metadata: Metadata = {
-  title: "Lập Kế Hoạch Trước | Hoa Viên Bình Dương",
+  title: "Chuẩn Bị Hậu Sự Từ Sớm | Hoa Viên Bình Dương",
   description:
-    "Để lại di sản của tình yêu thương. Tìm hiểu lập kế hoạch trước là gì, 5 lợi ích cho bạn và gia đình, cùng cẩm nang 6 bước chuẩn bị từ sớm.",
+    "Tìm hiểu cách chuẩn bị hậu sự từ sớm, những lợi ích đối với bản thân và gia đình, cùng cẩm nang 6 bước chủ động sắp xếp nguyện vọng.",
 };
 
 export default function PrePlanningPage() {

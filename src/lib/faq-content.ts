@@ -74,9 +74,9 @@ export const FAQ_GROUPS: FaqGroup[] = [
     category: "Hỏa táng & Quyền riêng tư",
     items: [
       {
-        q: "Liệu tro cốt có thể bị lẫn lộn không?",
+        q: "Tro cốt được nhận diện và quản lý như thế nào?",
         a: [
-          "Không. Mỗi thời điểm chỉ có một lễ hỏa táng diễn ra, và toàn bộ hồ sơ, thủ tục đều được đối chiếu kỹ lưỡng trước khi bắt đầu. Đội ngũ của chúng tôi tuân thủ quy trình nghiêm ngặt này cho từng lễ hỏa táng.",
+          "Thông tin của người đã khuất được đối chiếu trong quá trình tiếp nhận, hỏa táng và bàn giao. Gia đình vui lòng cung cấp đầy đủ giấy tờ theo hướng dẫn và kiểm tra lại thông tin khi nhận tro cốt.",
         ],
       },
       {
@@ -88,18 +88,18 @@ export const FAQ_GROUPS: FaqGroup[] = [
     ],
   },
   {
-    category: "Quyền an táng & Thanh toán",
+    category: "Thời hạn dịch vụ & Thanh toán",
     items: [
       {
-        q: "“Thời hạn” quyền an táng là gì?",
+        q: "Thời hạn sử dụng phần mộ hoặc lưu giữ tro cốt được quy định thế nào?",
         a: [
-          "Thời hạn là quyền sử dụng – ở đây là quyền an táng trong một khoảng thời gian nhất định. Phần mộ thường là vĩnh viễn, trong khi vị trí lưu tro cốt có thể theo thời hạn hoặc vĩnh viễn. Nhân viên Chăm sóc Khách hàng sẽ giải thích các lựa chọn cụ thể tại hoa viên.",
+          "Thời hạn và quyền lợi cụ thể phụ thuộc vào loại dịch vụ cùng nội dung hợp đồng. Quý vị nên yêu cầu nhân viên tư vấn giải thích rõ thời hạn, phạm vi chăm sóc, điều kiện gia hạn và các khoản phí liên quan trước khi ký kết.",
         ],
       },
       {
-        q: "Có thời gian cân nhắc lại sau khi mua quyền an táng hoặc vị trí tưởng niệm không?",
+        q: "Có thể thay đổi lựa chọn sau khi ký hợp đồng không?",
         a: [
-          "Có. Quý vị có thời gian cân nhắc lại sau khi mua, miễn là chưa tiến hành an táng trong thời gian này. Vui lòng liên hệ nhân viên để biết chi tiết áp dụng tại hoa viên.",
+          "Việc thay đổi hoặc hủy lựa chọn phụ thuộc vào loại dịch vụ và các điều khoản đã ký kết. Quý vị vui lòng liên hệ trực tiếp để được kiểm tra và hướng dẫn theo từng trường hợp.",
         ],
       },
       {
@@ -111,7 +111,7 @@ export const FAQ_GROUPS: FaqGroup[] = [
       {
         q: "Tôi có thể trả góp không?",
         a: [
-          "Có. Hoa Viên Bình Dương có chương trình trả góp linh hoạt với lãi suất ưu đãi, giúp quý vị chủ động hơn về tài chính. Vui lòng liên hệ để được tư vấn phương án phù hợp.",
+          "Phương án thanh toán được áp dụng theo chính sách tại từng thời điểm. Quý vị vui lòng liên hệ để được cung cấp thông tin và điều kiện cụ thể trước khi quyết định.",
         ],
       },
     ],

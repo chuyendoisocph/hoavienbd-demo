@@ -7,8 +7,13 @@
 ## DOM Structure
 Fixed-height section (~765px, NOT full viewport). Background `<video>` cover + dark overlay. Centered white title + subtitle.
 
+The reference header remains fixed while the hero starts **below** it. The burial
+page must therefore reserve 64px above the hero on mobile and 75px on desktop;
+the header must not cover the first part of the hero.
+
 ## Computed Styles
 - Section: position relative; height ~765px (use `min-h-[600px] h-[80vh] max-h-[765px]` or simply `h-[765px]` desktop, shorter on mobile); overflow hidden; bg #000.
+- Page offset before section: `64px`, switching to `75px` at the 980px header breakpoint.
 - video: absolute inset-0; w/h 100%; object-cover; z-0; autoplay loop muted playsInline.
 - overlay: absolute inset-0; bg-black/30; z-[1].
 - content: relative z-10; flex col; items-center justify-center; h-full; text-center; text-white.
@@ -22,7 +27,7 @@ Fixed-height section (~765px, NOT full viewport). Background `<video>` cover + d
 Title "Burial Plots"; Subtitle "Natural tranquility and serene beauty".
 
 ## Responsive
-- Desktop: h-[765px], H1 100px. Mobile: shorter (~h-[520px]), H1 ~44px.
+- Desktop: h-[765px], H1 100px. Mobile: h-[440px] (the reference uses a compact portrait crop), H1 ~44px.
 
 ## Notes
 - Import `BURIAL_HERO` from `@/lib/burial-content`. Named export `BurialHero`. tsc clean.

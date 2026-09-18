@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState } from "react";
 import { PARLOURS } from "@/lib/funeral-content";
 import { cn } from "@/lib/utils";
@@ -14,13 +15,14 @@ export function FuneralParlours() {
         <div>
           <div className="relative aspect-[4/3] w-full overflow-hidden">
             {PARLOURS.slides.map((slide, i) => (
-              // eslint-disable-next-line @next/next/no-img-element
-              <img
+              <Image
                 key={slide.image}
                 src={slide.image}
                 alt={slide.caption}
+                fill
+                sizes="(min-width: 1024px) 576px, calc(100vw - 48px)"
                 className={cn(
-                  "absolute inset-0 h-full w-full object-cover transition-opacity duration-500",
+                  "object-cover object-center transition-opacity duration-500",
                   i === active ? "opacity-100" : "opacity-0",
                 )}
               />

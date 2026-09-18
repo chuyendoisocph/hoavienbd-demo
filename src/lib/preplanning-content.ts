@@ -1,49 +1,49 @@
-/** Nội dung trang Lập Kế Hoạch Trước — Hoa Viên Bình Dương */
+/** Nội dung trang Chuẩn Bị Hậu Sự Từ Sớm — Hoa Viên Bình Dương */
 
 export const PREPLAN_HERO = {
   background: "/images/pre-planning-hero.webp",
-  title: "Lập Kế Hoạch Trước",
+  title: "Chuẩn Bị Từ Sớm",
   subtitle: "Để lại di sản của tình yêu thương",
 };
 
 export const PREPLAN_INTRO = {
   blocks: [
     {
-      title: "Lập kế hoạch trước",
+      title: "Chuẩn bị hậu sự từ sớm",
       body: "Chúng ta chuẩn bị cho hầu hết mọi điều trong cuộc sống. Để phòng ngừa rủi ro tai nạn, bệnh tật, ta mua bảo hiểm. Để kết hôn, các cặp đôi dành hàng tháng, thậm chí hàng năm để mọi việc được vẹn toàn. Để bảo đảm tương lai học vấn của con cái, ta lập quỹ giáo dục. Để sống trọn vẹn, ta có những danh sách ước mơ. Nhưng khoan đã, phải chăng ta đang quên mất điều gì đó?",
       cta: { label: "TÌM HIỂU THÊM", href: "/resources/contact-us-new" },
     },
     {
-      title: "Lập kế hoạch trước là gì?",
-      body: "Nói một cách đơn giản, lập kế hoạch trước (đôi khi còn gọi là “sắp xếp trước” hay “chuẩn bị hậu sự từ sớm”) nghĩa là chuẩn bị mọi việc hậu sự từ trước, trước khi nhu cầu thực sự phát sinh. Ý niệm này nghe có vẻ mới mẻ và thậm chí có phần kiêng kỵ. Tuy nhiên, lập kế hoạch trước thực ra không phải là điều gì xa lạ.",
+      title: "Chuẩn bị hậu sự từ sớm là gì?",
+      body: "Chuẩn bị hậu sự từ sớm là việc chủ động trao đổi và sắp xếp những nguyện vọng quan trọng trước khi nhu cầu thực sự phát sinh. Việc chuẩn bị có thể bao gồm hình thức an táng hoặc hỏa táng, nghi thức, nơi an nghỉ và kế hoạch tài chính phù hợp.",
       cta: { label: "TÌM HIỂU THÊM", href: "/resources/contact-us-new" },
     },
   ],
 };
 
 export const ADVANTAGES = {
-  title: "5 lợi ích chính của việc lập kế hoạch trước",
+  title: "5 lợi ích của việc chuẩn bị hậu sự từ sớm",
   groups: [
     {
-      label: "Cho bản thân bạn",
+      label: "Dành cho bản thân",
       image: "/images/775_Web.jpg",
       imageLeft: false,
       items: [
-        "Bạn chủ động đảm nhận trách nhiệm tài chính cho tang lễ của chính mình",
-        "Bạn có thời gian và không gian để cân nhắc mọi yếu tố và mối bận tâm",
-        "Bạn được tự chủ và lựa chọn cách mình muốn được tưởng nhớ, tôn vinh",
-        "Bạn có lựa chọn trả góp linh hoạt theo thời gian",
-        "Bạn an tâm hơn với một kế hoạch tài chính trọn vẹn",
+        "Chủ động chuẩn bị trách nhiệm tài chính cho hậu sự",
+        "Có thời gian cân nhắc kỹ các lựa chọn quan trọng",
+        "Được chủ động lựa chọn cách mình muốn được tưởng nhớ và tôn vinh",
+        "Có thể tìm hiểu phương án thanh toán phù hợp",
+        "An tâm hơn khi nguyện vọng đã được sắp xếp rõ ràng",
       ],
     },
     {
-      label: "Cho gia đình bạn",
+      label: "Dành cho gia đình",
       image: "/images/115_Web.jpg",
       imageLeft: true,
       items: [
         "Gia đình biết cần liên hệ với ai khi có việc khẩn cấp",
         "Gia đình không bị áp lực phải đưa ra quyết định vội vàng",
-        "Gia đình được tập trung vào việc tưởng nhớ và chữa lành",
+        "Gia đình có thêm thời gian tưởng nhớ và ở bên nhau",
         "Gia đình tránh được việc bất ngờ phải chi một khoản lớn để lo tang lễ",
         "Gia đình được bảo vệ trước chi phí tang lễ ngày càng tăng do lạm phát",
       ],
@@ -53,27 +53,27 @@ export const ADVANTAGES = {
 };
 
 export const PREPLAN_ARTICLES = {
-  eyebrow: "Lập Kế Hoạch Trước",
+  eyebrow: "Chuẩn Bị TỪ SỚM",
   cards: [
-    { title: "Lập kế hoạch trước hoạt động như thế nào?", image: "/images/252a.jpg", href: "/resources/article" },
-    { title: "Vì sao lập kế hoạch trước lại quan trọng?", image: "/images/1427.jpg", href: "/resources/article" },
+    { title: "Chuẩn bị hậu sự từ sớm gồm những gì?", image: "/images/252a.jpg", href: "/resources/article/chuan-bi-hau-su-tu-som" },
+    { title: "Vì sao nên trao đổi nguyện vọng cùng gia đình?", image: "/images/1427.jpg", href: "/resources/article/chuan-bi-hau-su-tu-som" },
     { title: "Gói dịch vụ trọn gói là gì?", image: "/images/80_1a.jpg", href: "/resources/article" },
   ],
 };
 
 export const PREPLAN_STEPS = {
-  title: "Cẩm nang 6 bước lập kế hoạch trước",
+  title: "Cẩm nang 6 bước chuẩn bị hậu sự từ sớm",
   body: [
-    "Lập kế hoạch trước có thể là một trải nghiệm đầy cảm xúc khi ta đối diện với sự hữu hạn của chính mình. Thế nhưng, đó cũng là cảm giác ý nghĩa khi đã sắp xếp ổn thỏa mọi việc, để bạn và gia đình được an lòng tận hưởng cuộc sống một cách trọn vẹn.",
-    "Như mọi quyết định lớn trong đời, lập kế hoạch trước không phải việc dễ dàng. Chính vì vậy, ta nên chuẩn bị càng sớm càng tốt để có thời gian và không gian cân nhắc trước khi đưa ra quyết định. Dưới đây là cẩm nang 6 bước đơn giản giúp việc lựa chọn của bạn trở nên dễ dàng hơn.",
+    "Chuẩn bị hậu sự từ sớm có thể gợi nhiều cảm xúc khi mỗi người đối diện với sự hữu hạn của cuộc đời. Tuy vậy, việc sắp xếp rõ ràng cũng giúp bản thân và gia đình thêm an tâm để sống trọn vẹn trong hiện tại.",
+    "Đây là một quyết định cần thời gian và sự đồng thuận. Sáu bước dưới đây giúp mỗi gia đình có cơ sở để tìm hiểu, trao đổi và lựa chọn một cách bình tĩnh.",
   ],
   steps: [
     "Tìm hiểu và so sánh các đơn vị dịch vụ tang lễ",
     "Đánh giá ngân sách và phương án thanh toán",
-    "Cân nhắc cách bạn muốn được tưởng nhớ và tôn vinh",
+    "Cân nhắc cách bản thân muốn được tưởng nhớ và tôn vinh",
     "Quyết định hình thức an nghỉ mong muốn",
     "Cân nhắc việc đóng góp cho một mục đích thiện nguyện",
-    "Đảm bảo người thân được biết về di nguyện và sắp xếp của bạn",
+    "Đảm bảo người thân được biết về di nguyện và các sắp xếp đã thực hiện",
   ],
   cta: { label: "CÁC BƯỚC TIẾP THEO", href: "/resources/contact-us-new" },
 };
@@ -83,6 +83,6 @@ export const PREPLAN_RESOURCES = {
   links: [
     { title: "So sánh các gói dịch vụ", href: "/planning-options/funeral-service" },
     { title: "Phần mộ tại Hoa Viên Bình Dương", href: "/planning-options/burial" },
-    { title: "Tìm hiểu về Lưu Tro Cốt", href: "/planning-options/cremation" },
+    { title: "Tìm hiểu về dịch vụ lưu tro cốt", href: "/planning-options/cremation" },
   ],
 };

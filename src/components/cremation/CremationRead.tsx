@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { CREMATION_READ } from "@/lib/cremation-content";
 import { cn } from "@/lib/utils";
 
@@ -17,11 +18,13 @@ export function CremationRead() {
         <div className="grid grid-cols-1 gap-[40px] md:grid-cols-3">
           {CREMATION_READ.cards.map((card) => (
             <a key={card.title} href={card.href} className="group block">
-              <div className="overflow-hidden">
-                <img
+              <div className="relative aspect-[16/10] overflow-hidden">
+                <Image
                   src={card.image}
                   alt={card.title}
-                  className="w-full aspect-[16/10] object-cover transition-transform duration-[400ms] group-hover:scale-105"
+                  fill
+                  sizes="(min-width: 768px) 340px, calc(100vw - 48px)"
+                  className="object-cover transition-transform duration-[400ms] group-hover:scale-105"
                 />
               </div>
               <h3

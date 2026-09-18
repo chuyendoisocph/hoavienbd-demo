@@ -33,14 +33,9 @@ export function ContactInfo() {
               </h3>
               <p className="mt-3 flex items-center gap-2 text-[15px] text-[#666]">
                 <PhoneIcon className="text-brand" />
-                <span>TỔNG ĐÀI :</span>
+              <span>TỔNG ĐÀI:</span>
                 <a href={`tel:${CONTACT_INFO.contact.hotline.replace(/[^0-9]/g, "")}`} className="text-brand-link">
                   {CONTACT_INFO.contact.hotline}
-                </a>
-              </p>
-              <p className="mt-2 text-[15px] text-[#666]">
-                <a href={`mailto:${CONTACT_INFO.contact.email}`} className="text-brand-link">
-                  {CONTACT_INFO.contact.email}
                 </a>
               </p>
             </div>
@@ -49,7 +44,7 @@ export function ContactInfo() {
           {/* Right: map */}
           <div className="min-h-[320px] overflow-hidden rounded-sm shadow-[0_20px_40px_-24px_rgba(0,0,0,0.4)]">
             <iframe
-              title="Nirvana Asia corporate office map"
+              title="Bản đồ Hoa Viên Nghĩa Trang Bình Dương"
               src={`https://maps.google.com/maps?q=${encodeURIComponent(CONTACT_INFO.mapQuery)}&output=embed`}
               className="h-full min-h-[320px] w-full border-0"
               loading="lazy"

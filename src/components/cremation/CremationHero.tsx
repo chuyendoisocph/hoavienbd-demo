@@ -1,15 +1,19 @@
+import Image from "next/image";
 import { CREMATION_HERO } from "@/lib/cremation-content";
 
 export function CremationHero() {
   return (
     <section className="relative h-[460px] overflow-hidden bg-black md:h-[565px]">
-      <img
+      <Image
         src={CREMATION_HERO.background}
         alt={CREMATION_HERO.title}
-        className="absolute inset-0 z-0 h-full w-full object-cover"
+        fill
+        priority
+        sizes="100vw"
+        className="z-0 object-cover object-center"
       />
-      <div className="absolute inset-0 z-[1] bg-black/35" />
-      <div className="relative z-10 flex h-full flex-col items-center justify-center text-center text-white">
+      <div className="absolute inset-0 z-[1] bg-gradient-to-b from-black/20 via-black/30 to-black/45" />
+      <div className="relative z-10 flex h-full flex-col items-center justify-center px-6 text-center text-white">
         <h1
           className="font-heading font-medium text-white"
           style={{ fontSize: "clamp(44px,9vw,100px)", textShadow: "8px 8px 8px #242424" }}

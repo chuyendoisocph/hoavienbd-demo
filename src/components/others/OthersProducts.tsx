@@ -37,7 +37,7 @@ function Carousel({
             <button
               key={src}
               type="button"
-              aria-label={`Show image ${i + 1}`}
+              aria-label={`Hiển thị hình ${i + 1}`}
               aria-current={i === active}
               onClick={() => onSelect(i)}
               className={cn(

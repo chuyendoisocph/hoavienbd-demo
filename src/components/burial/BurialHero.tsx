@@ -3,7 +3,7 @@ import { BURIAL_HERO } from "@/lib/burial-content";
 
 export function BurialHero() {
   return (
-    <section className="relative h-[520px] md:h-[765px] overflow-hidden bg-black">
+    <section className="relative h-[440px] overflow-hidden bg-black md:h-[765px]">
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         src={BURIAL_HERO.image}

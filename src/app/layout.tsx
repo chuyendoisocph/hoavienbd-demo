@@ -1,17 +1,18 @@
 import type { Metadata } from "next";
-import { Didact_Gothic, Open_Sans } from "next/font/google";
+import { Be_Vietnam_Pro, Cormorant_Garamond } from "next/font/google";
 import "./globals.css";
 
-const openSans = Open_Sans({
-  variable: "--font-sans",
+const bodyFont = Be_Vietnam_Pro({
+  variable: "--font-body",
+  weight: ["400", "500", "600", "700", "800"],
   subsets: ["latin", "vietnamese"],
   display: "swap",
 });
 
-const headingFont = Didact_Gothic({
-  variable: "--font-heading",
-  weight: "400",
-  subsets: ["latin"],
+const displayFont = Cormorant_Garamond({
+  variable: "--font-display-face",
+  weight: ["500", "600", "700"],
+  subsets: ["latin", "vietnamese"],
   display: "swap",
 });
 
@@ -40,7 +41,7 @@ export default function RootLayout({
   return (
     <html
       lang="vi"
-      className={`${openSans.variable} ${headingFont.variable} h-full antialiased`}
+      className={`${bodyFont.variable} ${displayFont.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-background text-foreground">
         {children}

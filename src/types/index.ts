@@ -1,4 +1,4 @@
-/** Shared content types for the Nirvana Asia clone. */
+/** Kiểu dữ liệu nội dung dùng chung cho website Hoa Viên Bình Dương. */
 
 export interface NavItem {
   label: string;

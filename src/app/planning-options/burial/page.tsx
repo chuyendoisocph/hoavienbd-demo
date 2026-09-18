@@ -18,7 +18,7 @@ export default function BurialPage() {
   return (
     <>
       <SiteHeader />
-      <main className="flex-1">
+      <main className="flex-1 pt-16 min-[980px]:pt-[75px]">
         <BurialHero />
         <BurialIntro />
         <CommitmentSection />

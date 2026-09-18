@@ -1,29 +1,19 @@
-"use client";
-
+import Image from "next/image";
 import { CREMATION_INTRO } from "@/lib/cremation-content";
-import { VideoFeature } from "@/components/VideoFeature";
 import { PlusIcon } from "@/components/icons";
-import { cn } from "@/lib/utils";
 
 export function CremationIntro() {
   return (
     <section className="bg-white">
       <div className="mx-auto grid max-w-[1200px] grid-cols-1 items-center gap-12 px-6 py-[70px] lg:grid-cols-[58%_42%]">
-        {/* LEFT: video with overlapping badge */}
-        <div className="relative">
-          <VideoFeature
-            poster={CREMATION_INTRO.poster}
-            video={CREMATION_INTRO.video}
-            className="aspect-[4/3]"
+        <div className="relative aspect-[16/10] overflow-hidden shadow-[0_24px_55px_-28px_rgba(20,36,68,0.5)] lg:aspect-[4/3]">
+          <Image
+            src={CREMATION_INTRO.image}
+            alt={CREMATION_INTRO.imageAlt}
+            fill
+            sizes="(min-width: 1024px) 650px, calc(100vw - 48px)"
+            className="object-cover object-center"
           />
-          <div
-            className={cn(
-              "absolute bottom-6 -left-2 z-10 bg-brand px-7 py-[18px] text-[18px] font-bold uppercase leading-tight tracking-[3px] text-white",
-            )}
-          >
-            <span className="block">VIDEO</span>
-            <span className="block">TOÀN CẢNH</span>
-          </div>
         </div>
 
         {/* RIGHT: heading, body, read more */}

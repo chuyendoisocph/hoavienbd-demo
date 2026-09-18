@@ -1,6 +1,5 @@
 import {
   CARELINE,
-  EMAIL,
   FOOTER_ADDRESS,
   FOOTER_COLUMNS,
   FOOTER_BUTTONS,
@@ -69,12 +68,6 @@ export function SiteFooter() {
               className="block pb-[30px] text-[20px] leading-[45px] tracking-[2px] text-white"
             >
               Tổng đài {CARELINE}
-            </a>
-            <a
-              href={`mailto:${EMAIL}`}
-              className="block text-[20px] leading-[45px] tracking-[2px] text-white"
-            >
-              {EMAIL}
             </a>
             <div className="mt-[10px] text-[15px] leading-[22px] tracking-[1px] text-[#d6d6d6]">
               <p className="pb-[10px] font-bold">{FOOTER_ADDRESS.office}</p>

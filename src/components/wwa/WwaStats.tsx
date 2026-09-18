@@ -46,7 +46,7 @@ function Counter({ stat }: { stat: Stat }) {
 export function WwaStats() {
   return (
     <section className="bg-white py-[70px]">
-      <div className="mx-auto grid max-w-[1100px] grid-cols-2 gap-y-12 px-6 md:grid-cols-4">
+      <div className="mx-auto grid max-w-[960px] grid-cols-1 gap-y-12 px-6 sm:grid-cols-3">
         {WWA_STATS.map((stat) => (
           <Counter key={stat.label} stat={stat} />
         ))}

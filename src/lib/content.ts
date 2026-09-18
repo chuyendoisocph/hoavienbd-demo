@@ -14,11 +14,11 @@ export const LOGO = "/images/hvbd/cpha-logo.png";
 export const TOP_NAV: NavItem[] = [
   { label: "Nhìn Lại Đêm Diễn", href: "https://demdientrian.cphaco.vn/" },
   {
-    label: "Bắt Đầu",
+    label: "Hỗ Trợ",
     href: "#",
     children: [
-      { label: "Nhu Cầu Cấp Thiết", href: "/getting-started/immediate-need" },
-      { label: "Lập Kế Hoạch Trước", href: "/getting-started/pre-planning" },
+      { label: "Khi Có Người Thân Qua Đời", href: "/getting-started/immediate-need" },
+      { label: "Chuẩn Bị Từ Sớm", href: "/getting-started/pre-planning" },
     ],
   },
   {
@@ -27,8 +27,8 @@ export const TOP_NAV: NavItem[] = [
     children: [
       { label: "Dịch Vụ Tang Lễ", href: "/planning-options/funeral-service" },
       { label: "Phần Mộ", href: "/planning-options/burial" },
-      { label: "Lưu Tro Cốt", href: "/planning-options/cremation" },
-      { label: "Sản Phẩm Khác", href: "/planning-options/others" },
+      { label: "Dịch Vụ Lưu Tro Cốt", href: "/planning-options/cremation" },
+      { label: "Dịch Vụ Khác", href: "/planning-options/others" },
     ],
   },
   {
@@ -43,9 +43,8 @@ export const TOP_NAV: NavItem[] = [
   },
 ];
 
-// Hotline thật của Hoa Viên Bình Dương (CPHA). Email tạm dùng theo tên miền cphaco.vn — cần xác nhận.
+// Tổng đài dịch vụ được công bố trên website chính thức của CPHACO.
 export const CARELINE = "0818 555 444";
-export const EMAIL = "info@cphaco.vn";
 
 export const HERO = {
   video: "/videos/hero-dji0305-1080.mp4",
@@ -59,25 +58,25 @@ export const CAROUSEL_SLIDES: CarouselSlide[] = [
   {
     title: "Hoa Viên Bình Dương",
     body: "Công viên tưởng niệm sinh thái hàng đầu, kiến tạo không gian an nghỉ trang nghiêm giữa thiên nhiên xanh mát.",
-    image: "/images/hvbd/monument-complex-1.jpg",
+    image: "/images/hvbd/linh-hoa-tue-dan-1.jpg",
     cta: { label: "Tìm hiểu thêm", href: "/resources/who-we-are" },
   },
   {
     title: "Cảnh Quan Hữu Tình",
-    body: "Hơn 200 hecta hoa viên được quy hoạch bài bản với phong thủy hữu tình, mang lại sự bình an cho người đã khuất và gia đình.",
+    body: "Quy mô quy hoạch lên đến 300 ha, được kiến tạo hài hòa giữa cảnh quan thiên nhiên và các công trình tâm linh, mang lại sự an yên cho người đã khuất và gia đình.",
     image: "/images/hvbd/park-aerial-roundabout.jpg",
     cta: { label: "Tìm hiểu thêm", href: "/resources/who-we-are" },
   },
   {
     title: "Lễ Cầu Siêu – Cầu An",
     body: "Các nghi lễ tâm linh trang trọng được tổ chức thường niên, gửi gắm lòng thành kính và sự tri ân đến tổ tiên.",
-    image: "/images/hvbd/ceremony-stage.jpg",
+    image: "/images/hvbd/dai-le-cau-sieu-cau-an.jpg",
     cta: { label: "Tìm hiểu thêm", href: "/resources/contact-us-new" },
   },
   {
     title: "Dịch Vụ Tang Lễ Trọn Gói",
-    body: "Đội ngũ chuyên nghiệp đồng hành cùng gia đình trong từng bước, để bạn an tâm tiễn biệt người thân một cách trọn vẹn.",
-    image: "/images/hvbd/procession-1.jpg",
+    body: "Đội ngũ chuyên nghiệp đồng hành cùng gia đình trong từng bước, để tang quyến an tâm tiễn biệt người thân một cách trọn vẹn.",
+    image: "/images/hvbd/dich-vu-tang-le-1.jpg",
     cta: { label: "Tìm hiểu thêm", href: "/planning-options/funeral-service" },
   },
   {
@@ -97,23 +96,23 @@ export const CULTURE = {
 
 export const CARING = {
   title: "Trân Trọng Từng Cuộc Đời",
-  body: "Với hệ thống tiện ích đồng bộ cùng các sản phẩm và dịch vụ toàn diện, Hoa Viên Bình Dương mong muốn mang đến trải nghiệm ấm áp và sẻ chia trong thời khắc quan trọng nhất. “Trân trọng từng cuộc đời” là triết lý của chúng tôi – nơi mỗi cuộc đời đều ý nghĩa và đáng quý. Hãy an tâm rằng đội ngũ của chúng tôi luôn nỗ lực để người thân của bạn được tôn vinh và tiễn biệt một cách trọn vẹn, bằng tất cả sự chuyên nghiệp và tận tâm.",
+  body: "Với hệ thống tiện ích đồng bộ cùng các sản phẩm và dịch vụ toàn diện, Hoa Viên Bình Dương mong muốn mang đến sự đồng hành ấm áp trong những thời khắc thiêng liêng. “Trân trọng từng cuộc đời” là triết lý của chúng tôi – nơi mỗi cuộc đời đều ý nghĩa và đáng quý. Đội ngũ Hoa Viên luôn nỗ lực để người thân của mỗi gia đình được tôn vinh và tiễn biệt một cách trọn vẹn, bằng tất cả sự chuyên nghiệp và tận tâm.",
   background: "/images/83609s.jpg",
 };
 
 export const PREPLAN_CARDS: PreplanCard[] = [
   {
-    title: "5 lợi ích chính của việc lập kế hoạch trước",
+    title: "5 lợi ích của việc chuẩn bị hậu sự từ sớm",
     image: "/images/45.jpg",
     href: "/resources/article/5-main-advantages-of-pre-planning",
   },
   {
-    title: "Khi nào là thời điểm tốt nhất để lập kế hoạch?",
+    title: "Khi nào nên bắt đầu chuẩn bị?",
     image: "/images/920.jpg",
     href: "/getting-started/pre-planning",
   },
   {
-    title: "Ai nên lập kế hoạch trước?",
+    title: "Ai nên chuẩn bị hậu sự từ sớm?",
     image: "/images/1661.jpg",
     href: "/getting-started/pre-planning",
   },
@@ -122,19 +121,18 @@ export const PREPLAN_CARDS: PreplanCard[] = [
 export const WATCH_VIDEO = {
   eyebrow: "XEM VIDEO",
   video: "/videos/resize-eng.mp4",
-  poster: "/images/hvbd/monument-complex-2.jpg",
+  poster: "/images/hvbd/linh-hoa-tue-dan-2.jpg",
 };
 
 export const PRODUCTS = {
   title: "Sản Phẩm & Dịch Vụ",
   items: [
     { label: "Phần Mộ", href: "/planning-options/burial" },
-    { label: "Lưu Tro Cốt", href: "/planning-options/cremation" },
+    { label: "Dịch Vụ Lưu Tro Cốt", href: "/planning-options/cremation" },
     { label: "Dịch Vụ Tang Lễ", href: "/planning-options/funeral-service" },
-    { label: "Bài Vị Tổ Tiên", href: "/planning-options/others" },
-    { label: "Đèn Cầu An", href: "/planning-options/others" },
-    { label: "Vườn Tưởng Niệm Thú Cưng", href: "/planning-options/others" },
-    { label: "Sinh Phần (Mộ Sống)", href: "/planning-options/others" },
+    { label: "Chăm Sóc Mộ Phần", href: "/planning-options/others" },
+    { label: "Tư Vấn Thiết Kế & Xây Dựng Mộ", href: "/planning-options/others" },
+    { label: "Sanh Phần", href: "/planning-options/others" },
   ] as ProductItem[],
   image: "/images/hvbd/columbaria-white.jpg",
 };
@@ -150,15 +148,15 @@ export const SITE_VIEW_360 = {
 };
 
 export const ADVANTAGES = {
-  title: "5 lợi ích chính khi lập kế hoạch trước cùng Hoa Viên Bình Dương",
-  subtitle: "Nhu cầu của bạn là ưu tiên hàng đầu",
+  title: "5 lợi ích khi chuẩn bị hậu sự từ sớm cùng Hoa Viên Bình Dương",
+  subtitle: "Nguyện vọng của gia đình là ưu tiên hàng đầu",
   cta: { label: "ĐẶT LỊCH HẸN", href: "/resources/contact-us-new" },
   cards: [
     {
       icon: "/images/PrePlan_Icon_Trust-Fund-150x150.png",
-      title: "Quỹ bảo trì dài hạn",
+      title: "Chăm sóc cảnh quan lâu dài",
       description:
-        "Hoa viên được duy trì bởi quỹ bảo trì dài hạn, đảm bảo việc chăm sóc đường sá, cảnh quan và hạ tầng luôn được giữ gìn chu đáo theo thời gian.",
+        "Đường sá, cây xanh, cảnh quan và các khu vực chung được đội ngũ Hoa Viên chăm sóc thường xuyên.",
     },
     {
       icon: "/images/PrePlan_Icon_FengShui.png",
@@ -168,9 +166,9 @@ export const ADVANTAGES = {
     },
     {
       icon: "/images/PrePlan_Icon_0-interest.png",
-      title: "Trả góp 0% lãi suất",
+      title: "Phương án thanh toán linh hoạt",
       description:
-        "An tâm với chương trình trả góp 0% lãi suất lên đến 36 tháng cùng mức trả trước thấp.",
+        "Quý khách được tư vấn phương án thanh toán theo chính sách áp dụng tại từng thời điểm.",
     },
     {
       icon: "/images/PrePlan_Icon_Comprehensive.png",
@@ -217,10 +215,10 @@ export const TESTIMONIALS: Testimonial[] = [
 
 export const FOOTER_COLUMNS: FooterLinkColumn[] = [
   {
-    heading: "Bắt Đầu",
+    heading: "Hỗ Trợ",
     links: [
-      { label: "Nhu Cầu Cấp Thiết", href: "/getting-started/immediate-need" },
-      { label: "Lập Kế Hoạch Trước", href: "/getting-started/pre-planning" },
+      { label: "Khi Có Người Thân Qua Đời", href: "/getting-started/immediate-need" },
+      { label: "Chuẩn Bị Từ Sớm", href: "/getting-started/pre-planning" },
     ],
   },
   {
@@ -228,8 +226,8 @@ export const FOOTER_COLUMNS: FooterLinkColumn[] = [
     links: [
       { label: "Dịch Vụ Tang Lễ", href: "/planning-options/funeral-service" },
       { label: "Phần Mộ", href: "/planning-options/burial" },
-      { label: "Lưu Tro Cốt", href: "/planning-options/cremation" },
-      { label: "Sản Phẩm Khác", href: "/planning-options/others" },
+      { label: "Dịch Vụ Lưu Tro Cốt", href: "/planning-options/cremation" },
+      { label: "Dịch Vụ Khác", href: "/planning-options/others" },
     ],
   },
   {
@@ -251,7 +249,7 @@ export const FOOTER_BUTTONS: { label: string; href: string }[] = [];
 export const FOOTER_ADDRESS = {
   office: "Văn Phòng Chính",
   address:
-    "Hoa Viên Nghĩa Trang Bình Dương, Khu phố Bông Trang, phường Chánh Phú Hòa, TP. Hồ Chí Minh.",
+    "Hoa Viên Nghĩa Trang Bình Dương, Khu phố 1B, phường Chánh Phú Hòa, TP. Hồ Chí Minh.",
   hours:
     "Giờ làm việc: 7h30 – 17h00, tất cả các ngày trong tuần (kể cả Chủ nhật và ngày lễ).",
   website: "cphaco.vn",

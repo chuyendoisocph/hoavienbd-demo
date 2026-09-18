@@ -7,28 +7,8 @@ import { PlusIcon } from "@/components/icons";
 
 const ROTATE_INTERVAL = 5000;
 
-/** Renders CULTURE.body with the bolded phrases wrapped in <strong>. */
 function CultureBody() {
-  const bold = ["Established in 1990,", "Nirvana Asia Group"];
-  // Build a regex that captures the bold phrases so they survive the split.
-  const pattern = new RegExp(
-    `(${bold.map((phrase) => phrase.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")).join("|")})`,
-  );
-  const parts = CULTURE.body.split(pattern);
-
-  return (
-    <p className="text-[14px] leading-[1.7] text-[#666]">
-      {parts.map((part, index) =>
-        bold.includes(part) ? (
-          <strong key={index} className="font-bold text-heading">
-            {part}
-          </strong>
-        ) : (
-          <span key={index}>{part}</span>
-        ),
-      )}
-    </p>
-  );
+  return <p className="text-[14px] leading-[1.7] text-[#666]">{CULTURE.body}</p>;
 }
 
 export function CultureSection() {
@@ -90,7 +70,7 @@ export function CultureSection() {
                 key={slide.title + index}
                 type="button"
                 onClick={() => setActive(index)}
-                aria-label={`Go to slide ${index + 1}`}
+                aria-label={`Chuyển đến nội dung ${index + 1}`}
                 aria-current={index === active ? "true" : undefined}
                 className={cn(
                   "h-2 rounded-full transition-all duration-300",

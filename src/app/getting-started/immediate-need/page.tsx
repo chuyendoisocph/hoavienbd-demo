@@ -7,7 +7,7 @@ import { ImmediateLoved } from "@/components/immediate-need/ImmediateLoved";
 import { ImmediateResources } from "@/components/immediate-need/ImmediateResources";
 
 export const metadata: Metadata = {
-  title: "Nhu Cầu Cấp Thiết | Hoa Viên Bình Dương",
+  title: "Khi Người Thân Qua Đời | Hoa Viên Bình Dương",
   description:
     "Chúng tôi sẵn sàng hỗ trợ 24/7. Hướng dẫn từng bước cần làm khi có người thân qua đời và sự hỗ trợ tang lễ từ Hoa Viên Bình Dương.",
 };
