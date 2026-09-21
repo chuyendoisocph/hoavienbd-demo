@@ -24,7 +24,7 @@ export function BurialConsiderations() {
         <div className="mx-auto grid max-w-[1140px] grid-cols-1 items-center gap-10 lg:grid-cols-2">
           <h2
             className="font-heading font-bold leading-tight text-white"
-            style={{ fontSize: "clamp(32px, 5vw, 52px)" }}
+            style={{ fontSize: "clamp(30px, 5vw, 52px)" }}
           >
             {CONSIDERATIONS.title}
           </h2>
@@ -72,7 +72,7 @@ export function BurialConsiderations() {
                 )}
               >
                 <div className="min-h-0">
-                  <p className="pt-3 text-[14px] leading-[1.7] text-[#666]">{item.body}</p>
+                  <p className="pt-3 text-[16px] leading-[1.7] text-[#666]">{item.body}</p>
                 </div>
               </div>
             </div>
@@ -84,11 +84,11 @@ export function BurialConsiderations() {
       <div className="bg-white px-6 pb-[80px] text-center">
         <h2
           className="font-heading text-brand"
-          style={{ fontSize: "clamp(28px, 4vw, 40px)" }}
+          style={{ fontSize: "clamp(30px, 4vw, 40px)" }}
         >
           {CEMETERIES.title}
         </h2>
-        <p className="mx-auto mt-6 max-w-[820px] text-[15px] leading-[1.9] text-[#666]">
+        <p className="mx-auto mt-6 max-w-[820px] text-[16px] leading-[1.9] text-[#666]">
           {CEMETERIES.body}
         </p>
         <a

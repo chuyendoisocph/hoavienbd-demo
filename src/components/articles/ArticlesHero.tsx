@@ -13,7 +13,7 @@ export function ArticlesHero() {
       <div className="relative z-10 flex h-full items-center justify-center">
         <h1
           className="text-center font-heading font-medium uppercase text-white"
-          style={{ fontSize: "clamp(44px, 8vw, 80px)", letterSpacing: "4px" }}
+          style={{ fontSize: "clamp(40px, 8vw, 80px)", letterSpacing: "4px" }}
         >
           {ARTICLES_HERO.title}
         </h1>

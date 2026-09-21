@@ -6,7 +6,7 @@ export function ContactForm() {
   return (
     <section className="bg-[#f5f5f5] py-[70px]">
       <div className="mx-auto max-w-[760px] px-6">
-        <h2 className="text-center font-heading text-[34px] font-medium text-brand md:text-[44px]">
+        <h2 className="text-center font-heading text-[30px] font-medium text-brand md:text-[44px]">
           {CONTACT_FORM.title}
         </h2>
 

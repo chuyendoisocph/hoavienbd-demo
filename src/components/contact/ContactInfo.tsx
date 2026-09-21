@@ -5,10 +5,10 @@ export function ContactInfo() {
   return (
     <section className="bg-white py-[70px]">
       <div className="mx-auto max-w-[1200px] px-6">
-        <p className="text-center text-[15px] uppercase tracking-[6px] text-[#999]">
+        <p className="text-center text-[15px] uppercase tracking-[0.12em] text-[#999]">
           {CONTACT_INFO.eyebrow}
         </p>
-        <h2 className="mt-3 text-center font-heading text-[34px] font-medium text-brand md:text-[44px]">
+        <h2 className="mt-3 text-center font-heading text-[30px] font-medium text-brand md:text-[44px]">
           {CONTACT_INFO.title}
         </h2>
 
@@ -19,7 +19,7 @@ export function ContactInfo() {
               <h3 className="font-heading text-[18px] font-bold tracking-[1px] text-brand">
                 {CONTACT_INFO.office.label}
               </h3>
-              <address className="mt-3 not-italic text-[15px] leading-[1.8] text-[#666]">
+              <address className="mt-3 not-italic text-[16px] leading-[1.8] text-[#666]">
                 {CONTACT_INFO.office.lines.map((line) => (
                   <span key={line} className="block">
                     {line}
@@ -31,7 +31,7 @@ export function ContactInfo() {
               <h3 className="font-heading text-[18px] font-bold tracking-[1px] text-brand">
                 {CONTACT_INFO.contact.label}
               </h3>
-              <p className="mt-3 flex items-center gap-2 text-[15px] text-[#666]">
+              <p className="mt-3 flex items-center gap-2 text-[16px] text-[#666]">
                 <PhoneIcon className="text-brand" />
               <span>TỔNG ĐÀI:</span>
                 <a href={`tel:${CONTACT_INFO.contact.hotline.replace(/[^0-9]/g, "")}`} className="text-brand-link">

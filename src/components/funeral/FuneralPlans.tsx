@@ -4,7 +4,7 @@ export function FuneralPlans() {
   return (
     <section className="bg-[#d6d6d6] px-6 py-[80px]">
       <div className="mx-auto max-w-[1000px] text-center">
-        <h2 className="font-heading text-[34px] font-medium tracking-[1px] text-heading md:text-[44px]">
+        <h2 className="font-heading text-[30px] font-medium text-heading md:text-[44px]">
           {PLANS.title}
         </h2>
         <p className="mx-auto mt-6 max-w-[720px] text-[17px] leading-[1.8] text-[#555]">

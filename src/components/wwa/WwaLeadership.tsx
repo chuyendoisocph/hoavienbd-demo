@@ -18,15 +18,15 @@ export function WwaLeadership() {
         const text = (
           <div className={leader.imageLeft ? "lg:order-2" : "lg:order-1"}>
             {leader.eyebrow && (
-              <p className="text-[14px] uppercase tracking-[3px] text-[#888]">{leader.eyebrow}</p>
+              <p className="text-[14px] uppercase tracking-[0.12em] text-[#888]">{leader.eyebrow}</p>
             )}
-            <h3 className="mt-3 font-heading text-[28px] font-bold text-brand md:text-[32px]">
+            <h3 className="mt-3 font-heading text-[20px] font-bold text-brand md:text-[32px]">
               {leader.name}
             </h3>
             {leader.role && <p className="mt-1 text-[16px] text-[#666]">{leader.role}</p>}
-            <p className="mt-6 text-[15px] leading-[1.9] text-[#666]">{leader.bio}</p>
+            <p className="mt-6 text-[16px] leading-[1.9] text-[#666]">{leader.bio}</p>
             {leader.quote && (
-              <blockquote className="mt-6 border-l-4 border-brand pl-5 text-[15px] italic leading-[1.9] text-[#555]">
+              <blockquote className="mt-6 border-l-4 border-brand pl-5 text-[16px] italic leading-[1.9] text-[#555]">
                 “{leader.quote}”
               </blockquote>
             )}

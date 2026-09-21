@@ -68,12 +68,12 @@ export function OthersProductBlock({ product }: { product: OtherProduct }) {
 
   const text = (
     <div className={product.imageLeft ? "lg:order-2" : "lg:order-1"}>
-      <p className="text-[15px] uppercase tracking-[3px] text-[#888]">{product.eyebrow}</p>
-      <h2 className="font-heading mt-4 text-[34px] font-medium text-brand md:text-[40px]">
+      <p className="text-[15px] uppercase tracking-[0.12em] text-[#888]">{product.eyebrow}</p>
+      <h2 className="font-heading mt-4 text-[30px] font-medium text-brand md:text-[40px]">
         {product.title}
       </h2>
       {product.body.map((para) => (
-        <p key={para.slice(0, 24)} className="mt-5 text-[15px] leading-[1.9] text-[#666]">
+        <p key={para.slice(0, 24)} className="mt-5 text-[16px] leading-[1.9] text-[#666]">
           {para}
         </p>
       ))}

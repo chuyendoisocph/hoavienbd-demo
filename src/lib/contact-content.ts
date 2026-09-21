@@ -107,6 +107,6 @@ export const CAREER = {
   ],
   cta: {
     label: "Tìm hiểu thêm",
-    href: "/resources/who-we-are",
+    href: "/ve-chung-toi",
   },
 };

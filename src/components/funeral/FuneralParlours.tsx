@@ -28,7 +28,7 @@ export function FuneralParlours() {
               />
             ))}
           </div>
-          <p className="mt-3 text-[15px] text-[#888]">
+          <p className="mt-3 text-[16px] text-[#888]">
             {PARLOURS.slides[active].caption}
           </p>
           <div className="mt-4 flex items-center gap-2">
@@ -50,11 +50,11 @@ export function FuneralParlours() {
 
         {/* Right: static description */}
         <div>
-          <h2 className="font-heading text-[34px] font-medium text-heading md:text-[40px]">
+          <h2 className="font-heading text-[30px] font-medium text-heading md:text-[40px]">
             {PARLOURS.title}
           </h2>
-          <p className="mt-6 text-[15px] leading-[1.9] text-[#666]">{PARLOURS.body}</p>
-          <p className="mt-6 text-[15px] text-[#666]">{PARLOURS.note}</p>
+          <p className="mt-6 text-[16px] leading-[1.9] text-[#666]">{PARLOURS.body}</p>
+          <p className="mt-6 text-[16px] text-[#666]">{PARLOURS.note}</p>
         </div>
       </div>
     </section>

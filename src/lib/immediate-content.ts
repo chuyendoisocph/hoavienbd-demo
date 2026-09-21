@@ -44,7 +44,7 @@ export const PASSING_STEPS = {
       body: "Gia đình có thể dành thời gian ở bên nhau, tưởng nhớ người đã khuất và nói lời tiễn biệt trong sự trang nghiêm.",
     },
   ] as ImmediateStep[],
-  cta: { label: "TÌM HIỂU", href: "/getting-started/pre-planning" },
+  cta: { label: "TÌM HIỂU", href: "/ho-tro/chuan-bi-tu-som" },
 };
 
 export const LOVED_ONE = {
@@ -55,14 +55,14 @@ export const LOVED_ONE = {
     "Nếu biết rõ những việc cần làm, mọi thứ có thể được giải quyết nhanh chóng, để quá trình tiếc thương sớm bắt đầu. Chúng tôi không thể nhấn mạnh đủ tầm quan trọng của việc chuẩn bị trước, bởi một đơn vị dịch vụ tang lễ uy tín có thể hỗ trợ những việc này một cách nhẹ nhàng, để tang quyến tập trung vào điều quan trọng hơn – đối diện với nỗi đau và tưởng nhớ người đã khuất.",
   ],
   prompt: "Gia đình đã cân nhắc việc chuẩn bị hậu sự từ sớm chưa?",
-  cta: { label: "CHUẨN BỊ TỪ SỚM", href: "/getting-started/pre-planning" },
+  cta: { label: "CHUẨN BỊ TỪ SỚM", href: "/ho-tro/chuan-bi-tu-som" },
   deathTitle: "Cần làm gì khi có người qua đời",
   deathSteps: [
     "Khai báo tử vong",
     "Đăng ký khai tử và nhận Trích lục khai tử",
     "Lo liệu tang lễ cùng đơn vị dịch vụ tang lễ",
   ],
-  deathCta: { label: "CÁC BƯỚC TIẾP THEO", href: "/resources/contact-us-new" },
+  deathCta: { label: "CÁC BƯỚC TIẾP THEO", href: "/lien-he" },
 };
 
 export interface ResourceLink {
@@ -73,8 +73,8 @@ export interface ResourceLink {
 export const RESOURCES = {
   title: "Thông Tin Hữu Ích",
   links: [
-    { title: "So sánh dịch vụ tang lễ", href: "/planning-options/funeral-service" },
-    { title: "Phần mộ tại Hoa Viên Bình Dương", href: "/planning-options/burial" },
-    { title: "Tìm hiểu về dịch vụ lưu tro cốt", href: "/planning-options/cremation" },
+    { title: "So sánh dịch vụ tang lễ", href: "/dich-vu/tang-le" },
+    { title: "Phần mộ tại Hoa Viên Bình Dương", href: "/dich-vu/phan-mo" },
+    { title: "Tìm hiểu về dịch vụ lưu tro cốt", href: "/dich-vu/luu-tro-cot" },
   ] as ResourceLink[],
 };

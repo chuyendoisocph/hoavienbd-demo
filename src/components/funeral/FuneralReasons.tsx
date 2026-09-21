@@ -8,7 +8,7 @@ export function FuneralReasons() {
       <div className="mx-auto grid max-w-[1200px] grid-cols-1 items-start gap-x-16 gap-y-12 px-6 lg:grid-cols-2">
         {/* Left: 6 Reasons */}
         <div>
-          <h2 className="font-heading text-[44px] font-medium leading-tight text-brand md:text-[52px]">
+          <h2 className="font-heading text-[30px] font-medium leading-[1.2] md:leading-tight text-brand md:text-[52px]">
             {REASONS.title}
           </h2>
           <p className="mt-2 text-[18px] text-[#666]">{REASONS.subtitle}</p>
@@ -41,13 +41,13 @@ export function FuneralReasons() {
               className="object-cover object-center"
             />
           </div>
-          <h2 className="mt-10 font-heading text-[40px] font-medium leading-tight text-brand md:text-[48px]">
+          <h2 className="mt-10 font-heading text-[30px] font-medium leading-[1.2] md:leading-tight text-brand md:text-[48px]">
             {CARE_TEAM.title}
           </h2>
           <p className="mt-4 text-[22px] leading-snug text-heading">
             {CARE_TEAM.subtitle}
           </p>
-          <p className="mt-6 text-[15px] leading-[1.9] text-[#666]">{CARE_TEAM.body}</p>
+          <p className="mt-6 text-[16px] leading-[1.9] text-[#666]">{CARE_TEAM.body}</p>
           <a
             href={CARE_TEAM.cta.href}
             className="mt-8 inline-block rounded-none border border-brand px-[30px] py-[14px] text-[16px] text-brand transition-colors hover:bg-brand/5"

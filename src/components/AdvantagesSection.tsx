@@ -31,7 +31,7 @@ export function AdvantagesSection() {
     <section className="bg-[#F7F9FC] py-[50px] lg:py-[4vw]">
       <div className="mx-auto grid w-[calc(100%-48px)] max-w-[1080px] grid-cols-1 gap-[52px] lg:w-[80%] lg:grid-cols-2 lg:gap-[5.5%]">
         <div className="text-center lg:py-[28px] lg:text-left">
-          <h2 className="font-heading pb-[10px] text-[24px] font-semibold leading-[36px] tracking-[1px] text-heading lg:text-[52px] lg:leading-[78px] lg:tracking-[2px]">
+          <h2 className="font-heading pb-[10px] text-[30px] font-semibold leading-[1.2] text-heading lg:text-[52px] lg:leading-[78px]">
             {ADVANTAGES.title}
           </h2>
           <p className="mt-3 text-[18px] font-medium leading-[29px] tracking-[0.5px] text-[#666] lg:mt-0 lg:text-[25px] lg:leading-[37.5px] lg:tracking-[1px]">

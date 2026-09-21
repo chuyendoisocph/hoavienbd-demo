@@ -76,7 +76,7 @@ const ARTICLE_INPUTS: ArticleInput[] = [
 
 export const ARTICLES: Article[] = ARTICLE_INPUTS.map((article) => ({
   ...article,
-  href: `/resources/article/${article.slug}`,
+  href: `/bai-viet/${article.slug}`,
 }));
 
 export function getArticleBySlug(slug: string): Article | undefined {

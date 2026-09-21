@@ -24,7 +24,7 @@ export function PreplanArticles() {
               </div>
               <h3
                 className={cn(
-                  "font-heading mt-4 text-center text-[22px] font-medium leading-[1.3] text-[#333] transition-colors",
+                  "font-heading mt-4 text-center text-[20px] md:text-[22px] font-medium leading-[1.3] text-[#333] transition-colors",
                   "group-hover:text-brand",
                 )}
               >

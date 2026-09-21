@@ -16,12 +16,12 @@ export function ContactCareer() {
 
         {/* Text right */}
         <div>
-          <p className="text-[15px] uppercase tracking-[6px] text-[#999]">{CAREER.eyebrow}</p>
+          <p className="text-[15px] uppercase tracking-[0.12em] text-[#999]">{CAREER.eyebrow}</p>
           <h2 className="mt-3 font-heading text-[30px] font-medium text-brand md:text-[38px]">
             {CAREER.title}
           </h2>
           {CAREER.body.map((para) => (
-            <p key={para.slice(0, 24)} className="mt-5 text-[15px] leading-[1.9] text-[#666]">
+            <p key={para.slice(0, 24)} className="mt-5 text-[16px] leading-[1.9] text-[#666]">
               {para}
             </p>
           ))}

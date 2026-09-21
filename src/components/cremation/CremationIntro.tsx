@@ -18,10 +18,10 @@ export function CremationIntro() {
 
         {/* RIGHT: heading, body, read more */}
         <div>
-          <h2 className="mb-6 font-heading font-medium leading-[1.25] text-brand text-[clamp(28px,3.5vw,36px)]">
+          <h2 className="mb-6 font-heading font-medium leading-[1.2] md:leading-[1.25] text-brand text-[30px] md:text-[clamp(28px,3.5vw,36px)]">
             {CREMATION_INTRO.title}
           </h2>
-          <p className="text-[15px] leading-[1.9] text-[#666]">
+          <p className="text-[16px] leading-[1.9] text-[#666]">
             {CREMATION_INTRO.body}
           </p>
           <a

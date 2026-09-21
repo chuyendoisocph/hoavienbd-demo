@@ -10,7 +10,7 @@ export function FuneralAbout() {
       <div className="absolute inset-0 bg-[#1b2447]/80" />
 
       <div className="relative mx-auto max-w-[1200px] px-6">
-        <h2 className="text-center font-heading text-[34px] font-medium text-white md:text-[44px]">
+        <h2 className="text-center font-heading text-[30px] font-medium text-white md:text-[44px]">
           {ABOUT.title}
         </h2>
 

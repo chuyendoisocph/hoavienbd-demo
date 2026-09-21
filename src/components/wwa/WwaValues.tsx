@@ -18,8 +18,8 @@ export function WwaValues() {
             >
               {card.number}
             </p>
-            <h3 className="mt-4 font-heading text-[26px] font-medium text-white">{card.title}</h3>
-            <p className="mx-auto mt-4 max-w-[320px] text-[15px] leading-[1.8] text-white/90">
+            <h3 className="mt-4 font-heading text-[20px] md:text-[26px] font-medium text-white">{card.title}</h3>
+            <p className="mx-auto mt-4 max-w-[320px] text-[16px] leading-[1.8] text-white/90">
               {card.body}
             </p>
             <a

@@ -10,7 +10,7 @@ export const CREMATION_INTRO = {
   badge: "KHÔNG GIAN CHÙA THIÊN PHƯỚC",
   title: "Nơi gia đình an tâm gửi gắm và tưởng nhớ người thân",
   body: "Nằm trong khuôn viên Hoa Viên Nghĩa Trang Bình Dương, Chùa Thiên Phước là nơi lưu giữ tro cốt trong không gian thanh tịnh và trang nghiêm. Các hộc lưu cốt được bố trí ngay ngắn, thuận tiện để gia đình nhận biết, thăm viếng, dâng hương và lễ Phật.",
-  cta: { label: "LIÊN HỆ TƯ VẤN", href: "/resources/contact-us-new" },
+  cta: { label: "LIÊN HỆ TƯ VẤN", href: "/lien-he" },
   image: "/images/hvbd/thien-phuoc-front.jpg",
   imageAlt: "Mặt tiền Chùa Thiên Phước tại Hoa Viên Bình Dương",
 };
@@ -43,7 +43,7 @@ export const COLUMBARIA_TYPES: ColumbariaType[] = [
     ],
     dark: false,
     imageLeft: true,
-    buttons: [{ label: "LIÊN HỆ TƯ VẤN", href: "/resources/contact-us-new" }],
+    buttons: [{ label: "LIÊN HỆ TƯ VẤN", href: "/lien-he" }],
   },
   {
     eyebrow: "THANH TỊNH, SẠCH SẼ VÀ TRANG NGHIÊM",
@@ -56,7 +56,7 @@ export const COLUMBARIA_TYPES: ColumbariaType[] = [
     ],
     dark: true,
     imageLeft: false,
-    buttons: [{ label: "LIÊN HỆ TƯ VẤN", href: "/resources/contact-us-new" }],
+    buttons: [{ label: "LIÊN HỆ TƯ VẤN", href: "/lien-he" }],
   },
   {
     eyebrow: "THIẾT KẾ RIÊNG BIỆT, BỐ TRÍ NGAY NGẮN",
@@ -69,7 +69,7 @@ export const COLUMBARIA_TYPES: ColumbariaType[] = [
     ],
     dark: false,
     imageLeft: true,
-    buttons: [{ label: "LIÊN HỆ TƯ VẤN", href: "/resources/contact-us-new" }],
+    buttons: [{ label: "LIÊN HỆ TƯ VẤN", href: "/lien-he" }],
   },
   {
     eyebrow: "AN TÂM TRONG SUỐT THỜI GIAN LƯU GIỮ",
@@ -82,7 +82,7 @@ export const COLUMBARIA_TYPES: ColumbariaType[] = [
     ],
     dark: true,
     imageLeft: false,
-    buttons: [{ label: "LIÊN HỆ TƯ VẤN", href: "/resources/contact-us-new" }],
+    buttons: [{ label: "LIÊN HỆ TƯ VẤN", href: "/lien-he" }],
   },
   {
     eyebrow: "GÌN GIỮ KHÔNG GIAN SẠCH SẼ VÀ CHU ĐÁO",
@@ -94,7 +94,7 @@ export const COLUMBARIA_TYPES: ColumbariaType[] = [
     ],
     dark: false,
     imageLeft: true,
-    buttons: [{ label: "LIÊN HỆ TƯ VẤN", href: "/resources/contact-us-new" }],
+    buttons: [{ label: "LIÊN HỆ TƯ VẤN", href: "/lien-he" }],
   },
   {
     eyebrow: "HƯỚNG DẪN RÕ RÀNG, HỖ TRỢ CHU ĐÁO",
@@ -107,7 +107,7 @@ export const COLUMBARIA_TYPES: ColumbariaType[] = [
     ],
     dark: true,
     imageLeft: true,
-    buttons: [{ label: "LIÊN HỆ TƯ VẤN", href: "/resources/contact-us-new" }],
+    buttons: [{ label: "LIÊN HỆ TƯ VẤN", href: "/lien-he" }],
   },
 ];
 
@@ -124,17 +124,17 @@ export const CREMATION_READ = {
     {
       title: "An táng hay hỏa táng: Lựa chọn nào phù hợp?",
       image: "/images/hvbd/thien-phuoc-ceremony.jpg",
-      href: "/resources/article",
+      href: "/bai-viet",
     },
     {
       title: "Quy trình hỏa táng và những điều gia đình cần lưu ý",
       image: "/images/hvbd/columbarium-main-hall.jpg",
-      href: "/resources/faq",
+      href: "/hoi-dap",
     },
     {
       title: "Các lựa chọn lưu giữ tro cốt sau hỏa táng",
       image: "/images/hvbd/thien-phuoc-yellow-blossom.jpg",
-      href: "/planning-options/cremation",
+      href: "/dich-vu/luu-tro-cot",
     },
   ] as CremationReadCard[],
 };

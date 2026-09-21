@@ -5,7 +5,7 @@ export function ImmediateSteps() {
   return (
     <section className="bg-white pb-[80px] pt-[70px]">
       <div className="mx-auto max-w-[1000px] px-6 text-center">
-        <h2 className="font-heading text-[34px] font-medium leading-tight text-brand md:text-[44px]">
+        <h2 className="font-heading text-[30px] font-medium leading-[1.2] md:leading-tight text-brand md:text-[44px]">
           {PASSING_STEPS.title}
         </h2>
         <p className="mx-auto mt-5 max-w-[640px] text-[16px] leading-[1.8] text-[#666]">
@@ -23,7 +23,7 @@ export function ImmediateSteps() {
             <h3 className="mt-5 font-heading text-[16px] font-bold leading-snug text-brand">
               {step.title}
             </h3>
-            <p className="mt-3 text-[13px] leading-[1.7] text-[#666]">{step.body}</p>
+            <p className="mt-3 text-[16px] leading-[1.7] text-[#666]">{step.body}</p>
           </div>
         ))}
       </div>

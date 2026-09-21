@@ -6,7 +6,7 @@ export function PreplanAdvantages() {
   return (
     <section className="bg-white pb-[40px] pt-[40px]">
       <div className="mx-auto max-w-[1000px] px-6 text-center">
-        <h2 className="font-heading text-[34px] font-medium leading-tight text-brand md:text-[44px]">
+        <h2 className="font-heading text-[30px] font-medium leading-[1.2] md:leading-tight text-brand md:text-[44px]">
           {ADVANTAGES.title}
         </h2>
       </div>
@@ -24,7 +24,7 @@ export function PreplanAdvantages() {
         );
         const text = (
           <div className={group.imageLeft ? "lg:order-2" : "lg:order-1"}>
-            <h3 className="font-heading text-[26px] font-bold text-brand">{group.label}</h3>
+            <h3 className="font-heading text-[20px] md:text-[26px] font-bold text-brand">{group.label}</h3>
             <ul className="mt-6 flex flex-col gap-4">
               {group.items.map((item) => (
                 <li key={item} className="flex items-start gap-3">

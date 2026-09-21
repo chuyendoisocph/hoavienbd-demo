@@ -17,7 +17,7 @@ export function FuneralGuide() {
               className="object-cover object-center"
             />
           </div>
-          <h2 className="max-w-[660px] self-start font-sans text-[36px] font-medium leading-[1.35] text-white sm:text-[44px] lg:mt-[128px] lg:text-[54px]">
+          <h2 className="max-w-[660px] self-start font-sans text-[30px] font-medium leading-[1.2] md:leading-[1.35] text-white sm:text-[44px] lg:mt-[128px] lg:text-[54px]">
             {GUIDE.title}
           </h2>
         </div>
@@ -26,7 +26,7 @@ export function FuneralGuide() {
       <div className="mx-auto grid max-w-[1612px] grid-cols-1 items-start gap-x-[82px] gap-y-12 px-6 py-[70px] lg:grid-cols-[minmax(0,722px)_minmax(0,1fr)] lg:pb-[90px] lg:pt-[120px]">
         {/* Left: guide intro + READ MORE */}
         <div>
-          <p className="text-[15px] leading-[1.9] text-[#666]">{GUIDE.body}</p>
+          <p className="text-[16px] leading-[1.9] text-[#666]">{GUIDE.body}</p>
           <div className="mt-8 flex justify-end">
             <a
               href={GUIDE.cta.href}

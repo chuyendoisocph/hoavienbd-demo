@@ -20,11 +20,11 @@ export function ArticleGrid() {
                   {article.title}
                 </h2>
               </a>
-              <p className="mt-3 text-[14px] text-[#666]">
+              <p className="mt-3 text-[16px] text-[#666]">
                 bởi Hoa Viên Bình Dương | {article.date}
                 {article.category ? ` | ${article.category}` : ""}
               </p>
-              <p className="mt-3 text-[14px] leading-[1.7] text-[#666]">{article.excerpt}</p>
+              <p className="mt-3 text-[16px] leading-[1.7] text-[#666]">{article.excerpt}</p>
             </article>
           ))}
         </div>

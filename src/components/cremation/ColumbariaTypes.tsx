@@ -94,7 +94,7 @@ function FeatureBlock({
     <div className={cn(imageLeft ? "lg:order-2" : "lg:order-1")}>
       <p
         className={cn(
-          "text-[15px] uppercase tracking-[3px]",
+          "text-[15px] uppercase tracking-[0.12em]",
           dark ? "text-white/85" : "text-[#888]",
         )}
       >
@@ -102,7 +102,7 @@ function FeatureBlock({
       </p>
       <h3
         className={cn(
-          "font-heading mt-4 text-[25px] font-bold",
+          "font-heading mt-4 text-[20px] font-bold md:text-[25px]",
           dark ? "text-white" : "text-brand",
         )}
       >
@@ -110,7 +110,7 @@ function FeatureBlock({
       </h3>
       <p
         className={cn(
-          "mt-5 text-[15px] leading-[1.8]",
+          "mt-5 text-[16px] leading-[1.8]",
           dark ? "text-white" : "text-[#666]",
         )}
       >
@@ -183,10 +183,10 @@ export function ColumbariaTypes() {
   return (
     <section>
       <div className="px-6 py-16 text-center">
-        <p className="text-[15px] uppercase tracking-[6px] text-[#999]">
+        <p className="text-[15px] uppercase tracking-[0.12em] text-[#999]">
           {COLUMBARIA_HEADING.eyebrow}
         </p>
-        <h2 className="font-heading mt-4 text-[clamp(34px,5vw,52px)] font-medium tracking-[1px] text-brand md:tracking-[2px]">
+        <h2 className="font-heading mt-4 text-[30px] md:text-[clamp(34px,5vw,52px)] font-medium text-brand">
           {COLUMBARIA_HEADING.title}
         </h2>
       </div>

@@ -21,7 +21,7 @@ export function ImmediateLoved() {
             {LOVED_ONE.title}
           </h2>
           {LOVED_ONE.body.map((para) => (
-            <p key={para.slice(0, 24)} className="mt-5 text-[15px] leading-[1.9] text-[#666]">
+            <p key={para.slice(0, 24)} className="mt-5 text-[16px] leading-[1.9] text-[#666]">
               {para}
             </p>
           ))}
@@ -38,7 +38,7 @@ export function ImmediateLoved() {
           </a>
 
           {/* What to do when someone dies */}
-          <h3 className="mt-12 font-heading text-[26px] font-medium text-brand">
+          <h3 className="mt-12 font-heading text-[20px] md:text-[26px] font-medium text-brand">
             {LOVED_ONE.deathTitle}
           </h3>
           <ol className="mt-6 flex flex-col gap-4">

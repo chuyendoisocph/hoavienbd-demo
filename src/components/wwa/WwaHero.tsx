@@ -13,7 +13,7 @@ export function WwaHero() {
       <div className="relative z-10 flex h-full items-center justify-center">
         <h1
           className="text-center font-heading font-medium text-white"
-          style={{ fontSize: "clamp(44px, 8vw, 90px)", textShadow: "8px 8px 8px #242424" }}
+          style={{ fontSize: "clamp(40px, 8vw, 90px)", textShadow: "8px 8px 8px #242424" }}
         >
           {WWA_HERO.title}
         </h1>

@@ -41,3 +41,13 @@ export interface FooterLinkColumn {
   heading: string;
   links: NavItem[];
 }
+
+export type PolicyBlock =
+  | { type: "p"; text: string; lead?: string; emphasis?: boolean }
+  | { type: "list"; items: string[] }
+  | { type: "contact"; rows: { label: string; value: string; href?: string }[] };
+
+export interface PolicyItem {
+  title: string;
+  blocks: PolicyBlock[];
+}

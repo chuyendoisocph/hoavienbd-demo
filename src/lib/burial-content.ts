@@ -12,14 +12,14 @@ export const BURIAL_INTRO = {
   eyebrow: "GIỚI THIỆU",
   title: "Nơi an nghỉ vượng khí, khác biệt vượt trội",
   body: "Phong thủy hữu tình được kiến tạo từ những thế đất tự nhiên đặc biệt trong môi trường. Một thế đất phong thủy tốt hội tụ năm yếu tố cát tường: sơn (gọi là “long mạch”), huyệt vị, nguồn nước, thế ôm bao bọc và hướng. Năm yếu tố này khi quy tụ trong một bối cảnh hài hòa sẽ tạo nên môi trường tích tụ vượng khí (hay “sinh khí”). Bởi vậy, phần mộ tọa lạc trên những vùng đất hội đủ các đặc điểm này được tin rằng sẽ mang lại phúc lộc, thịnh vượng và công danh cho con cháu đời sau.",
-  cta: { label: "TÌM HIỂU THÊM", href: "/resources/contact-us-new" },
+  cta: { label: "TÌM HIỂU THÊM", href: "/lien-he" },
 };
 
 export const COMMITMENT = {
   eyebrow: "XEM VIDEO",
   title: "Lời Cam Kết",
   body: "Một lời cam kết vượt qua mọi giới hạn được gắn kết bằng tình yêu thương chân thành. Tại Hoa Viên Bình Dương, hãy an tâm rằng việc thực hiện trọn vẹn cam kết đó chính là lời hứa của chúng tôi.",
-  cta: { label: "KHÁM PHÁ", href: "/resources/contact-us-new" },
+  cta: { label: "KHÁM PHÁ", href: "/lien-he" },
   poster: "/images/video-commit.jpg",
   video: "/videos/14444444.mp4",
 };
@@ -41,7 +41,7 @@ export const PLOT_TYPES_HEADING = {
 
 const PLOT_BUTTONS = [
   { label: "TÌM HIỂU THÊM", href: "https://sanpham.cphaco.vn" },
-  { label: "NHẬN BÁO GIÁ", href: "/resources/contact-us-new" },
+  { label: "NHẬN BÁO GIÁ", href: "/lien-he" },
 ];
 
 export const PLOT_TYPES: PlotType[] = [
@@ -126,5 +126,5 @@ export const CONSIDERATIONS = {
 export const CEMETERIES = {
   title: "Khác biệt giữa hoa viên và nghĩa trang truyền thống",
   body: "Khi chuẩn bị nơi an nghỉ cho bản thân hoặc người thân, gia đình có thể bắt gặp các khái niệm “hoa viên” và “nghĩa trang”. Hai cách gọi có cùng chức năng cơ bản, nhưng thường khác nhau về quy hoạch cảnh quan, tiện ích và dịch vụ chăm sóc lâu dài.",
-  cta: { label: "TÌM HIỂU THÊM", href: "/resources/contact-us-new" },
+  cta: { label: "TÌM HIỂU THÊM", href: "/lien-he" },
 };

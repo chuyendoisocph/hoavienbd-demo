@@ -4,7 +4,7 @@ export function FuneralHowItWorks() {
   return (
     <section className="bg-white pb-[90px] pt-[40px]">
       <div className="mx-auto max-w-[1100px] px-6 text-center">
-        <h2 className="font-heading text-[44px] font-medium leading-tight text-brand md:text-[52px]">
+        <h2 className="font-heading text-[30px] font-medium leading-[1.2] md:leading-tight text-brand md:text-[52px]">
           {HOW_IT_WORKS.title}
         </h2>
         <p className="mx-auto mt-5 max-w-[640px] text-[16px] leading-[1.8] text-[#666]">
@@ -29,7 +29,7 @@ export function FuneralHowItWorks() {
             <h3 className="mt-6 font-heading text-[18px] font-bold text-brand">
               {step.title}
             </h3>
-            <p className="mt-3 text-[14px] leading-[1.7] text-[#666]">{step.body}</p>
+            <p className="mt-3 text-[16px] leading-[1.7] text-[#666]">{step.body}</p>
           </div>
         ))}
       </div>

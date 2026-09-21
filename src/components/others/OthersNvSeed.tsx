@@ -12,14 +12,14 @@ export function OthersNvSeed() {
     <section className="bg-[#d6d6d6] py-[70px]">
       {/* Intro */}
       <div className="mx-auto max-w-[1100px] px-6 text-center">
-        <p className="text-[15px] uppercase tracking-[6px] text-[#888]">{SANH_PHAN.eyebrow}</p>
-        <h2 className="font-heading mt-3 text-[44px] font-medium text-brand md:text-[52px]">
+        <p className="text-[15px] uppercase tracking-[0.12em] text-[#888]">{SANH_PHAN.eyebrow}</p>
+        <h2 className="font-heading mt-3 text-[30px] font-medium text-brand md:text-[52px]">
           {SANH_PHAN.title}
         </h2>
         {SANH_PHAN.intro.map((para) => (
           <p
             key={para.slice(0, 24)}
-            className="mx-auto mt-6 max-w-[860px] text-[15px] leading-[1.9] text-[#555]"
+            className="mx-auto mt-6 max-w-[860px] text-[16px] leading-[1.9] text-[#555]"
           >
             {para}
           </p>
@@ -61,10 +61,10 @@ export function OthersNvSeed() {
         </div>
 
         <div>
-          <h3 className="font-heading text-[28px] font-bold text-brand">
+          <h3 className="font-heading text-[20px] md:text-[28px] font-bold text-brand">
             {SANH_PHAN.benefitsTitle}
           </h3>
-          <p className="mt-4 text-[15px] leading-[1.9] text-[#555]">{SANH_PHAN.benefitsIntro}</p>
+          <p className="mt-4 text-[16px] leading-[1.9] text-[#555]">{SANH_PHAN.benefitsIntro}</p>
           <ul className="mt-6 flex flex-col gap-4">
             {SANH_PHAN.benefits.map((item) => (
               <li key={item} className="flex items-start gap-3">

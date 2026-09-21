@@ -5,7 +5,7 @@ export function PreplanResources() {
   return (
     <section className="bg-white pb-[90px] pt-[20px]">
       <div className="mx-auto max-w-[1100px] px-6 text-center">
-        <h2 className="font-heading mb-[40px] text-[34px] font-medium tracking-[1px] text-brand md:text-[44px]">
+        <h2 className="font-heading mb-[40px] text-[30px] font-medium text-brand md:text-[44px]">
           {PREPLAN_RESOURCES.title}
         </h2>
 

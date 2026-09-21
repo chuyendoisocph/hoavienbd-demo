@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { Be_Vietnam_Pro, Cormorant_Garamond } from "next/font/google";
+import { Be_Vietnam_Pro, Newsreader } from "next/font/google";
+import { SiteMotion } from "@/components/SiteMotion";
 import "./globals.css";
 
 const bodyFont = Be_Vietnam_Pro({
@@ -9,9 +10,19 @@ const bodyFont = Be_Vietnam_Pro({
   display: "swap",
 });
 
-const displayFont = Cormorant_Garamond({
+// Italic only in the two weights the quotes use, to keep the font payload small.
+const bodyItalicFont = Be_Vietnam_Pro({
+  variable: "--font-body-italic",
+  weight: ["400", "600"],
+  style: "italic",
+  subsets: ["latin", "vietnamese"],
+  display: "swap",
+});
+
+const displayFont = Newsreader({
   variable: "--font-display-face",
-  weight: ["500", "600", "700"],
+  axes: ["opsz"],
+  style: ["normal", "italic"],
   subsets: ["latin", "vietnamese"],
   display: "swap",
 });
@@ -41,9 +52,10 @@ export default function RootLayout({
   return (
     <html
       lang="vi"
-      className={`${bodyFont.variable} ${displayFont.variable} h-full antialiased`}
+      className={`${bodyFont.variable} ${bodyItalicFont.variable} ${displayFont.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-background text-foreground">
+        <SiteMotion />
         {children}
       </body>
     </html>

@@ -17,28 +17,28 @@ export const TOP_NAV: NavItem[] = [
     label: "Hỗ Trợ",
     href: "#",
     children: [
-      { label: "Khi Có Người Thân Qua Đời", href: "/getting-started/immediate-need" },
-      { label: "Chuẩn Bị Từ Sớm", href: "/getting-started/pre-planning" },
+      { label: "Khi Có Người Thân Qua Đời", href: "/ho-tro/khi-co-nguoi-than-qua-doi" },
+      { label: "Chuẩn Bị Từ Sớm", href: "/ho-tro/chuan-bi-tu-som" },
     ],
   },
   {
     label: "Lựa Chọn Dịch Vụ",
     href: "#",
     children: [
-      { label: "Dịch Vụ Tang Lễ", href: "/planning-options/funeral-service" },
-      { label: "Phần Mộ", href: "/planning-options/burial" },
-      { label: "Dịch Vụ Lưu Tro Cốt", href: "/planning-options/cremation" },
-      { label: "Dịch Vụ Khác", href: "/planning-options/others" },
+      { label: "Dịch Vụ Tang Lễ", href: "/dich-vu/tang-le" },
+      { label: "Phần Mộ", href: "/dich-vu/phan-mo" },
+      { label: "Dịch Vụ Lưu Tro Cốt", href: "/dich-vu/luu-tro-cot" },
+      { label: "Dịch Vụ Khác", href: "/dich-vu/dich-vu-khac" },
     ],
   },
   {
     label: "Thông Tin",
     href: "#",
     children: [
-      { label: "Về Chúng Tôi", href: "/resources/who-we-are" },
-      { label: "Bài Viết", href: "/resources/article" },
-      { label: "Hỏi & Đáp", href: "/resources/faq" },
-      { label: "Liên Hệ", href: "/resources/contact-us-new" },
+      { label: "Về Chúng Tôi", href: "/ve-chung-toi" },
+      { label: "Bài Viết", href: "/bai-viet" },
+      { label: "Hỏi & Đáp", href: "/hoi-dap" },
+      { label: "Liên Hệ", href: "/lien-he" },
     ],
   },
 ];
@@ -59,31 +59,31 @@ export const CAROUSEL_SLIDES: CarouselSlide[] = [
     title: "Hoa Viên Bình Dương",
     body: "Công viên tưởng niệm sinh thái hàng đầu, kiến tạo không gian an nghỉ trang nghiêm giữa thiên nhiên xanh mát.",
     image: "/images/hvbd/linh-hoa-tue-dan-1.jpg",
-    cta: { label: "Tìm hiểu thêm", href: "/resources/who-we-are" },
+    cta: { label: "Tìm hiểu thêm", href: "/ve-chung-toi" },
   },
   {
     title: "Cảnh Quan Hữu Tình",
     body: "Quy mô quy hoạch lên đến 300 ha, được kiến tạo hài hòa giữa cảnh quan thiên nhiên và các công trình tâm linh, mang lại sự an yên cho người đã khuất và gia đình.",
     image: "/images/hvbd/park-aerial-roundabout.jpg",
-    cta: { label: "Tìm hiểu thêm", href: "/resources/who-we-are" },
+    cta: { label: "Tìm hiểu thêm", href: "/ve-chung-toi" },
   },
   {
     title: "Lễ Cầu Siêu – Cầu An",
     body: "Các nghi lễ tâm linh trang trọng được tổ chức thường niên, gửi gắm lòng thành kính và sự tri ân đến tổ tiên.",
     image: "/images/hvbd/dai-le-cau-sieu-cau-an.jpg",
-    cta: { label: "Tìm hiểu thêm", href: "/resources/contact-us-new" },
+    cta: { label: "Tìm hiểu thêm", href: "/lien-he" },
   },
   {
     title: "Dịch Vụ Tang Lễ Trọn Gói",
     body: "Đội ngũ chuyên nghiệp đồng hành cùng gia đình trong từng bước, để tang quyến an tâm tiễn biệt người thân một cách trọn vẹn.",
     image: "/images/hvbd/dich-vu-tang-le-1.jpg",
-    cta: { label: "Tìm hiểu thêm", href: "/planning-options/funeral-service" },
+    cta: { label: "Tìm hiểu thêm", href: "/dich-vu/tang-le" },
   },
   {
     title: "Tham Quan Miễn Phí",
     body: "Hệ thống xe đưa đón tận tình, mời quý khách tham quan và tìm hiểu hoa viên trước khi quyết định.",
     image: "/images/hvbd/tour-bus-gate.jpg",
-    cta: { label: "Tìm hiểu thêm", href: "/resources/contact-us-new" },
+    cta: { label: "Tìm hiểu thêm", href: "/lien-he" },
   },
 ];
 
@@ -91,7 +91,7 @@ export const CULTURE = {
   eyebrow: "HOA VIÊN BÌNH DƯƠNG",
   title: "Văn Hóa & Tương Lai",
   body: "Một nền văn hóa đã trường tồn hàng ngàn năm tựa như dòng nước – góp nhặt từng chút một để rồi hình thành nên bề dày lịch sử. Hoa Viên Bình Dương thấu hiểu sâu sắc điều này, tự hào gìn giữ truyền thống và văn hóa hiếu nghĩa của dân tộc bằng việc mang đến hệ thống dịch vụ tang lễ toàn diện, để tôn vinh và trân trọng từng cuộc đời.",
-  cta: { label: "TÌM HIỂU THÊM", href: "/resources/who-we-are" },
+  cta: { label: "TÌM HIỂU THÊM", href: "/ve-chung-toi" },
 };
 
 export const CARING = {
@@ -104,17 +104,17 @@ export const PREPLAN_CARDS: PreplanCard[] = [
   {
     title: "5 lợi ích của việc chuẩn bị hậu sự từ sớm",
     image: "/images/45.jpg",
-    href: "/resources/article/5-main-advantages-of-pre-planning",
+    href: "/bai-viet/chuan-bi-hau-su-tu-som",
   },
   {
     title: "Khi nào nên bắt đầu chuẩn bị?",
     image: "/images/920.jpg",
-    href: "/getting-started/pre-planning",
+    href: "/ho-tro/chuan-bi-tu-som",
   },
   {
     title: "Ai nên chuẩn bị hậu sự từ sớm?",
     image: "/images/1661.jpg",
-    href: "/getting-started/pre-planning",
+    href: "/ho-tro/chuan-bi-tu-som",
   },
 ];
 
@@ -127,12 +127,12 @@ export const WATCH_VIDEO = {
 export const PRODUCTS = {
   title: "Sản Phẩm & Dịch Vụ",
   items: [
-    { label: "Phần Mộ", href: "/planning-options/burial" },
-    { label: "Dịch Vụ Lưu Tro Cốt", href: "/planning-options/cremation" },
-    { label: "Dịch Vụ Tang Lễ", href: "/planning-options/funeral-service" },
-    { label: "Chăm Sóc Mộ Phần", href: "/planning-options/others" },
-    { label: "Tư Vấn Thiết Kế & Xây Dựng Mộ", href: "/planning-options/others" },
-    { label: "Sanh Phần", href: "/planning-options/others" },
+    { label: "Phần Mộ", href: "/dich-vu/phan-mo" },
+    { label: "Dịch Vụ Lưu Tro Cốt", href: "/dich-vu/luu-tro-cot" },
+    { label: "Dịch Vụ Tang Lễ", href: "/dich-vu/tang-le" },
+    { label: "Chăm Sóc Mộ Phần", href: "/dich-vu/dich-vu-khac" },
+    { label: "Tư Vấn Thiết Kế & Xây Dựng Mộ", href: "/dich-vu/dich-vu-khac" },
+    { label: "Sanh Phần", href: "/dich-vu/dich-vu-khac" },
   ] as ProductItem[],
   image: "/images/hvbd/columbaria-white.jpg",
 };
@@ -150,7 +150,7 @@ export const SITE_VIEW_360 = {
 export const ADVANTAGES = {
   title: "5 lợi ích khi chuẩn bị hậu sự từ sớm cùng Hoa Viên Bình Dương",
   subtitle: "Nguyện vọng của gia đình là ưu tiên hàng đầu",
-  cta: { label: "ĐẶT LỊCH HẸN", href: "/resources/contact-us-new" },
+  cta: { label: "ĐẶT LỊCH HẸN", href: "/lien-he" },
   cards: [
     {
       icon: "/images/PrePlan_Icon_Trust-Fund-150x150.png",
@@ -217,27 +217,28 @@ export const FOOTER_COLUMNS: FooterLinkColumn[] = [
   {
     heading: "Hỗ Trợ",
     links: [
-      { label: "Khi Có Người Thân Qua Đời", href: "/getting-started/immediate-need" },
-      { label: "Chuẩn Bị Từ Sớm", href: "/getting-started/pre-planning" },
+      { label: "Khi Có Người Thân Qua Đời", href: "/ho-tro/khi-co-nguoi-than-qua-doi" },
+      { label: "Chuẩn Bị Từ Sớm", href: "/ho-tro/chuan-bi-tu-som" },
     ],
   },
   {
     heading: "Lựa Chọn Dịch Vụ",
     links: [
-      { label: "Dịch Vụ Tang Lễ", href: "/planning-options/funeral-service" },
-      { label: "Phần Mộ", href: "/planning-options/burial" },
-      { label: "Dịch Vụ Lưu Tro Cốt", href: "/planning-options/cremation" },
-      { label: "Dịch Vụ Khác", href: "/planning-options/others" },
+      { label: "Dịch Vụ Tang Lễ", href: "/dich-vu/tang-le" },
+      { label: "Phần Mộ", href: "/dich-vu/phan-mo" },
+      { label: "Dịch Vụ Lưu Tro Cốt", href: "/dich-vu/luu-tro-cot" },
+      { label: "Dịch Vụ Khác", href: "/dich-vu/dich-vu-khac" },
     ],
   },
   {
     heading: "Thông Tin",
     links: [
-      { label: "Về Chúng Tôi", href: "/resources/who-we-are" },
-      { label: "Chi Nhánh", href: "/resources/contact-us-new" },
-      { label: "Liên Hệ", href: "/resources/contact-us-new" },
-      { label: "Bài Viết", href: "/resources/article" },
-      { label: "Hỏi & Đáp", href: "/resources/faq" },
+      { label: "Về Chúng Tôi", href: "/ve-chung-toi" },
+      { label: "Chi Nhánh", href: "/lien-he" },
+      { label: "Liên Hệ", href: "/lien-he" },
+      { label: "Bài Viết", href: "/bai-viet" },
+      { label: "Hỏi & Đáp", href: "/hoi-dap" },
+      { label: "Chính Sách Quyền Riêng Tư", href: "/chinh-sach-quyen-rieng-tu" },
     ],
   },
 ];

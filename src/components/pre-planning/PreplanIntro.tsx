@@ -9,11 +9,11 @@ export function PreplanIntro() {
           <div key={block.title}>
             <h2
               className="text-center font-heading font-medium leading-[1.2] text-brand"
-              style={{ fontSize: "clamp(28px, 4vw, 40px)" }}
+              style={{ fontSize: "clamp(30px, 4vw, 40px)" }}
             >
               {block.title}
             </h2>
-            <p className="mt-8 text-[15px] leading-[1.9] text-[#666]">{block.body}</p>
+            <p className="mt-8 text-[16px] leading-[1.9] text-[#666]">{block.body}</p>
             <div className="mt-[30px] flex justify-end">
               <a
                 href={block.cta.href}

@@ -6,12 +6,12 @@ export function FuneralIntro() {
   return (
     <section className="bg-white pt-[70px]">
       <div className="mx-auto w-full max-w-[1140px] px-6">
-        <p className="mb-3 text-center text-[15px] font-normal uppercase tracking-[6px] text-[#999]">
+        <p className="mb-3 text-center text-[15px] font-normal uppercase tracking-[0.12em] text-[#999]">
           {FUNERAL_INTRO.eyebrow}
         </p>
         <h2
           className="mb-12 text-center font-heading font-medium leading-[1.2] text-brand"
-          style={{ fontSize: "clamp(28px, 4vw, 40px)" }}
+          style={{ fontSize: "clamp(30px, 4vw, 40px)" }}
         >
           {FUNERAL_INTRO.title}
         </h2>
@@ -19,7 +19,7 @@ export function FuneralIntro() {
         <div className="grid grid-cols-1 items-start gap-12 md:grid-cols-2">
           {/* Left: body + READ MORE */}
           <div>
-            <p className="text-left text-[15px] leading-[1.9] text-[#666]">
+            <p className="text-left text-[16px] leading-[1.9] text-[#666]">
               {FUNERAL_INTRO.body}
             </p>
             <div className="mt-[30px] flex justify-end">
@@ -53,7 +53,7 @@ export function FuneralIntro() {
 
       {/* WATCH video */}
       <div className="px-6 pb-[90px] pt-[70px] text-center">
-        <p className="mb-[30px] text-[15px] uppercase tracking-[6px] text-[#999]">
+        <p className="mb-[30px] text-[15px] uppercase tracking-[0.12em] text-[#999]">
           XEM VIDEO
         </p>
         <YoutubeWatch

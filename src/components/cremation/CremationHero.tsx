@@ -16,7 +16,7 @@ export function CremationHero() {
       <div className="relative z-10 flex h-full flex-col items-center justify-center px-6 text-center text-white">
         <h1
           className="font-heading font-medium text-white"
-          style={{ fontSize: "clamp(44px,9vw,100px)", textShadow: "8px 8px 8px #242424" }}
+          style={{ fontSize: "clamp(40px,9vw,100px)", textShadow: "8px 8px 8px #242424" }}
         >
           {CREMATION_HERO.title}
         </h1>

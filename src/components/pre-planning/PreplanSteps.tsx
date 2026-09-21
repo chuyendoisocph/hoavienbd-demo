@@ -9,7 +9,7 @@ export function PreplanSteps() {
           {PREPLAN_STEPS.title}
         </h2>
         {PREPLAN_STEPS.body.map((para) => (
-          <p key={para.slice(0, 24)} className="mt-6 text-[15px] leading-[1.9] text-[#666]">
+          <p key={para.slice(0, 24)} className="mt-6 text-[16px] leading-[1.9] text-[#666]">
             {para}
           </p>
         ))}

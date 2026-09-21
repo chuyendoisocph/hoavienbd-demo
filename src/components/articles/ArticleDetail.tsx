@@ -20,16 +20,16 @@ export function ArticleDetail({ article, bodyHtml, related }: ArticleDetailProps
         />
         <div className="absolute inset-0 z-[1] bg-black/50" />
         <div className="relative z-10 mx-auto flex h-full max-w-[900px] flex-col items-center justify-center px-6 text-center text-white">
-          <p className="mb-4 text-[13px] uppercase tracking-[3px] text-white/80">
+          <p className="mb-4 text-[13px] uppercase tracking-[0.12em] text-white/80">
             {article.category}
           </p>
           <h1
-            className="font-heading font-medium leading-[1.25] text-white"
-            style={{ fontSize: "clamp(28px, 4.5vw, 48px)", letterSpacing: "0.5px" }}
+            className="font-heading font-medium leading-[1.15] text-white"
+            style={{ fontSize: "clamp(40px, 4.5vw, 48px)", letterSpacing: "0.5px" }}
           >
             {article.title}
           </h1>
-          <p className="mt-5 text-[14px] text-white/80">
+          <p className="mt-5 text-[16px] text-white/80">
             bởi Hoa Viên Bình Dương | {article.date}
           </p>
         </div>
@@ -44,7 +44,7 @@ export function ArticleDetail({ article, bodyHtml, related }: ArticleDetailProps
           />
           <div className="mt-14 border-t border-black/10 pt-8">
             <Link
-              href="/resources/article"
+              href="/bai-viet"
               className="text-[15px] font-medium uppercase tracking-[2px] text-brand-link transition-colors hover:text-brand"
             >
               ← Quay lại danh sách bài viết
@@ -76,7 +76,7 @@ export function ArticleDetail({ article, bodyHtml, related }: ArticleDetailProps
                       {item.title}
                     </h3>
                   </a>
-                  <p className="mt-3 text-[14px] text-[#666]">
+                  <p className="mt-3 text-[16px] text-[#666]">
                     {item.date}
                     {item.category ? ` | ${item.category}` : ""}
                   </p>

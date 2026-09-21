@@ -13,7 +13,7 @@ function RegionBlock({ region }: { region: Region }) {
       <div className="grid grid-cols-1 gap-8 lg:grid-cols-[320px_1fr]">
         {/* Region summary */}
         <div>
-          <h3 className="font-heading text-[22px] font-bold tracking-[1px] text-brand">
+          <h3 className="font-heading text-[20px] md:text-[22px] font-bold tracking-[1px] text-brand">
             {region.name}
           </h3>
           <ul className="mt-4 flex flex-col gap-2 text-[15px] text-[#666]">
@@ -60,7 +60,7 @@ function RegionBlock({ region }: { region: Region }) {
                   )}
                 >
                   <div className="min-h-0">
-                    <p className="whitespace-pre-line pb-5 text-[14px] leading-[1.8] text-[#666]">
+                    <p className="whitespace-pre-line pb-5 text-[16px] leading-[1.8] text-[#666]">
                       {loc.body}
                     </p>
                   </div>
@@ -78,7 +78,7 @@ export function ContactBranches() {
   return (
     <section className="bg-white pb-[40px]">
       <div className="mx-auto max-w-[1200px] px-6">
-        <h2 className="text-center font-heading text-[34px] font-medium text-brand md:text-[44px]">
+        <h2 className="text-center font-heading text-[30px] font-medium text-brand md:text-[44px]">
           Hệ Thống Chi Nhánh
         </h2>
         <div className="mt-8">

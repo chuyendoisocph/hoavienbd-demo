@@ -6,7 +6,7 @@ export function OthersRead() {
     <section className="bg-white">
       <div className="mx-auto max-w-[1100px] px-6 py-[70px]">
         <div className="text-center">
-          <h2 className="font-heading mb-[50px] text-[40px] font-medium tracking-[2px] text-brand md:text-[52px]">
+          <h2 className="font-heading mb-[50px] text-[30px] font-medium text-brand md:text-[52px]">
             {OTHERS_READ.eyebrow}
           </h2>
         </div>
@@ -24,7 +24,7 @@ export function OthersRead() {
               </div>
               <h3
                 className={cn(
-                  "font-heading mt-4 text-center text-[22px] font-medium leading-[1.3] text-[#333] transition-colors",
+                  "font-heading mt-4 text-center text-[20px] md:text-[22px] font-medium leading-[1.3] text-[#333] transition-colors",
                   "group-hover:text-brand",
                 )}
               >

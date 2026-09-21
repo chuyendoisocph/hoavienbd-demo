@@ -11,12 +11,12 @@ export const PREPLAN_INTRO = {
     {
       title: "Chuẩn bị hậu sự từ sớm",
       body: "Chúng ta chuẩn bị cho hầu hết mọi điều trong cuộc sống. Để phòng ngừa rủi ro tai nạn, bệnh tật, ta mua bảo hiểm. Để kết hôn, các cặp đôi dành hàng tháng, thậm chí hàng năm để mọi việc được vẹn toàn. Để bảo đảm tương lai học vấn của con cái, ta lập quỹ giáo dục. Để sống trọn vẹn, ta có những danh sách ước mơ. Nhưng khoan đã, phải chăng ta đang quên mất điều gì đó?",
-      cta: { label: "TÌM HIỂU THÊM", href: "/resources/contact-us-new" },
+      cta: { label: "TÌM HIỂU THÊM", href: "/lien-he" },
     },
     {
       title: "Chuẩn bị hậu sự từ sớm là gì?",
       body: "Chuẩn bị hậu sự từ sớm là việc chủ động trao đổi và sắp xếp những nguyện vọng quan trọng trước khi nhu cầu thực sự phát sinh. Việc chuẩn bị có thể bao gồm hình thức an táng hoặc hỏa táng, nghi thức, nơi an nghỉ và kế hoạch tài chính phù hợp.",
-      cta: { label: "TÌM HIỂU THÊM", href: "/resources/contact-us-new" },
+      cta: { label: "TÌM HIỂU THÊM", href: "/lien-he" },
     },
   ],
 };
@@ -49,15 +49,15 @@ export const ADVANTAGES = {
       ],
     },
   ],
-  cta: { label: "TÌM HIỂU", href: "/resources/contact-us-new" },
+  cta: { label: "TÌM HIỂU", href: "/lien-he" },
 };
 
 export const PREPLAN_ARTICLES = {
   eyebrow: "Chuẩn Bị TỪ SỚM",
   cards: [
-    { title: "Chuẩn bị hậu sự từ sớm gồm những gì?", image: "/images/252a.jpg", href: "/resources/article/chuan-bi-hau-su-tu-som" },
-    { title: "Vì sao nên trao đổi nguyện vọng cùng gia đình?", image: "/images/1427.jpg", href: "/resources/article/chuan-bi-hau-su-tu-som" },
-    { title: "Gói dịch vụ trọn gói là gì?", image: "/images/80_1a.jpg", href: "/resources/article" },
+    { title: "Chuẩn bị hậu sự từ sớm gồm những gì?", image: "/images/252a.jpg", href: "/bai-viet/chuan-bi-hau-su-tu-som" },
+    { title: "Vì sao nên trao đổi nguyện vọng cùng gia đình?", image: "/images/1427.jpg", href: "/bai-viet/chuan-bi-hau-su-tu-som" },
+    { title: "Gói dịch vụ trọn gói là gì?", image: "/images/80_1a.jpg", href: "/bai-viet" },
   ],
 };
 
@@ -75,14 +75,14 @@ export const PREPLAN_STEPS = {
     "Cân nhắc việc đóng góp cho một mục đích thiện nguyện",
     "Đảm bảo người thân được biết về di nguyện và các sắp xếp đã thực hiện",
   ],
-  cta: { label: "CÁC BƯỚC TIẾP THEO", href: "/resources/contact-us-new" },
+  cta: { label: "CÁC BƯỚC TIẾP THEO", href: "/lien-he" },
 };
 
 export const PREPLAN_RESOURCES = {
   title: "Thông Tin Hữu Ích",
   links: [
-    { title: "So sánh các gói dịch vụ", href: "/planning-options/funeral-service" },
-    { title: "Phần mộ tại Hoa Viên Bình Dương", href: "/planning-options/burial" },
-    { title: "Tìm hiểu về dịch vụ lưu tro cốt", href: "/planning-options/cremation" },
+    { title: "So sánh các gói dịch vụ", href: "/dich-vu/tang-le" },
+    { title: "Phần mộ tại Hoa Viên Bình Dương", href: "/dich-vu/phan-mo" },
+    { title: "Tìm hiểu về dịch vụ lưu tro cốt", href: "/dich-vu/luu-tro-cot" },
   ],
 };

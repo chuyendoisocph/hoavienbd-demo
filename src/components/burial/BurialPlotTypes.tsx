@@ -27,10 +27,10 @@ export function BurialPlotTypes() {
     <section className="py-[70px]">
       {/* Heading */}
       <div className="mx-auto max-w-[1200px] px-6 text-center">
-        <p className="mb-3 text-[14px] uppercase tracking-[3px] text-[#888]">
+        <p className="mb-3 text-[14px] uppercase tracking-[0.12em] text-[#888]">
           {PLOT_TYPES_HEADING.eyebrow}
         </p>
-        <h2 className="font-heading text-[52px] font-medium leading-tight tracking-[2px] text-brand">
+        <h2 className="font-heading text-[30px] md:text-[52px] font-medium leading-[1.2] md:leading-tight text-brand">
           {PLOT_TYPES_HEADING.title}
         </h2>
       </div>
@@ -92,7 +92,7 @@ function PlotBlock({ plot, activeIndex, onSelect }: PlotBlockProps) {
     >
       <p
         className={cn(
-          "mb-3 text-center text-[14px] uppercase tracking-[3px]",
+          "mb-3 text-center text-[14px] uppercase tracking-[0.12em]",
           dark ? "text-white/85" : "text-[#888]",
         )}
       >
@@ -100,7 +100,7 @@ function PlotBlock({ plot, activeIndex, onSelect }: PlotBlockProps) {
       </p>
       <h3
         className={cn(
-          "mb-4 text-center font-heading text-[25px] font-bold",
+          "mb-4 text-center font-heading text-[20px] font-bold md:text-[25px]",
           dark ? "text-white" : "text-brand",
         )}
       >
@@ -108,7 +108,7 @@ function PlotBlock({ plot, activeIndex, onSelect }: PlotBlockProps) {
       </h3>
       <p
         className={cn(
-          "text-[15px] leading-[1.8]",
+          "text-[16px] leading-[1.8]",
           dark ? "text-white/95" : "text-[#666]",
         )}
       >

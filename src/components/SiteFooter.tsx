@@ -58,7 +58,7 @@ export function SiteFooter() {
       <div className="grid w-full grid-cols-1 lg:-mt-[77px] lg:w-[84.82vw] lg:grid-cols-[57.8%_15.6%_15.6%] lg:items-start lg:justify-between lg:pb-[27px]">
         {/* Column 1 — purple panel */}
         <div className="bg-footer-purple px-6 py-12 lg:min-h-[519px] lg:pt-[83px] lg:pr-[30px] lg:pb-0 lg:pl-[15.18vw]">
-          <h2 className="pb-[20px] text-[30px] leading-[48px] font-bold tracking-[1px] text-white">
+          <h2 className="pb-[20px] text-[30px] leading-[1.2] font-bold text-white">
             Kết Nối
           </h2>
 

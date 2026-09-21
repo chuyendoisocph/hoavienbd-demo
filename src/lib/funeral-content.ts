@@ -10,7 +10,7 @@ export const FUNERAL_INTRO = {
   eyebrow: "DỊCH VỤ TANG LỄ",
   title: "Gói Dịch Vụ Trọn Gói",
   body: "Lo liệu tang lễ là việc hệ trọng và nhạy cảm. Dù là chuẩn bị trước hay khi hữu sự, việc biết bắt đầu từ đâu và quyết định những gì cần làm có thể khiến nhiều người bối rối, nhất là với những ai chưa từng trực tiếp lo liệu hậu sự. Với bề dày kinh nghiệm trong lĩnh vực dịch vụ tang lễ, Hoa Viên Bình Dương thấu hiểu sâu sắc nỗi trăn trở này.",
-  cta: { label: "TÌM HIỂU THÊM", href: "/resources/contact-us-new" },
+  cta: { label: "TÌM HIỂU THÊM", href: "/lien-he" },
   services: [
     "Tư vấn nghi thức & phương án tổ chức",
     "Khâm liệm & nhập quan",
@@ -117,7 +117,7 @@ export const CARE_TEAM = {
   title: "Đội Ngũ Phục Vụ Tận Tâm",
   subtitle: "Đồng hành cùng gia đình trong từng nghi thức",
   body: "Đội ngũ Hoa Viên Bình Dương đồng hành từ khi tiếp nhận nhu cầu, chuẩn bị khâm liệm, nhập quan và lễ viếng đến điều phối xe tang, di quan, an táng hoặc hỏa táng. Mỗi công việc được thực hiện chỉn chu, tôn trọng phong tục, tín ngưỡng và nguyện vọng riêng của từng gia đình.",
-  cta: { label: "LIÊN HỆ TƯ VẤN", href: "/resources/contact-us-new" },
+  cta: { label: "LIÊN HỆ TƯ VẤN", href: "/lien-he" },
 };
 
 export const PLANS = {
@@ -125,10 +125,10 @@ export const PLANS = {
   introLead: "Hoa Viên Bình Dương tư vấn giải pháp phù hợp với nhu cầu, tín ngưỡng và điều kiện của từng gia đình. ",
   introBold: "Mọi hạng mục sẽ được trao đổi rõ ràng trước khi thực hiện.",
   buttons: [
-    { label: "NHẬN TƯ VẤN DỊCH VỤ", href: "/resources/contact-us-new" },
-    { label: "DỊCH VỤ AN TÁNG", href: "/planning-options/burial" },
-    { label: "DỊCH VỤ HỎA TÁNG", href: "/planning-options/cremation" },
-    { label: "LƯU GIỮ TRO CỐT", href: "/planning-options/cremation" },
+    { label: "NHẬN TƯ VẤN DỊCH VỤ", href: "/lien-he" },
+    { label: "DỊCH VỤ AN TÁNG", href: "/dich-vu/phan-mo" },
+    { label: "DỊCH VỤ HỎA TÁNG", href: "/dich-vu/luu-tro-cot" },
+    { label: "LƯU GIỮ TRO CỐT", href: "/dich-vu/luu-tro-cot" },
   ],
 };
 
@@ -136,7 +136,7 @@ export const GUIDE = {
   bannerImage: "/images/hvbd/family-walk.jpg",
   title: "Cẩm nang chọn đơn vị dịch vụ tang lễ",
   body: "Lựa chọn đơn vị dịch vụ tang lễ phù hợp giúp gia đình được hướng dẫn rõ ràng và giảm bớt áp lực khi lo liệu hậu sự. Một đơn vị uy tín cần cung cấp thông tin minh bạch, tôn trọng tín ngưỡng và thực hiện đúng những nội dung đã thống nhất.",
-  cta: { label: "TÌM HIỂU THÊM", href: "/resources/contact-us-new" },
+  cta: { label: "TÌM HIỂU THÊM", href: "/lien-he" },
   considerTitle: "5 điều cần cân nhắc khi chọn đơn vị dịch vụ tang lễ",
   considerItems: [
     "Tôn giáo và văn hóa",
@@ -145,7 +145,7 @@ export const GUIDE = {
     "Cơ sở vật chất",
     "Sự an tâm của gia đình",
   ],
-  considerCta: { label: "TÌM HIỂU", href: "/resources/contact-us-new" },
+  considerCta: { label: "TÌM HIỂU", href: "/lien-he" },
 };
 
 export interface AboutCard {
@@ -158,9 +158,9 @@ export const ABOUT = {
   title: "Về Dịch Vụ Tang Lễ & Hậu Sự",
   background: "/images/hvbd/linh-hoa-tue-dan-3.jpg",
   cards: [
-    { title: "Đơn vị dịch vụ tang lễ là gì?", image: "/images/hvbd/dich-vu-tang-le-2.jpg", href: "/resources/article" },
-    { title: "Chuẩn bị một nghi lễ trang nghiêm", image: "/images/hvbd/dai-le-cau-sieu-cau-an.jpg", href: "/resources/article" },
-    { title: "Thăm viếng và tưởng nhớ", image: "/images/hvbd/grave-offering-white.jpg", href: "/resources/article" },
-    { title: "An táng hay hỏa táng", image: "/images/hvbd/thien-phuoc-courtyard.jpg", href: "/resources/article" },
+    { title: "Đơn vị dịch vụ tang lễ là gì?", image: "/images/hvbd/dich-vu-tang-le-2.jpg", href: "/bai-viet" },
+    { title: "Chuẩn bị một nghi lễ trang nghiêm", image: "/images/hvbd/dai-le-cau-sieu-cau-an.jpg", href: "/bai-viet" },
+    { title: "Thăm viếng và tưởng nhớ", image: "/images/hvbd/grave-offering-white.jpg", href: "/bai-viet" },
+    { title: "An táng hay hỏa táng", image: "/images/hvbd/thien-phuoc-courtyard.jpg", href: "/bai-viet" },
   ] as AboutCard[],
 };

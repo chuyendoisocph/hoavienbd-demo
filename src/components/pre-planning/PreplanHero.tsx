@@ -12,7 +12,7 @@ export function PreplanHero() {
       <div className="absolute inset-0 z-[1] bg-black/35" />
       <div className="relative z-10 flex h-full flex-col items-center justify-center px-6 text-center text-white">
         <h1
-          className="font-heading font-medium leading-none text-white"
+          className="font-heading font-medium leading-[1.15] text-white"
           style={{ fontSize: "clamp(40px, 8vw, 90px)", textShadow: "8px 8px 8px #242424" }}
         >
           {PREPLAN_HERO.title}

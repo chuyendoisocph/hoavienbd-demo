@@ -10,11 +10,11 @@ export function WwaAwards() {
   return (
     <section className="bg-white py-[70px]">
       <div className="mx-auto max-w-[1000px] px-6 text-center">
-        <h2 className="font-heading text-[34px] font-medium text-brand md:text-[44px]">
+        <h2 className="font-heading text-[30px] font-medium text-brand md:text-[44px]">
           {WWA_AWARDS.title}
         </h2>
         {WWA_AWARDS.body.map((para) => (
-          <p key={para.slice(0, 24)} className="mx-auto mt-5 max-w-[820px] text-[15px] leading-[1.9] text-[#666]">
+          <p key={para.slice(0, 24)} className="mx-auto mt-5 max-w-[820px] text-[16px] leading-[1.9] text-[#666]">
             {para}
           </p>
         ))}

@@ -24,13 +24,13 @@ export function CommitmentSection() {
             "px-10 py-[50px] md:w-[38%] md:max-w-[440px] md:-ml-[60px]",
           )}
         >
-          <p className="mb-4 text-sm uppercase tracking-[6px] text-white/85">
+          <p className="mb-4 text-sm uppercase tracking-[0.12em] text-white/85">
             {COMMITMENT.eyebrow}
           </p>
-          <h3 className="mb-4 font-heading text-[30px] font-bold text-white">
+          <h3 className="mb-4 font-heading text-[20px] md:text-[30px] font-bold text-white">
             {COMMITMENT.title}
           </h3>
-          <p className="text-[15px] leading-[1.8] text-white/95">
+          <p className="text-[16px] leading-[1.8] text-white/95">
             {COMMITMENT.body}
           </p>
           <a

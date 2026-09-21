@@ -14,7 +14,7 @@ export function FaqAccordion() {
       <div className="mx-auto max-w-[920px] px-6">
         {FAQ_GROUPS.map((group, gi) => (
           <div key={group.category} className="mb-12 last:mb-0">
-            <h2 className="mb-6 font-heading text-[24px] font-bold text-brand md:text-[28px]">
+            <h2 className="mb-6 font-heading text-[30px] font-bold text-brand md:text-[28px]">
               {group.category}
             </h2>
             <div className="flex flex-col gap-3">
@@ -54,7 +54,7 @@ export function FaqAccordion() {
                         {item.a.map((para) => (
                           <p
                             key={para.slice(0, 24)}
-                            className="pt-3 text-[15px] leading-[1.8] text-[#666]"
+                            className="pt-3 text-[16px] leading-[1.8] text-[#666]"
                           >
                             {para}
                           </p>

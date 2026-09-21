@@ -29,19 +29,19 @@ export const WWA_VALUES = {
       number: "01",
       title: "Tầm Nhìn",
       body: "Cam kết mang đến dịch vụ chất lượng, tỉ mỉ, chuyên nghiệp và đậm tính cá nhân hóa.",
-      cta: { label: "TÌM HIỂU THÊM", href: "/resources/contact-us-new" },
+      cta: { label: "TÌM HIỂU THÊM", href: "/lien-he" },
     },
     {
       number: "02",
       title: "Sứ Mệnh",
       body: "Kiên định với tinh thần lấy gia đình và thân nhân làm trọng tâm, cung cấp dịch vụ trọn gói chuyên nghiệp.",
-      cta: { label: "TÌM HIỂU THÊM", href: "/resources/contact-us-new" },
+      cta: { label: "TÌM HIỂU THÊM", href: "/lien-he" },
     },
     {
       number: "03",
       title: "Văn Hóa Doanh Nghiệp",
       body: "Với tinh thần chuyên nghiệp và trách nhiệm đối với nghề nghiệp cao quý này, Hoa Viên Bình Dương luôn nỗ lực vươn tới sự xuất sắc.",
-      cta: { label: "TÌM HIỂU THÊM", href: "/resources/contact-us-new" },
+      cta: { label: "TÌM HIỂU THÊM", href: "/lien-he" },
     },
   ] as ValueCard[],
 };

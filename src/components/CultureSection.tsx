@@ -8,7 +8,7 @@ import { PlusIcon } from "@/components/icons";
 const ROTATE_INTERVAL = 5000;
 
 function CultureBody() {
-  return <p className="text-[14px] leading-[1.7] text-[#666]">{CULTURE.body}</p>;
+  return <p className="text-[16px] leading-[1.7] text-[#666]">{CULTURE.body}</p>;
 }
 
 export function CultureSection() {
@@ -45,11 +45,11 @@ export function CultureSection() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-b from-[#0a0c2877] via-[#0a0c2899] to-[#0a0c28cc]" />
                 <div className="absolute inset-0 flex flex-col items-center justify-center px-[30px] py-10 text-center text-white">
-                  <h3 className="text-[24px] font-bold leading-snug text-white">{slide.title}</h3>
+                  <h3 className="text-[20px] md:text-[24px] font-bold leading-[1.3] md:leading-snug text-white">{slide.title}</h3>
                   {slide.subtitle ? (
                     <p className="mt-2 text-[16px] text-white">{slide.subtitle}</p>
                   ) : null}
-                  <p className="mt-4 text-[14px] leading-relaxed text-white/90">{slide.body}</p>
+                  <p className="mt-4 text-[16px] leading-relaxed text-white/90">{slide.body}</p>
                   {slide.cta ? (
                     <a
                       href={slide.cta.href}
@@ -83,10 +83,10 @@ export function CultureSection() {
 
         {/* RIGHT: static text */}
         <div className="text-center lg:text-left">
-          <p className="text-[15px] font-normal uppercase tracking-[6px] text-[#999]">
+          <p className="text-[15px] font-normal uppercase tracking-[0.12em] text-[#999]">
             {CULTURE.eyebrow}
           </p>
-          <h2 className="mt-3 font-heading text-[40px] font-medium leading-[1.15] tracking-[3px] text-brand md:text-[52px]">
+          <h2 className="mt-3 font-heading text-[30px] font-medium leading-[1.2] md:leading-[1.15] text-brand md:text-[52px]">
             {CULTURE.title}
           </h2>
           <div className="mt-6">

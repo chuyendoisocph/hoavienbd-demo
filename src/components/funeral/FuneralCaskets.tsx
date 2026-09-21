@@ -13,7 +13,7 @@ export function FuneralCaskets() {
       <div className="mx-auto grid max-w-[1200px] grid-cols-1 gap-12 px-6 lg:grid-cols-2">
         {/* Left: title + casket carousel + copy */}
         <div>
-          <h2 className="font-heading text-[34px] font-medium text-heading md:text-[40px]">
+          <h2 className="font-heading text-[30px] font-medium text-heading md:text-[40px]">
             {CASKETS.title}
           </h2>
           <div className="relative mt-8 aspect-[4/3] w-full overflow-hidden">
@@ -45,9 +45,9 @@ export function FuneralCaskets() {
               />
             ))}
           </div>
-          <p className="mt-8 text-[15px] leading-[1.9] text-[#666]">{CASKETS.bodyOne}</p>
-          <p className="mt-5 text-[15px] leading-[1.9] text-[#666]">{CASKETS.bodyTwo}</p>
-          <p className="mt-5 text-[15px] text-[#666]">{CASKETS.note}</p>
+          <p className="mt-8 text-[16px] leading-[1.9] text-[#666]">{CASKETS.bodyOne}</p>
+          <p className="mt-5 text-[16px] leading-[1.9] text-[#666]">{CASKETS.bodyTwo}</p>
+          <p className="mt-5 text-[16px] text-[#666]">{CASKETS.note}</p>
         </div>
 
         {/* Right: urn grid */}
@@ -66,7 +66,7 @@ export function FuneralCaskets() {
 
       {/* WATCH: The Guardian hearse */}
       <div className="px-6 pb-[20px] pt-[80px] text-center">
-        <p className="mb-[30px] text-[15px] uppercase tracking-[6px] text-[#999]">XEM VIDEO</p>
+        <p className="mb-[30px] text-[15px] uppercase tracking-[0.12em] text-[#999]">XEM VIDEO</p>
         <YoutubeWatch
           youtubeId={CASKET_WATCH.youtubeId}
           poster={CASKET_WATCH.poster}

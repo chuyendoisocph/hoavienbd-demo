@@ -19,7 +19,7 @@ export function SiteHeader() {
           href="/"
           aria-label="Hoa Viên Bình Dương - trang chủ"
           className={cn(
-            "absolute left-[15px] top-1/2 flex h-[45px] w-[140px] -translate-y-1/2 items-center gap-2 rounded-sm",
+            "absolute left-[15px] top-1/2 flex h-[45px] w-auto -translate-y-1/2 items-center gap-2 rounded-sm",
             "min-[980px]:h-[55px] min-[980px]:w-[187px] min-[980px]:gap-3",
             focusRing
           )}
@@ -32,7 +32,7 @@ export function SiteHeader() {
             height={639}
             className="h-[45px] w-[45px] shrink-0 object-contain min-[980px]:h-[55px] min-[980px]:w-[55px]"
           />
-          <span className="font-heading text-[12px] font-bold uppercase leading-[1.15] tracking-[0.35px] text-brand min-[980px]:text-[15px] min-[980px]:tracking-[0.5px]">
+          <span className="whitespace-nowrap font-heading text-[14px] font-bold uppercase leading-[1.15] tracking-[0.35px] text-brand min-[980px]:text-[15px] min-[980px]:tracking-[0.5px]">
             Hoa Viên
             <br />
             Bình Dương
@@ -52,7 +52,7 @@ export function SiteHeader() {
             <span>Tìm kiếm</span>
           </button>
           <a
-            href="/resources/contact-us-new"
+            href="/lien-he"
             className={cn(
               "flex items-center gap-1.5 rounded-sm transition-colors duration-200 hover:text-brand",
               focusRing
@@ -201,7 +201,7 @@ export function SiteHeader() {
                 <span>Tìm kiếm</span>
               </button>
               <a
-                href="/resources/contact-us-new"
+                href="/lien-he"
                 className={cn(
                   "flex items-center gap-1.5 rounded-sm transition-colors duration-200 hover:text-brand",
                   focusRing
