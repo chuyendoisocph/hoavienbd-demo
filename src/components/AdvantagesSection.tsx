@@ -1,13 +1,18 @@
+import Image from "next/image";
 import { ADVANTAGES } from "@/lib/content";
+import { noOrphan } from "@/lib/utils";
 
 type AdvantageCard = (typeof ADVANTAGES.cards)[number];
 
 function AdvantageItem({ card }: { card: AdvantageCard }) {
   return (
     <article>
-      <img
+      <Image
         src={card.icon}
         alt=""
+        width={100}
+        height={100}
+        sizes="100px"
         className="h-[88px] w-[88px] object-contain lg:h-[100px] lg:w-[100px]"
       />
       <div className="mt-5 lg:mt-[27.8px]">
@@ -15,7 +20,7 @@ function AdvantageItem({ card }: { card: AdvantageCard }) {
           {card.title}
         </h3>
         <p className="text-[16px] font-medium leading-[25px] tracking-[0.5px] text-[#666] lg:text-[18px] lg:leading-[27px] lg:tracking-[1px]">
-          {card.description}
+          {noOrphan(card.description)}
         </p>
       </div>
     </article>
@@ -31,7 +36,7 @@ export function AdvantagesSection() {
     <section className="bg-[#F7F9FC] py-[50px] lg:py-[4vw]">
       <div className="mx-auto grid w-[calc(100%-48px)] max-w-[1080px] grid-cols-1 gap-[52px] lg:w-[80%] lg:grid-cols-2 lg:gap-[5.5%]">
         <div className="text-center lg:py-[28px] lg:text-left">
-          <h2 className="font-heading pb-[10px] text-[30px] font-semibold leading-[1.2] text-heading lg:text-[52px] lg:leading-[78px]">
+          <h2 className="font-heading pb-[10px] text-[30px] font-semibold leading-[1.2] text-heading lg:text-[40px] lg:leading-[1.3] xl:text-[52px] xl:leading-[78px]">
             {ADVANTAGES.title}
           </h2>
           <p className="mt-3 text-[18px] font-medium leading-[29px] tracking-[0.5px] text-[#666] lg:mt-0 lg:text-[25px] lg:leading-[37.5px] lg:tracking-[1px]">

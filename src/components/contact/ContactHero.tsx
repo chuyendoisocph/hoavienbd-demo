@@ -1,12 +1,16 @@
+import Image from "next/image";
 import { CONTACT_HERO } from "@/lib/contact-content";
 
 export function ContactHero() {
   return (
     <section className="relative h-[420px] overflow-hidden bg-black md:h-[520px]">
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img
+      <Image
         src={CONTACT_HERO.background}
         alt=""
+        fill
+        sizes="100vw"
+        fetchPriority="high"
+        loading="eager"
         className="absolute inset-0 z-0 h-full w-full object-cover"
       />
       <div className="absolute inset-0 z-[1] bg-black/45" />

@@ -1,11 +1,14 @@
+import Image from "next/image";
 import { CARING } from "@/lib/content";
 
 export function CaringSection() {
   return (
     <section className="relative mb-[30px] flex h-[864px] items-center justify-center overflow-hidden md:mb-0 md:h-[798px]">
-      <img
+      <Image
         src={CARING.background}
         alt=""
+        fill
+        sizes="100vw"
         className="absolute inset-0 w-full h-full object-cover"
       />
       <div className="absolute inset-0 bg-black/35" />

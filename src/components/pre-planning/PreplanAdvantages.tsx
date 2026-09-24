@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { ADVANTAGES } from "@/lib/preplanning-content";
 import { CheckIcon, PlusIcon } from "@/components/icons";
 import { cn } from "@/lib/utils";
@@ -13,12 +14,13 @@ export function PreplanAdvantages() {
 
       {ADVANTAGES.groups.map((group) => {
         const image = (
-          <div className={group.imageLeft ? "lg:order-1" : "lg:order-2"}>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
+          <div className={cn("relative aspect-[4/3]", group.imageLeft ? "lg:order-1" : "lg:order-2")}>
+            <Image
               src={group.image}
               alt={group.label}
-              className="h-full max-h-[360px] w-full rounded-sm object-cover shadow-[0_24px_50px_-28px_rgba(0,0,0,0.45)]"
+              fill
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              className="rounded-sm object-cover shadow-[0_24px_50px_-28px_rgba(0,0,0,0.45)]"
             />
           </div>
         );

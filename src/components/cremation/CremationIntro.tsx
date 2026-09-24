@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { CREMATION_INTRO } from "@/lib/cremation-content";
-import { PlusIcon } from "@/components/icons";
+import { InlineReadMore } from "@/components/InlineReadMore";
 
 export function CremationIntro() {
   return (
@@ -24,15 +24,14 @@ export function CremationIntro() {
           <p className="text-[16px] leading-[1.9] text-[#666]">
             {CREMATION_INTRO.body}
           </p>
-          <a
-            href={CREMATION_INTRO.cta.href}
-            className="mt-6 inline-flex items-center gap-4 text-[18px] font-medium uppercase tracking-[2px] text-brand-link"
+          <InlineReadMore
+            id="cremation-intro-details"
+            align="start"
+            contentClassName="text-[16px] leading-[1.9] text-[#666]"
+            buttonClassName="text-[18px]"
           >
-            <span>{CREMATION_INTRO.cta.label}</span>
-            <span className="grid h-7 w-7 place-items-center rounded-full bg-brand">
-              <PlusIcon className="text-white" style={{ fontSize: "18px" }} />
-            </span>
-          </a>
+            {CREMATION_INTRO.details.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
+          </InlineReadMore>
         </div>
       </div>
     </section>

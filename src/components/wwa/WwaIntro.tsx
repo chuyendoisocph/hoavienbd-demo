@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { WWA_INTRO } from "@/lib/wwa-content";
 
 export function WwaIntro() {
@@ -20,12 +21,13 @@ export function WwaIntro() {
         ))}
       </div>
 
-      <div className="mx-auto mt-12 max-w-[1200px] px-6">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
+      <div className="relative mx-auto mt-12 aspect-[16/9] max-w-[1200px] px-6">
+        <Image
           src={WWA_INTRO.map}
           alt="Sơ đồ Hoa Viên Nghĩa Trang Bình Dương"
-          className="w-full object-contain"
+          fill
+          sizes="(max-width: 1200px) 100vw, 1200px"
+          className="object-contain px-6"
         />
       </div>
     </section>

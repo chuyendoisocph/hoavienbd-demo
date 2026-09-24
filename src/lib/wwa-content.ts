@@ -1,7 +1,7 @@
 /** Nội dung trang Về Chúng Tôi — Hoa Viên Bình Dương */
 
 export const WWA_HERO = {
-  image: "/images/hvbd/linh-hoa-tue-dan-3.jpg",
+  image: "/images/hvbd/park-aerial-roundabout.jpg",
   title: "Về Chúng Tôi",
 };
 
@@ -19,7 +19,7 @@ export interface ValueCard {
   number: string;
   title: string;
   body: string;
-  cta: { label: string; href: string };
+  details: string[];
 }
 
 export const WWA_VALUES = {
@@ -29,19 +29,25 @@ export const WWA_VALUES = {
       number: "01",
       title: "Tầm Nhìn",
       body: "Cam kết mang đến dịch vụ chất lượng, tỉ mỉ, chuyên nghiệp và đậm tính cá nhân hóa.",
-      cta: { label: "TÌM HIỂU THÊM", href: "/lien-he" },
+      details: [
+        "Hoa Viên Bình Dương hướng đến một tổ chức phát triển có trách nhiệm với cộng đồng, đặt sự chu đáo và nhu cầu riêng của từng gia đình làm nền tảng cho chất lượng phục vụ.",
+      ],
     },
     {
       number: "02",
       title: "Sứ Mệnh",
       body: "Kiên định với tinh thần lấy gia đình và thân nhân làm trọng tâm, cung cấp dịch vụ trọn gói chuyên nghiệp.",
-      cta: { label: "TÌM HIỂU THÊM", href: "/lien-he" },
+      details: [
+        "Chúng tôi đồng hành bằng sự thấu cảm trong những thời khắc quan trọng, duy trì quy trình minh bạch, an toàn và tôn trọng phong tục, tín ngưỡng cùng nguyện vọng của mỗi gia đình.",
+      ],
     },
     {
       number: "03",
       title: "Văn Hóa Doanh Nghiệp",
       body: "Với tinh thần chuyên nghiệp và trách nhiệm đối với nghề nghiệp cao quý này, Hoa Viên Bình Dương luôn nỗ lực vươn tới sự xuất sắc.",
-      cta: { label: "TÌM HIỂU THÊM", href: "/lien-he" },
+      details: [
+        "Sự chính trực, tinh thần phục vụ và thái độ tận tâm là những giá trị được gìn giữ trong từng công việc. Đội ngũ luôn học hỏi và cải tiến để mang đến trải nghiệm chỉn chu, nhân văn hơn cho khách hàng.",
+      ],
     },
   ] as ValueCard[],
 };
@@ -52,10 +58,10 @@ export interface Stat {
   label: string;
 }
 
-// Số liệu mang tính minh họa — cập nhật theo số liệu thật của Hoa Viên Bình Dương.
+// Số liệu đã được đối chiếu với website chính thức CPHACO (09/2026).
 export const WWA_STATS: Stat[] = [
   { value: 300, suffix: " ha", label: "Quy mô quy hoạch" },
-  { value: 20, suffix: "+", label: "Năm hình thành và phát triển" },
+  { value: 2006, suffix: "", label: "Quy hoạch và phát triển từ năm" },
   { value: 24, suffix: "/7", label: "Tư vấn và hỗ trợ" },
 ];
 

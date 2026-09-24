@@ -10,13 +10,21 @@ export const PREPLAN_INTRO = {
   blocks: [
     {
       title: "Chuẩn bị hậu sự từ sớm",
-      body: "Chúng ta chuẩn bị cho hầu hết mọi điều trong cuộc sống. Để phòng ngừa rủi ro tai nạn, bệnh tật, ta mua bảo hiểm. Để kết hôn, các cặp đôi dành hàng tháng, thậm chí hàng năm để mọi việc được vẹn toàn. Để bảo đảm tương lai học vấn của con cái, ta lập quỹ giáo dục. Để sống trọn vẹn, ta có những danh sách ước mơ. Nhưng khoan đã, phải chăng ta đang quên mất điều gì đó?",
-      cta: { label: "TÌM HIỂU THÊM", href: "/lien-he" },
+      body: [
+        "Trong cuộc sống, chúng ta thường chuẩn bị cho nhiều cột mốc quan trọng: xây dựng gia đình, chăm lo sức khỏe, hoạch định tài chính và vun đắp tương lai cho con cái. Thế nhưng, việc trao đổi về những mong muốn ở chặng cuối cuộc đời lại thường bị trì hoãn vì tâm lý e ngại.",
+        "Cuộc đời là hữu hạn. Khi một người ra đi, gia đình không chỉ đối diện với mất mát mà còn phải đưa ra nhiều quyết định trong thời gian ngắn. Việc chủ động tìm hiểu và sắp xếp từ sớm giúp những quyết định ấy được cân nhắc trong sự bình tĩnh, tôn trọng và yêu thương.",
+        "Chuẩn bị trước không phải là bi quan. Đó là cách mỗi người thể hiện trách nhiệm với lựa chọn của mình, đồng thời giảm bớt áp lực cho những người thân yêu.",
+      ],
+      cta: { label: "TÌM HIỂU THÊM" },
     },
     {
       title: "Chuẩn bị hậu sự từ sớm là gì?",
-      body: "Chuẩn bị hậu sự từ sớm là việc chủ động trao đổi và sắp xếp những nguyện vọng quan trọng trước khi nhu cầu thực sự phát sinh. Việc chuẩn bị có thể bao gồm hình thức an táng hoặc hỏa táng, nghi thức, nơi an nghỉ và kế hoạch tài chính phù hợp.",
-      cta: { label: "TÌM HIỂU THÊM", href: "/lien-he" },
+      body: [
+        "Chuẩn bị hậu sự từ sớm là quá trình chủ động tìm hiểu, trao đổi và ghi nhận những nguyện vọng quan trọng trước khi nhu cầu thực tế phát sinh. Nội dung có thể bao gồm hình thức an táng hoặc hỏa táng, nơi an nghỉ, nghi thức tưởng niệm, người cần liên hệ và ngân sách dự kiến.",
+        "Mỗi gia đình có tín ngưỡng, truyền thống và hoàn cảnh khác nhau. Vì vậy, việc chuẩn bị nên bắt đầu bằng một cuộc trò chuyện cởi mở, sau đó mới tìm hiểu các lựa chọn phù hợp và thống nhất cùng người thân.",
+        "Hoa Viên Bình Dương đồng hành bằng việc cung cấp thông tin và tư vấn rõ ràng, để gia đình có đủ thời gian cân nhắc trước khi đưa ra quyết định.",
+      ],
+      cta: { label: "TÌM HIỂU THÊM" },
     },
   ],
 };
@@ -29,11 +37,11 @@ export const ADVANTAGES = {
       image: "/images/775_Web.jpg",
       imageLeft: false,
       items: [
-        "Chủ động chuẩn bị trách nhiệm tài chính cho hậu sự",
-        "Có thời gian cân nhắc kỹ các lựa chọn quan trọng",
-        "Được chủ động lựa chọn cách mình muốn được tưởng nhớ và tôn vinh",
-        "Có thể tìm hiểu phương án thanh toán phù hợp",
-        "An tâm hơn khi nguyện vọng đã được sắp xếp rõ ràng",
+        "Chủ động bày tỏ nguyện vọng và cách mình muốn được tưởng nhớ",
+        "Có đủ thời gian tìm hiểu, so sánh và cân nhắc các lựa chọn",
+        "Lựa chọn hình thức an nghỉ phù hợp với tín ngưỡng và truyền thống gia đình",
+        "Chủ động dự trù ngân sách và tìm hiểu phương án phù hợp",
+        "An tâm hơn khi những mong muốn quan trọng đã được ghi nhận rõ ràng",
       ],
     },
     {
@@ -41,47 +49,49 @@ export const ADVANTAGES = {
       image: "/images/115_Web.jpg",
       imageLeft: true,
       items: [
-        "Gia đình biết cần liên hệ với ai khi có việc khẩn cấp",
-        "Gia đình không bị áp lực phải đưa ra quyết định vội vàng",
-        "Gia đình có thêm thời gian tưởng nhớ và ở bên nhau",
-        "Gia đình tránh được việc bất ngờ phải chi một khoản lớn để lo tang lễ",
-        "Gia đình được bảo vệ trước chi phí tang lễ ngày càng tăng do lạm phát",
+        "Biết rõ nguyện vọng của người thân và đầu mối cần liên hệ",
+        "Giảm áp lực phải đưa ra nhiều quyết định trong thời gian ngắn",
+        "Hạn chế những khác biệt ý kiến khi sắp xếp nghi thức và nơi an nghỉ",
+        "Có cơ sở chủ động chuẩn bị tài chính thay vì xử lý hoàn toàn bị động",
+        "Dành nhiều thời gian hơn cho việc tưởng nhớ, tiễn biệt và nâng đỡ nhau",
       ],
     },
   ],
-  cta: { label: "TÌM HIỂU", href: "/lien-he" },
+  cta: { label: "ĐẶT LỊCH TƯ VẤN", href: "/lien-he" },
 };
 
 export const PREPLAN_ARTICLES = {
-  eyebrow: "Chuẩn Bị TỪ SỚM",
+  eyebrow: "ĐỌC",
+  title: "Chuẩn Bị Từ Sớm",
   cards: [
     { title: "Chuẩn bị hậu sự từ sớm gồm những gì?", image: "/images/252a.jpg", href: "/bai-viet/chuan-bi-hau-su-tu-som" },
     { title: "Vì sao nên trao đổi nguyện vọng cùng gia đình?", image: "/images/1427.jpg", href: "/bai-viet/chuan-bi-hau-su-tu-som" },
-    { title: "Gói dịch vụ trọn gói là gì?", image: "/images/80_1a.jpg", href: "/bai-viet" },
+    { title: "An táng hay hỏa táng: lựa chọn nào phù hợp?", image: "/images/80_1a.jpg", href: "/bai-viet/an-tang-hay-hoa-tang" },
   ],
 };
 
 export const PREPLAN_STEPS = {
   title: "Cẩm nang 6 bước chuẩn bị hậu sự từ sớm",
   body: [
-    "Chuẩn bị hậu sự từ sớm có thể gợi nhiều cảm xúc khi mỗi người đối diện với sự hữu hạn của cuộc đời. Tuy vậy, việc sắp xếp rõ ràng cũng giúp bản thân và gia đình thêm an tâm để sống trọn vẹn trong hiện tại.",
-    "Đây là một quyết định cần thời gian và sự đồng thuận. Sáu bước dưới đây giúp mỗi gia đình có cơ sở để tìm hiểu, trao đổi và lựa chọn một cách bình tĩnh.",
+    "Việc nghĩ đến chặng cuối cuộc đời có thể gợi nhiều cảm xúc. Tuy vậy, khi những mong muốn quan trọng được trao đổi và sắp xếp rõ ràng, mỗi người có thể an tâm hơn để sống trọn vẹn trong hiện tại.",
+    "Giống như những quyết định lớn khác, chuẩn bị hậu sự cần thời gian tìm hiểu và sự đồng thuận của gia đình. Sáu bước dưới đây là điểm khởi đầu để quá trình ấy trở nên nhẹ nhàng, rõ ràng và phù hợp hơn.",
   ],
   steps: [
-    "Tìm hiểu và so sánh các đơn vị dịch vụ tang lễ",
-    "Đánh giá ngân sách và phương án thanh toán",
-    "Cân nhắc cách bản thân muốn được tưởng nhớ và tôn vinh",
-    "Quyết định hình thức an nghỉ mong muốn",
-    "Cân nhắc việc đóng góp cho một mục đích thiện nguyện",
-    "Đảm bảo người thân được biết về di nguyện và các sắp xếp đã thực hiện",
+    "Tìm hiểu nhu cầu của bản thân và các dịch vụ hiện có",
+    "Trao đổi cởi mở với những người thân trong gia đình",
+    "Lựa chọn hình thức an táng hoặc hỏa táng phù hợp",
+    "Cân nhắc nơi an nghỉ và nghi thức tưởng niệm mong muốn",
+    "Dự trù ngân sách và tìm hiểu phương án thanh toán",
+    "Ghi nhận nguyện vọng, thông tin liên hệ và chia sẻ với người thân",
   ],
-  cta: { label: "CÁC BƯỚC TIẾP THEO", href: "/lien-he" },
+  cta: { label: "TRAO ĐỔI CÙNG CHUYÊN VIÊN", href: "/lien-he" },
 };
 
 export const PREPLAN_RESOURCES = {
+  eyebrow: "BƯỚC TIẾP THEO",
   title: "Thông Tin Hữu Ích",
   links: [
-    { title: "So sánh các gói dịch vụ", href: "/dich-vu/tang-le" },
+    { title: "Tìm hiểu dịch vụ tang lễ", href: "/dich-vu/tang-le" },
     { title: "Phần mộ tại Hoa Viên Bình Dương", href: "/dich-vu/phan-mo" },
     { title: "Tìm hiểu về dịch vụ lưu tro cốt", href: "/dich-vu/luu-tro-cot" },
   ],

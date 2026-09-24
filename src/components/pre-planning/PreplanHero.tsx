@@ -1,12 +1,16 @@
+import Image from "next/image";
 import { PREPLAN_HERO } from "@/lib/preplanning-content";
 
 export function PreplanHero() {
   return (
     <section className="relative h-[460px] overflow-hidden bg-black md:h-[600px]">
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img
+      <Image
         src={PREPLAN_HERO.background}
         alt=""
+        fill
+        sizes="100vw"
+        fetchPriority="high"
+        loading="eager"
         className="absolute inset-0 z-0 h-full w-full object-cover"
       />
       <div className="absolute inset-0 z-[1] bg-black/35" />

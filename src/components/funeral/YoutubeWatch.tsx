@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { PlayIcon } from "@/components/icons";
 import { cn } from "@/lib/utils";
 
@@ -34,8 +35,13 @@ export function YoutubeWatch({ youtubeId, poster, className }: YoutubeWatchProps
         />
       ) : (
         <>
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={poster} alt="" className="h-full w-full object-cover" />
+          <Image
+            src={poster}
+            alt=""
+            fill
+            sizes="(max-width: 1024px) 100vw, 50vw"
+            className="object-cover"
+          />
           <button
             type="button"
             aria-label="Phát video"

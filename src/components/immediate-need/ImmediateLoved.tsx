@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { LOVED_ONE } from "@/lib/immediate-content";
 import { PlusIcon } from "@/components/icons";
 
@@ -6,12 +7,13 @@ export function ImmediateLoved() {
     <section className="bg-white py-[70px]">
       <div className="mx-auto grid max-w-[1200px] grid-cols-1 items-start gap-12 px-6 lg:grid-cols-2">
         {/* Left: image */}
-        <div className="lg:sticky lg:top-24">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
+        <div className="relative aspect-[4/3] lg:sticky lg:top-24">
+          <Image
             src={LOVED_ONE.image}
             alt={LOVED_ONE.title}
-            className="h-full w-full rounded-sm object-cover shadow-[0_24px_50px_-28px_rgba(0,0,0,0.5)]"
+            fill
+            sizes="(max-width: 1024px) 100vw, 50vw"
+            className="rounded-sm object-cover shadow-[0_24px_50px_-28px_rgba(0,0,0,0.5)]"
           />
         </div>
 

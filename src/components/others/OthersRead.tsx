@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { OTHERS_READ } from "@/lib/others-content";
 import { cn } from "@/lib/utils";
 
@@ -14,12 +15,13 @@ export function OthersRead() {
         <div className="grid grid-cols-1 gap-[40px] md:grid-cols-3">
           {OTHERS_READ.cards.map((card) => (
             <a key={card.title} href={card.href} className="group block">
-              <div className="overflow-hidden">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+              <div className="relative aspect-[16/10] overflow-hidden">
+                <Image
                   src={card.image}
                   alt={card.title}
-                  className="aspect-[16/10] w-full object-cover transition-transform duration-[400ms] group-hover:scale-105"
+                  fill
+                  sizes="(max-width: 767px) 100vw, 33vw"
+                  className="object-cover transition-transform duration-[400ms] group-hover:scale-105"
                 />
               </div>
               <h3

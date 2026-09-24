@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { PRODUCTS, type OtherProduct } from "@/lib/others-content";
 import { cn } from "@/lib/utils";
 
@@ -19,13 +20,14 @@ function Carousel({
     <div>
       <div className="relative aspect-[4/3] w-full overflow-hidden">
         {images.map((src, i) => (
-          // eslint-disable-next-line @next/next/no-img-element
-          <img
+          <Image
             key={src}
             src={src}
             alt={`${title} ${i + 1}`}
+            fill
+            sizes="(max-width: 1024px) 100vw, 50vw"
             className={cn(
-              "absolute inset-0 h-full w-full object-cover transition-opacity duration-500",
+              "object-cover transition-opacity duration-500",
               i === active ? "opacity-100" : "opacity-0",
             )}
           />

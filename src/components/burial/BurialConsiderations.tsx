@@ -1,8 +1,10 @@
 "use client";
 
+import Image from "next/image";
 import { useState } from "react";
 import { CONSIDERATIONS, CEMETERIES } from "@/lib/burial-content";
 import { PlusIcon } from "@/components/icons";
+import { InlineReadMore } from "@/components/InlineReadMore";
 import { cn } from "@/lib/utils";
 
 export function BurialConsiderations() {
@@ -28,11 +30,13 @@ export function BurialConsiderations() {
           >
             {CONSIDERATIONS.title}
           </h2>
-          <div className="lg:translate-y-6">
-            <img
+          <div className="relative aspect-[4/3] lg:translate-y-6">
+            <Image
               src={CONSIDERATIONS.bannerImage}
               alt={CONSIDERATIONS.title}
-              className="h-full max-h-[420px] w-full rounded object-cover"
+              fill
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              className="rounded object-cover"
             />
           </div>
         </div>
@@ -50,6 +54,7 @@ export function BurialConsiderations() {
               <button
                 type="button"
                 aria-expanded={isOpen}
+                aria-controls={`burial-consideration-${index}`}
                 onClick={() => toggle(index)}
                 className="flex w-full cursor-pointer items-center justify-between gap-4 text-left"
               >
@@ -66,6 +71,8 @@ export function BurialConsiderations() {
                 />
               </button>
               <div
+                id={`burial-consideration-${index}`}
+                aria-hidden={!isOpen}
                 className={cn(
                   "grid overflow-hidden transition-all duration-300 ease-in-out",
                   isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0",
@@ -80,26 +87,40 @@ export function BurialConsiderations() {
         })}
       </div>
 
-      {/* Cemeteries note */}
-      <div className="bg-white px-6 pb-[80px] text-center">
-        <h2
-          className="font-heading text-brand"
-          style={{ fontSize: "clamp(30px, 4vw, 40px)" }}
-        >
-          {CEMETERIES.title}
-        </h2>
-        <p className="mx-auto mt-6 max-w-[820px] text-[16px] leading-[1.9] text-[#666]">
-          {CEMETERIES.body}
-        </p>
-        <a
-          href={CEMETERIES.cta.href}
-          className="mt-8 inline-flex items-center gap-3 text-[18px] tracking-[2px] text-brand-link"
-        >
-          {CEMETERIES.cta.label}
-          <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-brand text-white">
-            <PlusIcon aria-hidden="true" style={{ fontSize: "16px" }} />
-          </span>
-        </a>
+      {/* Difference between memorial parks and traditional cemeteries */}
+      <div className="mx-auto grid max-w-[1320px] grid-cols-1 items-center gap-14 px-6 pb-24 pt-10 lg:grid-cols-[1.12fr_0.88fr] lg:gap-24">
+        <div className="relative pb-5 pr-5 md:pb-9 md:pr-9">
+          <div aria-hidden="true" className="absolute inset-0 translate-x-5 translate-y-5 bg-[#d7d7d7] md:translate-x-9 md:translate-y-9" />
+          <div className="relative aspect-[3/2] overflow-hidden bg-[#ecece8]">
+            <Image
+              src={CEMETERIES.image}
+              alt={CEMETERIES.imageAlt}
+              fill
+              sizes="(max-width: 1024px) 100vw, 58vw"
+              className="object-cover"
+            />
+          </div>
+        </div>
+
+        <div className="lg:pr-6">
+          <h2
+            className="font-heading font-medium leading-[1.18] text-brand"
+            style={{ fontSize: "clamp(30px, 3vw, 40px)" }}
+          >
+            {CEMETERIES.title}
+          </h2>
+          <p className="mt-8 text-[16px] leading-[1.9] text-[#333]">
+            {CEMETERIES.body}
+          </p>
+          <InlineReadMore
+            id="cemeteries-details"
+            align="end"
+            contentClassName="text-[16px] leading-[1.9] text-[#555]"
+            buttonClassName="text-[15px]"
+          >
+            {CEMETERIES.details.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
+          </InlineReadMore>
+        </div>
       </div>
     </section>
   );

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { ARTICLES } from "@/lib/articles-content";
 
 export function ArticleGrid() {
@@ -7,12 +8,13 @@ export function ArticleGrid() {
         <div className="grid grid-cols-1 gap-x-[30px] gap-y-[50px] sm:grid-cols-2 lg:grid-cols-3">
           {ARTICLES.map((article) => (
             <article key={article.href} className="group flex flex-col">
-              <a href={article.href} className="block overflow-hidden">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+              <a href={article.href} className="relative block aspect-[16/10] overflow-hidden">
+                <Image
                   src={article.image}
                   alt={article.title}
-                  className="aspect-[16/10] w-full object-cover transition-transform duration-[400ms] group-hover:scale-105"
+                  fill
+                  sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 33vw"
+                  className="object-cover transition-transform duration-[400ms] group-hover:scale-105"
                 />
               </a>
               <a href={article.href}>

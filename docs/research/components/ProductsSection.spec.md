@@ -7,7 +7,7 @@
 ## DOM Structure
 White section, centered container (max ~1200px), padding ~80px 0. 2-column layout:
 - **Left (~45%):** H2 "Our Products" + a bulleted list of products + two buttons stacked ("READ MORE" outline, then "360 SITE VIEW" solid indigo).
-- **Right (~55%):** a single tall photo (columbarium interior with gold chairs) `/images/85_Weba.jpg`, object-cover.
+- **Right (~55%):** a real landscape photo of the mộ song thân area at Hoa Viên Bình Dương, `/images/hvbd/TV da sua.jpg`, object-cover. Like Nirvana's representative columbarium image, this uses one flagship product to visually anchor the broader product-and-service group.
 
 ## Computed Styles (exact)
 - H2 "Our Products": Didact Gothic; fontSize 52px; fontWeight 600; color #333; margin-bottom 24px.
@@ -22,7 +22,8 @@ White section, centered container (max ~1200px), padding ~80px 0. 2-column layou
 - Outline button hover: bg light grey.
 
 ## Assets
-- Right image: `/images/85_Weba.jpg` (PRODUCTS.image).
+- Right image: `/images/hvbd/TV da sua.jpg` (PRODUCTS.image).
+- Alt text: `Khu mộ song thân trong cảnh quan xanh tại Hoa Viên Bình Dương`.
 
 ## Text Content (verbatim)
 From `PRODUCTS` in `@/lib/content`:

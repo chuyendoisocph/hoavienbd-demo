@@ -1,77 +1,56 @@
-"use client";
-
-import { useState } from "react";
-import { CASKETS, CASKET_WATCH } from "@/lib/funeral-content";
-import { YoutubeWatch } from "@/components/funeral/YoutubeWatch";
-import { cn } from "@/lib/utils";
+import Image from "next/image";
+import Link from "next/link";
+import { ArrowRight, Check } from "lucide-react";
+import { FUNERAL_SUPPLIES } from "@/lib/funeral-content";
 
 export function FuneralCaskets() {
-  const [active, setActive] = useState(0);
-
   return (
-    <section className="bg-white py-[70px]">
-      <div className="mx-auto grid max-w-[1200px] grid-cols-1 gap-12 px-6 lg:grid-cols-2">
-        {/* Left: title + casket carousel + copy */}
+    <section className="bg-[#f7f7f4] py-16 md:py-24">
+      <div className="mx-auto grid max-w-[1200px] grid-cols-1 items-center gap-10 px-6 lg:grid-cols-[1.08fr_0.92fr] lg:gap-16">
+        <div className="relative aspect-[4/3] overflow-hidden bg-[#e8e8e3]">
+          <Image
+            src={FUNERAL_SUPPLIES.image}
+            alt={FUNERAL_SUPPLIES.imageAlt}
+            fill
+            sizes="(max-width: 1024px) 100vw, 54vw"
+            className="object-cover"
+          />
+        </div>
+
         <div>
-          <h2 className="font-heading text-[30px] font-medium text-heading md:text-[40px]">
-            {CASKETS.title}
+          <p className="text-[13px] font-semibold uppercase tracking-[0.2em] text-brand">
+            {FUNERAL_SUPPLIES.eyebrow}
+          </p>
+          <h2 className="mt-4 font-heading text-[34px] font-medium leading-tight text-heading md:text-[44px]">
+            {FUNERAL_SUPPLIES.title}
           </h2>
-          <div className="relative mt-8 aspect-[4/3] w-full overflow-hidden">
-            {CASKETS.caskets.map((src, i) => (
-              // eslint-disable-next-line @next/next/no-img-element
-              <img
-                key={src}
-                src={src}
-                alt="Casket"
-                className={cn(
-                  "absolute inset-0 h-full w-full object-contain transition-opacity duration-500",
-                  i === active ? "opacity-100" : "opacity-0",
-                )}
-              />
-            ))}
-          </div>
-          <div className="mt-4 flex items-center gap-2">
-            {CASKETS.caskets.map((src, i) => (
-              <button
-                key={src}
-                type="button"
-                aria-label={`Show casket ${i + 1}`}
-                aria-current={i === active}
-                onClick={() => setActive(i)}
-                className={cn(
-                  "h-2.5 w-2.5 rounded-full transition-colors",
-                  i === active ? "bg-brand" : "bg-black/20",
-                )}
-              />
-            ))}
-          </div>
-          <p className="mt-8 text-[16px] leading-[1.9] text-[#666]">{CASKETS.bodyOne}</p>
-          <p className="mt-5 text-[16px] leading-[1.9] text-[#666]">{CASKETS.bodyTwo}</p>
-          <p className="mt-5 text-[16px] text-[#666]">{CASKETS.note}</p>
-        </div>
+          <p className="mt-6 text-[16px] leading-[1.85] text-[#606060]">
+            {FUNERAL_SUPPLIES.body}
+          </p>
 
-        {/* Right: urn grid */}
-        <div className="grid grid-cols-2 gap-x-8 gap-y-10 self-start pt-4">
-          {CASKETS.urns.map((urn) => (
-            <div key={urn.image} className="flex flex-col items-center text-center">
-              <div className="flex h-[220px] w-full items-end justify-center">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={urn.image} alt={urn.label} className="max-h-[220px] object-contain" />
-              </div>
-              <p className="mt-4 text-[16px] leading-snug text-heading">{urn.label}</p>
-            </div>
-          ))}
-        </div>
-      </div>
+          <ul className="mt-7 space-y-4">
+            {FUNERAL_SUPPLIES.items.map((item) => (
+              <li key={item} className="flex items-start gap-3 text-[15px] leading-7 text-[#4f4f4f]">
+                <span className="mt-1 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-brand text-white">
+                  <Check aria-hidden="true" className="h-3 w-3" strokeWidth={3} />
+                </span>
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
 
-      {/* WATCH: The Guardian hearse */}
-      <div className="px-6 pb-[20px] pt-[80px] text-center">
-        <p className="mb-[30px] text-[15px] uppercase tracking-[0.12em] text-[#999]">XEM VIDEO</p>
-        <YoutubeWatch
-          youtubeId={CASKET_WATCH.youtubeId}
-          poster={CASKET_WATCH.poster}
-          className="mx-auto aspect-[16/8] max-w-[1180px]"
-        />
+          <p className="mt-7 border-l-2 border-brand/50 pl-4 text-[14px] leading-7 text-[#757575]">
+            {FUNERAL_SUPPLIES.note}
+          </p>
+
+          <Link
+            href={FUNERAL_SUPPLIES.cta.href}
+            className="mt-8 inline-flex min-h-12 items-center gap-3 bg-brand px-6 py-3 text-[13px] font-semibold tracking-[0.12em] text-white transition-colors hover:bg-brand/90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
+          >
+            {FUNERAL_SUPPLIES.cta.label}
+            <ArrowRight aria-hidden="true" className="h-4 w-4" />
+          </Link>
+        </div>
       </div>
     </section>
   );

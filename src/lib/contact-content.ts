@@ -96,17 +96,3 @@ export const CONTACT_FORM = {
   ],
   submit: "GỬI",
 };
-
-export const CAREER = {
-  eyebrow: "GIA NHẬP",
-  title: "Cơ Hội Nghề Nghiệp",
-  image: "/images/1642a.jpg",
-  body: [
-    "Hãy cùng kiến tạo tương lai và trở thành một phần của đội ngũ Hoa Viên Bình Dương. Với đội ngũ nhân sự đa lĩnh vực, chúng tôi mang đến nhiều lộ trình nghề nghiệp đầy thử thách để bạn phát triển và hoàn thiện kỹ năng của mình.",
-    "Khám phá các vị trí đang tuyển dụng và trò chuyện cùng chúng tôi. Mở ra cánh cửa đến với những cơ hội mới mẻ và thú vị, cùng nhau tạo nên sự khác biệt!",
-  ],
-  cta: {
-    label: "Tìm hiểu thêm",
-    href: "/ve-chung-toi",
-  },
-};

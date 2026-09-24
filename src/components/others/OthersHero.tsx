@@ -1,12 +1,16 @@
+import Image from "next/image";
 import { OTHERS_HERO } from "@/lib/others-content";
 
 export function OthersHero() {
   return (
     <section className="relative h-[460px] overflow-hidden bg-black md:h-[600px]">
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img
+      <Image
         src={OTHERS_HERO.image}
         alt=""
+        fill
+        sizes="100vw"
+        fetchPriority="high"
+        loading="eager"
         className="absolute inset-0 z-0 h-full w-full object-cover"
       />
 

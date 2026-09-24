@@ -43,13 +43,13 @@ export const TOP_NAV: NavItem[] = [
   },
 ];
 
-// Tổng đài dịch vụ được công bố trên website chính thức của CPHACO.
+// Tổng đài dịch vụ 24/7 đã được đối chiếu trên cphaco.vn (09/2026).
 export const CARELINE = "0818 555 444";
 
 export const HERO = {
   video: "/videos/hero-dji0305-1080.mp4",
   videoMobile: "/videos/hero-dji0305-720.mp4",
-  image: "/images/hero-dji0305-poster.webp",
+  image: "/images/hero-dji0305-poster-optimized.webp",
   title: "Hoa Viên Bình Dương",
   subtitle: "Nơi Cuộc Sống Vĩnh Hằng",
 };
@@ -71,7 +71,7 @@ export const CAROUSEL_SLIDES: CarouselSlide[] = [
     title: "Lễ Cầu Siêu – Cầu An",
     body: "Các nghi lễ tâm linh trang trọng được tổ chức thường niên, gửi gắm lòng thành kính và sự tri ân đến tổ tiên.",
     image: "/images/hvbd/dai-le-cau-sieu-cau-an.jpg",
-    cta: { label: "Tìm hiểu thêm", href: "/lien-he" },
+    cta: { label: "LIÊN HỆ TƯ VẤN", href: "/lien-he" },
   },
   {
     title: "Dịch Vụ Tang Lễ Trọn Gói",
@@ -83,7 +83,7 @@ export const CAROUSEL_SLIDES: CarouselSlide[] = [
     title: "Tham Quan Miễn Phí",
     body: "Hệ thống xe đưa đón tận tình, mời quý khách tham quan và tìm hiểu hoa viên trước khi quyết định.",
     image: "/images/hvbd/tour-bus-gate.jpg",
-    cta: { label: "Tìm hiểu thêm", href: "/lien-he" },
+    cta: { label: "ĐẶT LỊCH THAM QUAN", href: "/lien-he" },
   },
 ];
 
@@ -91,7 +91,10 @@ export const CULTURE = {
   eyebrow: "HOA VIÊN BÌNH DƯƠNG",
   title: "Văn Hóa & Tương Lai",
   body: "Một nền văn hóa đã trường tồn hàng ngàn năm tựa như dòng nước – góp nhặt từng chút một để rồi hình thành nên bề dày lịch sử. Hoa Viên Bình Dương thấu hiểu sâu sắc điều này, tự hào gìn giữ truyền thống và văn hóa hiếu nghĩa của dân tộc bằng việc mang đến hệ thống dịch vụ tang lễ toàn diện, để tôn vinh và trân trọng từng cuộc đời.",
-  cta: { label: "TÌM HIỂU THÊM", href: "/ve-chung-toi" },
+  details: [
+    "Chúng tôi nhìn cuộc sống bằng sự trân trọng và lắng nghe bằng cả tấm lòng. Mỗi nghi thức tưởng niệm không chỉ là lời tiễn biệt mà còn là cách gia đình gìn giữ ký ức, tình thân và những giá trị đã được trao truyền qua nhiều thế hệ.",
+    "Bằng việc kết hợp truyền thống với cách tổ chức phù hợp đời sống hiện đại, Hoa Viên Bình Dương hướng đến một không gian nơi mọi người đã khuất đều được tưởng nhớ trang nghiêm, không phân biệt tín ngưỡng hay hoàn cảnh.",
+  ],
 };
 
 export const CARING = {
@@ -134,7 +137,8 @@ export const PRODUCTS = {
     { label: "Tư Vấn Thiết Kế & Xây Dựng Mộ", href: "/dich-vu/dich-vu-khac" },
     { label: "Sanh Phần", href: "/dich-vu/dich-vu-khac" },
   ] as ProductItem[],
-  image: "/images/hvbd/columbaria-white.jpg",
+  image: "/images/hvbd/TV da sua.jpg",
+  imageAlt: "Khu mộ song thân trong cảnh quan xanh tại Hoa Viên Bình Dương",
 };
 
 export const SITE_VIEW_360 = {
@@ -144,7 +148,7 @@ export const SITE_VIEW_360 = {
     "Khám phá không gian xanh, cảnh quan và các công trình nổi bật của hoa viên qua góc nhìn toàn cảnh.",
   video: "/videos/toan-canh-dji0304-1080.mp4",
   videoMobile: "/videos/toan-canh-dji0304-720.mp4",
-  poster: "/images/toan-canh-dji0304-poster.webp",
+  poster: "/images/toan-canh-dji0304-poster-optimized.webp",
 };
 
 export const ADVANTAGES = {

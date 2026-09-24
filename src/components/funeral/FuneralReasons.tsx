@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { CARE_TEAM, REASONS } from "@/lib/funeral-content";
-import { PlusIcon } from "@/components/icons";
+import { DetailAccordion } from "@/components/DetailAccordion";
 
 export function FuneralReasons() {
   return (
@@ -14,18 +14,10 @@ export function FuneralReasons() {
           <p className="mt-2 text-[18px] text-[#666]">{REASONS.subtitle}</p>
 
           <div className="mt-10 flex flex-col gap-5">
-            {REASONS.items.map((item) => (
-              <div
-                key={item}
-                className="flex items-center justify-between gap-4 border-l-4 border-brand bg-white px-5 py-[18px] shadow-[0_8px_24px_-16px_rgba(0,0,0,0.35)]"
-              >
-                <span className="text-[17px] font-medium leading-[1.3] text-brand">
-                  {item}
-                </span>
-                <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-brand text-white">
-                  <PlusIcon className="h-3.5 w-3.5" />
-                </span>
-              </div>
+            {REASONS.items.map((item, index) => (
+              <DetailAccordion key={item.title} id={`funeral-reason-${index}`} title={item.title}>
+                <p>{item.body}</p>
+              </DetailAccordion>
             ))}
           </div>
         </div>

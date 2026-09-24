@@ -33,7 +33,7 @@ function LinkGroup({
 }) {
   return (
     <div>
-      <h3 className="pb-[10px] text-[20px] leading-[30px] font-medium tracking-[1px] !text-[#4453c4]">
+      <h3 className="pb-[10px] text-[20px] leading-[30px] font-medium tracking-[1px] !text-[#aeb7ff]">
         {heading}
       </h3>
       <ul className="space-y-[18px]">
@@ -113,7 +113,7 @@ export function SiteFooter() {
             ))}
           </div>
 
-          <p className="mt-[42px] text-[14px] leading-[21px] tracking-[1px] text-white/70">
+          <p className="mt-[42px] text-[14px] leading-[21px] tracking-[1px] text-white/90">
             {FOOTER_ADDRESS.copyright}
           </p>
         </div>
@@ -147,11 +147,11 @@ export function SiteFooter() {
           </div>
 
           <div className="mt-[12px] flex flex-col gap-[5px] text-[14px] leading-[21px] tracking-[1px] text-white/60">
-            <a href="#" className="transition-colors hover:text-white">
+            <a
+              href="/chinh-sach-quyen-rieng-tu"
+              className="transition-colors hover:text-white"
+            >
               Chính sách bảo mật
-            </a>
-            <a href="#" className="transition-colors hover:text-white">
-              Điều khoản sử dụng
             </a>
           </div>
         </div>

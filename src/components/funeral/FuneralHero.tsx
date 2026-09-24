@@ -8,7 +8,8 @@ export function FuneralHero() {
         src={FUNERAL_HERO.image}
         alt="Đội ngũ thực hiện nghi lễ tang lễ tại Hoa Viên Bình Dương"
         fill
-        priority
+        fetchPriority="high"
+        loading="eager"
         sizes="100vw"
         className="z-0 object-cover object-center"
       />

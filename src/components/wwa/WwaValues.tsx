@@ -1,5 +1,5 @@
 import { WWA_VALUES } from "@/lib/wwa-content";
-import { PlusIcon } from "@/components/icons";
+import { InlineReadMore } from "@/components/InlineReadMore";
 
 export function WwaValues() {
   return (
@@ -10,7 +10,7 @@ export function WwaValues() {
       <div className="absolute inset-0 bg-[#1b2447]/80" />
 
       <div className="relative mx-auto grid max-w-[1200px] grid-cols-1 gap-12 px-6 md:grid-cols-3">
-        {WWA_VALUES.cards.map((card) => (
+        {WWA_VALUES.cards.map((card, index) => (
           <div key={card.title} className="text-center text-white">
             <p
               className="font-heading font-bold leading-none text-white/30"
@@ -22,15 +22,15 @@ export function WwaValues() {
             <p className="mx-auto mt-4 max-w-[320px] text-[16px] leading-[1.8] text-white/90">
               {card.body}
             </p>
-            <a
-              href={card.cta.href}
-              className="mt-6 inline-flex items-center gap-3 text-[14px] uppercase tracking-[2px] text-white"
+            <InlineReadMore
+              id={`value-details-${index}`}
+              align="center"
+              theme="dark"
+              contentClassName="text-[16px] leading-[1.8] text-white/90"
+              buttonClassName="text-[14px]"
             >
-              {card.cta.label}
-              <span className="inline-flex h-7 w-7 items-center justify-center rounded-full border border-white">
-                <PlusIcon className="h-3.5 w-3.5" />
-              </span>
-            </a>
+              {card.details.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
+            </InlineReadMore>
           </div>
         ))}
       </div>

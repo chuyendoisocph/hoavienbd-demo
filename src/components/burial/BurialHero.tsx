@@ -1,13 +1,17 @@
+import Image from "next/image";
 import { HeroVideo } from "@/components/HeroVideo";
 import { BURIAL_HERO } from "@/lib/burial-content";
 
 export function BurialHero() {
   return (
     <section className="relative h-[440px] overflow-hidden bg-black md:h-[765px]">
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img
+      <Image
         src={BURIAL_HERO.image}
         alt=""
+        fill
+        sizes="100vw"
+        fetchPriority="high"
+        loading="eager"
         className="absolute inset-0 z-0 h-full w-full object-cover"
       />
       <HeroVideo

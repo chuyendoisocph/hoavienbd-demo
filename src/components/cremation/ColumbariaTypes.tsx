@@ -7,7 +7,7 @@ import {
   COLUMBARIA_HEADING,
   type ColumbariaType,
 } from "@/lib/cremation-content";
-import { PlusIcon } from "@/components/icons";
+import { InlineReadMore } from "@/components/InlineReadMore";
 import { cn } from "@/lib/utils";
 
 function Carousel({
@@ -116,28 +116,18 @@ function FeatureBlock({
       >
         {type.body}
       </p>
-      <div className="mt-7 flex flex-wrap items-center gap-6">
-        {type.buttons.map((button) =>
-          button.label === "TÌM HIỂU THÊM" ? (
-            <a
-              key={button.label}
-              href={button.href}
-              className={cn(
-                "inline-flex items-center gap-3 text-[13px] uppercase tracking-[2px]",
-                dark ? "text-white" : "text-brand-link",
-              )}
-            >
-              {button.label}
-              <span
-                className={cn(
-                  "inline-flex h-8 w-8 items-center justify-center rounded-full border",
-                  dark ? "border-white" : "border-brand-link",
-                )}
-              >
-                <PlusIcon className="h-3.5 w-3.5" />
-              </span>
-            </a>
-          ) : (
+      <InlineReadMore
+        id={`columbaria-details-${type.title.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`}
+        align="start"
+        theme={dark ? "dark" : "light"}
+        contentClassName={cn("text-[16px] leading-[1.8]", dark ? "text-white/90" : "text-[#666]")}
+        buttonClassName="text-[13px]"
+      >
+        {type.details.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
+      </InlineReadMore>
+      {type.buttons.length > 0 ? (
+        <div className="mt-7 flex flex-wrap items-center gap-6">
+          {type.buttons.map((button) => (
             <a
               key={button.label}
               href={button.href}
@@ -148,9 +138,9 @@ function FeatureBlock({
             >
               {button.label}
             </a>
-          ),
-        )}
-      </div>
+          ))}
+        </div>
+      ) : null}
     </div>
   );
 

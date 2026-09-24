@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import { PRODUCTS } from "@/lib/content";
 import { cn } from "@/lib/utils";
 
@@ -21,14 +23,14 @@ export function ProductsSection() {
           </ul>
           <div className="mx-auto mt-8 flex w-full max-w-[300px] flex-col gap-4 lg:mx-0">
             <a
-              href="/dich-vu/dich-vu-khac"
+              href="/dich-vu/phan-mo"
               className={cn(
                 "border border-black/15 px-[30px] py-[14px] text-center",
                 "text-[18px] tracking-[2px] text-brand-link",
                 "transition-colors hover:bg-neutral-100",
               )}
             >
-              TÌM HIỂU THÊM
+              XEM SẢN PHẨM PHẦN MỘ
             </a>
             <a
               href="#tham-quan-360"
@@ -43,11 +45,13 @@ export function ProductsSection() {
             </a>
           </div>
         </div>
-        <div>
-          <img
+        <div className="relative h-[300px] overflow-hidden lg:h-[620px]">
+          <Image
             src={PRODUCTS.image}
-            alt={PRODUCTS.title}
-            className="h-[300px] w-full object-cover lg:h-[620px]"
+            alt={PRODUCTS.imageAlt}
+            fill
+            sizes="(min-width: 1024px) 55vw, 100vw"
+            className="object-cover"
           />
         </div>
       </div>

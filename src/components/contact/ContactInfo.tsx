@@ -3,7 +3,7 @@ import { PhoneIcon } from "@/components/icons";
 
 export function ContactInfo() {
   return (
-    <section className="bg-white py-[70px]">
+    <section id="thong-tin-lien-he" className="scroll-mt-24 bg-white py-[70px]">
       <div className="mx-auto max-w-[1200px] px-6">
         <p className="text-center text-[15px] uppercase tracking-[0.12em] text-[#999]">
           {CONTACT_INFO.eyebrow}

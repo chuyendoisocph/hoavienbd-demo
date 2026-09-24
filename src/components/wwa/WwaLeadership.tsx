@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { WWA_LEADERS } from "@/lib/wwa-content";
 import { cn } from "@/lib/utils";
 
@@ -6,12 +7,13 @@ export function WwaLeadership() {
     <section className="bg-white pb-[40px]">
       {WWA_LEADERS.map((leader) => {
         const image = (
-          <div className={cn("flex justify-center", leader.imageLeft ? "lg:order-1" : "lg:order-2")}>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
+          <div className={cn("relative mx-auto aspect-[4/5] w-full max-w-[420px]", leader.imageLeft ? "lg:order-1" : "lg:order-2")}>
+            <Image
               src={leader.image}
               alt={leader.name}
-              className="w-full max-w-[420px] rounded-sm object-cover shadow-[0_24px_50px_-28px_rgba(0,0,0,0.5)]"
+              fill
+              sizes="(max-width: 1024px) 100vw, 420px"
+              className="rounded-sm object-cover shadow-[0_24px_50px_-28px_rgba(0,0,0,0.5)]"
             />
           </div>
         );

@@ -1,7 +1,5 @@
-import Link from "next/link";
 import { BURIAL_INTRO } from "@/lib/burial-content";
-import { PlusIcon } from "@/components/icons";
-import { cn } from "@/lib/utils";
+import { InlineReadMore } from "@/components/InlineReadMore";
 
 export function BurialIntro() {
   return (
@@ -18,20 +16,14 @@ export function BurialIntro() {
         <p className="text-left text-[16px] leading-[1.8] text-black min-[980px]:px-[17px] min-[980px]:pr-[38px] min-[980px]:text-[18px] min-[980px]:leading-[27px]">
           {BURIAL_INTRO.body}
         </p>
-        <div className="mt-[6px] flex h-[58px] items-center justify-end px-4 min-[980px]:px-5">
-          <Link
-            href={BURIAL_INTRO.cta.href}
-            className={cn(
-              "inline-flex items-center gap-3",
-              "text-[18px] font-medium leading-[27px] tracking-[2px] text-brand-link",
-            )}
-          >
-            {BURIAL_INTRO.cta.label}
-            <span className="inline-flex h-7 w-7 items-center justify-center rounded-full bg-brand text-white">
-              <PlusIcon className="h-[14px] w-[14px]" />
-            </span>
-          </Link>
-        </div>
+        <InlineReadMore
+          id="burial-intro-details"
+          className="px-4 min-[980px]:px-5"
+          contentClassName="text-left text-[16px] leading-[1.8] text-black min-[980px]:text-[18px] min-[980px]:leading-[27px]"
+          buttonClassName="text-[18px] leading-[27px]"
+        >
+          {BURIAL_INTRO.details.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
+        </InlineReadMore>
       </div>
     </section>
   );

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { HeroVideo } from "@/components/HeroVideo";
 import { PhoneIcon } from "@/components/icons";
 import { CARELINE, HERO } from "@/lib/content";
@@ -7,10 +8,13 @@ export function HeroSection() {
     <section>
       <div className="relative h-[414px] overflow-hidden bg-black md:h-[558px]">
         {/* The still image remains visible when reduced motion disables the video. */}
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
+        <Image
           src={HERO.image}
           alt=""
+          fill
+          sizes="100vw"
+          fetchPriority="high"
+          loading="eager"
           className="absolute inset-0 h-full w-full object-cover"
         />
         <HeroVideo

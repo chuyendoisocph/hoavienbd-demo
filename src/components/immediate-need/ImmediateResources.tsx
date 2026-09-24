@@ -16,7 +16,7 @@ export function ImmediateResources() {
               href={link.href}
               className="group flex items-center justify-between gap-4 border border-brand/30 px-6 py-[22px] text-left transition-colors hover:bg-brand/5"
             >
-              <span className="text-[17px] font-medium leading-snug text-brand">
+              <span className="text-balance text-[17px] font-medium leading-snug text-brand">
                 {link.title}
               </span>
               <span className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-brand text-white transition-transform group-hover:translate-x-0.5">

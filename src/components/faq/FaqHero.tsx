@@ -1,12 +1,16 @@
+import Image from "next/image";
 import { FAQ_HERO } from "@/lib/faq-content";
 
 export function FaqHero() {
   return (
     <section className="relative h-[360px] overflow-hidden bg-black md:h-[440px]">
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img
+      <Image
         src={FAQ_HERO.background}
         alt=""
+        fill
+        sizes="100vw"
+        fetchPriority="high"
+        loading="eager"
         className="absolute inset-0 z-0 h-full w-full object-cover"
       />
       <div className="absolute inset-0 z-[1] bg-black/45" />

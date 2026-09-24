@@ -1,5 +1,6 @@
 import { FUNERAL_INTRO, INTRO_WATCH } from "@/lib/funeral-content";
-import { PlusIcon, CheckIcon } from "@/components/icons";
+import { CheckIcon } from "@/components/icons";
+import { InlineReadMore } from "@/components/InlineReadMore";
 import { YoutubeWatch } from "@/components/funeral/YoutubeWatch";
 
 export function FuneralIntro() {
@@ -17,22 +18,17 @@ export function FuneralIntro() {
         </h2>
 
         <div className="grid grid-cols-1 items-start gap-12 md:grid-cols-2">
-          {/* Left: body + READ MORE */}
+          {/* Left: body + consultation CTA */}
           <div>
             <p className="text-left text-[16px] leading-[1.9] text-[#666]">
               {FUNERAL_INTRO.body}
             </p>
-            <div className="mt-[30px] flex justify-end">
-              <a
-                href={FUNERAL_INTRO.cta.href}
-                className="inline-flex items-center gap-3 text-[18px] font-medium tracking-[2px] text-brand-link"
-              >
-                {FUNERAL_INTRO.cta.label}
-                <span className="inline-flex h-7 w-7 items-center justify-center rounded-full bg-brand text-white">
-                  <PlusIcon className="h-[14px] w-[14px]" />
-                </span>
-              </a>
-            </div>
+            <InlineReadMore
+              id="funeral-intro-details"
+              contentClassName="text-[16px] leading-[1.9] text-[#666]"
+            >
+              {FUNERAL_INTRO.details.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
+            </InlineReadMore>
           </div>
 
           {/* Right: service checklist */}

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { PlayIcon } from "@/components/icons";
 import { cn } from "@/lib/utils";
 
@@ -34,7 +35,13 @@ export function VideoFeature({ video, videoMobile, poster, className }: VideoFea
         </video>
       ) : (
         <>
-          <img src={poster} alt="" className="w-full h-full object-cover" />
+          <Image
+            src={poster}
+            alt=""
+            fill
+            sizes="(max-width: 1024px) 100vw, 58vw"
+            className="object-cover"
+          />
           <button
             type="button"
             aria-label="Phát video"

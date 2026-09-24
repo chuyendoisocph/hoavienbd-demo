@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { HOW_IT_WORKS } from "@/lib/funeral-content";
 
 export function FuneralHowItWorks() {
@@ -23,8 +24,14 @@ export function FuneralHowItWorks() {
               />
             )}
             <div className="grid h-[110px] w-[110px] place-items-center rounded-full border border-brand/20 bg-brand/5">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={step.icon} alt="" className="h-[56px] w-[56px] object-contain" />
+              <Image
+                src={step.icon}
+                alt=""
+                width={56}
+                height={56}
+                sizes="56px"
+                className="h-[56px] w-[56px] object-contain"
+              />
             </div>
             <h3 className="mt-6 font-heading text-[18px] font-bold text-brand">
               {step.title}

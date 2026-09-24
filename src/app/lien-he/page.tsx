@@ -5,7 +5,6 @@ import { ContactHero } from "@/components/contact/ContactHero";
 import { ContactInfo } from "@/components/contact/ContactInfo";
 import { ContactBranches } from "@/components/contact/ContactBranches";
 import { ContactForm } from "@/components/contact/ContactForm";
-import { ContactCareer } from "@/components/contact/ContactCareer";
 
 export const metadata: Metadata = {
   title: "Liên Hệ | Hoa Viên Bình Dương",
@@ -22,7 +21,6 @@ export default function ContactUsPage() {
         <ContactInfo />
         <ContactBranches />
         <ContactForm />
-        <ContactCareer />
       </main>
       <SiteFooter />
     </>

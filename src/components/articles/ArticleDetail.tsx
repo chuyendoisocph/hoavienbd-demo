@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import type { Article } from "@/lib/articles-content";
 
 interface ArticleDetailProps {
@@ -12,10 +13,13 @@ export function ArticleDetail({ article, bodyHtml, related }: ArticleDetailProps
     <>
       {/* Hero */}
       <section className="relative h-[380px] overflow-hidden bg-black md:h-[520px]">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
+        <Image
           src={article.image}
           alt={article.title}
+          fill
+          sizes="100vw"
+          fetchPriority="high"
+          loading="eager"
           className="absolute inset-0 z-0 h-full w-full object-cover"
         />
         <div className="absolute inset-0 z-[1] bg-black/50" />
@@ -63,12 +67,13 @@ export function ArticleDetail({ article, bodyHtml, related }: ArticleDetailProps
             <div className="grid grid-cols-1 gap-x-[30px] gap-y-[50px] sm:grid-cols-2 lg:grid-cols-3">
               {related.map((item) => (
                 <article key={item.slug} className="group flex flex-col">
-                  <a href={item.href} className="block overflow-hidden">
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img
+                  <a href={item.href} className="relative block aspect-[16/10] overflow-hidden">
+                    <Image
                       src={item.image}
                       alt={item.title}
-                      className="aspect-[16/10] w-full object-cover transition-transform duration-[400ms] group-hover:scale-105"
+                      fill
+                      sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 33vw"
+                      className="object-cover transition-transform duration-[400ms] group-hover:scale-105"
                     />
                   </a>
                   <a href={item.href}>

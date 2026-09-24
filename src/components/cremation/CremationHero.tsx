@@ -8,7 +8,8 @@ export function CremationHero() {
         src={CREMATION_HERO.background}
         alt={CREMATION_HERO.title}
         fill
-        priority
+        fetchPriority="high"
+        loading="eager"
         sizes="100vw"
         className="z-0 object-cover object-center"
       />

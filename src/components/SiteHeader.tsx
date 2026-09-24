@@ -2,9 +2,10 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import Image from "next/image";
 import { cn } from "@/lib/utils";
 import { TOP_NAV, LOGO } from "@/lib/content";
-import { SearchIcon, PhoneIcon, ChevronDownIcon } from "@/components/icons";
+import { PhoneIcon, ChevronDownIcon } from "@/components/icons";
 
 const focusRing =
   "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2";
@@ -20,37 +21,24 @@ export function SiteHeader() {
           aria-label="Hoa Viên Bình Dương - trang chủ"
           className={cn(
             "absolute left-[15px] top-1/2 flex h-[45px] w-auto -translate-y-1/2 items-center gap-2 rounded-sm",
-            "min-[980px]:h-[55px] min-[980px]:w-[187px] min-[980px]:gap-3",
+            "min-[980px]:h-[55px] min-[980px]:w-auto min-[980px]:gap-3",
             focusRing
           )}
         >
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
+          <Image
             src={LOGO}
             alt=""
             width={639}
             height={639}
+            sizes="55px"
             className="h-[45px] w-[45px] shrink-0 object-contain min-[980px]:h-[55px] min-[980px]:w-[55px]"
           />
-          <span className="whitespace-nowrap font-heading text-[14px] font-bold uppercase leading-[1.15] tracking-[0.35px] text-brand min-[980px]:text-[15px] min-[980px]:tracking-[0.5px]">
-            Hoa Viên
-            <br />
-            Bình Dương
+          <span className="whitespace-nowrap font-heading text-[13px] font-bold uppercase leading-none tracking-[0.35px] text-brand min-[980px]:text-[15px] min-[980px]:tracking-[0.5px]">
+            Hoa Viên Bình Dương
           </span>
         </Link>
 
         <div className="absolute right-[15px] top-[7px] hidden items-center gap-5 text-[13px] leading-none text-heading min-[980px]:flex">
-          <button
-            type="button"
-            aria-label="Tìm kiếm"
-            className={cn(
-              "flex items-center gap-1.5 rounded-sm transition-colors duration-200 hover:text-brand",
-              focusRing
-            )}
-          >
-            <SearchIcon className="text-[13px]" aria-hidden="true" />
-            <span>Tìm kiếm</span>
-          </button>
           <a
             href="/lien-he"
             className={cn(
@@ -72,21 +60,31 @@ export function SiteHeader() {
 
             return (
               <div key={item.label} className="group relative">
-                <a
-                  href={item.href === "#" ? undefined : item.href}
-                  target={item.href.startsWith("http") ? "_blank" : undefined}
-                  rel={item.href.startsWith("http") ? "noopener noreferrer" : undefined}
-                  aria-haspopup={hasChildren ? "menu" : undefined}
-                  className={cn(
-                    "flex items-center gap-1 rounded-sm font-heading text-[15px] font-normal leading-none text-black transition-colors duration-200 hover:text-brand",
-                    focusRing
-                  )}
-                >
-                  {item.label}
-                  {hasChildren && (
+                {hasChildren ? (
+                  <button
+                    type="button"
+                    aria-haspopup="menu"
+                    className={cn(
+                      "flex items-center gap-1 rounded-sm font-heading text-[15px] font-normal leading-none text-black transition-colors duration-200 hover:text-brand",
+                      focusRing
+                    )}
+                  >
+                    {item.label}
                     <ChevronDownIcon className="text-[11px]" aria-hidden="true" />
-                  )}
-                </a>
+                  </button>
+                ) : (
+                  <a
+                    href={item.href}
+                    target={item.href.startsWith("http") ? "_blank" : undefined}
+                    rel={item.href.startsWith("http") ? "noopener noreferrer" : undefined}
+                    className={cn(
+                      "flex items-center gap-1 rounded-sm font-heading text-[15px] font-normal leading-none text-black transition-colors duration-200 hover:text-brand",
+                      focusRing
+                    )}
+                  >
+                    {item.label}
+                  </a>
+                )}
 
                 {hasChildren && (
                   <div className="invisible absolute right-0 top-full z-20 w-[220px] translate-y-2 pt-[10px] opacity-0 transition-[opacity,transform,visibility] duration-200 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100 group-focus-within:visible group-focus-within:translate-y-0 group-focus-within:opacity-100">
@@ -144,11 +142,6 @@ export function SiteHeader() {
         </button>
       </div>
 
-      <div
-        className="nirvana-swoosh pointer-events-none absolute bottom-0 left-0 h-2 w-[55%]"
-        aria-hidden="true"
-      />
-
       {mobileOpen && (
         <div
           id="mobile-navigation"
@@ -157,17 +150,23 @@ export function SiteHeader() {
           <nav aria-label="Điều hướng di động" className="px-4 py-2">
             {TOP_NAV.map((item) => (
               <div key={item.label} className="border-b border-black/[0.07] last:border-b-0">
-                <a
-                  href={item.href === "#" ? undefined : item.href}
-                  target={item.href.startsWith("http") ? "_blank" : undefined}
-                  rel={item.href.startsWith("http") ? "noopener noreferrer" : undefined}
-                  className={cn(
-                    "block rounded-sm py-3 font-heading text-[15px] font-normal text-black transition-colors duration-200 hover:text-brand",
-                    focusRing
-                  )}
-                >
-                  {item.label}
-                </a>
+                {item.href === "#" ? (
+                  <p className="py-3 font-heading text-[15px] font-normal text-black">
+                    {item.label}
+                  </p>
+                ) : (
+                  <a
+                    href={item.href}
+                    target={item.href.startsWith("http") ? "_blank" : undefined}
+                    rel={item.href.startsWith("http") ? "noopener noreferrer" : undefined}
+                    className={cn(
+                      "block rounded-sm py-3 font-heading text-[15px] font-normal text-black transition-colors duration-200 hover:text-brand",
+                      focusRing
+                    )}
+                  >
+                    {item.label}
+                  </a>
+                )}
                 {!!item.children?.length && (
                   <ul className="pb-2 pl-4">
                     {item.children.map((child) => (
@@ -189,17 +188,6 @@ export function SiteHeader() {
             ))}
 
             <div className="flex flex-wrap items-center gap-x-6 gap-y-3 py-4 text-[13px] text-heading">
-              <button
-                type="button"
-                aria-label="Tìm kiếm"
-                className={cn(
-                  "flex items-center gap-1.5 rounded-sm transition-colors duration-200 hover:text-brand",
-                  focusRing
-                )}
-              >
-                <SearchIcon className="text-[15px]" aria-hidden="true" />
-                <span>Tìm kiếm</span>
-              </button>
               <a
                 href="/lien-he"
                 className={cn(

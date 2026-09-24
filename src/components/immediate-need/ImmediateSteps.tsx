@@ -1,5 +1,7 @@
+import Image from "next/image";
 import { PASSING_STEPS } from "@/lib/immediate-content";
 import { PlusIcon } from "@/components/icons";
+import { noOrphan } from "@/lib/utils";
 
 export function ImmediateSteps() {
   return (
@@ -16,14 +18,13 @@ export function ImmediateSteps() {
       <div className="mx-auto mt-14 grid max-w-[1200px] grid-cols-1 gap-10 px-6 sm:grid-cols-2 lg:grid-cols-5">
         {PASSING_STEPS.steps.map((step) => (
           <div key={step.title} className="flex flex-col items-center text-center">
-            <div className="grid h-[100px] w-[100px] place-items-center overflow-hidden rounded-full">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={step.icon} alt="" className="h-full w-full object-cover" />
+            <div className="relative grid h-[100px] w-[100px] place-items-center overflow-hidden rounded-full">
+              <Image src={step.icon} alt="" fill sizes="100px" className="object-cover" />
             </div>
             <h3 className="mt-5 font-heading text-[16px] font-bold leading-snug text-brand">
               {step.title}
             </h3>
-            <p className="mt-3 text-[16px] leading-[1.7] text-[#666]">{step.body}</p>
+            <p className="mt-3 text-[16px] leading-[1.7] text-[#666]">{noOrphan(step.body)}</p>
           </div>
         ))}
       </div>

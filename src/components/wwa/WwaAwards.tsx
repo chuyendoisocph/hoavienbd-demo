@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { WWA_AWARDS } from "@/lib/wwa-content";
 import { cn } from "@/lib/utils";
 
@@ -25,13 +26,14 @@ export function WwaAwards() {
       <div className="mx-auto mt-12 max-w-[900px] px-6">
         <div className="relative aspect-[16/10] w-full overflow-hidden">
           {WWA_AWARDS.images.map((src, i) => (
-            // eslint-disable-next-line @next/next/no-img-element
-            <img
+            <Image
               key={src}
               src={src}
-              alt={`Award ${i + 1}`}
+              alt={`Giải thưởng ${i + 1}`}
+              fill
+              sizes="(max-width: 900px) 100vw, 900px"
               className={cn(
-                "absolute inset-0 h-full w-full object-contain transition-opacity duration-500",
+                "object-contain transition-opacity duration-500",
                 i === active ? "opacity-100" : "opacity-0",
               )}
             />
@@ -42,7 +44,7 @@ export function WwaAwards() {
             <button
               key={src}
               type="button"
-              aria-label={`Show award ${i + 1}`}
+              aria-label={`Hiển thị giải thưởng ${i + 1}`}
               aria-current={i === active}
               onClick={() => setActive(i)}
               className={cn(

@@ -10,7 +10,10 @@ export const CREMATION_INTRO = {
   badge: "KHÔNG GIAN CHÙA THIÊN PHƯỚC",
   title: "Nơi gia đình an tâm gửi gắm và tưởng nhớ người thân",
   body: "Nằm trong khuôn viên Hoa Viên Nghĩa Trang Bình Dương, Chùa Thiên Phước là nơi lưu giữ tro cốt trong không gian thanh tịnh và trang nghiêm. Các hộc lưu cốt được bố trí ngay ngắn, thuận tiện để gia đình nhận biết, thăm viếng, dâng hương và lễ Phật.",
-  cta: { label: "LIÊN HỆ TƯ VẤN", href: "/lien-he" },
+  details: [
+    "Không gian lưu giữ được tổ chức gắn với khuôn viên tâm linh, lối đi và khu vực lễ bái để thân nhân có thể thăm viếng trong sự yên tĩnh. Việc bố trí từng hộc rõ ràng giúp gia đình nhận biết và gìn giữ thông tin người đã khuất.",
+    "Trước khi lựa chọn, gia đình nên tìm hiểu vị trí, thời hạn lưu giữ, cách thức bàn giao, quy định thăm viếng và phạm vi chăm sóc để bảo đảm phù hợp với nhu cầu lâu dài.",
+  ],
   image: "/images/hvbd/thien-phuoc-front.jpg",
   imageAlt: "Mặt tiền Chùa Thiên Phước tại Hoa Viên Bình Dương",
 };
@@ -19,6 +22,7 @@ export interface ColumbariaType {
   eyebrow: string;
   title: string;
   body: string;
+  details: string[];
   images: string[];
   dark: boolean;
   imageLeft: boolean;
@@ -43,7 +47,8 @@ export const COLUMBARIA_TYPES: ColumbariaType[] = [
     ],
     dark: false,
     imageLeft: true,
-    buttons: [{ label: "LIÊN HỆ TƯ VẤN", href: "/lien-he" }],
+    details: ["Các hoạt động thăm viếng, dâng hương và tưởng niệm được thực hiện trong cùng một khuôn viên, giúp gia đình thuận tiện kết hợp lễ Phật và tưởng nhớ người thân."],
+    buttons: [],
   },
   {
     eyebrow: "THANH TỊNH, SẠCH SẼ VÀ TRANG NGHIÊM",
@@ -56,7 +61,8 @@ export const COLUMBARIA_TYPES: ColumbariaType[] = [
     ],
     dark: true,
     imageLeft: false,
-    buttons: [{ label: "LIÊN HỆ TƯ VẤN", href: "/lien-he" }],
+    details: ["Lối đi, ánh sáng và cách đánh số vị trí được bố trí để thân nhân dễ tìm kiếm. Gia đình nên tham quan trực tiếp để lựa chọn khu vực phù hợp với thói quen thăm viếng."],
+    buttons: [],
   },
   {
     eyebrow: "THIẾT KẾ RIÊNG BIỆT, BỐ TRÍ NGAY NGẮN",
@@ -69,7 +75,8 @@ export const COLUMBARIA_TYPES: ColumbariaType[] = [
     ],
     dark: false,
     imageLeft: true,
-    buttons: [{ label: "LIÊN HỆ TƯ VẤN", href: "/lien-he" }],
+    details: ["Vật liệu gỗ tạo cảm giác ấm cúng, đồng thời mỗi vị trí có khu vực nhận diện riêng. Thông tin, hình ảnh và cách trang trí cần tuân theo hướng dẫn chung để giữ sự trang nghiêm."],
+    buttons: [],
   },
   {
     eyebrow: "AN TÂM TRONG SUỐT THỜI GIAN LƯU GIỮ",
@@ -82,7 +89,8 @@ export const COLUMBARIA_TYPES: ColumbariaType[] = [
     ],
     dark: true,
     imageLeft: false,
-    buttons: [{ label: "LIÊN HỆ TƯ VẤN", href: "/lien-he" }],
+    details: ["Vị trí được ghi nhận trong hồ sơ bàn giao để gia đình có thể tìm lại thuận tiện trong những lần thăm viếng sau. Mọi thay đổi, nếu có, cần được thông báo và thống nhất theo quy định."],
+    buttons: [],
   },
   {
     eyebrow: "GÌN GIỮ KHÔNG GIAN SẠCH SẼ VÀ CHU ĐÁO",
@@ -94,7 +102,8 @@ export const COLUMBARIA_TYPES: ColumbariaType[] = [
     ],
     dark: false,
     imageLeft: true,
-    buttons: [{ label: "LIÊN HỆ TƯ VẤN", href: "/lien-he" }],
+    details: ["Công việc vệ sinh khu vực chung và chăm sóc không gian lễ bái được thực hiện định kỳ. Gia đình nên hỏi rõ phạm vi chăm sóc từng hộc và các vật phẩm được phép đặt tại vị trí lưu giữ."],
+    buttons: [],
   },
   {
     eyebrow: "HƯỚNG DẪN RÕ RÀNG, HỖ TRỢ CHU ĐÁO",
@@ -107,7 +116,8 @@ export const COLUMBARIA_TYPES: ColumbariaType[] = [
     ],
     dark: true,
     imageLeft: true,
-    buttons: [{ label: "LIÊN HỆ TƯ VẤN", href: "/lien-he" }],
+    details: ["Quy trình thường gồm xác nhận thông tin người đã khuất, đối chiếu vị trí, lập biên bản và hướng dẫn nghi thức tiếp nhận. Người đại diện gia đình nên kiểm tra kỹ thông tin trước khi hoàn tất bàn giao."],
+    buttons: [],
   },
 ];
 
@@ -124,17 +134,17 @@ export const CREMATION_READ = {
     {
       title: "An táng hay hỏa táng: Lựa chọn nào phù hợp?",
       image: "/images/hvbd/thien-phuoc-ceremony.jpg",
-      href: "/bai-viet",
+      href: "/bai-viet/an-tang-hay-hoa-tang",
     },
     {
       title: "Quy trình hỏa táng và những điều gia đình cần lưu ý",
       image: "/images/hvbd/columbarium-main-hall.jpg",
-      href: "/hoi-dap",
+      href: "/bai-viet/an-tang-hay-hoa-tang",
     },
     {
       title: "Các lựa chọn lưu giữ tro cốt sau hỏa táng",
       image: "/images/hvbd/thien-phuoc-yellow-blossom.jpg",
-      href: "/dich-vu/luu-tro-cot",
+      href: "/bai-viet/luu-giu-tro-cot-trang-nghiem",
     },
   ] as CremationReadCard[],
 };

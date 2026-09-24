@@ -1,9 +1,10 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import { cn } from "@/lib/utils";
 import { CAROUSEL_SLIDES, CULTURE } from "@/lib/content";
-import { PlusIcon } from "@/components/icons";
+import { InlineReadMore } from "@/components/InlineReadMore";
 
 const ROTATE_INTERVAL = 5000;
 
@@ -32,20 +33,23 @@ export function CultureSection() {
             {CAROUSEL_SLIDES.map((slide, index) => (
               <div
                 key={slide.title + index}
+                inert={index !== active}
                 className={cn(
                   "absolute inset-0 transition-opacity duration-700 ease-in-out",
                   index === active ? "opacity-100" : "pointer-events-none opacity-0",
                 )}
                 aria-hidden={index === active ? undefined : true}
               >
-                <img
+                <Image
                   src={slide.image}
                   alt={slide.title}
+                  fill
+                  sizes="(max-width: 1024px) 410px, 35vw"
                   className="absolute inset-0 h-full w-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-b from-[#0a0c2877] via-[#0a0c2899] to-[#0a0c28cc]" />
                 <div className="absolute inset-0 flex flex-col items-center justify-center px-[30px] py-10 text-center text-white">
-                  <h3 className="text-[20px] md:text-[24px] font-bold leading-[1.3] md:leading-snug text-white">{slide.title}</h3>
+                  <p className="text-[20px] md:text-[24px] font-bold leading-[1.3] md:leading-snug text-white">{slide.title}</p>
                   {slide.subtitle ? (
                     <p className="mt-2 text-[16px] text-white">{slide.subtitle}</p>
                   ) : null}
@@ -53,6 +57,7 @@ export function CultureSection() {
                   {slide.cta ? (
                     <a
                       href={slide.cta.href}
+                      tabIndex={index === active ? undefined : -1}
                       className="mt-6 inline-block border border-white/80 px-[26px] py-[10px] text-[14px] tracking-[1px] text-white transition-colors duration-200 hover:bg-white/15"
                     >
                       {slide.cta.label}
@@ -64,7 +69,7 @@ export function CultureSection() {
           </div>
 
           {/* Dots */}
-          <div className="mt-5 flex items-center justify-center gap-2">
+          <div className="mt-5 flex items-center justify-center gap-1">
             {CAROUSEL_SLIDES.map((slide, index) => (
               <button
                 key={slide.title + index}
@@ -72,18 +77,23 @@ export function CultureSection() {
                 onClick={() => setActive(index)}
                 aria-label={`Chuyển đến nội dung ${index + 1}`}
                 aria-current={index === active ? "true" : undefined}
-                className={cn(
-                  "h-2 rounded-full transition-all duration-300",
-                  index === active ? "w-5 bg-brand" : "w-2 bg-black/20",
-                )}
-              />
+                className="grid h-6 w-6 place-items-center rounded-full"
+              >
+                <span
+                  aria-hidden="true"
+                  className={cn(
+                    "h-2 rounded-full transition-all duration-300",
+                    index === active ? "w-5 bg-brand" : "w-2 bg-black/20",
+                  )}
+                />
+              </button>
             ))}
           </div>
         </div>
 
         {/* RIGHT: static text */}
         <div className="text-center lg:text-left">
-          <p className="text-[15px] font-normal uppercase tracking-[0.12em] text-[#999]">
+          <p className="text-[15px] font-normal uppercase tracking-[0.12em] text-[#666]">
             {CULTURE.eyebrow}
           </p>
           <h2 className="mt-3 font-heading text-[30px] font-medium leading-[1.2] md:leading-[1.15] text-brand md:text-[52px]">
@@ -92,15 +102,13 @@ export function CultureSection() {
           <div className="mt-6">
             <CultureBody />
           </div>
-          <a
-            href={CULTURE.cta.href}
-            className="mt-6 inline-flex items-center gap-3 text-[18px] font-medium tracking-[2px] text-brand-link"
+          <InlineReadMore
+            id="culture-details"
+            align="start"
+            contentClassName="text-[16px] leading-[1.7] text-[#666]"
           >
-            {CULTURE.cta.label}
-            <span className="flex h-7 w-7 items-center justify-center rounded-full bg-brand text-white">
-              <PlusIcon className="h-4 w-4" />
-            </span>
-          </a>
+            {CULTURE.details.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
+          </InlineReadMore>
         </div>
       </div>
     </section>
