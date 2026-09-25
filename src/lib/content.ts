@@ -154,7 +154,7 @@ export const SITE_VIEW_360 = {
 export const ADVANTAGES = {
   title: "5 lợi ích khi chuẩn bị hậu sự từ sớm cùng Hoa Viên Bình Dương",
   subtitle: "Nguyện vọng của gia đình là ưu tiên hàng đầu",
-  cta: { label: "ĐẶT LỊCH HẸN", href: "/lien-he" },
+  cta: { label: "LIÊN HỆ TƯ VẤN", href: "/lien-he" },
   cards: [
     {
       icon: "/images/PrePlan_Icon_Trust-Fund-150x150.png",

@@ -38,22 +38,9 @@ export function SiteHeader() {
           </span>
         </Link>
 
-        <div className="absolute right-[15px] top-[7px] hidden items-center gap-5 text-[13px] leading-none text-heading min-[980px]:flex">
-          <a
-            href="/lien-he"
-            className={cn(
-              "flex items-center gap-1.5 rounded-sm transition-colors duration-200 hover:text-brand",
-              focusRing
-            )}
-          >
-            <PhoneIcon className="text-[13px]" aria-hidden="true" />
-            <span>Liên hệ</span>
-          </a>
-        </div>
-
         <nav
           aria-label="Điều hướng chính"
-          className="absolute bottom-[10px] right-[15px] hidden items-center gap-7 min-[980px]:flex"
+          className="absolute right-[15px] top-1/2 hidden -translate-y-1/2 items-center gap-7 min-[980px]:flex"
         >
           {TOP_NAV.map((item) => {
             const hasChildren = Boolean(item.children?.length);
