@@ -23,8 +23,8 @@ export const COMMITMENT = {
   title: "Lời Cam Kết",
   body: "Một lời cam kết vượt qua mọi giới hạn được gắn kết bằng tình yêu thương chân thành. Tại Hoa Viên Bình Dương, hãy an tâm rằng việc thực hiện trọn vẹn cam kết đó chính là lời hứa của chúng tôi.",
   cta: { label: "KHÁM PHÁ", href: "/lien-he" },
-  poster: "/images/video-commit.jpg",
-  video: "/videos/14444444.mp4",
+  poster: "/images/video-commit-vietnam.png",
+  video: "/videos/hero-dji0305-1080.mp4",
 };
 
 export interface PlotType {
@@ -139,7 +139,7 @@ export const MEMORIAL_360 = {
 
 export const CONSIDERATIONS = {
   title: "8 điều cần cân nhắc khi chọn nơi an táng",
-  bannerImage: "/images/1660a.jpg",
+  bannerImage: "/images/1660a-vietnam.png",
   items: [
     { title: "Giá và các khoản chi phí liên quan", body: "Gia đình nên yêu cầu bảng giá và phạm vi dịch vụ rõ ràng, đồng thời xác nhận các khoản như mở huyệt, lấp huyệt, xây dựng và chăm sóc mộ phần được tính riêng hay đã nằm trong hợp đồng." },
     { title: "Vị trí chính xác của phần mộ", body: "Trước khi ký kết, gia đình nên tham quan thực tế và xác nhận vị trí phần mộ trên sơ đồ quy hoạch. Mỗi khu vực có đặc điểm, diện tích và mức chi phí khác nhau." },

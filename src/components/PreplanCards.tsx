@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 export function PreplanCards() {
   return (
     <section className="bg-white">
-      <div className="mx-auto grid max-w-[1100px] grid-cols-1 gap-6 px-[15px] py-10 md:grid-cols-3 md:gap-12 md:px-6 md:py-[70px]">
+      <div data-stagger className="mx-auto grid max-w-[1100px] grid-cols-1 gap-6 px-[15px] py-10 md:grid-cols-3 md:gap-12 md:px-6 md:py-[70px]">
         {PREPLAN_CARDS.map((card) => (
           <a key={card.title} href={card.href} className="group block">
             <div className="relative h-[150px] overflow-hidden md:aspect-video md:h-auto">

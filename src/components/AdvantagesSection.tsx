@@ -57,13 +57,13 @@ export function AdvantagesSection() {
             </div>
           ) : null}
 
-          <div className="grid grid-cols-1 gap-[52px] pb-[52px] lg:min-h-[355px] lg:grid-cols-2 lg:gap-[11.64%] lg:py-[27.8px]">
+          <div data-stagger className="grid grid-cols-1 gap-[52px] pb-[52px] lg:min-h-[355px] lg:grid-cols-2 lg:gap-[11.64%] lg:py-[27.8px]">
             {middleCards.map((card) => (
               <AdvantageItem key={card.title} card={card} />
             ))}
           </div>
 
-          <div className="grid grid-cols-1 gap-[52px] lg:min-h-[411px] lg:grid-cols-2 lg:gap-[11.64%] lg:py-[27.8px]">
+          <div data-stagger className="grid grid-cols-1 gap-[52px] lg:min-h-[411px] lg:grid-cols-2 lg:gap-[11.64%] lg:py-[27.8px]">
             {finalCards.map((card) => (
               <AdvantageItem key={card.title} card={card} />
             ))}

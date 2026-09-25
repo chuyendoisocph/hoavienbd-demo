@@ -11,7 +11,7 @@ export function ProductsSection() {
           <h2 className="mb-[15px] font-heading text-[30px] font-semibold leading-[1.2] text-heading md:text-[52px] md:leading-[78px]">
             {PRODUCTS.title}
           </h2>
-          <ul className="inline-block list-disc pl-6 text-left text-[#666]">
+          <ul data-stagger className="inline-block list-disc pl-6 text-left text-[#666]">
             {PRODUCTS.items.map((item) => (
               <li
                 key={item.label}
@@ -21,12 +21,12 @@ export function ProductsSection() {
               </li>
             ))}
           </ul>
-          <div className="mx-auto mt-8 flex w-full max-w-[300px] flex-col gap-4 lg:mx-0">
+          <div className="mx-auto mt-8 flex w-full max-w-[360px] flex-col gap-4 lg:mx-0">
             <a
               href="/dich-vu/phan-mo"
               className={cn(
-                "border border-black/15 px-[30px] py-[14px] text-center",
-                "text-[18px] tracking-[2px] text-brand-link",
+                "border border-black/15 px-5 py-[14px] text-center",
+                "whitespace-nowrap text-[15px] tracking-[1.5px] text-brand-link sm:px-[30px] sm:text-[18px] sm:tracking-[2px]",
                 "transition-colors hover:bg-neutral-100",
               )}
             >

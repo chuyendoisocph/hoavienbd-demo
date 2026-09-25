@@ -60,7 +60,7 @@ export function InlineReadMore({
             buttonClassName,
           )}
         >
-          {expanded ? "THU GỌN" : "TÌM HIỂU THÊM"}
+          {expanded ? "Thu gọn" : "Xem thêm"}
           <span
             className={cn(
               "inline-flex h-7 w-7 items-center justify-center rounded-full",

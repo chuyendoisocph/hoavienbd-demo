@@ -72,7 +72,7 @@ export const OTHERS_READ = {
   eyebrow: "TÌM HIỂU THÊM",
   cards: [
     { title: "Kinh nghiệm lựa chọn phần mộ phù hợp", image: "/images/hvbd/grave-offering-white.jpg", href: "/dich-vu/phan-mo" },
-    { title: "Chuẩn bị sanh phần từ sớm", image: "/images/504.jpg", href: "/ho-tro/chuan-bi-tu-som" },
+    { title: "Chuẩn bị sanh phần từ sớm", image: "/images/504-vietnam.png", href: "/ho-tro/chuan-bi-tu-som" },
     { title: "Dịch vụ chăm sóc mộ phần", image: "/images/hvbd/care-team.jpg", href: "/lien-he" },
   ],
 };

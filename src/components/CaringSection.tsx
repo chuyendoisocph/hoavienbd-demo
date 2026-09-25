@@ -9,7 +9,8 @@ export function CaringSection() {
         alt=""
         fill
         sizes="100vw"
-        className="absolute inset-0 w-full h-full object-cover"
+        data-parallax
+        className="absolute inset-0 h-full w-full scale-[1.15] object-cover"
       />
       <div className="absolute inset-0 bg-black/35" />
       <div className="relative z-10 max-w-[780px] px-[15px] text-center text-white">

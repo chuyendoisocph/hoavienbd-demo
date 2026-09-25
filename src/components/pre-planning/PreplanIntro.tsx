@@ -65,9 +65,9 @@ export function PreplanIntro() {
                 aria-expanded={isExpanded}
                 aria-controls={detailsId}
                 onClick={() => toggleBlock(index)}
-                className="inline-flex cursor-pointer items-center gap-3 text-[18px] font-medium tracking-[2px] text-brand-link"
+                className="inline-flex cursor-pointer items-center gap-3 text-[18px] font-medium uppercase tracking-[2px] text-brand-link"
               >
-                {isExpanded ? "THU GỌN" : block.cta.label}
+                {isExpanded ? "Thu gọn" : block.cta.label}
                 <span className="inline-flex h-7 w-7 items-center justify-center rounded-full bg-brand text-white">
                   <PlusIcon
                     className={cn(

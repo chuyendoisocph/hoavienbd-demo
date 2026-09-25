@@ -52,7 +52,7 @@ const ARTICLE_INPUTS: ArticleInput[] = [
     excerpt:
       "Chủ động trao đổi nguyện vọng và chuẩn bị các lựa chọn cần thiết giúp gia đình bớt áp lực khi hữu sự.",
     slug: "chuan-bi-hau-su-tu-som",
-    image: "/images/45.jpg",
+    image: "/images/45-vietnam.png",
   },
   {
     title: "Những điều cần lưu ý khi thăm viếng và chăm sóc mộ phần",

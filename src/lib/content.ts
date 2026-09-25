@@ -100,30 +100,30 @@ export const CULTURE = {
 export const CARING = {
   title: "Trân Trọng Từng Cuộc Đời",
   body: "Với hệ thống tiện ích đồng bộ cùng các sản phẩm và dịch vụ toàn diện, Hoa Viên Bình Dương mong muốn mang đến sự đồng hành ấm áp trong những thời khắc thiêng liêng. “Trân trọng từng cuộc đời” là triết lý của chúng tôi – nơi mỗi cuộc đời đều ý nghĩa và đáng quý. Đội ngũ Hoa Viên luôn nỗ lực để người thân của mỗi gia đình được tôn vinh và tiễn biệt một cách trọn vẹn, bằng tất cả sự chuyên nghiệp và tận tâm.",
-  background: "/images/83609s.jpg",
+  background: "/images/83609s-vietnam-v2.png",
 };
 
 export const PREPLAN_CARDS: PreplanCard[] = [
   {
     title: "5 lợi ích của việc chuẩn bị hậu sự từ sớm",
-    image: "/images/45.jpg",
+    image: "/images/45-vietnam.png",
     href: "/bai-viet/chuan-bi-hau-su-tu-som",
   },
   {
     title: "Khi nào nên bắt đầu chuẩn bị?",
-    image: "/images/920.jpg",
+    image: "/images/920-vietnam.png",
     href: "/ho-tro/chuan-bi-tu-som",
   },
   {
     title: "Ai nên chuẩn bị hậu sự từ sớm?",
-    image: "/images/1661.jpg",
+    image: "/images/1661-vietnam.png",
     href: "/ho-tro/chuan-bi-tu-som",
   },
 ];
 
 export const WATCH_VIDEO = {
   eyebrow: "XEM VIDEO",
-  video: "/videos/resize-eng.mp4",
+  video: "/videos/toan-canh-dji0304-1080.mp4",
   poster: "/images/hvbd/linh-hoa-tue-dan-2.jpg",
 };
 

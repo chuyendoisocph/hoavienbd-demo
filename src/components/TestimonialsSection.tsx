@@ -10,7 +10,7 @@ export function TestimonialsSection() {
         {TESTIMONIALS_INTRO.body}
       </p>
 
-      <div className="max-w-[1140px] mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10">
+      <div data-stagger className="max-w-[1140px] mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10">
         {TESTIMONIALS.map((testimonial) => (
           <div
             key={testimonial.title}
