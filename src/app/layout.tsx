@@ -28,7 +28,7 @@ const displayFont = Newsreader({
 });
 
 export const metadata: Metadata = {
-  title: "Hoa Viên Bình Dương | Trân trọng từng cuộc đời",
+  title: "Hoa Viên Bình Dương | Nơi Cuộc Sống Vĩnh Hằng",
   description:
     "Hoa Viên Bình Dương (Chánh Phú Hòa) – công viên tưởng niệm sinh thái tại Bến Cát, Bình Dương, mang đến dịch vụ tang lễ và tưởng niệm toàn diện. Trân trọng từng cuộc đời.",
   icons: {
