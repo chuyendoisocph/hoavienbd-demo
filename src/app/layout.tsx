@@ -27,10 +27,40 @@ const displayFont = Newsreader({
   display: "swap",
 });
 
+const SITE_TITLE = "Hoa Viên Bình Dương | Nơi Cuộc Sống Vĩnh Hằng";
+const SITE_DESCRIPTION =
+  "Hoa Viên Bình Dương (Chánh Phú Hòa) – công viên tưởng niệm sinh thái tại Bến Cát, Bình Dương, mang đến dịch vụ tang lễ và tưởng niệm toàn diện. Trân trọng từng cuộc đời.";
+const SOCIAL_IMAGE = "/images/hvbd/park-aerial-roundabout.jpg";
+
 export const metadata: Metadata = {
-  title: "Hoa Viên Bình Dương | Nơi Cuộc Sống Vĩnh Hằng",
-  description:
-    "Hoa Viên Bình Dương (Chánh Phú Hòa) – công viên tưởng niệm sinh thái tại Bến Cát, Bình Dương, mang đến dịch vụ tang lễ và tưởng niệm toàn diện. Trân trọng từng cuộc đời.",
+  metadataBase: new URL("https://demo-cphaco.vercel.app"),
+  title: SITE_TITLE,
+  description: SITE_DESCRIPTION,
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    type: "website",
+    locale: "vi_VN",
+    url: "/",
+    siteName: "Hoa Viên Bình Dương",
+    title: SITE_TITLE,
+    description: SITE_DESCRIPTION,
+    images: [
+      {
+        url: SOCIAL_IMAGE,
+        width: 1630,
+        height: 965,
+        alt: "Toàn cảnh xanh tại Hoa Viên Bình Dương",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: SITE_TITLE,
+    description: SITE_DESCRIPTION,
+    images: [SOCIAL_IMAGE],
+  },
   icons: {
     icon: [
       { url: "/seo/hoa-vien-binh-duong-32x32.png", sizes: "32x32", type: "image/png" },

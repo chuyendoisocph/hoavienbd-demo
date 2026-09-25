@@ -49,17 +49,22 @@ function Carousel({
               aria-label={`Show image ${i + 1}`}
               aria-current={i === active}
               onClick={() => onSelect(i)}
-              className={cn(
-                "h-2.5 w-2.5 rounded-full transition-colors",
-                i === active
-                  ? dark
-                    ? "bg-white"
-                    : "bg-brand"
-                  : dark
-                    ? "bg-white/40"
-                    : "bg-black/20",
-              )}
-            />
+              className="grid h-6 w-6 place-items-center rounded-full"
+            >
+              <span
+                aria-hidden="true"
+                className={cn(
+                  "h-2.5 w-2.5 rounded-full transition-colors",
+                  i === active
+                    ? dark
+                      ? "bg-white"
+                      : "bg-brand"
+                    : dark
+                      ? "bg-white/40"
+                      : "bg-black/20",
+                )}
+              />
+            </button>
           ))}
         </div>
       )}

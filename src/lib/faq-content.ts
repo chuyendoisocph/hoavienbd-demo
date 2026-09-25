@@ -2,9 +2,9 @@
  *  Biên tập từ bộ FAQ thường gặp về nghĩa trang, điều chỉnh cho phù hợp Hoa Viên Bình Dương. */
 
 export const FAQ_HERO = {
-  background: "/images/hvbd/grave-offering-white.jpg",
+  background: "/images/hvbd/actual/faq-hero-vinh-hang-dai-expanded.jpg",
   title: "Hỏi & Đáp",
-  subtitle: "Những thắc mắc thường gặp về hoa viên của quý vị",
+  subtitle: "Giải đáp những thắc mắc thường gặp tại Hoa Viên Bình Dương",
 };
 
 export interface FaqItem {
@@ -19,123 +19,131 @@ export interface FaqGroup {
 
 export const FAQ_GROUPS: FaqGroup[] = [
   {
-    category: "Chăm sóc & Cảnh quan",
+    category: "Thông tin, bảo mật & hỏa táng",
     items: [
       {
-        q: "Các mộ phần được chăm sóc như thế nào?",
+        q: "Yêu cầu tìm hiểu thông tin có tuân theo quy định bảo mật không?",
         a: [
-          "Tùy thuộc vào vị trí và loại đất, sau khi an táng có thể mất vài tháng để đất ổn định. Trong thời gian này, mộ phần sẽ được bồi thêm đất khi cần thiết.",
-          "Việc gieo hạt hoặc trải cỏ được thực hiện ngay khi điều kiện phù hợp để cỏ bén rễ. Một khi lớp cỏ đã vững, đội ngũ của chúng tôi sẽ thường xuyên chăm sóc cẩn thận.",
+          "Có. Hoa Viên Bình Dương tuân thủ nghiêm ngặt quy trình bảo mật thông tin cá nhân. Quý vị vui lòng gọi hotline 0818 555 444 để trao đổi về nhu cầu tra cứu và được hướng dẫn thủ tục phù hợp.",
         ],
       },
       {
-        q: "Tại sao cảnh quan hoa viên lại thay đổi?",
+        q: "Tro cốt có thể bị nhầm lẫn không?",
         a: [
-          "Cảnh quan thay đổi vì nhiều lý do. Cây cối thay đổi theo mùa – rụng lá hay đâm chồi – và thời kỳ ra hoa phụ thuộc vào loại cây và thời điểm trong năm. Đội ngũ làm vườn và kỹ thuật của chúng tôi luôn lên kế hoạch chăm sóc theo mùa để mang lại không gian an nghỉ đẹp nhất có thể.",
-          "Trong điều kiện thời tiết khắc nghiệt như hạn hán hay mưa lớn, một số khu vực khó tránh khỏi bị ảnh hưởng. Chúng tôi cam kết sẽ nỗ lực hết sức để duy trì cảnh quan và tiện nghi tại hoa viên, đồng thời luôn lắng nghe ý kiến đóng góp của quý vị.",
-        ],
-      },
-      {
-        q: "Cách nào tốt nhất để giữ gìn bia/bảng tưởng niệm?",
-        a: [
-          "Mọi bia và bảng tưởng niệm đều hao mòn dần theo thời gian. Quý vị có thể kéo dài tuổi thọ lớp bảo vệ bằng cách thường xuyên rửa nhẹ bằng nước và xà phòng (hoặc chất tẩy rửa loại nhẹ), xả sạch và để khô.",
-          "Khuyến cáo: không dùng chất tẩy mài mòn, hóa chất ăn mòn mạnh hay dung môi, vì có thể làm hỏng bề mặt và lớp phủ bảo vệ.",
+          "Không. Mỗi thời điểm chỉ diễn ra một lễ hỏa táng. Hồ sơ và giấy tờ nhận diện đều được đối chiếu trước khi bắt đầu, đồng thời nhân viên hỏa táng phải tuân thủ quy trình kiểm soát nghiêm ngặt trong suốt quá trình thực hiện và bàn giao tro cốt.",
         ],
       },
     ],
   },
   {
-    category: "Mộ phần & Xây dựng",
+    category: "Mộ phần, xây dựng & cảnh quan",
     items: [
       {
-        q: "Tôi muốn xây mộ hoặc làm bia mộ thì nên làm gì?",
+        q: "Tôi muốn xây mộ, làm bia mộ hoặc thực hiện hạng mục xây dựng thì cần làm gì?",
         a: [
-          "Quý vị vui lòng liên hệ với chúng tôi để nhận danh sách các đơn vị thi công đã đăng ký với hoa viên. Để giữ tính minh bạch và độc lập, chúng tôi không chỉ định hay ưu tiên bất kỳ đơn vị nào.",
-          "Chúng tôi khuyên quý vị nên khảo giá vài đơn vị vì giá có thể chênh lệch đáng kể, đồng thời tìm hiểu về tay nghề và uy tín của họ. Sau khi quý vị đặt và thanh toán, đơn vị thi công sẽ phối hợp cùng chúng tôi để tiến hành xây mộ/làm bia.",
+          "Toàn bộ việc xây dựng mộ phần và lắp đặt bia mộ tại Hoa Viên Bình Dương đều do đội ngũ thợ của Hoa Viên trực tiếp thực hiện, bảo đảm đúng thiết kế, tiêu chuẩn kỹ thuật và sự đồng bộ của cảnh quan.",
+          "Quý vị chỉ cần liên hệ bộ phận tiếp nhận để được tư vấn mẫu, vật liệu và chi phí. Sau khi gia đình xác nhận phương án và hoàn tất thanh toán, Hoa Viên sẽ sắp xếp thi công và thông báo tiến độ cụ thể.",
         ],
       },
       {
-        q: "Tại sao vị trí an táng phải được phân bố? Tôi có được chọn vị trí không?",
+        q: "Cách tốt nhất để giữ gìn bia hoặc bảng tưởng niệm là gì?",
         a: [
-          "Các vị trí an táng được phân bố có trật tự để tránh phát triển rời rạc, tạo điều kiện chăm sóc cảnh quan hiệu quả và mang lại không gian yên bình cho khách đến viếng.",
-          "Tại một số khu vực, quý vị có thể chọn vị trí mong muốn. Vui lòng hỏi nhân viên Chăm sóc Khách hàng về những khu vực được phép chọn vị trí.",
+          "Bia và bảng tưởng niệm sẽ hao mòn dần dưới tác động của thời tiết. Việc khắc và dát vàng chữ hoặc sử dụng loại sơn bền màu có thể giúp kéo dài tuổi thọ và giữ nội dung dễ đọc hơn.",
+          "Không sử dụng chất tẩy rửa có tính mài mòn hoặc dung môi vì có thể làm hỏng bề mặt và lớp hoàn thiện.",
+        ],
+      },
+      {
+        q: "Các mộ phần được chăm sóc như thế nào?",
+        a: [
+          "Tùy vị trí và loại đất, sau khi an táng có thể mất vài tháng để nền đất ổn định. Trong thời gian này, Hoa Viên sẽ bồi thêm đất khi cần thiết.",
+          "Cây xanh và thảm cỏ được bổ sung khi điều kiện phù hợp. Khi cây cỏ đã ổn định, đội ngũ chăm sóc cảnh quan sẽ tiếp tục bảo dưỡng mộ phần và khu vực xung quanh thường xuyên.",
+        ],
+      },
+      {
+        q: "Tại sao cảnh quan Hoa Viên thay đổi theo thời gian?",
+        a: [
+          "Cây xanh thay đổi theo mùa; một số loại rụng lá vào mùa khô, phát triển mạnh vào mùa mưa hoặc chỉ ra hoa vào những thời điểm nhất định. Đội ngũ làm vườn và kỹ thuật lập kế hoạch chăm sóc theo mùa để duy trì không gian an nghỉ yên bình.",
+          "Hạn hán, nắng nóng hoặc mưa lớn có thể ảnh hưởng tạm thời đến cây cỏ và lối đi. Hoa Viên sẽ điều chỉnh việc tưới, thoát nước và bảo dưỡng trong phạm vi điều kiện thực tế, đồng thời thông báo khi có vấn đề ảnh hưởng đến việc thăm viếng.",
         ],
       },
       {
         q: "Tôi có thể tìm mộ phần bằng cách nào?",
         a: [
-          "Để tìm mộ phần, quý vị vui lòng gọi điện đến hoa viên. Để hỗ trợ nhanh nhất, chúng tôi sẽ hỏi họ tên, tuổi và năm mất của người quá cố, sau đó cung cấp chính xác vị trí mộ phần.",
-          "Khi đến viếng, quý vị có thể ghé văn phòng để được hỗ trợ bản đồ và đường đi đến mộ phần.",
+          "Quý vị có thể gọi hotline 0818 555 444 và cung cấp họ tên, tuổi cùng năm mất của người quá cố. Nhân viên sẽ tra cứu và hướng dẫn chính xác vị trí mộ phần.",
+          "Khi đến Hoa Viên, quý vị có thể ghé văn phòng hoặc sử dụng màn hình tra cứu để nhận bản đồ và hướng dẫn đường đi.",
         ],
       },
     ],
   },
   {
-    category: "Hỏa táng & Quyền riêng tư",
+    category: "Hồ sơ & hỗ trợ khách hàng",
     items: [
       {
-        q: "Tro cốt được nhận diện và quản lý như thế nào?",
+        q: "Tại sao cập nhật thông tin lại quan trọng và tôi cập nhật bằng cách nào?",
         a: [
-          "Thông tin của người đã khuất được đối chiếu trong quá trình tiếp nhận, hỏa táng và bàn giao. Gia đình vui lòng cung cấp đầy đủ giấy tờ theo hướng dẫn và kiểm tra lại thông tin khi nhận tro cốt.",
-        ],
-      },
-      {
-        q: "Yêu cầu tra cứu thông tin có bị chi phối bởi quy định bảo mật không?",
-        a: [
-          "Hoa Viên Bình Dương tuân thủ nghiêm ngặt các quy định về bảo mật thông tin cá nhân. Xin quý vị liên hệ trực tiếp với chúng tôi để được trao đổi về yêu cầu của mình.",
-        ],
-      },
-    ],
-  },
-  {
-    category: "Thời hạn dịch vụ & Thanh toán",
-    items: [
-      {
-        q: "Thời hạn sử dụng phần mộ hoặc lưu giữ tro cốt được quy định thế nào?",
-        a: [
-          "Thời hạn và quyền lợi cụ thể phụ thuộc vào loại dịch vụ cùng nội dung hợp đồng. Quý vị nên yêu cầu nhân viên tư vấn giải thích rõ thời hạn, phạm vi chăm sóc, điều kiện gia hạn và các khoản phí liên quan trước khi ký kết.",
-        ],
-      },
-      {
-        q: "Có thể thay đổi lựa chọn sau khi ký hợp đồng không?",
-        a: [
-          "Việc thay đổi hoặc hủy lựa chọn phụ thuộc vào loại dịch vụ và các điều khoản đã ký kết. Quý vị vui lòng liên hệ trực tiếp để được kiểm tra và hướng dẫn theo từng trường hợp.",
-        ],
-      },
-      {
-        q: "Tôi thanh toán bằng cách nào?",
-        a: [
-          "Vì sự an toàn của cả hai bên, chúng tôi ưu tiên thanh toán không dùng tiền mặt. Quý vị có thể thanh toán bằng thẻ, chuyển khoản ngân hàng hoặc các hình thức khác. Vui lòng trao đổi với nhân viên Chăm sóc Khách hàng để được hướng dẫn cụ thể.",
-        ],
-      },
-      {
-        q: "Tôi có thể trả góp không?",
-        a: [
-          "Phương án thanh toán được áp dụng theo chính sách tại từng thời điểm. Quý vị vui lòng liên hệ để được cung cấp thông tin và điều kiện cụ thể trước khi quyết định.",
-        ],
-      },
-    ],
-  },
-  {
-    category: "Thông tin & Phản hồi",
-    items: [
-      {
-        q: "Vì sao cập nhật thông tin lại quan trọng? Tôi cập nhật bằng cách nào?",
-        a: [
-          "Cũng như khi thay đổi địa chỉ với ngân hàng, việc báo cho chúng tôi khi quý vị đổi địa chỉ là rất quan trọng để chúng tôi giữ liên lạc. Quý vị có thể cập nhật thông tin qua điện thoại, email hoặc trực tiếp tại văn phòng hoa viên.",
+          "Thông tin chính xác giúp Hoa Viên liên hệ kịp thời về nghi lễ, bảo dưỡng và nghĩa vụ dịch vụ; duy trì hồ sơ pháp lý, nội dung khắc bia và thông tin người đại diện; đồng thời bảo vệ quyền lợi của gia đình khi có sự cố hạ tầng hoặc thời tiết.",
+          "Quý vị có thể cập nhật trực tiếp tại quầy tiếp nhận hoặc từ xa qua hotline, email hay Zalo OA. Khi cập nhật thay người khác, vui lòng chuẩn bị CCCD, số hợp đồng và giấy ủy quyền. Hồ sơ thông thường được xử lý trong 1–3 ngày làm việc và được bảo mật theo quy định.",
         ],
       },
       {
         q: "Tôi có thể đóng góp ý kiến bằng cách nào?",
         a: [
-          "Quý vị có thể gọi điện, gửi email hoặc điền phiếu góp ý có sẵn tại các văn phòng của chúng tôi. Mọi ý kiến đóng góp đều được trân trọng tiếp nhận để chúng tôi phục vụ ngày càng tốt hơn.",
+          "Quý vị có thể gọi hotline 0818 555 444 hoặc điền phiếu góp ý tại văn phòng Hoa Viên. Phiếu có thể được gửi vào hộp thư góp ý tại khu vực tiếp nhận.",
         ],
       },
       {
-        q: "Tôi trình báo trộm cắp hoặc hư hại và sắp xếp thay thế bằng cách nào?",
+        q: "Tôi trình báo trộm cắp hoặc hư hại và đề nghị thay thế bằng cách nào?",
         a: [
-          "Người sở hữu quyền an táng cần trình báo sự việc để chúng tôi hướng dẫn thủ tục và xác định khả năng được bồi thường.",
-          "Tùy trường hợp, quý vị có thể cần cung cấp: báo giá sửa chữa/thay thế phần bị hư hại (đối với mộ xây), hình ảnh phần bị hư hại hoặc mất cắp, và biên bản trình báo của cơ quan chức năng đối với các trường hợp cố ý phá hoại.",
+          "Người sở hữu quyền an táng cần thông báo sự việc cho Hoa Viên để được hướng dẫn xử lý và xác định trường hợp có thể đề nghị bồi thường.",
+          "Hồ sơ có thể gồm biên bản xác nhận sự việc, báo giá sửa chữa hoặc thay thế đối với mộ xây, cùng hình ảnh đầy đủ của phần bị hư hại hoặc mất cắp. Người sở hữu quyền an táng cần trực tiếp điền và ký hồ sơ đề nghị.",
+        ],
+      },
+    ],
+  },
+  {
+    category: "Quyền an táng & lựa chọn vị trí",
+    items: [
+      {
+        q: "Tôi có được lựa chọn vị trí an táng không?",
+        a: [
+          "Có. Các khu an táng được bố trí theo quy hoạch để bảo đảm cảnh quan đồng bộ và thuận tiện cho việc chăm sóc, nhưng quý vị vẫn có thể trực tiếp tham quan và lựa chọn trong số những vị trí còn trống tại khu mộ phù hợp.",
+          "Nhân viên Chăm sóc Khách hàng sẽ cung cấp danh sách vị trí đang còn trống và tư vấn về loại mộ, hướng cùng các đặc điểm liên quan trước khi gia đình xác nhận.",
+        ],
+      },
+      {
+        q: "Thời hạn của quyền an táng là gì?",
+        a: [
+          "Thời hạn là khoảng thời gian gia đình được quyền sử dụng vị trí để an táng. Tùy loại sản phẩm và nội dung hợp đồng, quyền sử dụng có thể là 50 năm hoặc vĩnh viễn.",
+          "Quý vị nên yêu cầu nhân viên giải thích rõ thời hạn, phạm vi chăm sóc và các quyền lợi liên quan trước khi ký hợp đồng.",
+        ],
+      },
+      {
+        q: "Sau khi mua quyền an táng, tôi có thời gian cân nhắc lại không?",
+        a: [
+          "Có. Thời gian cân nhắc lại là 30 ngày, với điều kiện chưa thực hiện mai táng trong khoảng thời gian này. Quý vị vui lòng liên hệ bộ phận Chăm sóc Khách hàng để được hướng dẫn theo hồ sơ cụ thể.",
+        ],
+      },
+    ],
+  },
+  {
+    category: "Thanh toán",
+    items: [
+      {
+        q: "Tôi có thể thanh toán bằng những hình thức nào?",
+        a: [
+          "Quý vị có thể thanh toán bằng tiền mặt, chuyển khoản, séc hoặc chi phiếu ngân hàng. Vui lòng trao đổi với nhân viên Chăm sóc Khách hàng để nhận thông tin tài khoản và hướng dẫn phù hợp.",
+        ],
+      },
+      {
+        q: "Séc hoặc chi phiếu cần ghi trả cho ai?",
+        a: [
+          "Tất cả séc hoặc chi phiếu cần ghi trả cho “Công ty Cổ phần Đầu tư Xây dựng Chánh Phú Hòa”.",
+        ],
+      },
+      {
+        q: "Tôi có thể trả góp không?",
+        a: [
+          "Hiện tại Hoa Viên không áp dụng hình thức trả góp hoặc nhận một phần khoản thanh toán. Quý vị vui lòng liên hệ nhân viên Chăm sóc Khách hàng để được hướng dẫn về thời điểm và phương thức thanh toán.",
         ],
       },
     ],

@@ -5,7 +5,7 @@ import { InlineReadMore } from "@/components/InlineReadMore";
 export function CremationIntro() {
   return (
     <section className="bg-white">
-      <div className="mx-auto grid max-w-[1200px] grid-cols-1 items-center gap-12 px-6 py-[70px] lg:grid-cols-[58%_42%]">
+      <div className="mx-auto grid max-w-[1200px] grid-cols-1 items-center gap-12 px-6 py-[70px] lg:grid-cols-[58fr_42fr]">
         <div className="relative aspect-[16/10] overflow-hidden shadow-[0_24px_55px_-28px_rgba(20,36,68,0.5)] lg:aspect-[4/3]">
           <Image
             src={CREMATION_INTRO.image}

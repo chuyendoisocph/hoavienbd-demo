@@ -33,7 +33,7 @@ export function DetailAccordion({
         aria-expanded={open}
         aria-controls={id}
         onClick={() => setOpen((current) => !current)}
-        className="flex w-full cursor-pointer items-center justify-between gap-4 text-left"
+        className="-my-2 flex w-full cursor-pointer items-center justify-between gap-4 py-2 text-left"
       >
         <span className={cn("text-[17px] font-medium leading-[1.3]", theme === "dark" ? "text-white" : "text-brand")}>
           {title}

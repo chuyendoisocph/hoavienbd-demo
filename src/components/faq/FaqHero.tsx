@@ -11,9 +11,9 @@ export function FaqHero() {
         sizes="100vw"
         fetchPriority="high"
         loading="eager"
-        className="absolute inset-0 z-0 h-full w-full object-cover"
+        className="absolute inset-0 z-0 h-full w-full object-cover object-[center_60%]"
       />
-      <div className="absolute inset-0 z-[1] bg-black/45" />
+      <div className="absolute inset-0 z-[1] bg-black/25" />
       <div className="relative z-10 flex h-full flex-col items-center justify-center px-6 text-center text-white">
         <h1
           className="font-heading font-medium leading-[1.15] text-white"

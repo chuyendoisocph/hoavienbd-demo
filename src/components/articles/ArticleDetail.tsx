@@ -49,7 +49,7 @@ export function ArticleDetail({ article, bodyHtml, related }: ArticleDetailProps
           <div className="mt-14 border-t border-black/10 pt-8">
             <Link
               href="/bai-viet"
-              className="text-[15px] font-medium uppercase tracking-[2px] text-brand-link transition-colors hover:text-brand"
+              className="inline-block py-2 text-[15px] font-medium uppercase tracking-[2px] text-brand-link transition-colors hover:text-brand"
             >
               ← Quay lại danh sách bài viết
             </Link>

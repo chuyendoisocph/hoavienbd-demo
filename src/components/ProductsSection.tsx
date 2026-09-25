@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
 export function ProductsSection() {
   return (
     <section className="bg-white lg:min-h-[1018px]">
-      <div className="mx-auto grid max-w-[1200px] grid-cols-1 items-center gap-10 px-[15px] py-[30px] lg:grid-cols-[45%_55%] lg:gap-12 lg:px-6 lg:py-[115px]">
+      <div className="mx-auto grid max-w-[1200px] grid-cols-1 items-center gap-10 px-[15px] py-[30px] lg:grid-cols-[45fr_55fr] lg:gap-12 lg:px-6 lg:py-[115px]">
         <div className="text-center lg:text-left">
           <h2 className="mb-[15px] font-heading text-[30px] font-semibold leading-[1.2] text-heading md:text-[52px] md:leading-[78px]">
             {PRODUCTS.title}

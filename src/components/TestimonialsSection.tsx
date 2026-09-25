@@ -2,7 +2,7 @@ import { TESTIMONIALS, TESTIMONIALS_INTRO } from "@/lib/content";
 
 export function TestimonialsSection() {
   return (
-    <section className="min-h-[1619px] bg-white pb-[120px] pt-[54px] md:min-h-[1183px] md:pb-[240px]">
+    <section className="bg-white pb-[80px] pt-[54px] md:pb-[120px]">
       <h2 className="mb-5 text-center font-heading text-[30px] font-bold leading-[1.2] text-heading md:text-[52px] md:leading-[62px]">
         {TESTIMONIALS_INTRO.title}
       </h2>

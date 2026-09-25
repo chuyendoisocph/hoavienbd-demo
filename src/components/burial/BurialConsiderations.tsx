@@ -56,7 +56,7 @@ export function BurialConsiderations() {
                 aria-expanded={isOpen}
                 aria-controls={`burial-consideration-${index}`}
                 onClick={() => toggle(index)}
-                className="flex w-full cursor-pointer items-center justify-between gap-4 text-left"
+                className="-my-2 flex w-full cursor-pointer items-center justify-between gap-4 py-2 text-left"
               >
                 <span className="text-[17px] font-medium leading-[1.3] text-brand">
                   {item.title}

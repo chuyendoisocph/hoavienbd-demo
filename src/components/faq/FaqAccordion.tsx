@@ -30,7 +30,7 @@ export function FaqAccordion() {
                       type="button"
                       aria-expanded={isOpen}
                       onClick={() => setOpen(isOpen ? null : key)}
-                      className="flex w-full cursor-pointer items-center justify-between gap-4 text-left"
+                      className="-my-2 flex w-full cursor-pointer items-center justify-between gap-4 py-2 text-left"
                     >
                       <span className="text-[17px] font-medium leading-[1.4] text-heading">
                         {item.q}

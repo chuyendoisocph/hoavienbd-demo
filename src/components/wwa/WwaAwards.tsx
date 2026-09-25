@@ -47,11 +47,16 @@ export function WwaAwards() {
               aria-label={`Hiển thị giải thưởng ${i + 1}`}
               aria-current={i === active}
               onClick={() => setActive(i)}
-              className={cn(
-                "h-2.5 w-2.5 rounded-full transition-colors",
-                i === active ? "bg-brand" : "bg-black/20",
-              )}
-            />
+              className="grid h-6 w-6 place-items-center rounded-full"
+            >
+              <span
+                aria-hidden="true"
+                className={cn(
+                  "h-2.5 w-2.5 rounded-full transition-colors",
+                  i === active ? "bg-brand" : "bg-black/20",
+                )}
+              />
+            </button>
           ))}
         </div>
       </div>

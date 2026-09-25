@@ -17,9 +17,9 @@ interface InlineReadMoreProps {
 }
 
 const alignment = {
-  start: "justify-start",
+  start: "justify-center lg:justify-start",
   center: "justify-center",
-  end: "justify-end",
+  end: "justify-center lg:justify-end",
 };
 
 export function InlineReadMore({
@@ -55,7 +55,7 @@ export function InlineReadMore({
           aria-controls={id}
           onClick={() => setExpanded((current) => !current)}
           className={cn(
-            "inline-flex cursor-pointer items-center gap-3 text-[16px] font-medium uppercase tracking-[2px]",
+            "inline-flex cursor-pointer items-center gap-3 py-2 text-[16px] font-medium uppercase tracking-[2px]",
             theme === "dark" ? "text-white" : "text-brand-link",
             buttonClassName,
           )}

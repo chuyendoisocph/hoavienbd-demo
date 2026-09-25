@@ -28,7 +28,7 @@ function Block({ block }: { block: PolicyBlock }) {
             <dt className="font-semibold text-heading">{row.label}:</dt>
             <dd>
               {row.href ? (
-                <Link href={row.href} className="text-brand-link underline underline-offset-2">
+                <Link href={row.href} className="inline-block py-1 text-brand-link underline underline-offset-2">
                   {row.value}
                 </Link>
               ) : (
@@ -82,7 +82,7 @@ export function PrivacyAccordion() {
                     aria-expanded={isOpen}
                     aria-controls={panelId}
                     onClick={() => setOpen(i)}
-                    className="relative block w-full cursor-pointer pr-[28px] text-left font-sans font-bold text-heading md:pr-[50px]"
+                    className="relative -my-2 block w-full cursor-pointer py-2 pr-[28px] text-left font-sans font-bold text-heading md:pr-[50px]"
                   >
                     {item.title}
                     <Icon

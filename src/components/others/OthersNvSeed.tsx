@@ -53,11 +53,16 @@ export function OthersNvSeed() {
                 aria-label={`Hiển thị hình ${i + 1}`}
                 aria-current={i === active}
                 onClick={() => setActive(i)}
-                className={cn(
-                  "h-2.5 w-2.5 rounded-full transition-colors",
-                  i === active ? "bg-brand" : "bg-black/25",
-                )}
-              />
+                className="grid h-6 w-6 place-items-center rounded-full"
+              >
+                <span
+                  aria-hidden="true"
+                  className={cn(
+                    "h-2.5 w-2.5 rounded-full transition-colors",
+                    i === active ? "bg-brand" : "bg-black/25",
+                  )}
+                />
+              </button>
             ))}
           </div>
         </div>

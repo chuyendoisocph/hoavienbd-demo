@@ -1,7 +1,8 @@
 "use client";
 
-import { useState } from "react";
+import { type RefObject, useRef, useState } from "react";
 import Image from "next/image";
+import { Phone, X } from "lucide-react";
 import {
   FAMILY_PLOT,
   PLOT_TYPES,
@@ -16,6 +17,8 @@ export function BurialPlotTypes() {
   const [activeIndices, setActiveIndices] = useState<number[]>(() =>
     PLOT_TYPES.map(() => 0),
   );
+  const [quoteInterest, setQuoteInterest] = useState("Khu mộ tại Hoa Viên Bình Dương");
+  const quoteDialogRef = useRef<HTMLDialogElement>(null);
 
   const setActive = (plotIndex: number, imageIndex: number) => {
     setActiveIndices((prev) => {
@@ -23,6 +26,11 @@ export function BurialPlotTypes() {
       next[plotIndex] = imageIndex;
       return next;
     });
+  };
+
+  const requestQuote = (interest: string) => {
+    setQuoteInterest(interest);
+    quoteDialogRef.current?.showModal();
   };
 
   const lightPlots = PLOT_TYPES.slice(0, 2);
@@ -48,6 +56,7 @@ export function BurialPlotTypes() {
             plot={plot}
             activeIndex={activeIndices[i]}
             onSelect={(imageIndex) => setActive(i, imageIndex)}
+            onRequestQuote={requestQuote}
           />
         ))}
       </div>
@@ -61,17 +70,19 @@ export function BurialPlotTypes() {
               plot={plot}
               activeIndex={activeIndices[i + 2]}
               onSelect={(imageIndex) => setActive(i + 2, imageIndex)}
+              onRequestQuote={requestQuote}
             />
           ))}
         </div>
       </div>
 
-      <FamilyPlotFeature />
+      <FamilyPlotFeature onRequestQuote={requestQuote} />
+      <QuoteDialog dialogRef={quoteDialogRef} interest={quoteInterest} />
     </section>
   );
 }
 
-function FamilyPlotFeature() {
+function FamilyPlotFeature({ onRequestQuote }: { onRequestQuote: (interest: string) => void }) {
   const [activeImage, setActiveImage] = useState(0);
 
   return (
@@ -116,11 +127,16 @@ function FamilyPlotFeature() {
               aria-label={`Hiển thị hình ${index + 1}: ${FAMILY_PLOT.title}`}
               aria-current={index === activeImage}
               onClick={() => setActiveImage(index)}
-              className={cn(
-                "h-2.5 w-2.5 rounded-full transition-colors",
-                index === activeImage ? "bg-brand" : "bg-brand/30",
-              )}
-            />
+              className="grid h-6 w-6 place-items-center rounded-full"
+            >
+              <span
+                aria-hidden="true"
+                className={cn(
+                  "h-2.5 w-2.5 rounded-full transition-colors",
+                  index === activeImage ? "bg-brand" : "bg-brand/30",
+                )}
+              />
+            </button>
           ))}
         </div>
 
@@ -129,12 +145,13 @@ function FamilyPlotFeature() {
             <p className="max-w-[54ch] text-[16px] leading-[1.8] text-[#666]">
               {FAMILY_PLOT.body}
             </p>
-            <a
-              href={FAMILY_PLOT.cta.href}
-              className="mt-7 inline-flex w-fit items-center justify-center border border-brand bg-brand px-7 py-4 text-[13px] font-semibold uppercase tracking-[0.12em] text-white transition-colors hover:bg-[#3544b8] active:translate-y-px"
+            <button
+              type="button"
+              onClick={() => onRequestQuote(FAMILY_PLOT.title)}
+              className="mt-7 inline-flex w-fit items-center justify-center border border-brand px-[34px] py-[14px] text-[14px] uppercase tracking-[2px] text-brand transition-colors hover:bg-brand/5 active:translate-y-px"
             >
               {FAMILY_PLOT.cta.label}
-            </a>
+            </button>
           </div>
 
           <div className="grid grid-cols-1 gap-px border-t border-brand/15 bg-brand/15 sm:grid-cols-2 lg:border-l lg:border-t-0">
@@ -159,9 +176,10 @@ interface PlotBlockProps {
   plot: PlotType;
   activeIndex: number;
   onSelect: (imageIndex: number) => void;
+  onRequestQuote: (interest: string) => void;
 }
 
-function PlotBlock({ plot, activeIndex, onSelect }: PlotBlockProps) {
+function PlotBlock({ plot, activeIndex, onSelect, onRequestQuote }: PlotBlockProps) {
   const { dark } = plot;
 
   const carousel = (
@@ -218,9 +236,10 @@ function PlotBlock({ plot, activeIndex, onSelect }: PlotBlockProps) {
 
       <div className="mt-5 flex flex-col items-center gap-5">
         {plot.buttons.map((button) => (
-            <a
+            <button
               key={button.label}
-              href={button.href}
+              type="button"
+              onClick={() => onRequestQuote(plot.title)}
               className={cn(
                 "inline-block rounded-none border px-[34px] py-[14px] text-[14px] uppercase tracking-[2px] transition-colors",
                 dark
@@ -229,7 +248,7 @@ function PlotBlock({ plot, activeIndex, onSelect }: PlotBlockProps) {
               )}
             >
               {button.label}
-            </a>
+            </button>
         ))}
       </div>
     </div>
@@ -254,6 +273,80 @@ function PlotBlock({ plot, activeIndex, onSelect }: PlotBlockProps) {
         </>
       )}
     </div>
+  );
+}
+
+interface QuoteDialogProps {
+  dialogRef: RefObject<HTMLDialogElement | null>;
+  interest: string;
+}
+
+function QuoteDialog({ dialogRef, interest }: QuoteDialogProps) {
+  return (
+    <dialog
+      ref={dialogRef}
+      aria-labelledby="quote-dialog-title"
+      onClick={(event) => {
+        if (event.target === event.currentTarget) dialogRef.current?.close();
+      }}
+      className="m-auto max-h-[calc(100dvh-32px)] w-[min(92vw,560px)] overflow-y-auto bg-transparent p-0 backdrop:bg-[#151937]/70 backdrop:backdrop-blur-sm"
+    >
+      <div className="relative border border-brand/15 bg-white px-6 py-8 shadow-2xl sm:px-10 sm:py-10">
+        <form method="dialog">
+          <button
+            type="submit"
+            aria-label="Đóng hộp thoại nhận báo giá"
+            className="absolute right-4 top-4 grid h-11 w-11 place-items-center text-brand/65 transition-colors hover:bg-brand/5 hover:text-brand focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
+          >
+            <X aria-hidden="true" className="h-5 w-5" />
+          </button>
+        </form>
+
+        <p className="pr-12 text-[12px] font-semibold uppercase tracking-[0.16em] text-brand/65">
+          TƯ VẤN NHANH
+        </p>
+        <h2 id="quote-dialog-title" className="mt-3 pr-12 font-heading text-[32px] font-medium leading-tight text-brand sm:text-[40px]">
+          Nhận báo giá ngay
+        </h2>
+        <p className="mt-5 text-[16px] leading-[1.75] text-[#5f6475]">
+          Quý khách đang quan tâm đến <strong className="font-semibold text-brand">{interest}</strong>. Gọi trực tiếp để được tư vấn vị trí, diện tích và chi phí phù hợp mà không cần rời khỏi trang này.
+        </p>
+
+        <div className="mt-7 border-y border-brand/15 py-5">
+          <p className="text-[12px] font-medium uppercase tracking-[0.12em] text-[#7b7f8d]">
+            TỔNG ĐÀI TƯ VẤN
+          </p>
+          <a
+            href="tel:0818555444"
+            className="mt-2 inline-flex items-center gap-3 text-[26px] font-semibold tracking-[-0.02em] text-brand transition-colors hover:text-[#3544b8] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand"
+          >
+            <Phone aria-hidden="true" className="h-5 w-5" />
+            0818 555 444
+          </a>
+          <p className="mt-2 text-[13px] leading-relaxed text-[#7b7f8d]">
+            Phục vụ từ 7h30 – 17h00, tất cả các ngày trong tuần.
+          </p>
+        </div>
+
+        <div className="mt-7 flex flex-col gap-3 sm:flex-row">
+          <a
+            href="tel:0818555444"
+            className="inline-flex min-h-12 flex-1 items-center justify-center gap-2 bg-brand px-6 py-3 text-[13px] font-semibold uppercase tracking-[0.12em] text-white transition-colors hover:bg-[#3544b8] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
+          >
+            <Phone aria-hidden="true" className="h-4 w-4" />
+            Gọi để nhận báo giá
+          </a>
+          <form method="dialog" className="flex-1">
+            <button
+              type="submit"
+              className="min-h-12 w-full border border-brand px-6 py-3 text-[13px] font-semibold uppercase tracking-[0.12em] text-brand transition-colors hover:bg-brand/5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
+            >
+              Tiếp tục xem
+            </button>
+          </form>
+        </div>
+      </div>
+    </dialog>
   );
 }
 
@@ -292,17 +385,22 @@ function Carousel({ images, activeIndex, onSelect, dark, title }: CarouselProps)
             aria-label={`Hiển thị hình ${i + 1}: ${title}`}
             aria-current={i === activeIndex}
             onClick={() => onSelect(i)}
-            className={cn(
-              "h-2.5 w-2.5 rounded-full transition-colors",
-              i === activeIndex
-                ? dark
-                  ? "bg-white"
-                  : "bg-brand"
-                : dark
-                  ? "bg-white/40"
-                  : "bg-brand/30",
-            )}
-          />
+            className="grid h-6 w-6 place-items-center rounded-full"
+          >
+            <span
+              aria-hidden="true"
+              className={cn(
+                "h-2.5 w-2.5 rounded-full transition-colors",
+                i === activeIndex
+                  ? dark
+                    ? "bg-white"
+                    : "bg-brand"
+                  : dark
+                    ? "bg-white/40"
+                    : "bg-brand/30",
+              )}
+            />
+          </button>
         ))}
       </div>
     </div>
