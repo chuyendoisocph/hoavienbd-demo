@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { ADVANTAGES } from "@/lib/content";
 import { noOrphan } from "@/lib/utils";
+import { ConsultationDialog } from "@/components/ConsultationDialog";
 
 type AdvantageCard = (typeof ADVANTAGES.cards)[number];
 
@@ -42,12 +43,13 @@ export function AdvantagesSection() {
           <p className="mt-3 text-[18px] font-medium leading-[29px] tracking-[0.5px] text-[#666] lg:mt-0 lg:text-[25px] lg:leading-[37.5px] lg:tracking-[1px]">
             {ADVANTAGES.subtitle}
           </p>
-          <a
-            href={ADVANTAGES.cta.href}
-            className="mt-6 inline-block rounded-none bg-[#4453C4] px-[30px] py-[18px] text-[16px] font-extrabold tracking-[2px] text-white shadow-[0_10px_20px_rgba(65,84,125,0.24)] transition-transform hover:-translate-y-0.5 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#4453C4] lg:mt-[27.8px] lg:text-[18px]"
+          <ConsultationDialog
+            title="Tư vấn chuẩn bị từ sớm"
+            interest="chuẩn bị hậu sự từ sớm"
+            triggerClassName="mt-6 inline-block rounded-none bg-[#4453C4] px-[30px] py-[18px] text-[16px] font-extrabold tracking-[2px] text-white shadow-[0_10px_20px_rgba(65,84,125,0.24)] transition-transform hover:-translate-y-0.5 lg:mt-[27.8px] lg:text-[18px]"
           >
             {ADVANTAGES.cta.label}
-          </a>
+          </ConsultationDialog>
         </div>
 
         <div>

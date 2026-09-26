@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { CARE_TEAM, REASONS } from "@/lib/funeral-content";
 import { DetailAccordion } from "@/components/DetailAccordion";
+import { ConsultationDialog } from "@/components/ConsultationDialog";
 
 export function FuneralReasons() {
   return (
@@ -40,12 +41,13 @@ export function FuneralReasons() {
             {CARE_TEAM.subtitle}
           </p>
           <p className="mt-6 text-[16px] leading-[1.9] text-[#666]">{CARE_TEAM.body}</p>
-          <a
-            href={CARE_TEAM.cta.href}
-            className="mt-8 inline-block rounded-none border border-brand px-[30px] py-[14px] text-[16px] text-brand transition-colors hover:bg-brand/5"
+          <ConsultationDialog
+            title="Tư vấn dịch vụ tang lễ"
+            interest="dịch vụ tang lễ và hậu sự"
+            triggerClassName="mt-8 inline-block rounded-none border border-brand px-[30px] py-[14px] text-[16px] text-brand transition-colors hover:bg-brand/5"
           >
             {CARE_TEAM.cta.label}
-          </a>
+          </ConsultationDialog>
         </div>
       </div>
     </section>

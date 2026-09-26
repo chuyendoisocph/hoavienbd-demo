@@ -1,5 +1,6 @@
 import { PREPLAN_STEPS } from "@/lib/preplanning-content";
 import { PlusIcon } from "@/components/icons";
+import { ConsultationDialog } from "@/components/ConsultationDialog";
 
 export function PreplanSteps() {
   return (
@@ -29,15 +30,16 @@ export function PreplanSteps() {
         </ol>
 
         <div className="mt-10 flex justify-center">
-          <a
-            href={PREPLAN_STEPS.cta.href}
-            className="inline-flex items-center gap-3 text-[16px] uppercase tracking-[2px] text-brand-link"
+          <ConsultationDialog
+            title="Trao đổi cùng chuyên viên"
+            interest="các bước chuẩn bị hậu sự từ sớm"
+            triggerClassName="inline-flex items-center gap-3 text-[16px] uppercase tracking-[2px] text-brand-link"
           >
             {PREPLAN_STEPS.cta.label}
             <span className="inline-flex h-7 w-7 items-center justify-center rounded-full bg-brand text-white">
               <PlusIcon className="h-3.5 w-3.5" />
             </span>
-          </a>
+          </ConsultationDialog>
         </div>
       </div>
     </section>

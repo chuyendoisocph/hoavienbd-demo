@@ -2,6 +2,7 @@ import Image from "next/image";
 import { ADVANTAGES } from "@/lib/preplanning-content";
 import { CheckIcon, PlusIcon } from "@/components/icons";
 import { cn } from "@/lib/utils";
+import { ConsultationDialog } from "@/components/ConsultationDialog";
 
 export function PreplanAdvantages() {
   return (
@@ -52,15 +53,16 @@ export function PreplanAdvantages() {
       })}
 
       <div className={cn("flex justify-center pt-4")}>
-        <a
-          href={ADVANTAGES.cta.href}
-          className="inline-flex items-center gap-3 text-[16px] uppercase tracking-[2px] text-brand-link"
+        <ConsultationDialog
+          title="Tư vấn chuẩn bị từ sớm"
+          interest="chuẩn bị hậu sự từ sớm"
+          triggerClassName="inline-flex items-center gap-3 text-[16px] uppercase tracking-[2px] text-brand-link"
         >
           {ADVANTAGES.cta.label}
           <span className="inline-flex h-7 w-7 items-center justify-center rounded-full bg-brand text-white">
             <PlusIcon className="h-3.5 w-3.5" />
           </span>
-        </a>
+        </ConsultationDialog>
       </div>
     </section>
   );

@@ -1,4 +1,5 @@
 import { PLANS } from "@/lib/funeral-content";
+import { ConsultationDialog } from "@/components/ConsultationDialog";
 
 export function FuneralPlans() {
   return (
@@ -14,13 +15,24 @@ export function FuneralPlans() {
 
         <div className="mx-auto mt-12 grid max-w-[820px] grid-cols-1 gap-6 sm:grid-cols-2">
           {PLANS.buttons.map((button) => (
-            <a
-              key={button.label}
-              href={button.href}
-              className="block bg-brand px-6 py-[18px] text-center text-[16px] tracking-[1px] text-white transition-colors hover:bg-brand/90"
-            >
-              {button.label}
-            </a>
+            button.href === "/lien-he" ? (
+              <ConsultationDialog
+                key={button.label}
+                title="Tư vấn dịch vụ tang lễ"
+                interest="dịch vụ tang lễ và hậu sự"
+                triggerClassName="block bg-brand px-6 py-[18px] text-center text-[16px] tracking-[1px] text-white transition-colors hover:bg-brand/90"
+              >
+                {button.label}
+              </ConsultationDialog>
+            ) : (
+              <a
+                key={button.label}
+                href={button.href}
+                className="block bg-brand px-6 py-[18px] text-center text-[16px] tracking-[1px] text-white transition-colors hover:bg-brand/90"
+              >
+                {button.label}
+              </a>
+            )
           ))}
         </div>
       </div>

@@ -1,7 +1,7 @@
 import Image from "next/image";
-import Link from "next/link";
 import { ArrowRight, Check } from "lucide-react";
 import { FUNERAL_SUPPLIES } from "@/lib/funeral-content";
+import { ConsultationDialog } from "@/components/ConsultationDialog";
 
 export function FuneralCaskets() {
   return (
@@ -39,17 +39,18 @@ export function FuneralCaskets() {
             ))}
           </ul>
 
-          <p className="mt-7 border-l-2 border-brand/50 pl-4 text-[14px] leading-7 text-[#757575]">
+          <p className="mt-7 border-l-2 border-brand/50 pl-4 text-[14px] leading-7 text-[#666]">
             {FUNERAL_SUPPLIES.note}
           </p>
 
-          <Link
-            href={FUNERAL_SUPPLIES.cta.href}
-            className="mt-8 inline-flex min-h-12 items-center gap-3 bg-brand px-6 py-3 text-[13px] font-semibold tracking-[0.12em] text-white transition-colors hover:bg-brand/90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
+          <ConsultationDialog
+            title="Tư vấn vật dụng tang lễ"
+            interest="vật dụng và phương án tang lễ"
+            triggerClassName="mt-8 inline-flex min-h-12 items-center gap-3 bg-brand px-6 py-3 text-[13px] font-semibold tracking-[0.12em] text-white transition-colors hover:bg-brand/90"
           >
             {FUNERAL_SUPPLIES.cta.label}
             <ArrowRight aria-hidden="true" className="h-4 w-4" />
-          </Link>
+          </ConsultationDialog>
         </div>
       </div>
     </section>
