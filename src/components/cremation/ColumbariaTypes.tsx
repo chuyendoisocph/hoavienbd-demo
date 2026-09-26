@@ -100,7 +100,7 @@ function FeatureBlock({
       <p
         className={cn(
           "text-[15px] uppercase tracking-[0.12em]",
-          dark ? "text-white/85" : "text-[#888]",
+          dark ? "text-white/85" : "text-[#6b6b6b]",
         )}
       >
         {type.eyebrow}
@@ -178,7 +178,7 @@ export function ColumbariaTypes() {
   return (
     <section>
       <div className="px-6 py-16 text-center">
-        <p className="text-[15px] uppercase tracking-[0.12em] text-[#999]">
+        <p className="text-[15px] uppercase tracking-[0.12em] text-[#6b6b6b]">
           {COLUMBARIA_HEADING.eyebrow}
         </p>
         <h2 className="font-heading mt-4 text-[30px] md:text-[clamp(34px,5vw,52px)] font-medium text-brand">

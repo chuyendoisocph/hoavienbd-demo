@@ -4,7 +4,7 @@ import { WATCH_VIDEO } from "@/lib/content";
 export function WatchVideo() {
   return (
     <section className="bg-white px-[15px] pb-[114px] pt-[30px] text-center md:px-6 md:pb-[90px] md:pt-[60px]">
-      <p className="mb-[30px] text-[15px] uppercase tracking-[0.12em] text-[#999]">
+      <p className="mb-[30px] text-[15px] uppercase tracking-[0.12em] text-[#6b6b6b]">
         XEM VIDEO
       </p>
       <VideoFeature

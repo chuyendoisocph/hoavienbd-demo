@@ -5,7 +5,7 @@ export function WwaIntro() {
   return (
     <section className="bg-white pt-[70px]">
       <div className="mx-auto max-w-[1000px] px-6 text-center">
-        <p className="mb-3 text-[15px] uppercase tracking-[0.12em] text-[#999]">
+        <p className="mb-3 text-[15px] uppercase tracking-[0.12em] text-[#6b6b6b]">
           {WWA_INTRO.eyebrow}
         </p>
         <h2

@@ -10,7 +10,7 @@ export function SiteView360() {
       <div className="mx-auto max-w-[1180px]">
         <div className="grid items-end gap-6 lg:grid-cols-[1fr_390px] lg:gap-16">
           <div>
-            <p className="mb-4 text-[13px] font-semibold tracking-[0.12em] text-[#7C8BA7]">
+            <p className="mb-4 text-[13px] font-semibold tracking-[0.12em] text-[#5a6b8a]">
               {SITE_VIEW_360.eyebrow}
             </p>
             <h2 className="max-w-[720px] font-heading text-[30px] font-semibold leading-[1.2] text-heading md:text-[50px] md:leading-[1.16]">

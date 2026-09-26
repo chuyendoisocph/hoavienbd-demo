@@ -20,7 +20,7 @@ export function WwaLeadership() {
         const text = (
           <div className={leader.imageLeft ? "lg:order-2" : "lg:order-1"}>
             {leader.eyebrow && (
-              <p className="text-[14px] uppercase tracking-[0.12em] text-[#888]">{leader.eyebrow}</p>
+              <p className="text-[14px] uppercase tracking-[0.12em] text-[#6b6b6b]">{leader.eyebrow}</p>
             )}
             <h3 className="mt-3 font-heading text-[20px] font-bold text-brand md:text-[32px]">
               {leader.name}

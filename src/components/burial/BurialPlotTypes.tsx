@@ -40,7 +40,7 @@ export function BurialPlotTypes() {
     <section className="bg-white py-[70px]">
       {/* Heading */}
       <div className="mx-auto max-w-[1200px] px-6 text-center">
-        <p className="mb-3 text-[14px] uppercase tracking-[0.12em] text-[#888]">
+        <p className="mb-3 text-[14px] uppercase tracking-[0.12em] text-[#6b6b6b]">
           {PLOT_TYPES_HEADING.eyebrow}
         </p>
         <h2 className="font-heading text-[30px] md:text-[52px] font-medium leading-[1.2] md:leading-tight text-brand">
@@ -157,7 +157,7 @@ function FamilyPlotFeature({ onRequestQuote }: { onRequestQuote: (interest: stri
           <div className="grid grid-cols-1 gap-px border-t border-brand/15 bg-brand/15 sm:grid-cols-2 lg:border-l lg:border-t-0">
             {FAMILY_PLOT.facts.map((fact) => (
               <div key={fact.label} className="flex min-h-[126px] flex-col justify-center bg-white px-6 py-5 sm:px-8">
-                <p className="text-[11px] font-medium tracking-[0.1em] text-[#888]">
+                <p className="text-[11px] font-medium tracking-[0.1em] text-[#6b6b6b]">
                   {fact.label}
                 </p>
                 <p className="mt-2 text-[17px] font-semibold leading-[1.45] text-brand">
@@ -202,7 +202,7 @@ function PlotBlock({ plot, activeIndex, onSelect, onRequestQuote }: PlotBlockPro
       <p
         className={cn(
           "mb-3 text-center text-[14px] uppercase tracking-[0.12em]",
-          dark ? "text-white/85" : "text-[#888]",
+          dark ? "text-white/85" : "text-[#6b6b6b]",
         )}
       >
         {plot.eyebrow}

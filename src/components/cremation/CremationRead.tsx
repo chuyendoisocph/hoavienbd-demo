@@ -7,7 +7,7 @@ export function CremationRead() {
     <section className="bg-white">
       <div className="mx-auto max-w-[1100px] px-6 py-[70px]">
         <div className="text-center">
-          <p className="text-[15px] uppercase tracking-[0.12em] text-[#999]">
+          <p className="text-[15px] uppercase tracking-[0.12em] text-[#6b6b6b]">
             {CREMATION_READ.eyebrow}
           </p>
           <h2 className="font-heading mb-[50px] text-[30px] md:text-[52px] font-medium text-brand">

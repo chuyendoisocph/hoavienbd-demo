@@ -28,7 +28,7 @@ export function FuneralParlours() {
               />
             ))}
           </div>
-          <p className="mt-3 text-[16px] text-[#888]">
+          <p className="mt-3 text-[16px] text-[#6b6b6b]">
             {PARLOURS.slides[active].caption}
           </p>
           <div className="mt-4 flex items-center gap-2">

@@ -19,7 +19,7 @@ export function TestimonialsSection() {
             <p className="font-bold text-heading text-[17px] mb-3">
               {testimonial.title}
             </p>
-            <p className="italic font-serif text-[#555] text-[16px] leading-[1.7]">
+            <p className="font-serif text-[#555] text-[16px] leading-[1.7]">
               {testimonial.excerpt}
             </p>
           </div>

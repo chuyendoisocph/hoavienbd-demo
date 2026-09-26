@@ -19,10 +19,10 @@ const bodyItalicFont = Be_Vietnam_Pro({
   display: "swap",
 });
 
+// Chỉ tải kiểu đứng: bản nghiêng của Newsreader nặng 264 KB mà chỉ dùng cho
+// một đoạn trích, không đáng.
 const displayFont = Newsreader({
   variable: "--font-display-face",
-  axes: ["opsz"],
-  style: ["normal", "italic"],
   subsets: ["latin", "vietnamese"],
   display: "swap",
 });

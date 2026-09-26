@@ -13,7 +13,7 @@ export function OthersNvSeed() {
     <section className="bg-[#d6d6d6] py-[70px]">
       {/* Intro */}
       <div className="mx-auto max-w-[1100px] px-6 text-center">
-        <p className="text-[15px] uppercase tracking-[0.12em] text-[#888]">{SANH_PHAN.eyebrow}</p>
+        <p className="text-[15px] uppercase tracking-[0.12em] text-[#4a4a4a]">{SANH_PHAN.eyebrow}</p>
         <h2 className="font-heading mt-3 text-[30px] font-medium text-brand md:text-[52px]">
           {SANH_PHAN.title}
         </h2>

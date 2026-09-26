@@ -7,7 +7,7 @@ export function FuneralIntro() {
   return (
     <section className="bg-white pt-[70px]">
       <div className="mx-auto w-full max-w-[1140px] px-6">
-        <p className="mb-3 text-center text-[15px] font-normal uppercase tracking-[0.12em] text-[#999]">
+        <p className="mb-3 text-center text-[15px] font-normal uppercase tracking-[0.12em] text-[#6b6b6b]">
           {FUNERAL_INTRO.eyebrow}
         </p>
         <h2
@@ -49,7 +49,7 @@ export function FuneralIntro() {
 
       {/* WATCH video */}
       <div className="px-6 pb-[90px] pt-[70px] text-center">
-        <p className="mb-[30px] text-[15px] uppercase tracking-[0.12em] text-[#999]">
+        <p className="mb-[30px] text-[15px] uppercase tracking-[0.12em] text-[#6b6b6b]">
           XEM VIDEO
         </p>
         <YoutubeWatch

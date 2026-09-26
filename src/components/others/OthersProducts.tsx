@@ -75,7 +75,7 @@ export function OthersProductBlock({ product }: { product: OtherProduct }) {
 
   const text = (
     <div className={product.imageLeft ? "lg:order-2" : "lg:order-1"}>
-      <p className="text-[15px] uppercase tracking-[0.12em] text-[#888]">{product.eyebrow}</p>
+      <p className="text-[15px] uppercase tracking-[0.12em] text-[#6b6b6b]">{product.eyebrow}</p>
       <h2 className="font-heading mt-4 text-[30px] font-medium text-brand md:text-[40px]">
         {product.title}
       </h2>
