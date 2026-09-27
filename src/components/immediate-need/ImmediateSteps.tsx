@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { PASSING_STEPS } from "@/lib/immediate-content";
-import { PlusIcon } from "@/components/icons";
+import { ArrowRightIcon } from "@/components/icons";
 import { noOrphan } from "@/lib/utils";
 
 export function ImmediateSteps() {
@@ -36,7 +36,7 @@ export function ImmediateSteps() {
         >
           {PASSING_STEPS.cta.label}
           <span className="inline-flex h-7 w-7 items-center justify-center rounded-full bg-brand text-white">
-            <PlusIcon className="h-3.5 w-3.5" />
+            <ArrowRightIcon aria-hidden="true" className="h-3.5 w-3.5" />
           </span>
         </a>
       </div>

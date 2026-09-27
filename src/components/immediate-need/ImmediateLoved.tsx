@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { LOVED_ONE } from "@/lib/immediate-content";
-import { PlusIcon } from "@/components/icons";
+import { ArrowRightIcon } from "@/components/icons";
 
 export function ImmediateLoved() {
   return (
@@ -35,7 +35,7 @@ export function ImmediateLoved() {
           >
             {LOVED_ONE.cta.label}
             <span className="inline-flex h-7 w-7 items-center justify-center rounded-full bg-brand text-white">
-              <PlusIcon className="h-3.5 w-3.5" />
+              <ArrowRightIcon aria-hidden="true" className="h-3.5 w-3.5" />
             </span>
           </a>
 
@@ -59,7 +59,7 @@ export function ImmediateLoved() {
           >
             {LOVED_ONE.deathCta.label}
             <span className="inline-flex h-7 w-7 items-center justify-center rounded-full bg-brand text-white">
-              <PlusIcon className="h-3.5 w-3.5" />
+              <ArrowRightIcon aria-hidden="true" className="h-3.5 w-3.5" />
             </span>
           </a>
         </div>
