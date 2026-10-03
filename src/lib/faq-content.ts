@@ -36,12 +36,12 @@ export const FAQ_GROUPS: FaqGroup[] = [
     ],
   },
   {
-    category: "Mộ phần, xây dựng & cảnh quan",
+    category: "Khu mộ, xây dựng & cảnh quan",
     items: [
       {
         q: "Tôi muốn xây mộ, làm bia mộ hoặc thực hiện hạng mục xây dựng thì cần làm gì?",
         a: [
-          "Toàn bộ việc xây dựng mộ phần và lắp đặt bia mộ tại Hoa Viên Bình Dương đều do đội ngũ thợ của Hoa Viên trực tiếp thực hiện, bảo đảm đúng thiết kế, tiêu chuẩn kỹ thuật và sự đồng bộ của cảnh quan.",
+          "Toàn bộ việc xây dựng mộ và lắp đặt bia mộ tại Hoa Viên Bình Dương đều do đội ngũ thợ của Hoa Viên trực tiếp thực hiện, bảo đảm đúng thiết kế, tiêu chuẩn kỹ thuật và sự đồng bộ của cảnh quan.",
           "Quý vị chỉ cần liên hệ bộ phận tiếp nhận để được tư vấn mẫu, vật liệu và chi phí. Sau khi gia đình xác nhận phương án và hoàn tất thanh toán, Hoa Viên sẽ sắp xếp thi công và thông báo tiến độ cụ thể.",
         ],
       },
@@ -53,10 +53,10 @@ export const FAQ_GROUPS: FaqGroup[] = [
         ],
       },
       {
-        q: "Các mộ phần được chăm sóc như thế nào?",
+        q: "Các khu mộ được chăm sóc như thế nào?",
         a: [
           "Tùy vị trí và loại đất, sau khi an táng có thể mất vài tháng để nền đất ổn định. Trong thời gian này, Hoa Viên sẽ bồi thêm đất khi cần thiết.",
-          "Cây xanh và thảm cỏ được bổ sung khi điều kiện phù hợp. Khi cây cỏ đã ổn định, đội ngũ chăm sóc cảnh quan sẽ tiếp tục bảo dưỡng mộ phần và khu vực xung quanh thường xuyên.",
+          "Cây xanh và thảm cỏ được bổ sung khi điều kiện phù hợp. Khi cây cỏ đã ổn định, đội ngũ chăm sóc cảnh quan sẽ tiếp tục bảo dưỡng mộ và khu vực xung quanh thường xuyên.",
         ],
       },
       {
@@ -67,9 +67,9 @@ export const FAQ_GROUPS: FaqGroup[] = [
         ],
       },
       {
-        q: "Tôi có thể tìm mộ phần bằng cách nào?",
+        q: "Tôi có thể tìm vị trí mộ bằng cách nào?",
         a: [
-          "Quý vị có thể gọi hotline 0818 555 444 và cung cấp họ tên, tuổi cùng năm mất của người quá cố. Nhân viên sẽ tra cứu và hướng dẫn chính xác vị trí mộ phần.",
+          "Quý vị có thể gọi hotline 0818 555 444 và cung cấp họ tên, tuổi cùng năm mất của người quá cố. Nhân viên sẽ tra cứu và hướng dẫn chính xác vị trí mộ.",
           "Khi đến Hoa Viên, quý vị có thể ghé văn phòng hoặc sử dụng màn hình tra cứu để nhận bản đồ và hướng dẫn đường đi.",
         ],
       },

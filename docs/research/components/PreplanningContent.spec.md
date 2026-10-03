@@ -7,7 +7,7 @@
 - **Adaptation:** follows the information architecture of Nirvana's pre-planning page while using original Vietnamese copy appropriate for Hoa Viên Bình Dương.
 
 ## Content Principles
-- Use the Vietnamese term “chuẩn bị hậu sự từ sớm”.
+- Use the Vietnamese term “chủ động chuẩn bị từ sớm”.
 - Present preparation as a responsible, caring and practical conversation rather than a fear-based message.
 - Do not claim that Hoa Viên Bình Dương sells funeral insurance or pre-need insurance contracts.
 - Do not promise protection against inflation, guaranteed pricing or specific payment terms.

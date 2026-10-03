@@ -26,7 +26,7 @@ export function EventsInvitation({ image, imageAlt }: EventsInvitationProps) {
           />
         </div>
 
-        <div className="flex flex-col justify-center px-7 py-12 sm:px-12 sm:py-16 lg:px-14 xl:px-16">
+        <div className="flex min-w-0 flex-col justify-center px-7 py-12 sm:px-12 sm:py-16 lg:px-14 xl:px-16">
           <p className="text-[12px] font-semibold uppercase tracking-[0.2em] text-brand/70">
             HOA VIÊN BÌNH DƯƠNG
           </p>

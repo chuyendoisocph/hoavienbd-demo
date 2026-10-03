@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export type EventItem = {
   slug: string;
@@ -22,22 +23,22 @@ export function FeaturedEvent({ event }: FeaturedEventProps) {
   return (
     <section className="bg-brand px-6 py-16 text-white sm:py-20 lg:py-24">
       <div className="mx-auto max-w-[1180px]">
-        <header className="mx-auto max-w-[760px] text-center">
+        <header className="mx-auto w-full min-w-0 max-w-[760px] text-center">
           <p className="text-[13px] font-bold uppercase tracking-[0.2em] text-white/75 sm:text-sm">
             Sự kiện nổi bật
           </p>
           <h2 className="mt-3 font-display text-[34px] font-semibold leading-[1.18] text-white sm:text-[42px] lg:text-[52px]">
             Những dịp sum vầy đầy ý nghĩa
           </h2>
-          <p className="mx-auto mt-4 max-w-[650px] text-[16px] leading-7 text-white/80 sm:text-[18px] sm:leading-8">
+          <p className="mx-auto mt-4 w-full max-w-[650px] text-[16px] leading-7 text-white/80 sm:text-[18px] sm:leading-8">
             Cùng Hoa Viên Bình Dương gìn giữ truyền thống, tưởng nhớ nguồn cội
             và trao gửi bình an qua những hoạt động văn hóa thường niên.
           </p>
         </header>
 
         <article id={event.slug} className="scroll-mt-28">
-          <a
-            href={`#${event.slug}`}
+          <Link
+            href={`/su-kien/${event.slug}`}
             aria-label={`Xem sự kiện ${event.title}`}
             className="group relative mt-10 block aspect-[16/9] min-h-[390px] overflow-hidden rounded-[2px] bg-footer-navy shadow-[0_24px_70px_rgba(20,23,54,0.34)] outline-none focus-visible:ring-4 focus-visible:ring-white focus-visible:ring-offset-4 focus-visible:ring-offset-brand sm:min-h-0 lg:mt-12 lg:aspect-[2/1]"
           >
@@ -63,7 +64,7 @@ export function FeaturedEvent({ event }: FeaturedEventProps) {
                 Xem sự kiện →
               </span>
             </div>
-          </a>
+          </Link>
         </article>
       </div>
     </section>
@@ -74,7 +75,7 @@ export function AnnualEventsGrid({ events }: AnnualEventsGridProps) {
   return (
     <section className="bg-white px-6 py-16 sm:py-20 lg:py-24">
       <div className="mx-auto max-w-[1180px]">
-        <header className="max-w-[720px]">
+        <header className="w-full min-w-0 max-w-[720px]">
           <p className="text-[13px] font-bold uppercase tracking-[0.2em] text-brand-link sm:text-sm">
             Dấu ấn văn hóa
           </p>
@@ -94,8 +95,8 @@ export function AnnualEventsGrid({ events }: AnnualEventsGridProps) {
               id={event.slug}
               className="group scroll-mt-28 border border-[#e4e7ef] bg-white shadow-[0_12px_34px_rgba(28,38,75,0.08)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_18px_44px_rgba(28,38,75,0.13)]"
             >
-              <a
-                href={`#${event.slug}`}
+              <Link
+                href={`/su-kien/${event.slug}`}
                 aria-label={`Xem sự kiện ${event.title}`}
                 className="block h-full outline-none focus-visible:ring-4 focus-visible:ring-brand focus-visible:ring-inset"
               >
@@ -122,7 +123,7 @@ export function AnnualEventsGrid({ events }: AnnualEventsGridProps) {
                     Xem sự kiện →
                   </span>
                 </div>
-              </a>
+              </Link>
             </article>
           ))}
         </div>

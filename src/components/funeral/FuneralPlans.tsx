@@ -19,7 +19,7 @@ export function FuneralPlans() {
               <ConsultationDialog
                 key={button.label}
                 title="Tư vấn dịch vụ tang lễ"
-                interest="dịch vụ tang lễ và hậu sự"
+                interest="dịch vụ tang lễ trọn gói"
                 triggerClassName="block bg-brand px-6 py-[18px] text-center text-[16px] tracking-[1px] text-white transition-colors hover:bg-brand/90"
               >
                 {button.label}

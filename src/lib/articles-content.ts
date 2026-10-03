@@ -19,9 +19,9 @@ export const ARTICLES_HERO = {
 
 const ARTICLE_INPUTS: ArticleInput[] = [
   {
-    title: "Cần làm gì khi có người thân qua đời?",
+    title: "Cần làm gì khi gia đình có tang?",
     date: "17/09/2026",
-    category: "Hướng dẫn hậu sự",
+    category: "Hướng dẫn dành cho gia đình",
     excerpt:
       "Những việc cần ưu tiên trong thời gian đầu, từ liên hệ đơn vị hỗ trợ đến chuẩn bị giấy tờ và thống nhất hình thức tiễn biệt.",
     slug: "can-lam-gi-khi-co-nguoi-than-qua-doi",
@@ -30,7 +30,7 @@ const ARTICLE_INPUTS: ArticleInput[] = [
   {
     title: "An táng hay hỏa táng: Gia đình nên cân nhắc điều gì?",
     date: "17/09/2026",
-    category: "Hướng dẫn hậu sự",
+    category: "Hướng dẫn dành cho gia đình",
     excerpt:
       "Mỗi hình thức đều có những đặc điểm riêng. Gia đình nên cân nhắc di nguyện, tín ngưỡng, nơi an nghỉ và điều kiện thực tế.",
     slug: "an-tang-hay-hoa-tang",
@@ -46,7 +46,7 @@ const ARTICLE_INPUTS: ArticleInput[] = [
     image: "/images/hvbd/columbaria-white.jpg",
   },
   {
-    title: "Chuẩn bị hậu sự từ sớm: Một cách sẻ chia với gia đình",
+    title: "Chủ động chuẩn bị từ sớm: Một cách sẻ chia với gia đình",
     date: "17/09/2026",
     category: "Chuẩn bị từ sớm",
     excerpt:
@@ -55,9 +55,9 @@ const ARTICLE_INPUTS: ArticleInput[] = [
     image: "/images/45-vietnam.png",
   },
   {
-    title: "Những điều cần lưu ý khi thăm viếng và chăm sóc mộ phần",
+    title: "Những điều cần lưu ý khi thăm viếng và chăm sóc khu mộ",
     date: "17/09/2026",
-    category: "Chăm sóc mộ phần",
+    category: "Chăm sóc khu mộ",
     excerpt:
       "Một số lưu ý giúp việc thăm viếng diễn ra trang nghiêm, thuận tiện và góp phần giữ gìn cảnh quan chung của hoa viên.",
     slug: "tham-vieng-va-cham-soc-mo-phan",
@@ -68,7 +68,7 @@ const ARTICLE_INPUTS: ArticleInput[] = [
     date: "17/09/2026",
     category: "Văn hóa tưởng niệm",
     excerpt:
-      "Thanh Minh là dịp con cháu thăm viếng, chăm sóc mộ phần và cùng nhau gìn giữ đạo lý uống nước nhớ nguồn.",
+      "Thanh Minh là dịp con cháu thăm viếng, chăm sóc mộ và cùng nhau gìn giữ đạo lý uống nước nhớ nguồn.",
     slug: "thanh-minh-va-truyen-thong-tuong-nho-to-tien",
     image: "/images/hvbd/dai-le-vu-lan.jpg",
   },

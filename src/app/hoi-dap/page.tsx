@@ -7,7 +7,7 @@ import { FaqAccordion } from "@/components/faq/FaqAccordion";
 export const metadata: Metadata = {
   title: "Hỏi & Đáp | Hoa Viên Bình Dương",
   description:
-    "Giải đáp những thắc mắc thường gặp về hoa viên: chăm sóc mộ phần, xây mộ & bia mộ, hỏa táng, quyền an táng, thanh toán và phản hồi tại Hoa Viên Bình Dương.",
+    "Giải đáp những thắc mắc thường gặp về hoa viên: chăm sóc khu mộ, xây mộ & bia mộ, hỏa táng, quyền an táng, thanh toán và phản hồi tại Hoa Viên Bình Dương.",
 };
 
 export default function FaqPage() {

@@ -30,7 +30,7 @@ export function ProductsSection() {
                 "transition-colors hover:bg-neutral-100",
               )}
             >
-              XEM SẢN PHẨM PHẦN MỘ
+              XEM CÁC KHU MỘ
             </a>
             <a
               href="#tham-quan-360"

@@ -32,7 +32,7 @@ export function PreplanSteps() {
         <div className="mt-10 flex justify-center">
           <ConsultationDialog
             title="Trao đổi cùng chuyên viên"
-            interest="các bước chuẩn bị hậu sự từ sớm"
+            interest="các bước chủ động chuẩn bị từ sớm"
             triggerClassName="inline-flex items-center gap-3 text-[16px] uppercase tracking-[2px] text-brand-link"
           >
             {PREPLAN_STEPS.cta.label}

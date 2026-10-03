@@ -43,7 +43,7 @@ export function FuneralReasons() {
           <p className="mt-6 text-[16px] leading-[1.9] text-[#666]">{CARE_TEAM.body}</p>
           <ConsultationDialog
             title="Tư vấn dịch vụ tang lễ"
-            interest="dịch vụ tang lễ và hậu sự"
+            interest="dịch vụ tang lễ trọn gói"
             triggerClassName="mt-8 inline-block rounded-none border border-brand px-[30px] py-[14px] text-[16px] text-brand transition-colors hover:bg-brand/5"
           >
             {CARE_TEAM.cta.label}

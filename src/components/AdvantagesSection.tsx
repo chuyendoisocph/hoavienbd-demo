@@ -45,7 +45,7 @@ export function AdvantagesSection() {
           </p>
           <ConsultationDialog
             title="Tư vấn chuẩn bị từ sớm"
-            interest="chuẩn bị hậu sự từ sớm"
+            interest="chủ động chuẩn bị từ sớm"
             triggerClassName="mt-6 inline-block rounded-none bg-[#4453C4] px-[30px] py-[18px] text-[16px] font-extrabold tracking-[2px] text-white shadow-[0_10px_20px_rgba(65,84,125,0.24)] transition-transform hover:-translate-y-0.5 lg:mt-[27.8px] lg:text-[18px]"
           >
             {ADVANTAGES.cta.label}

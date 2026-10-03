@@ -9,7 +9,7 @@ export const FUNERAL_HERO = {
 export const FUNERAL_INTRO = {
   eyebrow: "DỊCH VỤ TANG LỄ",
   title: "Gói Dịch Vụ Trọn Gói",
-  body: "Lo liệu tang lễ là việc hệ trọng và nhạy cảm. Dù là chuẩn bị trước hay khi hữu sự, việc biết bắt đầu từ đâu và quyết định những gì cần làm có thể khiến nhiều người bối rối, nhất là với những ai chưa từng trực tiếp lo liệu hậu sự. Với bề dày kinh nghiệm trong lĩnh vực dịch vụ tang lễ, Hoa Viên Bình Dương thấu hiểu sâu sắc nỗi trăn trở này.",
+  body: "Lo liệu tang lễ là việc hệ trọng và nhạy cảm. Dù là chuẩn bị trước hay khi hữu sự, việc biết bắt đầu từ đâu và quyết định những gì cần làm có thể khiến nhiều người bối rối, nhất là với những ai chưa từng trực tiếp sắp xếp các nghi thức cần thiết. Với bề dày kinh nghiệm trong lĩnh vực dịch vụ tang lễ, Hoa Viên Bình Dương thấu hiểu sâu sắc nỗi trăn trở này.",
   details: [
     "Gia đình được hướng dẫn lựa chọn các hạng mục cần thiết theo tín ngưỡng, phong tục, quy mô lễ tang và ngân sách dự kiến. Mỗi phương án được trao đổi rõ ràng trước khi thực hiện để hạn chế những quyết định vội vàng trong lúc tang gia bối rối.",
     "Đội ngũ phụ trách phối hợp xuyên suốt từ tiếp nhận, khâm liệm, nhập quan, chuẩn bị lễ viếng đến di quan, an táng hoặc hỏa táng, giúp gia đình có thêm thời gian ở bên nhau và tưởng nhớ người đã khuất.",
@@ -115,7 +115,7 @@ export const CARE_TEAM = {
 };
 
 export const PLANS = {
-  title: "DỊCH VỤ TANG LỄ & HẬU SỰ",
+  title: "DỊCH VỤ TANG LỄ TRỌN GÓI",
   introLead: "Hoa Viên Bình Dương tư vấn giải pháp phù hợp với nhu cầu, tín ngưỡng và điều kiện của từng gia đình. ",
   introBold: "Mọi hạng mục sẽ được trao đổi rõ ràng trước khi thực hiện.",
   buttons: [
@@ -129,7 +129,7 @@ export const PLANS = {
 export const GUIDE = {
   bannerImage: "/images/hvbd/family-walk.jpg",
   title: "Cẩm nang chọn đơn vị dịch vụ tang lễ",
-  body: "Lựa chọn đơn vị dịch vụ tang lễ phù hợp giúp gia đình được hướng dẫn rõ ràng và giảm bớt áp lực khi lo liệu hậu sự. Một đơn vị uy tín cần cung cấp thông tin minh bạch, tôn trọng tín ngưỡng và thực hiện đúng những nội dung đã thống nhất.",
+  body: "Lựa chọn đơn vị dịch vụ tang lễ phù hợp giúp gia đình được hướng dẫn rõ ràng và giảm bớt áp lực khi sắp xếp các nghi thức cần thiết. Một đơn vị uy tín cần cung cấp thông tin minh bạch, tôn trọng tín ngưỡng và thực hiện đúng những nội dung đã thống nhất.",
   details: [
     "Gia đình nên dành thời gian tìm hiểu kinh nghiệm, phạm vi dịch vụ, cách phối hợp và phản hồi từ những người từng sử dụng. Không nên quyết định chỉ dựa trên mức giá khi chưa hiểu rõ những hạng mục đã bao gồm và các chi phí có thể phát sinh.",
     "Một đơn vị phù hợp cần biết lắng nghe, giải thích dễ hiểu và không gây áp lực lựa chọn. Cảm giác tin cậy, sự minh bạch và khả năng đáp ứng đúng nghi thức là những yếu tố quan trọng trong suốt quá trình tổ chức.",
@@ -151,7 +151,7 @@ export interface AboutCard {
 }
 
 export const ABOUT = {
-  title: "Về Dịch Vụ Tang Lễ & Hậu Sự",
+  title: "Về Dịch Vụ Tang Lễ",
   background: "/images/hvbd/linh-hoa-tue-dan-3.jpg",
   cards: [
     { title: "Đơn vị dịch vụ tang lễ là gì?", image: "/images/hvbd/dich-vu-tang-le-2.jpg", href: "/bai-viet/can-lam-gi-khi-co-nguoi-than-qua-doi" },

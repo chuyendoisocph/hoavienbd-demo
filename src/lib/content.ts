@@ -17,8 +17,8 @@ export const TOP_NAV: NavItem[] = [
     label: "Hỗ Trợ",
     href: "#",
     children: [
-      { label: "Khi Có Người Thân Qua Đời", href: "/ho-tro/khi-co-nguoi-than-qua-doi" },
-      { label: "Chuẩn Bị Từ Sớm", href: "/ho-tro/chuan-bi-tu-som" },
+      { label: "Hỗ Trợ Khi Gia Đình Cần", href: "/ho-tro/khi-co-nguoi-than-qua-doi" },
+      { label: "Chủ Động Chuẩn Bị", href: "/ho-tro/chuan-bi-tu-som" },
     ],
   },
   {
@@ -26,7 +26,7 @@ export const TOP_NAV: NavItem[] = [
     href: "#",
     children: [
       { label: "Dịch Vụ Tang Lễ", href: "/dich-vu/tang-le" },
-      { label: "Phần Mộ", href: "/dich-vu/phan-mo" },
+      { label: "Khu Mộ & Vị Trí An Nghỉ", href: "/dich-vu/phan-mo" },
       { label: "Dịch Vụ Lưu Tro Cốt", href: "/dich-vu/luu-tro-cot" },
       { label: "Dịch Vụ Khác", href: "/dich-vu/dich-vu-khac" },
     ],
@@ -36,6 +36,7 @@ export const TOP_NAV: NavItem[] = [
     href: "#",
     children: [
       { label: "Về Chúng Tôi", href: "/ve-chung-toi" },
+      { label: "Sự Kiện", href: "/su-kien" },
       { label: "Bài Viết", href: "/bai-viet" },
       { label: "Hỏi & Đáp", href: "/hoi-dap" },
       { label: "Liên Hệ", href: "/lien-he" },
@@ -105,7 +106,7 @@ export const CARING = {
 
 export const PREPLAN_CARDS: PreplanCard[] = [
   {
-    title: "5 lợi ích của việc chuẩn bị hậu sự từ sớm",
+    title: "5 lợi ích khi chủ động chuẩn bị từ sớm",
     image: "/images/45-vietnam.png",
     href: "/bai-viet/chuan-bi-hau-su-tu-som",
   },
@@ -115,7 +116,7 @@ export const PREPLAN_CARDS: PreplanCard[] = [
     href: "/ho-tro/chuan-bi-tu-som",
   },
   {
-    title: "Ai nên chuẩn bị hậu sự từ sớm?",
+    title: "Ai nên chủ động chuẩn bị từ sớm?",
     image: "/images/1661-vietnam.png",
     href: "/ho-tro/chuan-bi-tu-som",
   },
@@ -130,10 +131,10 @@ export const WATCH_VIDEO = {
 export const PRODUCTS = {
   title: "Sản Phẩm & Dịch Vụ",
   items: [
-    { label: "Phần Mộ", href: "/dich-vu/phan-mo" },
+    { label: "Khu Mộ & Vị Trí An Nghỉ", href: "/dich-vu/phan-mo" },
     { label: "Dịch Vụ Lưu Tro Cốt", href: "/dich-vu/luu-tro-cot" },
     { label: "Dịch Vụ Tang Lễ", href: "/dich-vu/tang-le" },
-    { label: "Chăm Sóc Mộ Phần", href: "/dich-vu/dich-vu-khac" },
+    { label: "Chăm Sóc Khu Mộ", href: "/dich-vu/dich-vu-khac" },
     { label: "Tư Vấn Thiết Kế & Xây Dựng Mộ", href: "/dich-vu/dich-vu-khac" },
     { label: "Sanh Phần", href: "/dich-vu/dich-vu-khac" },
   ] as ProductItem[],
@@ -152,7 +153,7 @@ export const SITE_VIEW_360 = {
 };
 
 export const ADVANTAGES = {
-  title: "5 lợi ích khi chuẩn bị hậu sự từ sớm cùng Hoa Viên Bình Dương",
+  title: "5 lợi ích khi chủ động chuẩn bị từ sớm cùng Hoa Viên Bình Dương",
   subtitle: "Nguyện vọng của gia đình là ưu tiên hàng đầu",
   cta: { label: "LIÊN HỆ TƯ VẤN", href: "/lien-he" },
   cards: [
@@ -221,15 +222,15 @@ export const FOOTER_COLUMNS: FooterLinkColumn[] = [
   {
     heading: "Hỗ Trợ",
     links: [
-      { label: "Khi Có Người Thân Qua Đời", href: "/ho-tro/khi-co-nguoi-than-qua-doi" },
-      { label: "Chuẩn Bị Từ Sớm", href: "/ho-tro/chuan-bi-tu-som" },
+      { label: "Hỗ Trợ Khi Gia Đình Cần", href: "/ho-tro/khi-co-nguoi-than-qua-doi" },
+      { label: "Chủ Động Chuẩn Bị", href: "/ho-tro/chuan-bi-tu-som" },
     ],
   },
   {
     heading: "Lựa Chọn Dịch Vụ",
     links: [
       { label: "Dịch Vụ Tang Lễ", href: "/dich-vu/tang-le" },
-      { label: "Phần Mộ", href: "/dich-vu/phan-mo" },
+      { label: "Khu Mộ & Vị Trí An Nghỉ", href: "/dich-vu/phan-mo" },
       { label: "Dịch Vụ Lưu Tro Cốt", href: "/dich-vu/luu-tro-cot" },
       { label: "Dịch Vụ Khác", href: "/dich-vu/dich-vu-khac" },
     ],
@@ -240,6 +241,7 @@ export const FOOTER_COLUMNS: FooterLinkColumn[] = [
       { label: "Về Chúng Tôi", href: "/ve-chung-toi" },
       { label: "Chi Nhánh", href: "/lien-he" },
       { label: "Liên Hệ", href: "/lien-he" },
+      { label: "Sự Kiện", href: "/su-kien" },
       { label: "Bài Viết", href: "/bai-viet" },
       { label: "Hỏi & Đáp", href: "/hoi-dap" },
       { label: "Chính Sách Quyền Riêng Tư", href: "/chinh-sach-quyen-rieng-tu" },

@@ -10,7 +10,7 @@ import { PRODUCTS } from "@/lib/others-content";
 export const metadata: Metadata = {
   title: "Dịch Vụ Khác | Hoa Viên Bình Dương",
   description:
-    "Tìm hiểu dịch vụ chăm sóc mộ phần, tư vấn thiết kế xây dựng mộ và sanh phần tại Hoa Viên Bình Dương.",
+    "Tìm hiểu dịch vụ chăm sóc khu mộ, tư vấn thiết kế xây dựng mộ và sanh phần tại Hoa Viên Bình Dương.",
 };
 
 export default function OthersPage() {

@@ -2,7 +2,7 @@
 
 export const IMMEDIATE_HERO = {
   background: "/images/immediate-need-hero.webp",
-  title: "Khi Người Thân Qua Đời",
+  title: "Hỗ Trợ Khi Gia Đình Có Tang",
   subtitle: "Chúng tôi sẵn sàng hỗ trợ 24/7",
   cta: { label: "GỌI TỔNG ĐÀI 0818 555 444", href: "tel:0818555444" },
 };
@@ -14,7 +14,7 @@ export interface ImmediateStep {
 }
 
 export const PASSING_STEPS = {
-  title: "Cần làm gì khi có người thân qua đời",
+  title: "Những việc cần làm khi gia đình có tang",
   intro:
     "Đội ngũ Hoa Viên luôn sẵn sàng hướng dẫn và đồng hành cùng gia đình trong từng bước.",
   steps: [
@@ -36,7 +36,7 @@ export const PASSING_STEPS = {
     {
       icon: "/images/Icon-04a.jpg",
       title: "Bước 4: Lựa chọn nơi an nghỉ",
-      body: "Nếu còn băn khoăn, gia đình có thể tham quan thực tế và trao đổi với nhân viên tư vấn về vị trí, loại hình phần mộ hoặc nơi lưu giữ tro cốt.",
+      body: "Nếu còn băn khoăn, gia đình có thể tham quan thực tế và trao đổi với nhân viên tư vấn về vị trí, loại hình mộ hoặc nơi lưu giữ tro cốt.",
     },
     {
       icon: "/images/Icon-05a.jpg",
@@ -49,14 +49,14 @@ export const PASSING_STEPS = {
 
 export const LOVED_ONE = {
   image: "/images/hvbd/grave-offering-white.jpg",
-  title: "Khi người thân yêu qua đời",
+  title: "Đồng hành cùng gia đình khi có tang",
   body: [
     "Chúng ta khó tránh khỏi những giây phút đau buồn khi người thân yêu ra đi. Trong khoảng thời gian nhạy cảm này, có những việc hệ trọng cần được lưu tâm. Thủ tục pháp lý và khai báo có thể trở thành gánh nặng trong lúc như thế, nhưng lại là điều không thể bỏ qua.",
     "Nếu biết rõ những việc cần làm, mọi thứ có thể được giải quyết nhanh chóng, để quá trình tiếc thương sớm bắt đầu. Chúng tôi không thể nhấn mạnh đủ tầm quan trọng của việc chuẩn bị trước, bởi một đơn vị dịch vụ tang lễ uy tín có thể hỗ trợ những việc này một cách nhẹ nhàng, để tang quyến tập trung vào điều quan trọng hơn – đối diện với nỗi đau và tưởng nhớ người đã khuất.",
   ],
-  prompt: "Gia đình đã cân nhắc việc chuẩn bị hậu sự từ sớm chưa?",
+  prompt: "Gia đình đã cân nhắc việc chủ động chuẩn bị từ sớm chưa?",
   cta: { label: "CHUẨN BỊ TỪ SỚM", href: "/ho-tro/chuan-bi-tu-som" },
-  deathTitle: "Cần làm gì khi có người qua đời",
+  deathTitle: "Các thủ tục cần lưu ý",
   deathSteps: [
     "Khai báo tử vong",
     "Đăng ký khai tử và nhận Trích lục khai tử",
@@ -74,7 +74,7 @@ export const RESOURCES = {
   title: "Thông Tin Hữu Ích",
   links: [
     { title: "So sánh dịch vụ tang lễ", href: "/dich-vu/tang-le" },
-    { title: "Phần mộ tại Hoa Viên Bình Dương", href: "/dich-vu/phan-mo" },
+    { title: "Các khu mộ tại Hoa Viên Bình Dương", href: "/dich-vu/phan-mo" },
     { title: "Tìm hiểu về dịch vụ lưu tro cốt", href: "/dich-vu/luu-tro-cot" },
   ] as ResourceLink[],
 };

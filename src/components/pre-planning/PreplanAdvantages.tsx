@@ -55,7 +55,7 @@ export function PreplanAdvantages() {
       <div className={cn("flex justify-center pt-4")}>
         <ConsultationDialog
           title="Tư vấn chuẩn bị từ sớm"
-          interest="chuẩn bị hậu sự từ sớm"
+          interest="chủ động chuẩn bị từ sớm"
           triggerClassName="inline-flex items-center gap-3 text-[16px] uppercase tracking-[2px] text-brand-link"
         >
           {ADVANTAGES.cta.label}
