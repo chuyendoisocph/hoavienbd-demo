@@ -17,8 +17,8 @@ export const TOP_NAV: NavItem[] = [
     label: "Hỗ Trợ",
     href: "#",
     children: [
-      { label: "Hỗ Trợ Khi Gia Đình Cần", href: "/ho-tro/khi-co-nguoi-than-qua-doi" },
-      { label: "Chủ Động Chuẩn Bị", href: "/ho-tro/chuan-bi-tu-som" },
+      { label: "Cần Hỗ Trợ Ngay", href: "/ho-tro/khi-co-nguoi-than-qua-doi" },
+      { label: "Chuẩn Bị Từ Sớm", href: "/ho-tro/chuan-bi-tu-som" },
     ],
   },
   {
@@ -101,7 +101,7 @@ export const CULTURE = {
 export const CARING = {
   title: "Trân Trọng Từng Cuộc Đời",
   body: "Với hệ thống tiện ích đồng bộ cùng các sản phẩm và dịch vụ toàn diện, Hoa Viên Bình Dương mong muốn mang đến sự đồng hành ấm áp trong những thời khắc thiêng liêng. “Trân trọng từng cuộc đời” là triết lý của chúng tôi – nơi mỗi cuộc đời đều ý nghĩa và đáng quý. Đội ngũ Hoa Viên luôn nỗ lực để người thân của mỗi gia đình được tôn vinh và tiễn biệt một cách trọn vẹn, bằng tất cả sự chuyên nghiệp và tận tâm.",
-  background: "/images/83609s-vietnam-v2.png",
+  background: "/images/hvbd/tran-trong-tung-cuoc-doi-hoa-vien-v3.png",
 };
 
 export const PREPLAN_CARDS: PreplanCard[] = [
@@ -222,8 +222,8 @@ export const FOOTER_COLUMNS: FooterLinkColumn[] = [
   {
     heading: "Hỗ Trợ",
     links: [
-      { label: "Hỗ Trợ Khi Gia Đình Cần", href: "/ho-tro/khi-co-nguoi-than-qua-doi" },
-      { label: "Chủ Động Chuẩn Bị", href: "/ho-tro/chuan-bi-tu-som" },
+      { label: "Cần Hỗ Trợ Ngay", href: "/ho-tro/khi-co-nguoi-than-qua-doi" },
+      { label: "Chuẩn Bị Từ Sớm", href: "/ho-tro/chuan-bi-tu-som" },
     ],
   },
   {

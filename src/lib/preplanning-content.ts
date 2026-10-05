@@ -1,4 +1,4 @@
-/** Nội dung trang Chủ Động Chuẩn Bị Từ Sớm — Hoa Viên Bình Dương */
+/** Nội dung trang Chuẩn Bị Từ Sớm — Hoa Viên Bình Dương */
 
 export const PREPLAN_HERO = {
   background: "/images/pre-planning-hero-vietnam.png",

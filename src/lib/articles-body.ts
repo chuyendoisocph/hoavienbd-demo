@@ -2,7 +2,7 @@
 
 export const ARTICLE_BODIES: Record<string, string> = {
   "can-lam-gi-khi-co-nguoi-than-qua-doi": `
-    <p>Khi gia đình có tang, nhiều công việc cần được sắp xếp trong thời gian ngắn. Việc bình tĩnh xác định thứ tự ưu tiên sẽ giúp các thủ tục và nghi lễ được tiến hành chu toàn hơn.</p>
+    <p>Khi cần tổ chức tang lễ, nhiều công việc phải được sắp xếp trong thời gian ngắn. Việc bình tĩnh xác định thứ tự ưu tiên sẽ giúp các thủ tục và nghi lễ được tiến hành chu toàn hơn.</p>
     <h2>Liên hệ đơn vị hỗ trợ</h2>
     <p>Gia đình nên liên hệ đơn vị dịch vụ tang lễ để được hướng dẫn việc tiếp nhận, di chuyển người đã khuất, chuẩn bị tang lễ và lựa chọn hình thức an táng hoặc hỏa táng. Hãy trao đổi rõ về tín ngưỡng, phong tục, thời gian và ngân sách trước khi thống nhất dịch vụ.</p>
     <h2>Chuẩn bị giấy tờ cần thiết</h2>

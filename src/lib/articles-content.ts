@@ -19,7 +19,7 @@ export const ARTICLES_HERO = {
 
 const ARTICLE_INPUTS: ArticleInput[] = [
   {
-    title: "Cần làm gì khi gia đình có tang?",
+    title: "Hướng dẫn các bước cần thiết khi tổ chức tang lễ",
     date: "17/09/2026",
     category: "Hướng dẫn dành cho gia đình",
     excerpt:

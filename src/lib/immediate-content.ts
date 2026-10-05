@@ -1,8 +1,8 @@
-/** Nội dung trang Khi Người Thân Qua Đời — Hoa Viên Bình Dương */
+/** Nội dung trang Hỗ Trợ Tang Lễ Cho Gia Đình — Hoa Viên Bình Dương */
 
 export const IMMEDIATE_HERO = {
   background: "/images/immediate-need-hero.webp",
-  title: "Hỗ Trợ Khi Gia Đình Có Tang",
+  title: "Hỗ Trợ Tang Lễ Cho Gia Đình",
   subtitle: "Chúng tôi sẵn sàng hỗ trợ 24/7",
   cta: { label: "GỌI TỔNG ĐÀI 0818 555 444", href: "tel:0818555444" },
 };
@@ -14,7 +14,7 @@ export interface ImmediateStep {
 }
 
 export const PASSING_STEPS = {
-  title: "Những việc cần làm khi gia đình có tang",
+  title: "Những việc gia đình cần ưu tiên",
   intro:
     "Đội ngũ Hoa Viên luôn sẵn sàng hướng dẫn và đồng hành cùng gia đình trong từng bước.",
   steps: [
@@ -49,7 +49,7 @@ export const PASSING_STEPS = {
 
 export const LOVED_ONE = {
   image: "/images/hvbd/grave-offering-white.jpg",
-  title: "Đồng hành cùng gia đình khi có tang",
+  title: "Đồng hành trong thời điểm cần thiết",
   body: [
     "Chúng ta khó tránh khỏi những giây phút đau buồn khi người thân yêu ra đi. Trong khoảng thời gian nhạy cảm này, có những việc hệ trọng cần được lưu tâm. Thủ tục pháp lý và khai báo có thể trở thành gánh nặng trong lúc như thế, nhưng lại là điều không thể bỏ qua.",
     "Nếu biết rõ những việc cần làm, mọi thứ có thể được giải quyết nhanh chóng, để quá trình tiếc thương sớm bắt đầu. Chúng tôi không thể nhấn mạnh đủ tầm quan trọng của việc chuẩn bị trước, bởi một đơn vị dịch vụ tang lễ uy tín có thể hỗ trợ những việc này một cách nhẹ nhàng, để tang quyến tập trung vào điều quan trọng hơn – đối diện với nỗi đau và tưởng nhớ người đã khuất.",

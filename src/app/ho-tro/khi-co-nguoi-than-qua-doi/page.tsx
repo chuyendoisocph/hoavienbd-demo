@@ -7,9 +7,9 @@ import { ImmediateLoved } from "@/components/immediate-need/ImmediateLoved";
 import { ImmediateResources } from "@/components/immediate-need/ImmediateResources";
 
 export const metadata: Metadata = {
-  title: "Khi Người Thân Qua Đời | Hoa Viên Bình Dương",
+  title: "Hỗ Trợ Tang Lễ | Hoa Viên Bình Dương",
   description:
-    "Chúng tôi sẵn sàng hỗ trợ 24/7. Hướng dẫn từng bước cần làm khi có người thân qua đời và sự hỗ trợ tang lễ từ Hoa Viên Bình Dương.",
+    "Hướng dẫn các bước cần thiết và kết nối đội ngũ hỗ trợ tang lễ 24/7 từ Hoa Viên Bình Dương.",
 };
 
 export default function ImmediateNeedPage() {
