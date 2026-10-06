@@ -138,8 +138,8 @@ export const PRODUCTS = {
     { label: "Tư Vấn Thiết Kế & Xây Dựng Mộ", href: "/dich-vu/dich-vu-khac" },
     { label: "Sanh Phần", href: "/dich-vu/dich-vu-khac" },
   ] as ProductItem[],
-  image: "/images/hvbd/TV da sua.jpg",
-  imageAlt: "Khu mộ song thân trong cảnh quan xanh tại Hoa Viên Bình Dương",
+  image: "/images/hvbd/doi-ngu-cham-soc-khu-mo-v2.png",
+  imageAlt: "Đội ngũ chăm sóc cảnh quan và khu mộ tại Hoa Viên Bình Dương",
 };
 
 export const SITE_VIEW_360 = {

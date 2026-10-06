@@ -45,7 +45,7 @@ export function ProductsSection() {
             </a>
           </div>
         </div>
-        <div className="relative h-[300px] overflow-hidden lg:h-[620px]">
+        <div className="relative mx-auto aspect-square w-full max-w-[680px] overflow-hidden lg:mx-0 lg:h-[620px] lg:max-w-none lg:aspect-auto">
           <Image
             src={PRODUCTS.image}
             alt={PRODUCTS.imageAlt}
