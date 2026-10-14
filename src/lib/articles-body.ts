@@ -1,6 +1,59 @@
 /** Nội dung chi tiết đã được biên tập cho bối cảnh Việt Nam. */
 
 export const ARTICLE_BODIES: Record<string, string> = {
+  "doi-phuong-hoang-chuyen-ve-mot-nguoi-biet-lo-truoc": `
+    <p><strong>Chuyện về một người biết lo trước</strong></p>
+    <p>Cuối một đời người, điều để lại không chỉ là tài sản, mà còn là sự an lòng cho những người thân yêu.</p>
+    <p><em>Đây là câu chuyện và hình ảnh minh họa. Nhân vật, địa danh trong bài không đại diện cho một người hay một khu vực có thật tại Hoa Viên Bình Dương.</em></p>
+    <h2>Câu chuyện bên chén trà</h2>
+    <p>Chiều xuống chậm.</p>
+    <p>Nắng cuối ngày xuyên qua tán cây, đọng thành những vệt vàng trên chiếc bàn trà ngoài hiên. Ông nội ngồi đó, mái tóc bạc, tay nâng chén trà còn nghi ngút khói.</p>
+    <p>Một đời làm kinh doanh đã tạo cho ông thói quen ít nói. Nhưng mỗi khi muốn nhắn nhủ cháu điều gì, ông thường bắt đầu bằng một câu chuyện.</p>
+    <p>Nhìn về phía ngọn đồi xa, ông chậm rãi đọc:</p>
+    <blockquote>“Đất là nơi con chim phượng hoàng bay về hòn núi bạc…”</blockquote>
+    <p><small>Trích “Đất Nước”, chương V trường ca <em>Mặt đường khát vọng</em> của Nguyễn Khoa Điềm. Câu thơ sử dụng chất liệu dân ca Bình Trị Thiên.</small></p>
+    <p>– Câu thơ đẹp quá, nội.</p>
+    <p>Ông đặt chén trà xuống, chỉ tay về phía chân trời:</p>
+    <p>– Con nhìn ngọn đồi ấy đi. Người xưa từng kể một câu chuyện về đàn phượng hoàng.</p>
+    <p>Phía xa là khu rừng với những tán cây lớn chen nhau thành vòm xanh thẫm. Bên cạnh, những đồi đá nhấp nhô cao thấp ánh lên dưới nắng chiều.</p>
+    <p>Ông kể rằng thuở xưa, một đàn phượng hoàng bay qua vùng đất này. Nhận ra đây là nơi đất lành, chúng chọn khu rừng làm chốn trú ngụ và những ngọn đồi đá làm nơi trở về.</p>
+    <p>Phượng hoàng không đợi đến khi đôi cánh mỏi mới tìm chỗ dừng chân.</p>
+    <p>Khi còn đủ sức bay, chúng đã tha từng viên đá, vun đắp nơi mình chọn. Người xưa nhìn thấy vậy, tin rằng phượng hoàng đã chọn đúng vùng đất lành. Từ đó, ngọn đồi mang theo ước nguyện về sự an yên của người đã khuất, sự bình an của con cháu và sự tiếp nối bền lâu của gia đình.</p>
+    <p>Ông nhìn ngọn đồi hồi lâu rồi nói:</p>
+    <p>– Nhưng thời thế đã khác rồi, con. Ngày nay, đất đai phải được sử dụng theo quy hoạch. Nơi an nghỉ cũng cần được lựa chọn tại những khu vực phù hợp, có người quản lý và chăm sóc lâu dài.</p>
+    <figure>
+      <img src="/images/hvbd/doi-phuong-hoang-chuyen-tro.webp" alt="Minh họa người ông trò chuyện với cháu bên chén trà" width="1536" height="1024" loading="lazy" />
+      <figcaption>Cuộc trò chuyện giữa hai ông cháu. Ảnh minh họa.</figcaption>
+    </figure>
+    <h2>Một lựa chọn khi còn khỏe</h2>
+    <p>– Sao hôm nay nội lại kể con nghe chuyện này?</p>
+    <p>Ông nhấp một ngụm trà:</p>
+    <p>– Vì nội muốn đi chọn sanh phần.</p>
+    <p>Đứa cháu thoáng giật mình:</p>
+    <p>– Nội còn khỏe mà! Sao lại nghĩ đến chuyện ấy sớm vậy? Nghe không may đâu, nội.</p>
+    <p>Ông bật cười:</p>
+    <p>– Chính vì còn khỏe nên nội mới muốn tự mình lựa chọn.</p>
+    <p>Ông chậm rãi rót thêm trà cho cháu:</p>
+    <p>– Người ta mua bảo hiểm đâu phải vì mong mình đau bệnh. Việc này cũng vậy. Thu xếp không làm ngày ấy đến sớm hơn, chỉ giúp nội và cả nhà không bị động khi nó đến.</p>
+    <p>Gió chiều lướt nhẹ qua khu vườn.</p>
+    <p>– Cả đời nội đã tự quyết định chuyện dựng nghiệp, xây nhà và lo cho con cái. Việc sau cùng của mình, nội cũng muốn tự chọn. Nội không muốn đến lúc không còn đủ sức, con cháu vừa đau buồn vừa phải đoán xem nội mong muốn điều gì.</p>
+    <h2>Cả nhà cứ an lòng mà sống</h2>
+    <p>Đứa cháu im lặng một lúc rồi hỏi:</p>
+    <p>– Nội không sợ sao?</p>
+    <p>Ông nhìn làn khói mỏng bay lên từ chén trà:</p>
+    <p>– Có chứ, ai mà không sợ. Nhưng lo lắng khác với né tránh. Nội thu xếp cho yên lòng rồi trở về chăm cây, uống trà, chờ bồng chắt. Cuộc sống vẫn còn nhiều việc vui phải làm.</p>
+    <p>Đứa cháu nhìn ông, ánh mắt đã bớt lo lắng:</p>
+    <p>– Vậy ngày mai con chở nội đi. Chọn xong rồi mình về chăm cây. Nội còn phải giữ sức để bồng chắt nữa.</p>
+    <p>Ông bật cười. Tiếng cười của hai ông cháu hòa vào buổi chiều, nhẹ như cơn gió vừa đi qua khu vườn.</p>
+    <p>Đứa cháu lại nhìn về Đồi Phượng Hoàng. Lúc ấy, nó chợt hiểu: ngọn đồi không chỉ kể chuyện về nơi một người sẽ trở về. Ngọn đồi còn kể về cách người ta thương những người ở lại.</p>
+    <p>Một đời ông đã lo cho gia đình. Đến việc sau cùng, ông vẫn chọn nhận phần khó về mình, để con cháu mai sau bớt đi một nỗi nặng lòng.</p>
+    <p>Ông nâng chén trà, nheo mắt cười:</p>
+    <blockquote>“Phần của ông, ông đã lo rồi.<br />Cả nhà cứ an lòng mà sống.”</blockquote>
+    <figure>
+      <img src="/images/hvbd/doi-phuong-hoang-ket.webp" alt="Minh họa hai ông cháu đi dạo lúc hoàng hôn" width="1536" height="1024" loading="lazy" />
+      <figcaption>Sau khi thu xếp, cuộc sống vẫn tiếp tục trong sự bình yên và gần gũi. Ảnh minh họa.</figcaption>
+    </figure>
+  `,
   "can-lam-gi-khi-co-nguoi-than-qua-doi": `
     <p>Khi cần tổ chức tang lễ, nhiều công việc phải được sắp xếp trong thời gian ngắn. Việc bình tĩnh xác định thứ tự ưu tiên sẽ giúp các thủ tục và nghi lễ được tiến hành chu toàn hơn.</p>
     <h2>Liên hệ đơn vị hỗ trợ</h2>

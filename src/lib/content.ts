@@ -12,7 +12,7 @@ import type {
 export const LOGO = "/images/hvbd/cpha-logo.png";
 
 export const TOP_NAV: NavItem[] = [
-  { label: "Nhìn Lại Đêm Diễn", href: "https://demdientrian.cphaco.vn/" },
+  { label: "Tặng Tre Giữ Nghề", href: "https://cphaco.vn/duong-thien-thai-noi-tre-que-nha-hoi-tu/" },
   {
     label: "Hỗ Trợ",
     href: "#",
@@ -143,12 +143,11 @@ export const PRODUCTS = {
 };
 
 export const SITE_VIEW_360 = {
-  eyebrow: "THAM QUAN TRỰC TUYẾN",
   title: "Toàn cảnh Hoa Viên Bình Dương",
   description:
-    "Khám phá không gian xanh, cảnh quan và các công trình nổi bật của hoa viên qua góc nhìn toàn cảnh.",
-  video: "/videos/toan-canh-dji0304-1080.mp4",
-  videoMobile: "/videos/toan-canh-dji0304-720.mp4",
+    "Cùng ngắm không gian xanh và những công trình nổi bật của Hoa Viên Bình Dương qua video flycam từ trên cao.",
+  videoId: "5eMkcNdEj6U",
+  videoTitle: "Video flycam toàn cảnh Hoa Viên Bình Dương",
   poster: "/images/toan-canh-dji0304-poster-optimized.webp",
 };
 

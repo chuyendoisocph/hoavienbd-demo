@@ -241,12 +241,33 @@
     margin: 24px auto;
     border-radius: 4px;
   }
+  .article-prose figure {
+    margin: 36px 0;
+  }
+  .article-prose figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+  .article-prose figcaption {
+    margin-top: 10px;
+    color: #777;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+  }
   .article-prose blockquote {
-    border-left: 4px solid var(--brand);
-    padding-left: 20px;
-    margin: 24px 0;
-    color: #666;
-    font-style: italic;
+    max-width: 38rem;
+    margin: 44px auto;
+    padding: 0 12px;
+    color: var(--heading);
+    font-family: var(--font-display);
+    font-size: clamp(23px, 3.5vw, 30px);
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: -0.015em;
+    text-align: center;
   }
 }
 

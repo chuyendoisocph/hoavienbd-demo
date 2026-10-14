@@ -3,7 +3,6 @@ import { HeroSection } from "@/components/HeroSection";
 import { CultureSection } from "@/components/CultureSection";
 import { CaringSection } from "@/components/CaringSection";
 import { PreplanCards } from "@/components/PreplanCards";
-import { WatchVideo } from "@/components/WatchVideo";
 import { ProductsSection } from "@/components/ProductsSection";
 import { SiteView360 } from "@/components/SiteView360";
 import { AdvantagesSection } from "@/components/AdvantagesSection";
@@ -20,7 +19,6 @@ export default function Home() {
         <CultureSection />
         <CaringSection />
         <PreplanCards />
-        <WatchVideo />
         <ProductsSection />
         <SiteView360 />
         <AdvantagesSection />

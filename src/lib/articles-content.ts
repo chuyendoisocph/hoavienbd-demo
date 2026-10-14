@@ -19,6 +19,15 @@ export const ARTICLES_HERO = {
 
 const ARTICLE_INPUTS: ArticleInput[] = [
   {
+    title: "Đồi Phượng Hoàng: Chuyện về một người biết lo trước",
+    date: "13/10/2026",
+    category: "Chuẩn bị từ sớm",
+    excerpt:
+      "Câu chuyện minh họa về một người ông tự mình chọn nơi an nghỉ khi còn khỏe, để gia đình an lòng sống tiếp.",
+    slug: "doi-phuong-hoang-chuyen-ve-mot-nguoi-biet-lo-truoc",
+    image: "/images/hvbd/doi-phuong-hoang-mo-bai.webp",
+  },
+  {
     title: "Hướng dẫn các bước cần thiết khi tổ chức tang lễ",
     date: "17/09/2026",
     category: "Hướng dẫn dành cho gia đình",
