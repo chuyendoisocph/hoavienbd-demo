@@ -36,6 +36,7 @@ export const TOP_NAV: NavItem[] = [
     href: "#",
     children: [
       { label: "Về Chúng Tôi", href: "/ve-chung-toi" },
+      { label: "Chi Nhánh", href: "/chi-nhanh" },
       { label: "Sự Kiện", href: "/su-kien" },
       { label: "Bài Viết", href: "/bai-viet" },
       { label: "Hỏi & Đáp", href: "/hoi-dap" },
@@ -238,7 +239,7 @@ export const FOOTER_COLUMNS: FooterLinkColumn[] = [
     heading: "Thông Tin",
     links: [
       { label: "Về Chúng Tôi", href: "/ve-chung-toi" },
-      { label: "Chi Nhánh", href: "/lien-he" },
+      { label: "Chi Nhánh", href: "/chi-nhanh" },
       { label: "Liên Hệ", href: "/lien-he" },
       { label: "Sự Kiện", href: "/su-kien" },
       { label: "Bài Viết", href: "/bai-viet" },
@@ -255,7 +256,7 @@ export const FOOTER_BUTTONS: { label: string; href: string }[] = [];
 export const FOOTER_ADDRESS = {
   office: "Văn Phòng Chính",
   address:
-    "Hoa Viên Nghĩa Trang Bình Dương, Khu phố 1B, phường Chánh Phú Hòa, TP. Hồ Chí Minh.",
+    "Hoa Viên Nghĩa Trang Bình Dương, Khu phố Bông Trang, phường Chánh Phú Hòa, TP. Hồ Chí Minh.",
   hours:
     "Giờ làm việc: 7h30 – 17h00, tất cả các ngày trong tuần (kể cả Chủ nhật và ngày lễ).",
   website: "cphaco.vn",

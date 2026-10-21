@@ -183,7 +183,7 @@ export const PRIVACY_ITEMS: PolicyItem[] = [
           { label: "Công ty", value: COMPANY },
           {
             label: "Địa chỉ",
-            value: "Hoa Viên Nghĩa Trang Bình Dương, Khu phố 1B, phường Chánh Phú Hòa, TP. Hồ Chí Minh",
+            value: "Hoa Viên Nghĩa Trang Bình Dương, Khu phố Bông Trang, phường Chánh Phú Hòa, TP. Hồ Chí Minh",
           },
           { label: "Tổng đài", value: "0818 555 444", href: "tel:0818555444" },
           { label: "Trực tuyến", value: "Gửi yêu cầu tại trang Liên Hệ", href: "/lien-he" },

@@ -60,9 +60,19 @@ function RegionBlock({ region }: { region: Region }) {
                   )}
                 >
                   <div className="min-h-0">
-                    <p className="whitespace-pre-line pb-5 text-[16px] leading-[1.8] text-[#666]">
+                    <p className="whitespace-pre-line pb-2 text-[16px] leading-[1.8] text-[#666]">
                       {loc.body}
                     </p>
+                    {loc.mapUrl && (
+                      <a
+                        href={loc.mapUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="mb-5 inline-block text-[14px] font-semibold text-brand underline underline-offset-4 hover:text-[#303c9d] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
+                      >
+                        Xem trên bản đồ
+                      </a>
+                    )}
                   </div>
                 </div>
               </div>
