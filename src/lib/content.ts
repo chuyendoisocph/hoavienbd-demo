@@ -31,12 +31,13 @@ export const TOP_NAV: NavItem[] = [
       { label: "Dịch Vụ Khác", href: "/dich-vu/dich-vu-khac" },
     ],
   },
+  { label: "Chi Nhánh", href: "/chi-nhanh" },
   {
     label: "Thông Tin",
     href: "#",
     children: [
       { label: "Về Chúng Tôi", href: "/ve-chung-toi" },
-      { label: "Chi Nhánh", href: "/chi-nhanh" },
+      { label: "Tham Quan 360°", href: "/tham-quan-360" },
       { label: "Sự Kiện", href: "/su-kien" },
       { label: "Bài Viết", href: "/bai-viet" },
       { label: "Hỏi & Đáp", href: "/hoi-dap" },
@@ -88,22 +89,6 @@ export const CAROUSEL_SLIDES: CarouselSlide[] = [
     cta: { label: "ĐẶT LỊCH THAM QUAN", href: "/lien-he" },
   },
 ];
-
-export const CULTURE = {
-  eyebrow: "HOA VIÊN BÌNH DƯƠNG",
-  title: "Văn Hóa & Tương Lai",
-  body: "Một nền văn hóa đã trường tồn hàng ngàn năm tựa như dòng nước – góp nhặt từng chút một để rồi hình thành nên bề dày lịch sử. Hoa Viên Bình Dương thấu hiểu sâu sắc điều này, tự hào gìn giữ truyền thống và văn hóa hiếu nghĩa của dân tộc bằng việc mang đến hệ thống dịch vụ tang lễ toàn diện, để tôn vinh và trân trọng từng cuộc đời.",
-  details: [
-    "Chúng tôi nhìn cuộc sống bằng sự trân trọng và lắng nghe bằng cả tấm lòng. Mỗi nghi thức tưởng niệm không chỉ là lời tiễn biệt mà còn là cách gia đình gìn giữ ký ức, tình thân và những giá trị đã được trao truyền qua nhiều thế hệ.",
-    "Bằng việc kết hợp truyền thống với cách tổ chức phù hợp đời sống hiện đại, Hoa Viên Bình Dương hướng đến một không gian nơi mọi người đã khuất đều được tưởng nhớ trang nghiêm, không phân biệt tín ngưỡng hay hoàn cảnh.",
-  ],
-};
-
-export const CARING = {
-  title: "Trân Trọng Từng Cuộc Đời",
-  body: "Với hệ thống tiện ích đồng bộ cùng các sản phẩm và dịch vụ toàn diện, Hoa Viên Bình Dương mong muốn mang đến sự đồng hành ấm áp trong những thời khắc thiêng liêng. “Trân trọng từng cuộc đời” là triết lý của chúng tôi – nơi mỗi cuộc đời đều ý nghĩa và đáng quý. Đội ngũ Hoa Viên luôn nỗ lực để người thân của mỗi gia đình được tôn vinh và tiễn biệt một cách trọn vẹn, bằng tất cả sự chuyên nghiệp và tận tâm.",
-  background: "/images/hvbd/tran-trong-tung-cuoc-doi-hoa-vien-v3.png",
-};
 
 export const PREPLAN_CARDS: PreplanCard[] = [
   {
@@ -239,6 +224,7 @@ export const FOOTER_COLUMNS: FooterLinkColumn[] = [
     heading: "Thông Tin",
     links: [
       { label: "Về Chúng Tôi", href: "/ve-chung-toi" },
+      { label: "Tham Quan 360°", href: "/tham-quan-360" },
       { label: "Chi Nhánh", href: "/chi-nhanh" },
       { label: "Liên Hệ", href: "/lien-he" },
       { label: "Sự Kiện", href: "/su-kien" },

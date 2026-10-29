@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { MEMORIAL_360 } from "@/lib/burial-content";
 import { VideoFeature } from "@/components/VideoFeature";
 
@@ -24,6 +25,14 @@ export function MemorialPark360() {
           videoMobile={MEMORIAL_360.videoMobile}
           className="mx-auto aspect-[16/8] max-w-[1180px]"
         />
+        <div className="mt-8 text-center">
+          <Link
+            href="/tham-quan-360"
+            className="inline-flex min-h-12 items-center justify-center border border-white px-6 py-3 text-[14px] font-bold uppercase tracking-[0.08em] text-white transition-colors hover:bg-white hover:text-[#4f6aa6] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+          >
+            Khám phá tour ảnh 360°
+          </Link>
+        </div>
       </div>
     </section>
   );

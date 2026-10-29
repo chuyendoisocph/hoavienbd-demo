@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { YouTubeFeature } from "@/components/YouTubeFeature";
 import { SITE_VIEW_360 } from "@/lib/content";
 
@@ -38,6 +39,17 @@ export function SiteView360() {
             Xem trên YouTube
           </a>
         </p>
+        <div className="mt-9 flex flex-col items-start justify-between gap-5 border-t border-[#dce3ec] pt-7 sm:flex-row sm:items-center">
+          <p className="max-w-[58ch] text-[16px] leading-relaxed text-[#4d596b]">
+            Muốn tự mình nhìn quanh từng khu vực? Khám phá tour ảnh 360° được chụp thực tế tại Hoa Viên Bình Dương.
+          </p>
+          <Link
+            href="/tham-quan-360"
+            className="inline-flex min-h-12 shrink-0 items-center justify-center bg-brand px-6 py-3 text-[14px] font-bold uppercase tracking-[0.08em] text-white transition-colors hover:bg-[#3543ab] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
+          >
+            Tham quan 360°
+          </Link>
+        </div>
       </div>
     </section>
   );

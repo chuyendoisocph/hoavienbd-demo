@@ -15,7 +15,7 @@ export default function BranchesPage() {
     <>
       <SiteHeader />
       <main className="flex-1">
-        <section className="relative flex min-h-[360px] items-center justify-center overflow-hidden bg-[#163551] px-6 text-center text-white md:min-h-[500px]">
+        <section className="print-page-hero relative flex min-h-[360px] items-center justify-center overflow-hidden bg-[#163551] px-6 text-center text-white md:min-h-[500px]">
           <Image
             src="/images/hvbd/park-aerial-roundabout.jpg"
             alt=""

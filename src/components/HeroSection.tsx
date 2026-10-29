@@ -5,8 +5,8 @@ import { CARELINE, HERO } from "@/lib/content";
 
 export function HeroSection() {
   return (
-    <section>
-      <div className="relative h-[414px] overflow-hidden bg-black md:h-[558px]">
+    <section className="print-home-hero">
+      <div className="print-home-visual relative h-[414px] overflow-hidden bg-black md:h-[558px]">
         {/* The still image remains visible when reduced motion disables the video. */}
         <Image
           src={HERO.image}
@@ -24,7 +24,7 @@ export function HeroSection() {
           className="absolute inset-0 h-full w-full object-cover motion-reduce:hidden"
         />
 
-        <div className="absolute inset-0 bg-black/35" />
+        <div className="print-home-overlay absolute inset-0 bg-black/35" />
 
         <div className="relative flex h-full flex-col items-center justify-center px-6 text-center text-white">
           <h1 data-hero-item className="whitespace-nowrap font-heading text-[8.2vw] leading-[1.15] font-bold text-white [text-shadow:8px_8px_8px_#242424] md:text-[clamp(60px,9vw,100px)] md:leading-[1.2] md:font-medium">
@@ -36,7 +36,7 @@ export function HeroSection() {
         </div>
       </div>
 
-      <div className="relative z-10 -mt-9 h-[60px] md:h-[78px]">
+      <div className="print-home-callout relative z-10 -mt-9 h-[60px] md:h-[78px]">
         <a
           href={`tel:${CARELINE.replace(/[^0-9]/g, "")}`}
           className="flex h-full w-[92%] items-center justify-center gap-2 rounded-r-[70px] bg-[linear-gradient(90deg,rgb(124,180,223)_0%,rgb(67,142,201)_48%,rgb(28,111,179)_100%)] px-4 text-white shadow-[0_18px_40px_-18px_rgba(0,0,0,0.55)] transition-[filter] hover:brightness-105 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1c6fb3] md:w-[48%] md:justify-end md:gap-3 md:pr-[6%] md:pl-6"

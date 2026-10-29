@@ -14,7 +14,7 @@ export function SiteHeader() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50 h-16 bg-white shadow-[0_2px_5px_rgba(0,0,0,0.08)] min-[980px]:h-[75px]">
+    <header className="site-header fixed inset-x-0 top-0 z-50 h-16 bg-white shadow-[0_2px_5px_rgba(0,0,0,0.08)] min-[980px]:h-[75px]">
       <div className="relative h-full w-full px-[15px]">
         <Link
           href="/"

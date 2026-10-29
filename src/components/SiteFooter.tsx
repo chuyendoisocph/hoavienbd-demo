@@ -54,7 +54,7 @@ function LinkGroup({
 
 export function SiteFooter() {
   return (
-    <footer className="relative mt-[70px] bg-footer-navy font-heading text-white lg:min-h-[735px] lg:pt-[7px] lg:pr-[15.18vw] lg:pb-[51px]">
+    <footer className="site-footer relative mt-[70px] bg-footer-navy font-heading text-white lg:min-h-[735px] lg:pt-[7px] lg:pr-[15.18vw] lg:pb-[51px]">
       <div className="grid w-full grid-cols-1 lg:-mt-[77px] lg:w-[84.82vw] lg:grid-cols-[57.8%_15.6%_15.6%] lg:items-start lg:justify-between lg:pb-[27px]">
         {/* Column 1 — purple panel */}
         <div className="bg-footer-purple px-6 py-12 lg:min-h-[519px] lg:pt-[83px] lg:pr-[30px] lg:pb-0 lg:pl-[15.18vw]">

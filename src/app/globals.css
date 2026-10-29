@@ -12,6 +12,7 @@
   --font-heading: var(--font-body), "Be Vietnam Pro", Helvetica, Arial, sans-serif;
   --font-display: var(--font-display-face), "Newsreader", Georgia, serif;
   --font-serif: var(--font-display-face), "Newsreader", Georgia, serif;
+  --font-accent: var(--font-accent-face), "Playfair Display", Georgia, serif;
   /* Brand tokens */
   --color-brand: var(--brand);
   --color-brand-link: var(--brand-link);
@@ -272,3 +273,248 @@
 }
 
 /* Chuyển động do GSAP điều khiển trong src/components/SiteMotion.tsx. */
+
+/* Bản in là tài liệu A4 liên tục, không phải ảnh chụp một viewport desktop. */
+@page {
+  size: A4 landscape;
+  margin: 12mm;
+}
+
+@media print {
+  html,
+  body {
+    width: auto !important;
+    min-width: 0 !important;
+    height: auto !important;
+    overflow: visible !important;
+    background: white !important;
+    color: #30343c !important;
+    font-size: 10pt !important;
+    line-height: 1.5 !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  body,
+  main {
+    display: block !important;
+  }
+
+  .site-header,
+  video,
+  iframe,
+  button[aria-label^="Phát"] {
+    display: none !important;
+  }
+
+  /* Những khối GSAP chưa cuộn tới vẫn phải xuất hiện trong PDF. */
+  main > section,
+  main > article,
+  [data-hero-item],
+  [data-stagger] > *,
+  [data-parallax] {
+    opacity: 1 !important;
+    transform: none !important;
+    filter: none !important;
+  }
+
+  main > section,
+  main > article {
+    min-height: 0 !important;
+    overflow: visible !important;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  figure,
+  blockquote,
+  article,
+  img {
+    break-inside: avoid-page;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    break-after: avoid-page;
+  }
+
+  .print-home-hero {
+    break-after: avoid-page;
+  }
+
+  .print-home-visual {
+    height: auto !important;
+    min-height: 0 !important;
+    background: white !important;
+  }
+
+  .print-home-visual > img,
+  .print-home-overlay,
+  .print-page-hero > img,
+  .print-page-hero > [aria-hidden="true"] {
+    display: none !important;
+  }
+
+  .print-home-visual > .relative {
+    padding: 9mm 0 5mm !important;
+  }
+
+  .print-home-visual [data-hero-item] {
+    color: #30343c !important;
+    text-shadow: none !important;
+  }
+
+  .print-home-visual h1 {
+    font-size: 30pt !important;
+    white-space: normal !important;
+  }
+
+  .print-home-visual p {
+    font-size: 16pt !important;
+    line-height: 1.3 !important;
+  }
+
+  .print-home-callout {
+    height: auto !important;
+    margin: 0 0 5mm !important;
+  }
+
+  .print-home-callout a {
+    width: 100% !important;
+    min-height: 10mm !important;
+    justify-content: center !important;
+    padding: 2mm !important;
+    border-radius: 0 !important;
+    background: #eaf1fa !important;
+    box-shadow: none !important;
+    color: #233c65 !important;
+  }
+
+  .print-home-callout span {
+    color: #233c65 !important;
+    font-size: 11pt !important;
+  }
+
+  .print-culture {
+    padding: 5mm 0 !important;
+  }
+
+  .print-culture > div {
+    grid-template-columns: 75mm minmax(0, 1fr) !important;
+    gap: 8mm !important;
+    padding: 0 !important;
+  }
+
+  .print-culture > div > div:first-child > div:first-child {
+    width: 75mm !important;
+    height: 75mm !important;
+  }
+
+  .print-culture > div > div:first-child > div:last-child {
+    display: none !important;
+  }
+
+  .print-caring {
+    height: 78mm !important;
+    margin: 5mm 0 !important;
+    overflow: hidden !important;
+    break-inside: avoid-page;
+  }
+
+  .print-caring [data-parallax] {
+    height: 100% !important;
+    object-fit: cover !important;
+  }
+
+  .print-quote {
+    padding: 5mm 0 !important;
+    background: white !important;
+  }
+
+  .print-quote > div {
+    display: block !important;
+    height: auto !important;
+  }
+
+  .print-quote blockquote {
+    position: static !important;
+    width: 100% !important;
+    height: auto !important;
+    margin: 0 !important;
+    padding: 5mm !important;
+    background: #edf1fb !important;
+    box-shadow: none !important;
+  }
+
+  .print-quote blockquote p {
+    color: #30343c !important;
+  }
+
+  .print-quote [aria-hidden="true"] {
+    display: none !important;
+  }
+
+  .print-page-hero {
+    min-height: 0 !important;
+    padding: 9mm 0 5mm !important;
+    background: white !important;
+    color: #30343c !important;
+  }
+
+  .print-page-hero > div:last-child {
+    padding: 0 !important;
+  }
+
+  .print-page-hero h1,
+  .print-page-hero p {
+    color: #30343c !important;
+  }
+
+  .print-page-hero h1 {
+    font-size: 30pt !important;
+  }
+
+  [id^="branch-panel-"][hidden] {
+    display: block !important;
+  }
+
+  [id^="branch-panel-"] article {
+    break-inside: avoid-page;
+  }
+
+  .site-footer {
+    min-height: 0 !important;
+    margin: 6mm 0 0 !important;
+    padding: 5mm 0 0 !important;
+    border-top: 1px solid #dce3ed;
+    background: white !important;
+    box-shadow: none !important;
+    color: #30343c !important;
+  }
+
+  .site-footer > div {
+    display: block !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .site-footer > div > div {
+    min-height: 0 !important;
+    padding: 0 !important;
+    background: white !important;
+  }
+
+  .site-footer > div > div:not(:first-child),
+  .site-footer a[aria-label] {
+    display: none !important;
+  }
+
+  .site-footer :where(h2, p, a, div) {
+    color: #30343c !important;
+  }
+}

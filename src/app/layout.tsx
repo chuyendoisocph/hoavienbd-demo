@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Be_Vietnam_Pro, Newsreader } from "next/font/google";
+import { Be_Vietnam_Pro, Newsreader, Playfair_Display } from "next/font/google";
 import { SiteMotion } from "@/components/SiteMotion";
 import "./globals.css";
 
@@ -25,6 +25,17 @@ const displayFont = Newsreader({
   variable: "--font-display-face",
   subsets: ["latin", "vietnamese"],
   display: "swap",
+});
+
+// Riêng hai tiêu đề "Câu Chuyện Thương Hiệu" và "Hệ Tư Tưởng Thương Hiệu" ở trang chủ:
+// chữ T của Newsreader ở cỡ lớn trông nặng, Playfair Display thanh hơn.
+const accentFont = Playfair_Display({
+  variable: "--font-accent-face",
+  subsets: ["latin", "vietnamese"],
+  weight: "500",
+  display: "swap",
+  // Chỉ dùng ở trang chủ: không tải trước trên mọi trang.
+  preload: false,
 });
 
 const SITE_TITLE = "Hoa Viên Bình Dương | Nơi Cuộc Sống Vĩnh Hằng";
@@ -82,7 +93,7 @@ export default function RootLayout({
   return (
     <html
       lang="vi"
-      className={`${bodyFont.variable} ${bodyItalicFont.variable} ${displayFont.variable} h-full antialiased`}
+      className={`${bodyFont.variable} ${bodyItalicFont.variable} ${displayFont.variable} ${accentFont.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-background text-foreground">
         <SiteMotion />

@@ -25,7 +25,7 @@ export function BurialConsiderations() {
       >
         <div className="mx-auto grid max-w-[1140px] grid-cols-1 items-center gap-10 lg:grid-cols-2">
           <h2
-            className="font-heading font-bold leading-tight text-white"
+            className="font-heading font-medium leading-tight text-white"
             style={{ fontSize: "clamp(30px, 5vw, 52px)" }}
           >
             {CONSIDERATIONS.title}

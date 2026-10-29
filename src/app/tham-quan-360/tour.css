@@ -1,0 +1,141 @@
+.tour-scene-hotspot {
+  align-items: center;
+  background: rgba(255, 255, 255, 0.96);
+  border: 2px solid #fff;
+  border-radius: 999px;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.32);
+  color: #172b45;
+  cursor: pointer;
+  display: flex;
+  gap: 8px;
+  max-width: 210px;
+  min-height: 44px;
+  padding: 5px 12px 5px 5px;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+.tour-scene-hotspot:hover,
+.tour-scene-hotspot:focus-visible {
+  background: #eef3f7;
+  outline: 2px solid #fff;
+  outline-offset: 3px;
+}
+
+.tour-scene-hotspot-arrow {
+  align-items: center;
+  background: #4356c3;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  flex: 0 0 32px;
+  font-size: 22px;
+  height: 32px;
+  justify-content: center;
+  line-height: 1;
+  position: relative;
+  transition: transform 180ms ease-out;
+  width: 32px;
+}
+
+.tour-scene-hotspot-arrow::after {
+  animation: tour-waypoint-ring 1.3s cubic-bezier(0.16, 1, 0.3, 1) 250ms 2 both;
+  border: 1px solid #4356c3;
+  border-radius: 50%;
+  content: "";
+  inset: -4px;
+  pointer-events: none;
+  position: absolute;
+}
+
+.tour-scene-hotspot:hover .tour-scene-hotspot-arrow,
+.tour-scene-hotspot:focus-visible .tour-scene-hotspot-arrow {
+  transform: scale(1.1);
+}
+
+@keyframes tour-waypoint-ring {
+  from {
+    opacity: 0.65;
+    transform: scale(0.85);
+  }
+  to {
+    opacity: 0;
+    transform: scale(1.8);
+  }
+}
+
+.tour-scene-hotspot-label {
+  font-size: 12px;
+  font-weight: 700;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tour-map-node:hover .tour-map-dot,
+.tour-map-node:focus-visible .tour-map-dot {
+  stroke: #f2b544;
+  stroke-width: 4px;
+}
+
+.tour-map-node:focus-visible {
+  outline: none;
+}
+
+.tour-map-node-active .tour-map-dot {
+  filter: drop-shadow(0 4px 5px rgba(31, 47, 86, 0.3));
+}
+
+.tour-scene-caption {
+  clip-path: inset(0 0 0 0);
+  opacity: 1;
+  transition: clip-path 420ms cubic-bezier(0.16, 1, 0.3, 1), opacity 250ms ease-out;
+}
+
+.tour-scene-caption-pending {
+  clip-path: inset(0 0 100% 0);
+  opacity: 0;
+}
+
+.tour-route-panel {
+  transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.pnlm-container .pnlm-load-button,
+.pnlm-container .pnlm-info-box {
+  display: none;
+}
+
+/* Chỉ hiện thông báo đang tải khi việc tải kéo dài quá 250ms. Ảnh đã tải sẵn mở ngay,
+   nên không còn cảnh thông báo nháy lên rồi tắt mỗi lần chuyển điểm. */
+.tour-loading-delayed {
+  animation: tour-loading-in 200ms ease-out 250ms both;
+}
+
+@keyframes tour-loading-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tour-scene-hotspot-arrow::after {
+    animation: none;
+    opacity: 0;
+  }
+
+  .tour-scene-hotspot-arrow {
+    transition: none;
+  }
+
+  .tour-scene-caption {
+    clip-path: none;
+    transition: opacity 120ms ease-out;
+  }
+
+  .tour-route-panel {
+    transition-duration: 120ms;
+  }
+}

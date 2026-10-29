@@ -1,9 +1,11 @@
 import Image from "next/image";
-import { CARING } from "@/lib/content";
+import { CARING } from "@/lib/brand-content";
+import { StoryBlocks } from "@/components/StoryBlocks";
+import { StoryDialog } from "@/components/StoryDialog";
 
 export function CaringSection() {
   return (
-    <section className="relative mb-[30px] flex h-[864px] items-center overflow-hidden md:mb-0 md:h-[798px]">
+    <section className="print-caring relative mb-[30px] flex min-h-[864px] items-center overflow-hidden py-20 md:mb-0 md:min-h-[798px]">
       <Image
         src={CARING.background}
         alt=""
@@ -16,12 +18,24 @@ export function CaringSection() {
       <div className="relative z-10 mx-auto w-full max-w-[1180px] px-6 text-white lg:px-8">
         <div className="mx-auto max-w-[680px] text-center md:mx-0 md:text-left">
           <h2
-            className="mb-6 font-heading font-bold leading-[1.2] text-white"
-            style={{ fontSize: "clamp(30px,7vw,60px)" }}
+            className="mb-6 font-accent font-medium leading-[1.15] text-white [text-shadow:0_2px_16px_rgba(0,0,0,0.35)]"
+            style={{ fontSize: "clamp(34px,8vw,60px)" }}
           >
             {CARING.title}
           </h2>
-          <p className="text-base leading-relaxed text-white">{CARING.body}</p>
+          <p className="text-base leading-relaxed text-white [text-shadow:0_1px_10px_rgba(0,0,0,0.35)]">{CARING.body}</p>
+          <StoryDialog
+            id="caring-story"
+            eyebrow="Hoa Viên Bình Dương"
+            title={CARING.title}
+            lead={CARING.body}
+            image={CARING.background}
+            imagePosition="62% 28%"
+            theme="dark"
+            align="md"
+          >
+            <StoryBlocks blocks={CARING.details} />
+          </StoryDialog>
         </div>
       </div>
     </section>
