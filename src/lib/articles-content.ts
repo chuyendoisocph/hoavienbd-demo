@@ -19,13 +19,22 @@ export const ARTICLES_HERO = {
 
 const ARTICLE_INPUTS: ArticleInput[] = [
   {
+    title: "Chuyện thầy trò: Khi nào là thời điểm tốt nhất để chuẩn bị chuyện trăm năm?",
+    date: "30/10/2026",
+    category: "Chuẩn bị từ sớm",
+    excerpt:
+      "Không cần đợi đến tuổi già, cũng chẳng cần vội vàng quyết định: thời điểm thích hợp là khi ta đã có thể nghĩ về điều ấy một cách bình thản.",
+    slug: "chuyen-thay-tro-khi-nao-chuan-bi-chuyen-tram-nam",
+    image: "/images/hvbd/chuyen-thay-tro-chuan-bi-chuyen-tram-nam-v3.webp",
+  },
+  {
     title: "Đồi Phượng Hoàng: Chuyện về một người biết lo trước",
     date: "13/10/2026",
     category: "Chuẩn bị từ sớm",
     excerpt:
       "Câu chuyện minh họa về một người ông tự mình chọn nơi an nghỉ khi còn khỏe, để gia đình an lòng sống tiếp.",
     slug: "doi-phuong-hoang-chuyen-ve-mot-nguoi-biet-lo-truoc",
-    image: "/images/hvbd/doi-phuong-hoang-mo-bai.webp",
+    image: "/images/hvbd/doi-phuong-hoang-mo-bai-v2.webp",
   },
   {
     title: "Hướng dẫn các bước cần thiết khi tổ chức tang lễ",

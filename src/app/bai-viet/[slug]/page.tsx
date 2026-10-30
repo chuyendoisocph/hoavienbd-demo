@@ -9,6 +9,8 @@ import {
   getRelatedArticles,
 } from "@/lib/articles-content";
 import { ARTICLE_BODIES } from "@/lib/articles-body";
+import { ARTICLE_STORIES } from "@/lib/article-stories";
+import { StoryArticle } from "@/components/articles/StoryArticle";
 
 export function generateStaticParams() {
   return ARTICLES.map((a) => ({ slug: a.slug }));
@@ -36,7 +38,8 @@ export default async function ArticleDetailPage({
   const { slug } = await params;
   const article = getArticleBySlug(slug);
   const bodyHtml = ARTICLE_BODIES[slug];
-  if (!article || !bodyHtml) notFound();
+  const story = ARTICLE_STORIES[slug];
+  if (!article || (!bodyHtml && !story)) notFound();
 
   return (
     <>
@@ -46,7 +49,9 @@ export default async function ArticleDetailPage({
           article={article}
           bodyHtml={bodyHtml}
           related={getRelatedArticles(slug)}
-        />
+        >
+          {story ? <StoryArticle story={story} /> : null}
+        </ArticleDetail>
       </main>
       <SiteFooter />
     </>

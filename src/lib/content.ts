@@ -97,14 +97,14 @@ export const PREPLAN_CARDS: PreplanCard[] = [
     href: "/bai-viet/chuan-bi-hau-su-tu-som",
   },
   {
-    title: "Khi nào nên bắt đầu chuẩn bị?",
-    image: "/images/920-vietnam.png",
-    href: "/ho-tro/chuan-bi-tu-som",
+    title: "Chuyện thầy trò: Khi nào là thời điểm tốt nhất để chuẩn bị chuyện trăm năm?",
+    image: "/images/hvbd/chuyen-thay-tro-chuan-bi-chuyen-tram-nam-v3.webp",
+    href: "/bai-viet/chuyen-thay-tro-khi-nao-chuan-bi-chuyen-tram-nam",
   },
   {
-    title: "Ai nên chủ động chuẩn bị từ sớm?",
-    image: "/images/1661-vietnam.png",
-    href: "/ho-tro/chuan-bi-tu-som",
+    title: "Đồi Phượng Hoàng: Chuyện về một người biết lo trước",
+    image: "/images/hvbd/doi-phuong-hoang-mo-bai-v2.webp",
+    href: "/bai-viet/doi-phuong-hoang-chuyen-ve-mot-nguoi-biet-lo-truoc",
   },
 ];
 

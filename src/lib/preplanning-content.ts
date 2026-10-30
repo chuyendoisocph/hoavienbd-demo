@@ -64,7 +64,7 @@ export const PREPLAN_ARTICLES = {
   eyebrow: "ĐỌC",
   title: "Chuẩn Bị Từ Sớm",
   cards: [
-    { title: "Đồi Phượng Hoàng: Chuyện về một người biết lo trước", image: "/images/hvbd/doi-phuong-hoang-mo-bai.webp", href: "/bai-viet/doi-phuong-hoang-chuyen-ve-mot-nguoi-biet-lo-truoc" },
+    { title: "Đồi Phượng Hoàng: Chuyện về một người biết lo trước", image: "/images/hvbd/doi-phuong-hoang-mo-bai-v2.webp", href: "/bai-viet/doi-phuong-hoang-chuyen-ve-mot-nguoi-biet-lo-truoc" },
     { title: "Chủ động chuẩn bị từ sớm gồm những gì?", image: "/images/252a.jpg", href: "/bai-viet/chuan-bi-hau-su-tu-som" },
     { title: "An táng hay hỏa táng: lựa chọn nào phù hợp?", image: "/images/80_1a.jpg", href: "/bai-viet/an-tang-hay-hoa-tang" },
   ],

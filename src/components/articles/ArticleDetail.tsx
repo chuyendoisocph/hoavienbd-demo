@@ -1,14 +1,17 @@
 import Link from "next/link";
 import Image from "next/image";
+import type { ReactNode } from "react";
 import type { Article } from "@/lib/articles-content";
 
 interface ArticleDetailProps {
   article: Article;
-  bodyHtml: string;
+  /** Thân bài dạng HTML; bỏ qua khi bài có cách trình bày riêng (`children`). */
+  bodyHtml?: string;
+  children?: ReactNode;
   related: Article[];
 }
 
-export function ArticleDetail({ article, bodyHtml, related }: ArticleDetailProps) {
+export function ArticleDetail({ article, bodyHtml, children, related }: ArticleDetailProps) {
   return (
     <>
       {/* Hero */}
@@ -42,10 +45,14 @@ export function ArticleDetail({ article, bodyHtml, related }: ArticleDetailProps
       {/* Body */}
       <section className="bg-white py-[70px]">
         <div className="mx-auto max-w-[820px] px-6">
-          <article
-            className="article-prose"
-            dangerouslySetInnerHTML={{ __html: bodyHtml }}
-          />
+          {children ? (
+            <article>{children}</article>
+          ) : (
+            <article
+              className="article-prose"
+              dangerouslySetInnerHTML={{ __html: bodyHtml ?? "" }}
+            />
+          )}
           <div className="mt-14 border-t border-black/10 pt-8">
             <Link
               href="/bai-viet"
