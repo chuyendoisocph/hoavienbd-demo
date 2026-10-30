@@ -138,39 +138,36 @@ export const SITE_VIEW_360 = {
 };
 
 export const ADVANTAGES = {
-  title: "5 lợi ích khi chủ động chuẩn bị từ sớm cùng Hoa Viên Bình Dương",
-  subtitle: "Nguyện vọng của gia đình là ưu tiên hàng đầu",
+  eyebrow: "Ba giá trị cốt lõi",
+  title: "Chọn sanh phần sớm – An tâm cho nhiều thế hệ",
+  subtitle:
+    "Trong cuộc sống hiện đại, chuẩn bị trước nơi an nghỉ là cách chủ động hoạch định tương lai, thể hiện trách nhiệm với bản thân và sự chu đáo dành cho con cháu.",
+  slogan: "Chủ động hôm nay – Nhẹ gánh người thân – Trọn nghĩa mai sau.",
   cta: { label: "LIÊN HỆ TƯ VẤN", href: "/lien-he" },
   cards: [
     {
-      icon: "/images/PrePlan_Icon_Trust-Fund-150x150.png",
-      title: "Chăm sóc cảnh quan lâu dài",
+      icon: "shield",
+      pillar: "Thiên thời",
+      title: "Hợp pháp",
+      tagline: "Vững tin lâu dài",
       description:
-        "Đường sá, cây xanh, cảnh quan và các khu vực chung được đội ngũ Hoa Viên chăm sóc thường xuyên.",
+        "**Pháp lý rõ ràng, quyền lợi minh bạch**; các khoản phí và trách nhiệm chăm sóc được xác lập theo **hợp đồng, thỏa thuận và quy định pháp luật**, tạo sự an tâm lâu dài.",
     },
     {
-      icon: "/images/PrePlan_Icon_FengShui.png",
-      title: "Phong thủy hữu tình",
+      icon: "scale",
+      pillar: "Địa lợi",
+      title: "Hợp lý",
+      tagline: "Chủ động hôm nay",
       description:
-        "Hoa viên được các bậc thầy phong thủy uy tín đánh giá cao về thế đất và vượng khí.",
+        "Quỹ đất quy hoạch **khoảng 300 ha**, nhiều sản phẩm và **mức giá phù hợp** để chủ động ngân sách. Giao thông kết nối thuận tiện; nền tảng quản lý, tra cứu và tương tác số được cung cấp **miễn phí** theo chính sách của Hoa Viên.",
     },
     {
-      icon: "/images/PrePlan_Icon_0-interest.png",
-      title: "Phương án thanh toán linh hoạt",
+      icon: "heart",
+      pillar: "Nhân hòa",
+      title: "Hợp lòng",
+      tagline: "Trọn nghĩa mai sau",
       description:
-        "Quý khách được tư vấn phương án thanh toán theo chính sách áp dụng tại từng thời điểm.",
-    },
-    {
-      icon: "/images/PrePlan_Icon_Comprehensive.png",
-      title: "Tiện ích toàn diện",
-      description:
-        "Hệ thống hoa viên và trung tâm tích hợp với đầy đủ tiện ích cùng đội ngũ phục vụ chuyên nghiệp.",
-    },
-    {
-      icon: "/images/PrePlan_Icon_Majestic.png",
-      title: "Kiến trúc trang nghiêm",
-      description:
-        "Mỗi khu trong hoa viên đều được thiết kế với kiến trúc thanh nhã, trang nghiêm, mang lại sự bình an và thư thái.",
+        "**Đa dạng tiểu khu, cảnh quan và không gian tâm linh** để lựa chọn nơi an nghỉ phù hợp văn hóa, tín ngưỡng, nguyện vọng gia đình; dễ tìm, dễ nhớ, thuận tiện thăm viếng và **gìn giữ nghĩa tình nhiều thế hệ**.",
     },
   ] as AdvantageCard[],
 };

@@ -21,8 +21,11 @@ export interface PreplanCard {
 }
 
 export interface AdvantageCard {
-  icon: string;
+  icon: "shield" | "scale" | "heart";
+  /** Thiên thời / Địa lợi / Nhân hòa. */
+  pillar: string;
   title: string;
+  tagline: string;
   description: string;
 }
 
