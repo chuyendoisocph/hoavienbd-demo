@@ -25,7 +25,6 @@ export interface AdvantageCard {
   /** Thiên thời / Địa lợi / Nhân hòa. */
   pillar: string;
   title: string;
-  tagline: string;
   description: string;
 }
 

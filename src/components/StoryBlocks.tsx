@@ -17,16 +17,6 @@ function withBold(text: string) {
   );
 }
 
-/** Hình thoi nhỏ: kiểu dấu ngăn kinh điển của sách và thiệp trang trọng. */
-function OrnamentMark() {
-  return (
-    <svg aria-hidden="true" viewBox="0 0 24 12" className="inline-block h-4 w-8 text-[#c9a24a]">
-      <path d="M12 1 17 6 12 11 7 6Z" fill="currentColor" />
-      <path d="M3.5 6 5 4.5 6.5 6 5 7.5Z M17.5 6 19 4.5 20.5 6 19 7.5Z" fill="currentColor" fillOpacity="0.55" />
-    </svg>
-  );
-}
-
 /** Khẩu hiệu, câu chốt: không đóng khung, chữ lớn giữa hai vạch vàng ngắn. */
 function Quote({ lines }: { lines: string[] }) {
   return (
@@ -58,11 +48,7 @@ function Poem({ lines, cite }: { lines: string[]; cite: string }) {
       >
         “
       </span>
-      <div className="flex items-center justify-center gap-3" aria-hidden="true">
-        <span className="h-px w-10 bg-[#d9c79c] md:w-16" />
-        <OrnamentMark />
-        <span className="h-px w-10 bg-[#d9c79c] md:w-16" />
-      </div>
+      <span aria-hidden="true" className="mx-auto block h-px w-12 bg-[#c9a24a]" />
       <blockquote className="relative mx-auto mt-6 w-fit font-serif text-[17.5px] font-medium leading-[1.9] text-heading md:text-[25px] md:leading-[1.8]">
         {lines.map((line, index) => (
           <p key={line} className={index % 2 === 0 ? "pl-[1.6em]" : undefined}>

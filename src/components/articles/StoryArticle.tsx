@@ -69,6 +69,12 @@ export function StoryArticle({ story }: { story: ArticleStory }) {
                 {part.text}
               </p>
             );
+          case "chapter":
+            return (
+              <h2 key={index} className="mb-6 mt-14 font-serif text-[25px] font-medium leading-[1.3] text-brand md:mt-16 md:pl-[112px] md:text-[30px]">
+                {part.text}
+              </h2>
+            );
           case "narration":
             return (
               <p key={index} className="my-6 font-serif text-[18px] leading-[1.75] text-[#6b6f78] md:pl-[112px] md:text-[19px]">
@@ -110,6 +116,7 @@ export function StoryArticle({ story }: { story: ArticleStory }) {
                     <p key={verse}>{verse}</p>
                   ))}
                 </blockquote>
+                {part.source && <p className="mx-auto mt-6 max-w-[520px] text-[13px] leading-relaxed text-[#777]">{part.source}</p>}
               </figure>
             );
           case "moral":

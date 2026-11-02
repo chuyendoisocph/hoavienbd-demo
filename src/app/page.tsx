@@ -5,6 +5,7 @@ import { CaringSection } from "@/components/CaringSection";
 import { PreplanCards } from "@/components/PreplanCards";
 import { ProductsSection } from "@/components/ProductsSection";
 import { SiteView360 } from "@/components/SiteView360";
+import { FilialVersesSection } from "@/components/FilialVersesSection";
 import { AdvantagesSection } from "@/components/AdvantagesSection";
 import { QuoteSection } from "@/components/QuoteSection";
 import { TestimonialsSection } from "@/components/TestimonialsSection";
@@ -21,6 +22,7 @@ export default function Home() {
         <PreplanCards />
         <ProductsSection />
         <SiteView360 />
+        <FilialVersesSection />
         <AdvantagesSection />
         <QuoteSection />
         <TestimonialsSection />

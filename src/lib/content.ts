@@ -92,18 +92,18 @@ export const CAROUSEL_SLIDES: CarouselSlide[] = [
 
 export const PREPLAN_CARDS: PreplanCard[] = [
   {
-    title: "5 lợi ích khi chủ động chuẩn bị từ sớm",
-    image: "/images/45-vietnam.png",
-    href: "/bai-viet/chuan-bi-hau-su-tu-som",
+    title: "Chọn sanh phần sớm – An tâm cho nhiều thế hệ",
+    image: "/images/hvbd/thuc-te/loi-di-vom-cay.webp",
+    href: "/bai-viet/chon-sanh-phan-som-an-tam-cho-nhieu-the-he",
   },
   {
     title: "Chuyện thầy trò: Khi nào là thời điểm tốt nhất để chuẩn bị chuyện trăm năm?",
-    image: "/images/hvbd/chuyen-thay-tro-chuan-bi-chuyen-tram-nam-v3.webp",
+    image: "/images/hvbd/thien-phuoc-garden-path.jpg",
     href: "/bai-viet/chuyen-thay-tro-khi-nao-chuan-bi-chuyen-tram-nam",
   },
   {
     title: "Đồi Phượng Hoàng: Chuyện về một người biết lo trước",
-    image: "/images/hvbd/doi-phuong-hoang-mo-bai-v2.webp",
+    image: "/images/hvbd/linh-hoa-tue-dan-3.jpg",
     href: "/bai-viet/doi-phuong-hoang-chuyen-ve-mot-nguoi-biet-lo-truoc",
   },
 ];
@@ -149,7 +149,6 @@ export const ADVANTAGES = {
       icon: "shield",
       pillar: "Thiên thời",
       title: "Hợp pháp",
-      tagline: "Vững tin lâu dài",
       description:
         "**Pháp lý rõ ràng, quyền lợi minh bạch**; các khoản phí và trách nhiệm chăm sóc được xác lập theo **hợp đồng, thỏa thuận và quy định pháp luật**, tạo sự an tâm lâu dài.",
     },
@@ -157,7 +156,6 @@ export const ADVANTAGES = {
       icon: "scale",
       pillar: "Địa lợi",
       title: "Hợp lý",
-      tagline: "Chủ động hôm nay",
       description:
         "Quỹ đất quy hoạch **khoảng 300 ha**, nhiều sản phẩm và **mức giá phù hợp** để chủ động ngân sách. Giao thông kết nối thuận tiện; nền tảng quản lý, tra cứu và tương tác số được cung cấp **miễn phí** theo chính sách của Hoa Viên.",
     },
@@ -165,7 +163,6 @@ export const ADVANTAGES = {
       icon: "heart",
       pillar: "Nhân hòa",
       title: "Hợp lòng",
-      tagline: "Trọn nghĩa mai sau",
       description:
         "**Đa dạng tiểu khu, cảnh quan và không gian tâm linh** để lựa chọn nơi an nghỉ phù hợp văn hóa, tín ngưỡng, nguyện vọng gia đình; dễ tìm, dễ nhớ, thuận tiện thăm viếng và **gìn giữ nghĩa tình nhiều thế hệ**.",
     },

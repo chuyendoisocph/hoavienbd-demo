@@ -1,58 +1,62 @@
 /** Nội dung chi tiết đã được biên tập cho bối cảnh Việt Nam. */
 
 export const ARTICLE_BODIES: Record<string, string> = {
-  "doi-phuong-hoang-chuyen-ve-mot-nguoi-biet-lo-truoc": `
-    <p><strong>Chuyện về một người biết lo trước</strong></p>
-    <p>Cuối một đời người, điều để lại không chỉ là tài sản, mà còn là sự an lòng cho những người thân yêu.</p>
-    <p><em>Đây là câu chuyện và hình ảnh minh họa. Nhân vật, địa danh trong bài không đại diện cho một người hay một khu vực có thật tại Hoa Viên Bình Dương.</em></p>
-    <h2>Câu chuyện bên chén trà</h2>
-    <p>Chiều xuống chậm.</p>
-    <p>Nắng cuối ngày xuyên qua tán cây, đọng thành những vệt vàng trên chiếc bàn trà ngoài hiên. Ông nội ngồi đó, mái tóc bạc, tay nâng chén trà còn nghi ngút khói.</p>
-    <p>Một đời làm kinh doanh đã tạo cho ông thói quen ít nói. Nhưng mỗi khi muốn nhắn nhủ cháu điều gì, ông thường bắt đầu bằng một câu chuyện.</p>
-    <p>Nhìn về phía ngọn đồi xa, ông chậm rãi đọc:</p>
-    <blockquote>“Đất là nơi con chim phượng hoàng bay về hòn núi bạc…”</blockquote>
-    <p><small>Trích “Đất Nước”, chương V trường ca <em>Mặt đường khát vọng</em> của Nguyễn Khoa Điềm. Câu thơ sử dụng chất liệu dân ca Bình Trị Thiên.</small></p>
-    <p>– Câu thơ đẹp quá, nội.</p>
-    <p>Ông đặt chén trà xuống, chỉ tay về phía chân trời:</p>
-    <p>– Con nhìn ngọn đồi ấy đi. Người xưa từng kể một câu chuyện về đàn phượng hoàng.</p>
-    <p>Phía xa là khu rừng với những tán cây lớn chen nhau thành vòm xanh thẫm. Bên cạnh, những đồi đá nhấp nhô cao thấp ánh lên dưới nắng chiều.</p>
-    <p>Ông kể rằng thuở xưa, một đàn phượng hoàng bay qua vùng đất này. Nhận ra đây là nơi đất lành, chúng chọn khu rừng làm chốn trú ngụ và những ngọn đồi đá làm nơi trở về.</p>
-    <p>Phượng hoàng không đợi đến khi đôi cánh mỏi mới tìm chỗ dừng chân.</p>
-    <p>Khi còn đủ sức bay, chúng đã tha từng viên đá, vun đắp nơi mình chọn. Người xưa nhìn thấy vậy, tin rằng phượng hoàng đã chọn đúng vùng đất lành. Từ đó, ngọn đồi mang theo ước nguyện về sự an yên của người đã khuất, sự bình an của con cháu và sự tiếp nối bền lâu của gia đình.</p>
-    <p>Ông nhìn ngọn đồi hồi lâu rồi nói:</p>
-    <p>– Nhưng thời thế đã khác rồi, con. Ngày nay, đất đai phải được sử dụng theo quy hoạch. Nơi an nghỉ cũng cần được lựa chọn tại những khu vực phù hợp, có người quản lý và chăm sóc lâu dài.</p>
+  "cong-cha-nghia-me-tron-chu-hieu": `
+    <blockquote>Đi khắp thế gian, không ai tốt bằng mẹ.<br />Gánh nặng cuộc đời, không ai khổ bằng cha.</blockquote>
+    <h2>Những gánh nặng không bao giờ kể</h2>
+    <p>Có người mẹ đạp xe giữa trưa, phía sau là đứa con ngủ say trên chiếc giỏ. Có người cha gánh con qua những con đường đất, nghiêng chiếc dù về phía con để mình ướt nửa vai. Cha mẹ gánh cả đời cho con, nhưng hiếm khi kể về những gánh nặng ấy.</p>
     <figure>
-      <img src="/images/hvbd/doi-phuong-hoang-chuyen-tro.webp" alt="Minh họa người ông trò chuyện với cháu bên chén trà" width="1536" height="1024" loading="lazy" />
-      <figcaption>Cuộc trò chuyện giữa hai ông cháu. Ảnh minh họa.</figcaption>
+      <img src="/images/hvbd/cong-cha-nghia-me/me-dap-xe-cho-con.webp" alt="Người mẹ đạp xe, đứa con ngủ say trên chiếc giỏ phía sau" width="1530" height="1028" loading="lazy" />
     </figure>
-    <h2>Một lựa chọn khi còn khỏe</h2>
-    <p>– Sao hôm nay nội lại kể con nghe chuyện này?</p>
-    <p>Ông nhấp một ngụm trà:</p>
-    <p>– Vì nội muốn đi chọn sanh phần.</p>
-    <p>Đứa cháu thoáng giật mình:</p>
-    <p>– Nội còn khỏe mà! Sao lại nghĩ đến chuyện ấy sớm vậy? Nghe không may đâu, nội.</p>
-    <p>Ông bật cười:</p>
-    <p>– Chính vì còn khỏe nên nội mới muốn tự mình lựa chọn.</p>
-    <p>Ông chậm rãi rót thêm trà cho cháu:</p>
-    <p>– Người ta mua bảo hiểm đâu phải vì mong mình đau bệnh. Việc này cũng vậy. Thu xếp không làm ngày ấy đến sớm hơn, chỉ giúp nội và cả nhà không bị động khi nó đến.</p>
-    <p>Gió chiều lướt nhẹ qua khu vườn.</p>
-    <p>– Cả đời nội đã tự quyết định chuyện dựng nghiệp, xây nhà và lo cho con cái. Việc sau cùng của mình, nội cũng muốn tự chọn. Nội không muốn đến lúc không còn đủ sức, con cháu vừa đau buồn vừa phải đoán xem nội mong muốn điều gì.</p>
-    <h2>Cả nhà cứ an lòng mà sống</h2>
-    <p>Đứa cháu im lặng một lúc rồi hỏi:</p>
-    <p>– Nội không sợ sao?</p>
-    <p>Ông nhìn làn khói mỏng bay lên từ chén trà:</p>
-    <p>– Có chứ, ai mà không sợ. Nhưng lo lắng khác với né tránh. Nội thu xếp cho yên lòng rồi trở về chăm cây, uống trà, chờ bồng chắt. Cuộc sống vẫn còn nhiều việc vui phải làm.</p>
-    <p>Đứa cháu nhìn ông, ánh mắt đã bớt lo lắng:</p>
-    <p>– Vậy ngày mai con chở nội đi. Chọn xong rồi mình về chăm cây. Nội còn phải giữ sức để bồng chắt nữa.</p>
-    <p>Ông bật cười. Tiếng cười của hai ông cháu hòa vào buổi chiều, nhẹ như cơn gió vừa đi qua khu vườn.</p>
-    <p>Đứa cháu lại nhìn về Đồi Phượng Hoàng. Lúc ấy, nó chợt hiểu: ngọn đồi không chỉ kể chuyện về nơi một người sẽ trở về. Ngọn đồi còn kể về cách người ta thương những người ở lại.</p>
-    <p>Một đời ông đã lo cho gia đình. Đến việc sau cùng, ông vẫn chọn nhận phần khó về mình, để con cháu mai sau bớt đi một nỗi nặng lòng.</p>
-    <p>Ông nâng chén trà, nheo mắt cười:</p>
-    <blockquote>“Phần của ông, ông đã lo rồi.<br />Cả nhà cứ an lòng mà sống.”</blockquote>
+    <div class="grid grid-cols-2 gap-3 md:gap-4">
+      <figure class="!my-0">
+        <img src="/images/hvbd/cong-cha-nghia-me/cha-ganh-con.webp" alt="Người cha vừa cõng con vừa gánh hành lý" width="1518" height="1952" class="aspect-[3/4] object-cover" loading="lazy" />
+      </figure>
+      <figure class="!my-0">
+        <img src="/images/hvbd/cong-cha-nghia-me/cha-che-du-cho-con.webp" alt="Người cha nghiêng chiếc dù che cho con dưới mưa" width="1039" height="1514" class="aspect-[3/4] object-cover" loading="lazy" />
+      </figure>
+    </div>
+    <p>Đến khi con lớn, tóc cha mẹ đã bạc. Điều cha mẹ mong nhiều khi không còn là của cải, mà là con cháu sống bình an, gia đình còn sum vầy.</p>
+    <figure class="mx-auto max-w-[520px]">
+      <img src="/images/hvbd/cong-cha-nghia-me/ba-cu-toc-bac.webp" alt="Chân dung đen trắng một bà cụ tóc bạc" width="1122" height="1402" loading="lazy" />
+    </figure>
+    <h2>Chữ hiếu khi cha mẹ còn bên ta</h2>
+    <blockquote>Công cha như núi Thái Sơn,<br />Nghĩa mẹ như nước trong nguồn chảy ra.<br />Một lòng thờ mẹ kính cha,<br />Cho tròn chữ hiếu mới là đạo con.</blockquote>
+    <p>Chữ hiếu trước hết nằm ở những ngày cha mẹ còn bên ta: một bữa cơm chung, một lần về thăm, một câu hỏi han, một lúc ngồi lắng nghe. Ông bà xưa vẫn dạy: phụng dưỡng cha mẹ khi còn sống là điều quý nhất.</p>
+    <h2>Khi cha mẹ muốn tự lo phần mình</h2>
+    <p>Nhiều bậc cha mẹ, khi còn khỏe, muốn tự mình chọn nơi an nghỉ. Không phải vì nghĩ đến chuyện buồn, mà vì thương con: không muốn đến lúc hữu sự, con cháu vừa đau buồn vừa phải bối rối đoán xem cha mẹ mong muốn điều gì.</p>
+    <p>Khi cha mẹ mở lời, con cháu có thể cùng ngồi lại lắng nghe, cùng đi tìm hiểu và tôn trọng nguyện vọng ấy. Cùng cha mẹ lo trọn những điều mai sau, khi cả nhà còn đủ đầy bên nhau, cũng là một cách báo hiếu.</p>
     <figure>
-      <img src="/images/hvbd/doi-phuong-hoang-ket.webp" alt="Minh họa hai ông cháu đi dạo lúc hoàng hôn" width="1536" height="1024" loading="lazy" />
-      <figcaption>Sau khi thu xếp, cuộc sống vẫn tiếp tục trong sự bình yên và gần gũi. Ảnh minh họa.</figcaption>
+      <img src="/images/hvbd/thuc-te/gia-dinh-thap-huong.webp" alt="Ba thế hệ trong gia đình cùng thắp hương bên khu mộ" width="2400" height="1600" loading="lazy" />
+      <figcaption>Nhiều thế hệ cùng về thăm ông bà.</figcaption>
     </figure>
+    <h2>Nơi con cháu tìm về</h2>
+    <p>Nơi an nghỉ không chỉ dành cho người đã khuất. Đó còn là nơi con cháu tìm về mỗi dịp Thanh Minh, giỗ chạp, Tết đến; nơi những câu chuyện về ông bà được kể lại, để thế hệ sau hiểu thêm về nguồn cội và đạo lý uống nước nhớ nguồn.</p>
+    <h2>Hợp pháp – Hợp lý – Hợp lòng</h2>
+    <p>Nếu gia đình đang tìm hiểu, ba điều đáng cân nhắc là: <strong>hợp pháp</strong> để vững tin lâu dài, <strong>hợp lý</strong> để chủ động ngân sách và thuận tiện thăm viếng, <strong>hợp lòng</strong> để nơi an nghỉ phù hợp tín ngưỡng, nguyện vọng của cha mẹ và nghĩa tình nhiều thế hệ.</p>
+    <p>Không có thời điểm nào bắt buộc. Điều quan trọng là cả nhà cùng hiểu nhau và cha mẹ được an lòng.</p>
+    <blockquote>Chủ động hôm nay – Nhẹ gánh người thân – Trọn nghĩa mai sau.</blockquote>
+    <p><strong>Hoa Viên Bình Dương</strong> – Nơi cuộc sống vĩnh hằng.</p>
+  `,
+  "chon-sanh-phan-som-an-tam-cho-nhieu-the-he": `
+    <p><strong>Ba giá trị cốt lõi: Hợp pháp – Hợp lý – Hợp lòng</strong></p>
+    <p>Trong cuộc sống hiện đại, chuẩn bị trước nơi an nghỉ là cách chủ động hoạch định tương lai, thể hiện trách nhiệm với bản thân và sự chu đáo dành cho con cháu.</p>
+    <h2>1. Hợp pháp – Vững tin lâu dài</h2>
+    <p>Pháp lý rõ ràng, quyền lợi minh bạch; các khoản phí và trách nhiệm chăm sóc được xác lập theo hợp đồng, thỏa thuận và quy định pháp luật, tạo sự an tâm lâu dài.</p>
+    <h2>2. Hợp lý – Chủ động hôm nay</h2>
+    <p>Quỹ đất quy hoạch khoảng 300 ha, nhiều sản phẩm và mức giá phù hợp để chủ động ngân sách. Giao thông kết nối thuận tiện; nền tảng quản lý, tra cứu và tương tác số được cung cấp miễn phí theo chính sách của Hoa viên.</p>
+    <figure>
+      <img src="/images/hvbd/thuc-te/flycam-vong-xoay-hoa-sen.webp" alt="Vòng xoay hoa sen và đại lộ giữa rừng cây nhìn từ trên cao" width="2400" height="1600" loading="lazy" />
+      <figcaption>Đại lộ và vòng xoay hoa sen, nhìn từ trên cao.</figcaption>
+    </figure>
+    <h2>3. Hợp lòng – Trọn nghĩa mai sau</h2>
+    <p>Đa dạng tiểu khu, cảnh quan và không gian tâm linh để lựa chọn nơi an nghỉ phù hợp văn hóa, tín ngưỡng, nguyện vọng gia đình; dễ tìm, dễ nhớ, thuận tiện thăm viếng và gìn giữ nghĩa tình nhiều thế hệ.</p>
+    <figure>
+      <img src="/images/hvbd/thuc-te/khu-mo-tham-hoa.webp" alt="Khu mộ phủ kín hoa cúc giữa cảnh quan cây xanh" width="2400" height="1600" loading="lazy" />
+      <figcaption>Cảnh quan một tiểu khu tại Hoa Viên Bình Dương.</figcaption>
+    </figure>
+    <blockquote>Chủ động hôm nay – Nhẹ gánh người thân – Trọn nghĩa mai sau.</blockquote>
+    <p><strong>Hoa Viên Bình Dương</strong> – Nơi cuộc sống vĩnh hằng.</p>
   `,
   "can-lam-gi-khi-co-nguoi-than-qua-doi": `
     <p>Khi cần tổ chức tang lễ, nhiều công việc phải được sắp xếp trong thời gian ngắn. Việc bình tĩnh xác định thứ tự ưu tiên sẽ giúp các thủ tục và nghi lễ được tiến hành chu toàn hơn.</p>

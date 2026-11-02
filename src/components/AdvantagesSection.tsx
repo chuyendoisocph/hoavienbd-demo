@@ -34,7 +34,6 @@ function AdvantageItem({ card }: { card: AdvantageCard }) {
       </span>
       <p className="mt-6 text-[12px] font-semibold uppercase tracking-[0.26em] text-brand">{card.pillar}</p>
       <h3 className="mt-2 text-[22px] font-bold uppercase leading-[1.3] tracking-[3px] text-heading">{card.title}</h3>
-      <p className="mt-1 font-serif text-[20px] font-medium leading-[1.4] text-brand">{card.tagline}</p>
       <span aria-hidden="true" className="mt-5 block h-px w-10 bg-brand/40" />
       <p className="mt-5 max-w-[330px] text-[15.5px] leading-[1.8] text-[#666]">{withBold(card.description)}</p>
     </article>

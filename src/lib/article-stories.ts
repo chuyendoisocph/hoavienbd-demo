@@ -19,7 +19,8 @@ export type StoryPart =
   | { kind: "line"; line: StoryLine }
   /** Đoạn thoại then chốt, được làm nổi bật. `key` là câu chốt in đậm trong câu cuối. */
   | { kind: "highlight"; lines: StoryLine[]; key: string }
-  | { kind: "verse"; cue: string; lines: string[] }
+  | { kind: "chapter"; text: string }
+  | { kind: "verse"; cue: string; lines: string[]; source?: string }
   | { kind: "moral"; text: string }
   | { kind: "note"; text: string };
 
@@ -32,6 +33,93 @@ const line = (who: Speaker, text: string, cue?: string): StoryPart => ({ kind: "
 const narration = (text: string): StoryPart => ({ kind: "narration", text });
 
 export const ARTICLE_STORIES: Record<string, ArticleStory> = {
+  "doi-phuong-hoang-chuyen-ve-mot-nguoi-biet-lo-truoc": {
+    speakers: { thay: "Ông", tro: "Cháu" },
+    parts: [
+      { kind: "lead", text: "Cuối một đời người, điều để lại không chỉ là tài sản, mà còn là sự an lòng cho những người thân yêu." },
+      { kind: "chapter", text: "Câu chuyện bên chén trà" },
+      narration(
+        "Chiều xuống chậm. Nắng cuối ngày xuyên qua tán cây, đọng thành những vệt vàng trên chiếc bàn trà ngoài hiên. Ông nội ngồi đó, mái tóc bạc, tay nâng chén trà còn nghi ngút khói.",
+      ),
+      narration(
+        "Một đời làm kinh doanh khiến ông quen ít nói. Nhưng mỗi khi muốn nhắn nhủ cháu điều gì, ông thường bắt đầu bằng một câu chuyện.",
+      ),
+      {
+        kind: "verse",
+        cue: "Nhìn về phía ngọn đồi xa, ông chậm rãi đọc",
+        lines: ["“Đất là nơi con chim phượng hoàng", "bay về hòn núi bạc…”"],
+        source: "Trích “Đất Nước”, chương V trường ca Mặt đường khát vọng của Nguyễn Khoa Điềm. Câu thơ sử dụng chất liệu dân ca Bình Trị Thiên.",
+      },
+      line("tro", "Câu thơ đẹp quá, nội."),
+      line("thay", "Con nhìn ngọn đồi ấy đi. Người xưa gọi đó là Đồi Phượng Hoàng.", "Ông đặt chén trà xuống, chỉ tay về phía chân trời"),
+      narration("Phía xa, những tán cây lớn chen nhau thành vòm xanh thẫm. Bên cạnh, các đồi đá nhấp nhô ánh lên dưới nắng chiều."),
+      narration(
+        "Ông kể rằng thuở xưa, một đàn phượng hoàng bay qua vùng này. Nhận ra đất lành, chúng chọn khu rừng làm chốn trú ngụ và những ngọn đồi đá làm nơi trở về.",
+      ),
+      { kind: "moral", text: "Phượng hoàng không đợi đến khi đôi cánh mỏi mới tìm chỗ dừng chân." },
+      narration(
+        "Khi còn đủ sức bay, chúng đã tha từng viên đá, vun đắp nơi mình chọn. Từ đó, người ta gửi vào ngọn đồi ước nguyện về sự an yên của người đã khuất, sự bình an của con cháu và sự tiếp nối bền lâu của gia đình.",
+      ),
+      line(
+        "thay",
+        "Chuyện xưa là vậy. Còn ngày nay, đất đai phải được sử dụng theo quy hoạch. Nơi an nghỉ cũng cần được chọn tại những khu vực phù hợp, có người quản lý và chăm sóc lâu dài.",
+        "Ông nhìn ngọn đồi hồi lâu rồi nói",
+      ),
+      {
+        kind: "image",
+        src: "/images/hvbd/khu-long-phung.jpg",
+        alt: "Khu mộ được quy hoạch giữa thảm cỏ xanh tại Hoa Viên Bình Dương",
+        caption: "Các khu mộ tại Hoa Viên Bình Dương được quy hoạch và chăm sóc lâu dài.",
+        width: 1448,
+        height: 1086,
+      },
+      { kind: "chapter", text: "Một lựa chọn khi còn khỏe" },
+      line("tro", "Sao hôm nay nội lại kể con nghe chuyện này?"),
+      line("thay", "Vì nội muốn đi chọn sanh phần.", "Ông nhấp một ngụm trà"),
+      line("tro", "Nội còn khỏe mà! Sao lại nghĩ đến chuyện ấy sớm vậy? Nghe không may đâu, nội.", "Đứa cháu thoáng giật mình"),
+      {
+        kind: "highlight",
+        key: "Chính vì còn khỏe nên nội mới muốn tự mình lựa chọn.",
+        lines: [{ who: "thay", cue: "Ông bật cười", text: "Chính vì còn khỏe nên nội mới muốn tự mình lựa chọn." }],
+      },
+      line(
+        "thay",
+        "Người ta mua bảo hiểm đâu phải vì mong mình đau bệnh. Việc này cũng vậy. Thu xếp trước không làm ngày ấy đến sớm hơn, chỉ giúp nội và cả nhà không bị động khi nó đến.",
+        "Rồi ông nói tiếp, giọng chậm lại",
+      ),
+      narration("Gió chiều lướt nhẹ qua khu vườn."),
+      line(
+        "thay",
+        "Cả đời nội đã tự quyết định chuyện dựng nghiệp, xây nhà và lo cho con cái. Việc sau cùng của mình, nội cũng muốn tự chọn. Nội không muốn đến lúc không còn đủ sức, con cháu vừa đau buồn vừa phải đoán xem nội mong muốn điều gì.",
+      ),
+      {
+        kind: "image",
+        src: "/images/hvbd/dai-lo-vinh-hang.jpg",
+        alt: "Đại lộ Vĩnh Hằng giữa rừng cây xanh nhìn từ trên cao",
+        caption: "Đại lộ Vĩnh Hằng, Hoa Viên Bình Dương.",
+        width: 1920,
+        height: 1081,
+      },
+      { kind: "chapter", text: "Cả nhà cứ an lòng mà sống" },
+      line("tro", "Nội không sợ sao?", "Đứa cháu im lặng một lúc rồi hỏi"),
+      line(
+        "thay",
+        "Có chứ, ai mà không sợ. Nhưng lo lắng khác với né tránh. Nội thu xếp cho yên lòng rồi về chăm cây, uống trà, chờ bồng chắt. Cuộc sống còn nhiều việc vui phải làm lắm.",
+        "Ông nhìn làn khói mỏng bay lên từ chén trà",
+      ),
+      line("tro", "Vậy ngày mai con chở nội đi. Chọn xong rồi mình về chăm cây. Nội còn phải giữ sức để bồng chắt nữa.", "Ánh mắt đứa cháu đã bớt lo"),
+      narration("Tiếng cười của hai ông cháu hòa vào buổi chiều, nhẹ như cơn gió vừa đi qua khu vườn."),
+      narration(
+        "Đứa cháu lại nhìn về Đồi Phượng Hoàng và chợt hiểu: ngọn đồi không chỉ kể chuyện về nơi một người sẽ trở về, mà còn kể về cách người ta thương những người ở lại.",
+      ),
+      narration("Một đời ông đã lo cho gia đình. Đến việc sau cùng, ông vẫn nhận phần khó về mình, để con cháu mai sau bớt đi một nỗi nặng lòng."),
+      { kind: "verse", cue: "Ông nâng chén trà, nheo mắt cười", lines: ["“Phần của nội, nội đã lo rồi.", "Cả nhà cứ an lòng mà sống.”"] },
+      {
+        kind: "note",
+        text: "Đây là câu chuyện minh họa. Nhân vật và tên Đồi Phượng Hoàng trong bài không đại diện cho một người hay một khu vực có thật. Hình ảnh trong bài được chụp tại Hoa Viên Bình Dương.",
+      },
+    ],
+  },
   "chuyen-thay-tro-khi-nao-chuan-bi-chuyen-tram-nam": {
     speakers: { thay: "Thầy", tro: "Học trò" },
     parts: [
@@ -68,11 +156,11 @@ export const ARTICLE_STORIES: Record<string, ArticleStory> = {
       line("thay", "Không phải lo sợ, mà là biết chu toàn. Sống trọn tình, mất trọn nghĩa. Hai điều ấy đâu có trái nhau."),
       {
         kind: "image",
-        src: "/images/hvbd/chuyen-thay-tro-chen-tra-chiec-la.webp",
-        alt: "Hai chén trà dưới tán cây và chiếc lá vàng còn trên cành",
-        caption: "Ảnh minh họa: chiếc lá và chén trà trong câu chuyện thầy trò.",
-        width: 1536,
-        height: 1024,
+        src: "/images/hvbd/thien-phuoc-yellow-blossom.jpg",
+        alt: "Mái chùa Thiện Phước bên tán hoa vàng",
+        caption: "Chùa Thiện Phước trong khuôn viên Hoa Viên Bình Dương.",
+        width: 2400,
+        height: 1600,
       },
       line("tro", "Nhưng con còn trẻ, cha mẹ vẫn khỏe. Sao không đợi đến tuổi già rồi chuẩn bị?", "Người học trò suy nghĩ rồi hỏi tiếp"),
       line("thay", "Con có biết ngày mai và cái chết, điều gì đến trước không?", "Thầy hỏi lại"),
@@ -124,11 +212,11 @@ export const ARTICLE_STORIES: Record<string, ArticleStory> = {
       line("thay", "Sớm để hiểu, để lựa chọn, để an tâm thì tốt. Nhưng không nên vì chuẩn bị cho ngày mai mà làm ảnh hưởng đến cuộc sống hôm nay."),
       {
         kind: "image",
-        src: "/images/hvbd/chuyen-thay-tro-hoc-tro-nhin-chiec-la.webp",
-        alt: "Người học trò nhìn chiếc lá vàng trên cành, người thầy ngồi bên bàn trà",
-        caption: "Ảnh minh họa: người học trò suy ngẫm về chiếc lá vẫn còn trên cành.",
-        width: 1536,
-        height: 1024,
+        src: "/images/hvbd/thien-phuoc-courtyard.jpg",
+        alt: "Sân chùa Thiện Phước rợp bóng cây",
+        caption: "Sân chùa Thiện Phước, Hoa Viên Bình Dương.",
+        width: 2000,
+        height: 841,
       },
       {
         kind: "highlight",

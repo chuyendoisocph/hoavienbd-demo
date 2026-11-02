@@ -518,3 +518,13 @@
     color: #30343c !important;
   }
 }
+
+/* Thanh tiến trình tự chuyển bài trong mục "Công cha nghĩa mẹ". */
+@keyframes filial-progress {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}

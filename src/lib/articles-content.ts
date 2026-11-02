@@ -19,13 +19,31 @@ export const ARTICLES_HERO = {
 
 const ARTICLE_INPUTS: ArticleInput[] = [
   {
+    title: "Công cha nghĩa mẹ: Trọn chữ hiếu từ hôm nay",
+    date: "31/10/2026",
+    category: "Văn hóa tưởng niệm",
+    excerpt:
+      "Cha mẹ gánh cả đời cho con mà chẳng mấy khi kể. Lắng nghe và cùng cha mẹ lo trọn những điều mai sau cũng là một cách báo hiếu.",
+    slug: "cong-cha-nghia-me-tron-chu-hieu",
+    image: "/images/hvbd/cong-cha-nghia-me/gia-dinh-ganh-con.webp",
+  },
+  {
+    title: "Chọn sanh phần sớm – An tâm cho nhiều thế hệ",
+    date: "31/10/2026",
+    category: "Chuẩn bị từ sớm",
+    excerpt:
+      "Ba giá trị cốt lõi Hợp pháp – Hợp lý – Hợp lòng: chuẩn bị trước nơi an nghỉ là cách chủ động hoạch định tương lai, chu đáo với con cháu.",
+    slug: "chon-sanh-phan-som-an-tam-cho-nhieu-the-he",
+    image: "/images/hvbd/thuc-te/loi-di-vom-cay.webp",
+  },
+  {
     title: "Chuyện thầy trò: Khi nào là thời điểm tốt nhất để chuẩn bị chuyện trăm năm?",
     date: "30/10/2026",
     category: "Chuẩn bị từ sớm",
     excerpt:
       "Không cần đợi đến tuổi già, cũng chẳng cần vội vàng quyết định: thời điểm thích hợp là khi ta đã có thể nghĩ về điều ấy một cách bình thản.",
     slug: "chuyen-thay-tro-khi-nao-chuan-bi-chuyen-tram-nam",
-    image: "/images/hvbd/chuyen-thay-tro-chuan-bi-chuyen-tram-nam-v3.webp",
+    image: "/images/hvbd/thien-phuoc-garden-path.jpg",
   },
   {
     title: "Đồi Phượng Hoàng: Chuyện về một người biết lo trước",
@@ -34,7 +52,7 @@ const ARTICLE_INPUTS: ArticleInput[] = [
     excerpt:
       "Câu chuyện minh họa về một người ông tự mình chọn nơi an nghỉ khi còn khỏe, để gia đình an lòng sống tiếp.",
     slug: "doi-phuong-hoang-chuyen-ve-mot-nguoi-biet-lo-truoc",
-    image: "/images/hvbd/doi-phuong-hoang-mo-bai-v2.webp",
+    image: "/images/hvbd/linh-hoa-tue-dan-3.jpg",
   },
   {
     title: "Hướng dẫn các bước cần thiết khi tổ chức tang lễ",
