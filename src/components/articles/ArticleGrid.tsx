@@ -1,12 +1,12 @@
 import Image from "next/image";
-import { ARTICLES } from "@/lib/articles-content";
+import type { Article } from "@/lib/articles-content";
 
-export function ArticleGrid() {
+export function ArticleGrid({ articles }: { articles: Article[] }) {
   return (
     <section className="bg-white py-[60px]">
       <div className="mx-auto max-w-[1200px] px-6">
         <div className="grid grid-cols-1 gap-x-[30px] gap-y-[50px] sm:grid-cols-2 lg:grid-cols-3">
-          {ARTICLES.map((article) => (
+          {articles.map((article) => (
             <article key={article.href} className="group flex flex-col">
               <a href={article.href} className="relative block aspect-[16/10] overflow-hidden">
                 <Image

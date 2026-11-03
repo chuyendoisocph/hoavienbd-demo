@@ -2,18 +2,18 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
+import { ArticleBody } from "@/components/articles/ArticleBody";
 import { ArticleDetail } from "@/components/articles/ArticleDetail";
-import {
-  ARTICLES,
-  getArticleBySlug,
-  getRelatedArticles,
-} from "@/lib/articles-content";
-import { ARTICLE_BODIES } from "@/lib/articles-body";
-import { ARTICLE_STORIES } from "@/lib/article-stories";
+import { getRelatedArticles } from "@/lib/articles-content";
+import { getArticleContent, getArticles } from "@/lib/cms";
+import { JsonLd } from "@/components/JsonLd";
+import { SITE_NAME, SITE_URL, absoluteUrl, isoDate, pageMetadata } from "@/lib/seo";
 import { StoryArticle } from "@/components/articles/StoryArticle";
 
-export function generateStaticParams() {
-  return ARTICLES.map((a) => ({ slug: a.slug }));
+export const revalidate = 3600;
+
+export async function generateStaticParams() {
+  return (await getArticles()).map((a) => ({ slug: a.slug }));
 }
 
 export async function generateMetadata({
@@ -22,12 +22,17 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
-  const article = getArticleBySlug(slug);
-  if (!article) return { title: "Bài Viết | Hoa Viên Bình Dương" };
-  return {
-    title: `${article.title} | Hoa Viên Bình Dương`,
+  const content = await getArticleContent(slug);
+  if (!content) return { title: "Bài Viết | Hoa Viên Bình Dương" };
+  const { article } = content;
+  return pageMetadata(article.href, {
+    // Tiêu đề dài thì bỏ đuôi tên thương hiệu, để Google không cắt mất phần chính.
+    title: article.title.length > 42 ? article.title : `${article.title} | ${SITE_NAME}`,
     description: article.excerpt,
-  };
+    image: { url: article.image, alt: article.title },
+    type: "article",
+    publishedTime: isoDate(article.date),
+  });
 }
 
 export default async function ArticleDetailPage({
@@ -36,21 +41,34 @@ export default async function ArticleDetailPage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const article = getArticleBySlug(slug);
-  const bodyHtml = ARTICLE_BODIES[slug];
-  const story = ARTICLE_STORIES[slug];
-  if (!article || (!bodyHtml && !story)) notFound();
+  const content = await getArticleContent(slug);
+  if (!content) notFound();
+  const { article, bodyHtml, body, story } = content;
+  const articleJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: article.title,
+    description: article.excerpt,
+    image: [absoluteUrl(article.image)],
+    datePublished: isoDate(article.date),
+    articleSection: article.category,
+    inLanguage: "vi-VN",
+    mainEntityOfPage: absoluteUrl(article.href),
+    author: { "@type": "Organization", name: SITE_NAME, url: SITE_URL },
+    publisher: { "@id": `${SITE_URL}/#organization` },
+  };
 
   return (
     <>
+      <JsonLd data={articleJsonLd} />
       <SiteHeader />
       <main className="flex-1">
         <ArticleDetail
           article={article}
           bodyHtml={bodyHtml}
-          related={getRelatedArticles(slug)}
+          related={getRelatedArticles(await getArticles(), slug)}
         >
-          {story ? <StoryArticle story={story} /> : null}
+          {story ? <StoryArticle story={story} /> : body ? <ArticleBody body={body} /> : null}
         </ArticleDetail>
       </main>
       <SiteFooter />

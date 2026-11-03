@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Be_Vietnam_Pro, Newsreader, Playfair_Display } from "next/font/google";
 import { SiteMotion } from "@/components/SiteMotion";
+import { DEFAULT_SOCIAL_IMAGE, SITE_DESCRIPTION, SITE_INDEXABLE, SITE_NAME, SITE_TITLE, SITE_URL } from "@/lib/seo";
 import "./globals.css";
 
 const bodyFont = Be_Vietnam_Pro({
@@ -38,39 +39,26 @@ const accentFont = Playfair_Display({
   preload: false,
 });
 
-const SITE_TITLE = "Hoa Viên Bình Dương | Nơi Cuộc Sống Vĩnh Hằng";
-const SITE_DESCRIPTION =
-  "Hoa Viên Bình Dương (Chánh Phú Hòa) – công viên tưởng niệm sinh thái tại Bến Cát, Bình Dương, mang đến dịch vụ tang lễ và tưởng niệm toàn diện. Trân trọng từng cuộc đời.";
-const SOCIAL_IMAGE = "/images/hvbd/park-aerial-roundabout.jpg";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://demo-cphaco.vercel.app"),
+  metadataBase: new URL(SITE_URL),
   title: SITE_TITLE,
   description: SITE_DESCRIPTION,
-  alternates: {
-    canonical: "/",
-  },
+  applicationName: SITE_NAME,
+  ...(SITE_INDEXABLE ? {} : { robots: { index: false, follow: false } }),
   openGraph: {
     type: "website",
     locale: "vi_VN",
-    url: "/",
-    siteName: "Hoa Viên Bình Dương",
+    siteName: SITE_NAME,
     title: SITE_TITLE,
     description: SITE_DESCRIPTION,
-    images: [
-      {
-        url: SOCIAL_IMAGE,
-        width: 1630,
-        height: 965,
-        alt: "Toàn cảnh xanh tại Hoa Viên Bình Dương",
-      },
-    ],
+    images: [DEFAULT_SOCIAL_IMAGE],
   },
   twitter: {
     card: "summary_large_image",
     title: SITE_TITLE,
     description: SITE_DESCRIPTION,
-    images: [SOCIAL_IMAGE],
+    images: [DEFAULT_SOCIAL_IMAGE.url],
   },
   icons: {
     icon: [

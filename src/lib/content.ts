@@ -236,7 +236,7 @@ export const FOOTER_BUTTONS: { label: string; href: string }[] = [];
 export const FOOTER_ADDRESS = {
   office: "Văn Phòng Chính",
   address:
-    "Hoa Viên Nghĩa Trang Bình Dương, Khu phố Bông Trang, phường Chánh Phú Hòa, TP. Hồ Chí Minh.",
+    "Hoa Viên Bình Dương, Khu phố Bông Trang, phường Chánh Phú Hòa, TP. Hồ Chí Minh.",
   hours:
     "Giờ làm việc: 7h30 – 17h00, tất cả các ngày trong tuần (kể cả Chủ nhật và ngày lễ).",
   website: "cphaco.vn",

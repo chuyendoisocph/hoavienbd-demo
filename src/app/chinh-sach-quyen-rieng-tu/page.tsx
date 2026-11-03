@@ -1,14 +1,15 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { PrivacyHero } from "@/components/privacy/PrivacyHero";
 import { PrivacyAccordion } from "@/components/privacy/PrivacyAccordion";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata("/chinh-sach-quyen-rieng-tu", {
   title: "Chính Sách Quyền Riêng Tư | Hoa Viên Bình Dương",
   description:
     "Cách Hoa Viên Bình Dương thu thập, sử dụng, bảo mật và chia sẻ dữ liệu cá nhân của khách hàng, cùng quyền truy cập và chỉnh sửa dữ liệu của Quý khách.",
-};
+});
 
 export default function PrivacyPolicyPage() {
   return (

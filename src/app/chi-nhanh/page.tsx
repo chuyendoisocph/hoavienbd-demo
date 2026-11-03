@@ -1,14 +1,15 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import Image from "next/image";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { BranchDirectory } from "@/components/branches/BranchDirectory";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata("/chi-nhanh", {
   title: "Hệ Thống Chi Nhánh | Hoa Viên Bình Dương",
   description:
     "Địa chỉ Hoa Viên Bình Dương và ba chi nhánh tại TP. Hồ Chí Minh. Xem vị trí trên bản đồ và chọn địa điểm thuận tiện cho quý khách.",
-};
+});
 
 export default function BranchesPage() {
   return (

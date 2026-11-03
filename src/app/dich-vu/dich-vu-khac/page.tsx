@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { OthersHero } from "@/components/others/OthersHero";
@@ -7,11 +8,11 @@ import { OthersNvSeed } from "@/components/others/OthersNvSeed";
 import { OthersRead } from "@/components/others/OthersRead";
 import { PRODUCTS } from "@/lib/others-content";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata("/dich-vu/dich-vu-khac", {
   title: "Dịch Vụ Khác | Hoa Viên Bình Dương",
   description:
     "Tìm hiểu dịch vụ chăm sóc khu mộ, tư vấn thiết kế xây dựng mộ và sanh phần tại Hoa Viên Bình Dương.",
-};
+});
 
 export default function OthersPage() {
   const graveCare = PRODUCTS[0];

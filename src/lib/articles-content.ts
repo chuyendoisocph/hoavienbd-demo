@@ -115,13 +115,9 @@ export const ARTICLES: Article[] = ARTICLE_INPUTS.map((article) => ({
   href: `/bai-viet/${article.slug}`,
 }));
 
-export function getArticleBySlug(slug: string): Article | undefined {
-  return ARTICLES.find((article) => article.slug === slug);
-}
-
-export function getRelatedArticles(slug: string, count = 3): Article[] {
-  const current = getArticleBySlug(slug);
-  const others = ARTICLES.filter((article) => article.slug !== slug);
+export function getRelatedArticles(articles: Article[], slug: string, count = 3): Article[] {
+  const current = articles.find((article) => article.slug === slug);
+  const others = articles.filter((article) => article.slug !== slug);
   const sameCategory = current
     ? others.filter((article) => article.category === current.category)
     : [];

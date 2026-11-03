@@ -103,12 +103,3 @@ export const HOA_VIEN_EVENTS: HoaVienEvent[] = [
     ],
   },
 ];
-
-export const FEATURED_EVENT =
-  HOA_VIEN_EVENTS.find((event) => event.featured) ?? HOA_VIEN_EVENTS[0];
-
-export const ANNUAL_EVENTS = HOA_VIEN_EVENTS.filter((event) => !event.featured);
-
-export function getEventBySlug(slug: string) {
-  return HOA_VIEN_EVENTS.find((event) => event.slug === slug);
-}

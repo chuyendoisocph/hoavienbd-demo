@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import Link from "next/link";
 import "pannellum/build/pannellum.css";
 import { SiteHeader } from "@/components/SiteHeader";
@@ -6,10 +7,10 @@ import { SiteFooter } from "@/components/SiteFooter";
 import { VirtualTour } from "@/components/tour360/VirtualTour";
 import "./tour.css";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata("/tham-quan-360", {
   title: "Tham Quan Hoa Viên 360° | Hoa Viên Bình Dương",
   description: "Khám phá Hoa Viên Bình Dương qua ảnh toàn cảnh 360° thực tế: cổng hoa viên, Đại Lộ Vĩnh Hằng, Vĩnh Hằng Đài, Chùa Thiên Phước và các khu cảnh quan.",
-};
+});
 
 export default function VirtualTourPage() {
   return (

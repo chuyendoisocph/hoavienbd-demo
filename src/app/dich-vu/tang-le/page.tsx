@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { FuneralHero } from "@/components/funeral/FuneralHero";
@@ -11,11 +12,11 @@ import { FuneralPlans } from "@/components/funeral/FuneralPlans";
 import { FuneralGuide } from "@/components/funeral/FuneralGuide";
 import { FuneralAbout } from "@/components/funeral/FuneralAbout";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata("/dich-vu/tang-le", {
   title: "Dịch Vụ Tang Lễ | Hoa Viên Bình Dương",
   description:
     "Dịch vụ tang lễ trọn gói của Hoa Viên Bình Dương – nhà tang lễ, quan tài & hũ cốt cao cấp, cùng đội ngũ chăm sóc tận tâm, chuyên nghiệp.",
-};
+});
 
 export default function FuneralServicePage() {
   return (

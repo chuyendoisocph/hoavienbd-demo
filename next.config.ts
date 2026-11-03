@@ -20,6 +20,9 @@ const LEGACY_ROUTES: Record<string, string> = {
 const nextConfig: NextConfig = {
   /* config options here */
   output: "standalone",
+  images: {
+    remotePatterns: [{ protocol: "https", hostname: "cdn.sanity.io" }],
+  },
   async redirects() {
     return Object.entries(LEGACY_ROUTES).map(([source, destination]) => ({
       source,

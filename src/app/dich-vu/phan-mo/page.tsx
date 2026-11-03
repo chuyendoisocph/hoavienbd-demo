@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { BurialHero } from "@/components/burial/BurialHero";
@@ -8,11 +9,11 @@ import { BurialPlotTypes } from "@/components/burial/BurialPlotTypes";
 import { MemorialPark360 } from "@/components/burial/MemorialPark360";
 import { BurialConsiderations } from "@/components/burial/BurialConsiderations";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata("/dich-vu/phan-mo", {
   title: "Khu Mộ & Vị Trí An Nghỉ | Hoa Viên Bình Dương",
   description:
     "Tìm hiểu các khu mộ và vị trí an nghỉ tại Hoa Viên Bình Dương – Mộ Gia Tộc Hoàng Gia, Mộ Gia Đình, Mộ Đơn & Đôi và Vườn Tưởng Niệm Công Giáo.",
-};
+});
 
 export default function BurialPage() {
   return (

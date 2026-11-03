@@ -119,5 +119,9 @@ public/videos/articles-hero.mp4
 public/videos/hero-hoa-vien.mp4
 public/videos/v1.mp4
 public/videos/wwa-hero.mp4
+# Sanity
+sanity-seed/
+.sanity/
+
 # Local high-resolution source media (not deployed or versioned)
 source-assets/videos/

@@ -5,38 +5,35 @@ import { notFound } from "next/navigation";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 import { ConsultationDialog } from "@/components/ConsultationDialog";
-import { HOA_VIEN_EVENTS, getEventBySlug } from "@/lib/events-content";
+import { getEvent, getEvents } from "@/lib/cms";
+import { pageMetadata } from "@/lib/seo";
+
+export const revalidate = 3600;
 
 interface EventDetailPageProps {
   params: Promise<{ slug: string }>;
 }
 
-export function generateStaticParams() {
-  return HOA_VIEN_EVENTS.map((event) => ({ slug: event.slug }));
+export async function generateStaticParams() {
+  return (await getEvents()).map((event) => ({ slug: event.slug }));
 }
 
 export async function generateMetadata({
   params,
 }: EventDetailPageProps): Promise<Metadata> {
-  const event = getEventBySlug((await params).slug);
+  const event = await getEvent((await params).slug);
 
   if (!event) return {};
 
-  return {
+  return pageMetadata(`/su-kien/${event.slug}`, {
     title: `${event.title} | Hoa Viên Bình Dương`,
     description: event.description,
-    alternates: { canonical: `/su-kien/${event.slug}` },
-    openGraph: {
-      title: `${event.title} | Hoa Viên Bình Dương`,
-      description: event.description,
-      url: `/su-kien/${event.slug}`,
-      images: [{ url: event.image, alt: event.imageAlt }],
-    },
-  };
+    image: { url: event.image, alt: event.imageAlt },
+  });
 }
 
 export default async function EventDetailPage({ params }: EventDetailPageProps) {
-  const event = getEventBySlug((await params).slug);
+  const event = await getEvent((await params).slug);
 
   if (!event) notFound();
 

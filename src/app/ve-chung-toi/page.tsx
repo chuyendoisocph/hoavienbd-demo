@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { WwaHero } from "@/components/wwa/WwaHero";
@@ -7,11 +8,11 @@ import { WwaValues } from "@/components/wwa/WwaValues";
 import { WwaStats } from "@/components/wwa/WwaStats";
 import { WwaAwards } from "@/components/wwa/WwaAwards";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata("/ve-chung-toi", {
   title: "Về Chúng Tôi | Hoa Viên Bình Dương",
   description:
-    "Hoa Viên Bình Dương là công viên tưởng niệm sinh thái quy mô lớn tại Chánh Phú Hòa, Bến Cát, Bình Dương, mang đến chốn an nghỉ trang nghiêm giữa thiên nhiên xanh mát.",
-};
+    "Hoa Viên Bình Dương là công viên tưởng niệm sinh thái quy mô lớn tại phường Chánh Phú Hòa, TP. Hồ Chí Minh, mang đến chốn an nghỉ trang nghiêm giữa thiên nhiên xanh mát.",
+});
 
 export default function WhoWeArePage() {
   return (
