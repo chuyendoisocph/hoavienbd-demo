@@ -1,4 +1,4 @@
-/** Nội dung bài viết dành riêng cho Hoa Viên Bình Dương. */
+/** Nội dung bài viết dành riêng cho Hoa Viên Nghĩa Trang Bình Dương. */
 
 export interface Article {
   title: string;

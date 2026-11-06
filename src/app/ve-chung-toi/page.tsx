@@ -6,12 +6,11 @@ import { WwaHero } from "@/components/wwa/WwaHero";
 import { WwaIntro } from "@/components/wwa/WwaIntro";
 import { WwaValues } from "@/components/wwa/WwaValues";
 import { WwaStats } from "@/components/wwa/WwaStats";
-import { WwaAwards } from "@/components/wwa/WwaAwards";
 
 export const metadata: Metadata = pageMetadata("/ve-chung-toi", {
-  title: "Về Chúng Tôi | Hoa Viên Bình Dương",
+  title: "Về Chúng Tôi | Hoa Viên Nghĩa Trang Bình Dương",
   description:
-    "Hoa Viên Bình Dương là công viên tưởng niệm sinh thái quy mô lớn tại phường Chánh Phú Hòa, TP. Hồ Chí Minh, mang đến chốn an nghỉ trang nghiêm giữa thiên nhiên xanh mát.",
+    "Hoa Viên Nghĩa Trang Bình Dương là công viên tưởng niệm sinh thái tại phường Chánh Phú Hòa, TP. Hồ Chí Minh, chốn an nghỉ trang nghiêm giữa thiên nhiên xanh mát.",
 });
 
 export default function WhoWeArePage() {
@@ -23,7 +22,6 @@ export default function WhoWeArePage() {
         <WwaIntro />
         <WwaValues />
         <WwaStats />
-        <WwaAwards />
       </main>
       <SiteFooter />
     </>

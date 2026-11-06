@@ -9,9 +9,9 @@ import { ContactBranches } from "@/components/contact/ContactBranches";
 import { ContactForm } from "@/components/contact/ContactForm";
 
 export const metadata: Metadata = pageMetadata("/lien-he", {
-  title: "Liên Hệ | Hoa Viên Bình Dương",
+  title: "Liên Hệ | Hoa Viên Nghĩa Trang Bình Dương",
   description:
-    "Liên hệ Hoa Viên Bình Dương. Thông tin văn phòng, tổng đài, email và hệ thống hoa viên tại phường Chánh Phú Hòa, TP. Hồ Chí Minh.",
+    "Liên hệ Hoa Viên Nghĩa Trang Bình Dương. Thông tin văn phòng, tổng đài, email và hệ thống hoa viên tại phường Chánh Phú Hòa, TP. Hồ Chí Minh.",
 });
 
 export default function ContactUsPage() {

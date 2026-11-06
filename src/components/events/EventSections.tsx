@@ -31,7 +31,7 @@ export function FeaturedEvent({ event }: FeaturedEventProps) {
             Những dịp sum vầy đầy ý nghĩa
           </h2>
           <p className="mx-auto mt-4 w-full max-w-[650px] text-[16px] leading-7 text-white/80 sm:text-[18px] sm:leading-8">
-            Cùng Hoa Viên Bình Dương gìn giữ truyền thống, tưởng nhớ nguồn cội
+            Cùng Hoa Viên Nghĩa Trang Bình Dương gìn giữ truyền thống, tưởng nhớ nguồn cội
             và trao gửi bình an qua những hoạt động văn hóa thường niên.
           </p>
         </header>
@@ -40,7 +40,7 @@ export function FeaturedEvent({ event }: FeaturedEventProps) {
           <Link
             href={`/su-kien/${event.slug}`}
             aria-label={`Xem sự kiện ${event.title}`}
-            className="group relative mt-10 block aspect-[16/9] min-h-[390px] overflow-hidden rounded-[2px] bg-footer-navy shadow-[0_24px_70px_rgba(20,23,54,0.34)] outline-none focus-visible:ring-4 focus-visible:ring-white focus-visible:ring-offset-4 focus-visible:ring-offset-brand sm:min-h-0 lg:mt-12 lg:aspect-[2/1]"
+            className="group relative mt-10 block min-h-[390px] sm:aspect-[16/9] overflow-hidden rounded-[2px] bg-footer-navy shadow-[0_24px_70px_rgba(20,23,54,0.34)] outline-none focus-visible:ring-4 focus-visible:ring-white focus-visible:ring-offset-4 focus-visible:ring-offset-brand sm:min-h-0 lg:mt-12 lg:aspect-[2/1]"
           >
             <Image
               src={event.image}

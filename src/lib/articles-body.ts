@@ -36,7 +36,7 @@ export const ARTICLE_BODIES: Record<string, string> = {
     <p>Nếu gia đình đang tìm hiểu, ba điều đáng cân nhắc là: <strong>hợp pháp</strong> để vững tin lâu dài, <strong>hợp lý</strong> để chủ động ngân sách và thuận tiện thăm viếng, <strong>hợp lòng</strong> để nơi an nghỉ phù hợp tín ngưỡng, nguyện vọng của cha mẹ và nghĩa tình nhiều thế hệ.</p>
     <p>Không có thời điểm nào bắt buộc. Điều quan trọng là cả nhà cùng hiểu nhau và cha mẹ được an lòng.</p>
     <blockquote>Chủ động hôm nay – Nhẹ gánh người thân – Trọn nghĩa mai sau.</blockquote>
-    <p><strong>Hoa Viên Bình Dương</strong> – Nơi cuộc sống vĩnh hằng.</p>
+    <p><strong>Hoa Viên Nghĩa Trang Bình Dương</strong> – Nơi cuộc sống vĩnh hằng.</p>
   `,
   "chon-sanh-phan-som-an-tam-cho-nhieu-the-he": `
     <p><strong>Ba giá trị cốt lõi: Hợp pháp – Hợp lý – Hợp lòng</strong></p>
@@ -53,10 +53,10 @@ export const ARTICLE_BODIES: Record<string, string> = {
     <p>Đa dạng tiểu khu, cảnh quan và không gian tâm linh để lựa chọn nơi an nghỉ phù hợp văn hóa, tín ngưỡng, nguyện vọng gia đình; dễ tìm, dễ nhớ, thuận tiện thăm viếng và gìn giữ nghĩa tình nhiều thế hệ.</p>
     <figure>
       <img src="/images/hvbd/thuc-te/khu-mo-tham-hoa.webp" alt="Khu mộ phủ kín hoa cúc giữa cảnh quan cây xanh" width="2400" height="1600" loading="lazy" />
-      <figcaption>Cảnh quan một tiểu khu tại Hoa Viên Bình Dương.</figcaption>
+      <figcaption>Cảnh quan một tiểu khu tại Hoa Viên Nghĩa Trang Bình Dương.</figcaption>
     </figure>
     <blockquote>Chủ động hôm nay – Nhẹ gánh người thân – Trọn nghĩa mai sau.</blockquote>
-    <p><strong>Hoa Viên Bình Dương</strong> – Nơi cuộc sống vĩnh hằng.</p>
+    <p><strong>Hoa Viên Nghĩa Trang Bình Dương</strong> – Nơi cuộc sống vĩnh hằng.</p>
   `,
   "can-lam-gi-khi-co-nguoi-than-qua-doi": `
     <p>Khi cần tổ chức tang lễ, nhiều công việc phải được sắp xếp trong thời gian ngắn. Việc bình tĩnh xác định thứ tự ưu tiên sẽ giúp các thủ tục và nghi lễ được tiến hành chu toàn hơn.</p>
@@ -85,7 +85,7 @@ export const ARTICLE_BODIES: Record<string, string> = {
     <ul><li>Vị trí hộc lưu cốt và cách nhận biết.</li><li>Thời hạn lưu giữ và các điều khoản dịch vụ.</li><li>Thời gian mở cửa thăm viếng.</li><li>Việc vệ sinh, chăm sóc và bảo quản khu vực lưu cốt.</li><li>Các nghi thức được phép thực hiện tại nơi an vị.</li></ul>
     <h2>Tiếp nhận và bàn giao tro cốt</h2>
     <p>Gia đình nên thống nhất trước ngày giờ, vị trí và nghi thức an vị. Đơn vị tiếp nhận có trách nhiệm hướng dẫn hồ sơ, đối chiếu thông tin và thực hiện việc tiếp nhận, bàn giao theo nội dung đã thỏa thuận.</p>
-    <p>Tại Chùa Thiên Phước trong khuôn viên Hoa Viên Bình Dương, gia đình có thể tìm hiểu không gian lưu giữ tro cốt và trao đổi trực tiếp với đội ngũ tư vấn trước khi lựa chọn.</p>
+    <p>Tại Chùa Thiên Phước trong khuôn viên Hoa Viên Nghĩa Trang Bình Dương, gia đình có thể tìm hiểu không gian lưu giữ tro cốt và trao đổi trực tiếp với đội ngũ tư vấn trước khi lựa chọn.</p>
   `,
   "chuan-bi-hau-su-tu-som": `
     <p>Chủ động chuẩn bị từ sớm không phải là bi quan. Đây có thể là cách mỗi người nói rõ nguyện vọng, giảm bớt những quyết định khó khăn cho người thân và sắp xếp tài chính phù hợp.</p>

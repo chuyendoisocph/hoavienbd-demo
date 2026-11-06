@@ -8,9 +8,9 @@ import { ImmediateLoved } from "@/components/immediate-need/ImmediateLoved";
 import { ImmediateResources } from "@/components/immediate-need/ImmediateResources";
 
 export const metadata: Metadata = pageMetadata("/ho-tro/khi-co-nguoi-than-qua-doi", {
-  title: "Hỗ Trợ Tang Lễ | Hoa Viên Bình Dương",
+  title: "Hỗ Trợ Tang Lễ | Hoa Viên Nghĩa Trang Bình Dương",
   description:
-    "Hướng dẫn các bước cần thiết và kết nối đội ngũ hỗ trợ tang lễ 24/7 từ Hoa Viên Bình Dương.",
+    "Hướng dẫn các bước cần thiết và kết nối đội ngũ hỗ trợ tang lễ 24/7 từ Hoa Viên Nghĩa Trang Bình Dương.",
 });
 
 export default function ImmediateNeedPage() {

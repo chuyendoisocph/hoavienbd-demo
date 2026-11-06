@@ -1,4 +1,4 @@
-/** Nội dung Hoa Viên Bình Dương (Chánh Phú Hòa). Nguồn dữ liệu chung cho toàn bộ giao diện. */
+/** Nội dung Hoa Viên Nghĩa Trang Bình Dương (Chánh Phú Hòa). Nguồn dữ liệu chung cho toàn bộ giao diện. */
 import type {
   CarouselSlide,
   PreplanCard,
@@ -12,7 +12,7 @@ import type {
 export const LOGO = "/images/hvbd/cpha-logo.png";
 
 export const TOP_NAV: NavItem[] = [
-  { label: "Tặng Tre Giữ Nghề", href: "https://cphaco.vn/duong-thien-thai-noi-tre-que-nha-hoi-tu/" },
+  { label: "Khu Mộ", href: "/dich-vu/phan-mo" },
   {
     label: "Hỗ Trợ",
     href: "#",
@@ -26,7 +26,6 @@ export const TOP_NAV: NavItem[] = [
     href: "#",
     children: [
       { label: "Dịch Vụ Tang Lễ", href: "/dich-vu/tang-le" },
-      { label: "Khu Mộ & Vị Trí An Nghỉ", href: "/dich-vu/phan-mo" },
       { label: "Dịch Vụ Lưu Tro Cốt", href: "/dich-vu/luu-tro-cot" },
       { label: "Dịch Vụ Khác", href: "/dich-vu/dich-vu-khac" },
     ],
@@ -53,21 +52,17 @@ export const HERO = {
   video: "/videos/hero-dji0305-1080.mp4",
   videoMobile: "/videos/hero-dji0305-720.mp4",
   image: "/images/hero-dji0305-poster-optimized.webp",
-  title: "Hoa Viên Bình Dương",
+  // Hai dòng trên điện thoại, một dòng trên màn hình rộng; chỉ ngắt giữa "Nghĩa Trang" và "Bình Dương".
+  title: ["Hoa Viên Nghĩa Trang", "Bình Dương"],
   subtitle: "Nơi Cuộc Sống Vĩnh Hằng",
 };
 
 export const CAROUSEL_SLIDES: CarouselSlide[] = [
   {
-    title: "Hoa Viên Bình Dương",
-    body: "Công viên tưởng niệm sinh thái hàng đầu, kiến tạo không gian an nghỉ trang nghiêm giữa thiên nhiên xanh mát.",
-    image: "/images/hvbd/linh-hoa-tue-dan-1.jpg",
-    cta: { label: "Tìm hiểu thêm", href: "/ve-chung-toi" },
-  },
-  {
+    // Không lặp tên hoa viên: tiêu đề mục ngay bên phải đã là tên hoa viên.
     title: "Cảnh Quan Hữu Tình",
-    body: "Quy mô quy hoạch lên đến 300 ha, được kiến tạo hài hòa giữa cảnh quan thiên nhiên và các công trình tâm linh, mang lại sự an yên cho người đã khuất và gia đình.",
-    image: "/images/hvbd/park-aerial-roundabout.jpg",
+    body: "Quy hoạch 300 ha, hài hòa giữa thiên nhiên và các công trình tâm linh.",
+    image: "/images/hvbd/linh-hoa-tue-dan-1.jpg",
     cta: { label: "Tìm hiểu thêm", href: "/ve-chung-toi" },
   },
   {
@@ -125,15 +120,15 @@ export const PRODUCTS = {
     { label: "Sanh Phần", href: "/dich-vu/dich-vu-khac" },
   ] as ProductItem[],
   image: "/images/hvbd/doi-ngu-cham-soc-khu-mo-v2.png",
-  imageAlt: "Đội ngũ chăm sóc cảnh quan và khu mộ tại Hoa Viên Bình Dương",
+  imageAlt: "Đội ngũ chăm sóc cảnh quan và khu mộ tại Hoa Viên Nghĩa Trang Bình Dương",
 };
 
 export const SITE_VIEW_360 = {
-  title: "Toàn cảnh Hoa Viên Bình Dương",
+  title: "Toàn Cảnh Hoa Viên",
   description:
-    "Cùng ngắm không gian xanh và những công trình nổi bật của Hoa Viên Bình Dương qua video flycam từ trên cao.",
+    "Cùng ngắm không gian xanh và những công trình nổi bật của Hoa Viên Nghĩa Trang Bình Dương qua video flycam từ trên cao.",
   videoId: "5eMkcNdEj6U",
-  videoTitle: "Video flycam toàn cảnh Hoa Viên Bình Dương",
+  videoTitle: "Video flycam toàn cảnh Hoa Viên Nghĩa Trang Bình Dương",
   poster: "/images/toan-canh-dji0304-poster-optimized.webp",
 };
 
@@ -183,7 +178,7 @@ export const TESTIMONIALS: Testimonial[] = [
   {
     title: "Dịch vụ tận tâm và chu đáo",
     excerpt:
-      "Gia đình chúng tôi xin gửi lời cảm ơn chân thành đến đội ngũ Hoa Viên Bình Dương vì sự phục vụ tận tâm, chu đáo trong suốt tang lễ của cha chúng tôi. Mọi việc đều được lo liệu trọn vẹn…",
+      "Gia đình chúng tôi xin gửi lời cảm ơn chân thành đến đội ngũ Hoa Viên Nghĩa Trang Bình Dương vì sự phục vụ tận tâm, chu đáo trong suốt tang lễ của cha chúng tôi. Mọi việc đều được lo liệu trọn vẹn…",
   },
   {
     title: "Chuyên nghiệp trong từng chi tiết",
@@ -230,13 +225,13 @@ export const FOOTER_COLUMNS: FooterLinkColumn[] = [
 ];
 
 // Các nút tiện ích (Cẩm Nang, Cổng Khách Hàng, Cổng Đại Lý) chưa có trang —
-// tạm ẩn cho tới khi có nội dung thật của Hoa Viên Bình Dương.
+// tạm ẩn cho tới khi có nội dung thật của Hoa Viên Nghĩa Trang Bình Dương.
 export const FOOTER_BUTTONS: { label: string; href: string }[] = [];
 
 export const FOOTER_ADDRESS = {
   office: "Văn Phòng Chính",
   address:
-    "Hoa Viên Bình Dương, Khu phố Bông Trang, phường Chánh Phú Hòa, TP. Hồ Chí Minh.",
+    "Hoa Viên Nghĩa Trang Bình Dương, Khu phố Bông Trang, phường Chánh Phú Hòa, TP. Hồ Chí Minh.",
   hours:
     "Giờ làm việc: 7h30 – 17h00, tất cả các ngày trong tuần (kể cả Chủ nhật và ngày lễ).",
   website: "cphaco.vn",

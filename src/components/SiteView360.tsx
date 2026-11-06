@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { YouTubeFeature } from "@/components/YouTubeFeature";
 import { SITE_VIEW_360 } from "@/lib/content";
+import { keepNameTogether } from "@/lib/typography";
 
 export function SiteView360() {
   return (
@@ -11,8 +12,8 @@ export function SiteView360() {
       <div className="mx-auto max-w-[1180px]">
         <div className="grid items-end gap-6 lg:grid-cols-[1fr_390px] lg:gap-16">
           <div>
-            <h2 className="max-w-[720px] font-heading text-[30px] font-semibold leading-[1.2] text-heading md:text-[50px] md:leading-[1.16]">
-              {SITE_VIEW_360.title}
+            <h2 className="max-w-[720px] font-heading text-[30px] font-semibold leading-[1.2] text-heading [text-wrap:balance] md:text-[50px] md:leading-[1.16]">
+              {keepNameTogether(SITE_VIEW_360.title)}
             </h2>
           </div>
           <p className="max-w-[52ch] text-[17px] font-medium leading-[1.75] text-[#687184] lg:pb-1">
@@ -41,7 +42,7 @@ export function SiteView360() {
         </p>
         <div className="mt-9 flex flex-col items-start justify-between gap-5 border-t border-[#dce3ec] pt-7 sm:flex-row sm:items-center">
           <p className="max-w-[58ch] text-[16px] leading-relaxed text-[#4d596b]">
-            Muốn tự mình nhìn quanh từng khu vực? Khám phá tour ảnh 360° được chụp thực tế tại Hoa Viên Bình Dương.
+            Muốn tự mình nhìn quanh từng khu vực? Khám phá tour ảnh 360° được chụp thực tế tại Hoa Viên Nghĩa Trang Bình Dương.
           </p>
           <Link
             href="/tham-quan-360"

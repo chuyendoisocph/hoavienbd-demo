@@ -1,4 +1,4 @@
-/** Nội dung trang Hỗ Trợ Tang Lễ Cho Gia Đình — Hoa Viên Bình Dương */
+/** Nội dung trang Hỗ Trợ Tang Lễ Cho Gia Đình — Hoa Viên Nghĩa Trang Bình Dương */
 
 export const IMMEDIATE_HERO = {
   background: "/images/immediate-need-hero.webp",
@@ -74,7 +74,7 @@ export const RESOURCES = {
   title: "Thông Tin Hữu Ích",
   links: [
     { title: "So sánh dịch vụ tang lễ", href: "/dich-vu/tang-le" },
-    { title: "Các khu mộ tại Hoa Viên Bình Dương", href: "/dich-vu/phan-mo" },
+    { title: "Các khu mộ tại Hoa Viên Nghĩa Trang Bình Dương", href: "/dich-vu/phan-mo" },
     { title: "Tìm hiểu về dịch vụ lưu tro cốt", href: "/dich-vu/luu-tro-cot" },
   ] as ResourceLink[],
 };

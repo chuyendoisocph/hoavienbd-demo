@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { WWA_INTRO } from "@/lib/wwa-content";
+import { keepNameTogether } from "@/lib/typography";
 
 export function WwaIntro() {
   return (
@@ -12,7 +13,7 @@ export function WwaIntro() {
           className="mb-10 font-heading font-medium leading-[1.2] text-brand"
           style={{ fontSize: "clamp(30px, 4vw, 40px)" }}
         >
-          {WWA_INTRO.title}
+          {keepNameTogether(WWA_INTRO.title)}
         </h2>
         {WWA_INTRO.body.map((para) => (
           <p key={para.slice(0, 24)} className="mt-5 text-left text-[16px] leading-[1.9] text-[#666]">

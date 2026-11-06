@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { MEMORIAL_360 } from "@/lib/burial-content";
 import { VideoFeature } from "@/components/VideoFeature";
+import { keepNameTogether } from "@/lib/typography";
 
 export function MemorialPark360() {
   return (
@@ -13,7 +14,7 @@ export function MemorialPark360() {
             {MEMORIAL_360.eyebrow}
           </p>
           <h3 className="font-heading text-[20px] md:text-[30px] font-bold text-white">
-            {MEMORIAL_360.title}
+            {keepNameTogether(MEMORIAL_360.title)}
           </h3>
           <p className="mb-[30px] font-heading text-[22px] text-white">
             {MEMORIAL_360.subtitle}

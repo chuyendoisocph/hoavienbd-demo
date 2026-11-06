@@ -37,7 +37,7 @@ export function ArticleDetail({ article, bodyHtml, children, related }: ArticleD
             {article.title}
           </h1>
           <p className="mt-5 text-[16px] text-white/80">
-            bởi Hoa Viên Bình Dương | {article.date}
+            bởi Hoa Viên Nghĩa Trang Bình Dương | {article.date}
           </p>
         </div>
       </section>

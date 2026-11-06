@@ -1,4 +1,4 @@
-/** Nội dung trang Liên Hệ — Hoa Viên Bình Dương. */
+/** Nội dung trang Liên Hệ — Hoa Viên Nghĩa Trang Bình Dương. */
 
 export const CONTACT_HERO = {
   background: "/images/hvbd/vinh-hoa-mon.jpg",

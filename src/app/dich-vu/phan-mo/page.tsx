@@ -10,9 +10,9 @@ import { MemorialPark360 } from "@/components/burial/MemorialPark360";
 import { BurialConsiderations } from "@/components/burial/BurialConsiderations";
 
 export const metadata: Metadata = pageMetadata("/dich-vu/phan-mo", {
-  title: "Khu Mộ & Vị Trí An Nghỉ | Hoa Viên Bình Dương",
+  title: "Khu Mộ & Vị Trí An Nghỉ | Hoa Viên Nghĩa Trang Bình Dương",
   description:
-    "Tìm hiểu các khu mộ và vị trí an nghỉ tại Hoa Viên Bình Dương – Mộ Gia Tộc Hoàng Gia, Mộ Gia Đình, Mộ Đơn & Đôi và Vườn Tưởng Niệm Công Giáo.",
+    "Tìm hiểu các khu mộ và vị trí an nghỉ tại Hoa Viên Nghĩa Trang Bình Dương – Mộ Gia Tộc Hoàng Gia, Mộ Gia Đình, Mộ Đơn & Đôi và Vườn Tưởng Niệm Công Giáo.",
 });
 
 export default function BurialPage() {

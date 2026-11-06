@@ -133,7 +133,7 @@ export function StoryArticle({ story }: { story: ArticleStory }) {
               <div key={index} className="mt-14 border-t border-[#e3e7f0] pt-10 text-center">
                 <p className="mx-auto max-w-[600px] text-[16px] leading-[1.8] text-[#666]">{part.text}</p>
                 <p className="mt-6 text-[13px] font-semibold uppercase tracking-[0.2em] text-heading">
-                  Hoa Viên Bình Dương – Nơi cuộc sống vĩnh hằng
+                  Hoa Viên Nghĩa Trang Bình Dương – Nơi cuộc sống vĩnh hằng
                 </p>
                 <Link
                   href="/ho-tro/chuan-bi-tu-som"

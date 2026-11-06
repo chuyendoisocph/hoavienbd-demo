@@ -16,7 +16,7 @@ export const EVENTS_HERO = {
   subtitle:
     "Nơi những giá trị hiếu nghĩa được gìn giữ qua các mùa lễ truyền thống và những dịp sum vầy của gia đình.",
   image: "/images/hvbd/park-aerial-roundabout.jpg",
-  imageAlt: "Toàn cảnh cây xanh và công trình trung tâm tại Hoa Viên Bình Dương",
+  imageAlt: "Toàn cảnh cây xanh và công trình trung tâm tại Hoa Viên Nghĩa Trang Bình Dương",
 };
 
 export const HOA_VIEN_EVENTS: HoaVienEvent[] = [
@@ -28,13 +28,13 @@ export const HOA_VIEN_EVENTS: HoaVienEvent[] = [
       "Dịp để các gia đình cùng tưởng nhớ tổ tiên, gửi lời cầu nguyện bình an và chăm sóc mộ trong không gian trang nghiêm của Hoa Viên.",
     image: "/images/hvbd/dai-le-cau-sieu-cau-an.jpg",
     imageAlt:
-      "Không gian Đại lễ Cầu Siêu – Cầu An Tiết Thanh Minh tại Hoa Viên Bình Dương",
+      "Không gian Đại lễ Cầu Siêu – Cầu An Tiết Thanh Minh tại Hoa Viên Nghĩa Trang Bình Dương",
     featured: true,
     introduction:
       "Lễ Cầu Siêu – Cầu An Tiết Thanh Minh là hoạt động văn hóa tâm linh thường niên, nơi lòng tri ân được thể hiện bằng những nghi thức trang trọng và sự sum họp của các thế hệ.",
     paragraphs: [
       "Trong tiết Thanh Minh, các gia đình trở về Hoa Viên để thăm viếng, chỉnh trang mộ và dành thời gian tưởng niệm người thân. Không gian xanh yên tĩnh giúp mỗi cuộc hội ngộ trở nên gần gũi, lắng đọng và trọn vẹn hơn.",
-      "Hoa Viên Bình Dương chuẩn bị cảnh quan, khu vực nghi lễ và đội ngũ hỗ trợ để gia đình thuận tiện tham dự. Lịch tổ chức chi tiết của từng năm sẽ được công bố trên website và các kênh chính thức của Hoa Viên.",
+      "Hoa Viên Nghĩa Trang Bình Dương chuẩn bị cảnh quan, khu vực nghi lễ và đội ngũ hỗ trợ để gia đình thuận tiện tham dự. Lịch tổ chức chi tiết của từng năm sẽ được công bố trên website và các kênh chính thức của Hoa Viên.",
     ],
     highlights: [
       "Nghi lễ cầu siêu, cầu an trang nghiêm",
@@ -49,11 +49,11 @@ export const HOA_VIEN_EVENTS: HoaVienEvent[] = [
     description:
       "Hoạt động hướng về cội nguồn, nhắc nhớ truyền thống uống nước nhớ nguồn và kết nối các thế hệ trong gia đình Việt.",
     image: "/images/hvbd/actual/cong-hon-viet-gate.jpg",
-    imageAlt: "Cổng Hồn Việt trong khuôn viên xanh của Hoa Viên Bình Dương",
+    imageAlt: "Cổng Hồn Việt trong khuôn viên xanh của Hoa Viên Nghĩa Trang Bình Dương",
     introduction:
       "Ngày Giỗ Tổ Hùng Vương là dịp để mỗi người Việt cùng hướng về nguồn cội và gìn giữ tinh thần biết ơn tiền nhân.",
     paragraphs: [
-      "Tại Hoa Viên Bình Dương, giá trị uống nước nhớ nguồn được thể hiện xuyên suốt trong cảnh quan, nghi thức tưởng niệm và cách đón tiếp các gia đình.",
+      "Tại Hoa Viên Nghĩa Trang Bình Dương, giá trị uống nước nhớ nguồn được thể hiện xuyên suốt trong cảnh quan, nghi thức tưởng niệm và cách đón tiếp các gia đình.",
       "Thông tin về chương trình hưởng ứng và thời gian tổ chức từng năm sẽ được Hoa Viên cập nhật khi kế hoạch được xác nhận.",
     ],
     highlights: [
@@ -69,7 +69,7 @@ export const HOA_VIEN_EVENTS: HoaVienEvent[] = [
     description:
       "Mùa báo hiếu để mỗi gia đình bày tỏ lòng biết ơn cha mẹ, tưởng nhớ ông bà tổ tiên và lan tỏa sự yêu thương.",
     image: "/images/hvbd/dai-le-vu-lan.jpg",
-    imageAlt: "Đại lễ Vu Lan với đông đảo gia đình tham dự tại Hoa Viên Bình Dương",
+    imageAlt: "Đại lễ Vu Lan với đông đảo gia đình tham dự tại Hoa Viên Nghĩa Trang Bình Dương",
     introduction:
       "Vu Lan là mùa của lòng biết ơn, nhắc mỗi người trân trọng tình thân và những giá trị đã được trao truyền qua nhiều thế hệ.",
     paragraphs: [
@@ -89,7 +89,7 @@ export const HOA_VIEN_EVENTS: HoaVienEvent[] = [
     description:
       "Dịp gia đình chăm sóc nơi an nghỉ của người thân, dâng hương tưởng niệm và chuẩn bị đón năm mới trong sự an yên.",
     image: "/images/hvbd/actual/grave-care-aerial-1.jpg",
-    imageAlt: "Khu mộ được chăm sóc giữa cảnh quan xanh tại Hoa Viên Bình Dương",
+    imageAlt: "Khu mộ được chăm sóc giữa cảnh quan xanh tại Hoa Viên Nghĩa Trang Bình Dương",
     introduction:
       "Tảo mộ cuối năm là nét đẹp truyền thống, giúp các thành viên trong gia đình cùng trở về, chăm sóc nơi an nghỉ và tưởng nhớ người thân.",
     paragraphs: [

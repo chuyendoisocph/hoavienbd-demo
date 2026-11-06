@@ -9,9 +9,9 @@ import { getArticles } from "@/lib/cms";
 export const revalidate = 3600;
 
 export const metadata: Metadata = pageMetadata("/bai-viet", {
-  title: "Bài Viết | Hoa Viên Bình Dương",
+  title: "Bài Viết | Hoa Viên Nghĩa Trang Bình Dương",
   description:
-    "Bài viết từ Hoa Viên Bình Dương về chủ động chuẩn bị từ sớm, dịch vụ tang lễ, an táng, hỏa táng, lưu giữ tro cốt và văn hóa tưởng niệm Việt Nam.",
+    "Bài viết từ Hoa Viên Nghĩa Trang Bình Dương về chủ động chuẩn bị từ sớm, dịch vụ tang lễ, an táng, hỏa táng, lưu giữ tro cốt và văn hóa tưởng niệm Việt Nam.",
 });
 
 export default async function ArticlesPage() {

@@ -28,20 +28,20 @@ export function EventsInvitation({ image, imageAlt }: EventsInvitationProps) {
 
         <div className="flex min-w-0 flex-col justify-center px-7 py-12 sm:px-12 sm:py-16 lg:px-14 xl:px-16">
           <p className="text-[12px] font-semibold uppercase tracking-[0.2em] text-brand/70">
-            HOA VIÊN BÌNH DƯƠNG
+            HOA VIÊN NGHĨA TRANG BÌNH DƯƠNG
           </p>
           <h2 className="mt-4 font-heading text-[34px] font-medium leading-[1.12] text-brand sm:text-[42px] lg:text-[48px]">
             Gìn giữ nét đẹp văn hóa qua từng mùa lễ
           </h2>
           <p className="mt-6 text-[16px] leading-[1.8] text-[#666a77]">
-            Kính mời quý gia đình theo dõi lịch sự kiện thường niên tại Hoa Viên Bình Dương
+            Kính mời quý gia đình theo dõi lịch sự kiện thường niên tại Hoa Viên Nghĩa Trang Bình Dương
             và liên hệ với chúng tôi để được hướng dẫn thời gian, nội dung chương trình cùng
             các thông tin cần chuẩn bị trước khi tham dự.
           </p>
 
           <ConsultationDialog
             title="Liên hệ lịch sự kiện"
-            interest="lịch sự kiện tại Hoa Viên Bình Dương"
+            interest="lịch sự kiện tại Hoa Viên Nghĩa Trang Bình Dương"
             description="Đội ngũ Hoa Viên sẽ cung cấp lịch tổ chức, nội dung chương trình và hướng dẫn tham dự phù hợp với nhu cầu của gia đình."
             triggerClassName="mt-8 inline-flex min-h-12 w-fit items-center justify-center bg-brand px-7 py-3 text-[13px] font-semibold uppercase tracking-[0.12em] text-white transition-colors hover:bg-[#3544b8]"
           >

@@ -13,9 +13,9 @@ import { FuneralGuide } from "@/components/funeral/FuneralGuide";
 import { FuneralAbout } from "@/components/funeral/FuneralAbout";
 
 export const metadata: Metadata = pageMetadata("/dich-vu/tang-le", {
-  title: "Dịch Vụ Tang Lễ | Hoa Viên Bình Dương",
+  title: "Dịch Vụ Tang Lễ | Hoa Viên Nghĩa Trang Bình Dương",
   description:
-    "Dịch vụ tang lễ trọn gói của Hoa Viên Bình Dương – nhà tang lễ, quan tài & hũ cốt cao cấp, cùng đội ngũ chăm sóc tận tâm, chuyên nghiệp.",
+    "Dịch vụ tang lễ trọn gói của Hoa Viên Nghĩa Trang Bình Dương – nhà tang lễ, quan tài & hũ cốt cao cấp, cùng đội ngũ chăm sóc tận tâm, chuyên nghiệp.",
 });
 
 export default function FuneralServicePage() {

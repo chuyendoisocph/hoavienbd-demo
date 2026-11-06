@@ -9,17 +9,19 @@ export type StoryBlock =
   | { quote: string[]; cite?: string }
   | { lead: string; text: string };
 
-export const CULTURE: { eyebrow: string; title: string; body: string; details: StoryBlock[] } = {
-  eyebrow: "HOA VIÊN BÌNH DƯƠNG",
-  title: "Câu Chuyện Thương Hiệu",
+export const CULTURE: { eyebrow: string; title: string[]; body: string; details: StoryBlock[] } = {
+  // Nhãn nhỏ chỉ hiện trong bảng "Đọc thêm"; mục trên trang chủ lấy tên hoa viên làm tiêu đề.
+  eyebrow: "CÂU CHUYỆN THƯƠNG HIỆU",
+  // Xuống dòng theo nghĩa (loại hình / nơi chốn), không để trình duyệt cắt giữa "Nghĩa / Trang".
+  title: ["Hoa Viên Nghĩa Trang", "Bình Dương"],
   // Nguyên văn bài "Câu chuyện thương hiệu Hoa viên Nghĩa trang Bình Dương" (sếp đã duyệt).
-  // Chỉ đổi tên riêng thành "Hoa Viên Bình Dương"/"Hoa Viên"; câu thơ giữ nguyên chữ "Hoa viên".
+  // Chỉ đổi tên riêng thành "Hoa Viên Nghĩa Trang Bình Dương"/"Hoa Viên"; câu thơ giữ nguyên chữ "Hoa viên".
   // **…** là chữ in đậm khi hiển thị trong cửa sổ "Đọc thêm".
   // body: phần tóm hiện sẵn (đoạn mở đầu của bài); details: toàn bài, hiện khi bấm "Xem thêm".
-  body: "Mỗi vùng đất trên hành trình phát triển đều cần những nơi để con người bắt đầu một cuộc sống mới, và cũng cần một nơi trang nghiêm để những người đã hoàn thành hành trình của mình được trở về an nghỉ. Hoa Viên Bình Dương ra đời từ nhiệm vụ ấy – và từ ngày đón người đầu tiên về an nghỉ, trách nhiệm của chúng tôi mới thực sự bắt đầu.",
+  body: "Mỗi vùng đất trên hành trình phát triển đều cần những nơi để con người bắt đầu một cuộc sống mới, và cũng cần một nơi trang nghiêm để những người đã hoàn thành hành trình của mình được trở về an nghỉ. Hoa Viên Nghĩa Trang Bình Dương ra đời từ nhiệm vụ ấy – và từ ngày đón người đầu tiên về an nghỉ, trách nhiệm của chúng tôi mới thực sự bắt đầu.",
   details: [
     "Đầu những năm 2000, Bình Dương và Thành phố Hồ Chí Minh bước vào thời kỳ công nghiệp hóa, đô thị hóa nhanh chóng. Những khu công nghiệp, khu dân cư mới hình thành; người dân từ nhiều tỉnh thành đến làm việc, lập nghiệp và gắn bó lâu dài. Cùng với sự phát triển ấy là yêu cầu chỉnh trang, di dời các nghĩa trang cũ, tạo quỹ đất cho đô thị và đáp ứng nhu cầu an táng, hỏa táng ngày càng lớn của xã hội.",
-    "Trong bối cảnh đó, với sự tin tưởng của lãnh đạo tỉnh Bình Dương, ông Nguyễn Văn Thiền – Chủ tịch Hội đồng Quản trị Công ty Cổ phần Đầu tư Xây dựng Chánh Phú Hòa, cùng Công ty đã nghiên cứu, lập dự án và từng bước xây dựng Hoa Viên Bình Dương.",
+    "Trong bối cảnh đó, với sự tin tưởng của lãnh đạo tỉnh Bình Dương, ông Nguyễn Văn Thiền – Chủ tịch Hội đồng Quản trị Công ty Cổ phần Đầu tư Xây dựng Chánh Phú Hòa, cùng Công ty đã nghiên cứu, lập dự án và từng bước xây dựng Hoa Viên Nghĩa Trang Bình Dương.",
     "**Đó không chỉ là cơ hội của một doanh nghiệp, mà trước hết là một nhiệm vụ đối với Nhà nước và cộng đồng.**",
     "Từ khi nhận lấy nhiệm vụ ấy, Công ty hiểu rằng Hoa Viên phải được xây dựng không chỉ để đáp ứng nhu cầu của hôm nay, mà còn để gìn giữ một trách nhiệm lâu dài với nhiều thế hệ mai sau.",
     { heading: "Từ một dự án đến một không gian văn hóa – tâm linh" },
@@ -71,7 +73,7 @@ export const CULTURE: { eyebrow: string; title: string; body: string; details: S
     "Chúng tôi mong mỗi lần một gia đình trở lại, họ đều thấy Hoa Viên tốt hơn lần trước: cây xanh hơn, cảnh quan đẹp hơn, phần mộ được chăm sóc chu đáo hơn, dịch vụ thuận tiện hơn và công nghệ giúp những người ở xa vẫn có thể quan tâm đến nơi an nghỉ của người thân.",
     "Uy tín của Hoa Viên vì thế không chỉ nằm ở những gì đã xây dựng, mà còn ở những gì được kiên trì gìn giữ và làm tốt hơn qua năm tháng.",
     { heading: "Một niềm tin được trao gửi" },
-    "Từ một nhiệm vụ phục vụ nhu cầu phát triển của xã hội, Hoa Viên Bình Dương đã trở thành nơi nhiều gia đình tin tưởng trao gửi người thân.",
+    "Từ một nhiệm vụ phục vụ nhu cầu phát triển của xã hội, Hoa Viên Nghĩa Trang Bình Dương đã trở thành nơi nhiều gia đình tin tưởng trao gửi người thân.",
     "Chúng tôi hiểu rằng phía sau mỗi phần mộ là một con người, một gia đình và một tình thương còn ở lại. Vì thế, trách nhiệm của Hoa Viên không kết thúc sau một lễ an táng, mà bắt đầu từ chính ngày người thân được trao gửi nơi đây.",
     "Bằng sự tử tế của người lãnh đạo và sự tận tâm của từng cán bộ, nhân viên, chúng tôi mong mỗi ngày đều làm tốt hơn một điều: **chăm lo chu đáo cho người đã khuất để người đang sống được an lòng.**",
     "Hoa Viên trân trọng cảm ơn những gia đình đã tin tưởng lựa chọn và đồng hành trong suốt những năm qua. Chính sự tin tưởng ấy đã tiếp thêm nguồn lực để Hoa Viên được gìn giữ, đầu tư và ngày một tốt đẹp hơn.",
@@ -85,10 +87,10 @@ export const CULTURE: { eyebrow: string; title: string; body: string; details: S
 };
 
 export const CARING: { title: string; body: string; details: StoryBlock[]; background: string } = {
-  title: "Hệ Tư Tưởng Thương Hiệu",
+  title: "Tầm Nhìn & Sứ Mệnh",
   // Nguyên văn "Hệ tư tưởng thương hiệu" (bản rà soát cuối, sếp đã duyệt). Chỉ đổi tên thành
-  // "Hoa Viên Bình Dương"/"Hoa Viên" và bỏ số thứ tự mục; body là phần mở đầu, details là toàn văn.
-  body: "Hoa Viên Bình Dương được xây dựng từ một niềm tin giản dị: mỗi cuộc đời đều xứng đáng được trân trọng, mỗi ký ức đều xứng đáng được gìn giữ. Nơi an nghỉ vì thế không chỉ là điểm khép lại một hành trình, mà còn là nơi tình thân được lưu giữ, lòng biết ơn được trao truyền và các thế hệ tìm thấy sự kết nối với cội nguồn.",
+  // "Hoa Viên Nghĩa Trang Bình Dương"/"Hoa Viên" và bỏ số thứ tự mục; body là phần mở đầu, details là toàn văn.
+  body: "Hoa Viên Nghĩa Trang Bình Dương được xây dựng từ một niềm tin giản dị: mỗi cuộc đời đều xứng đáng được trân trọng, mỗi ký ức đều xứng đáng được gìn giữ. Nơi an nghỉ vì thế không chỉ là điểm khép lại một hành trình, mà còn là nơi tình thân được lưu giữ, lòng biết ơn được trao truyền và các thế hệ tìm thấy sự kết nối với cội nguồn.",
   details: [
     { heading: "Triết lý thương hiệu" },
     { quote: ["Sự sống tiếp nối trong tĩnh lặng"] },
@@ -96,7 +98,7 @@ export const CARING: { title: string; body: string; details: StoryBlock[]; backg
     "Hoa Viên kiến tạo một không gian trang nghiêm, thanh tịnh và bền vững, nơi người đã khuất được trân trọng, người ở lại tìm thấy sự an yên và con cháu luôn có một nơi để trở về tưởng nhớ.",
     { heading: "Tầm nhìn" },
     "Trở thành hoa viên nghĩa trang **nhân văn và đáng tin cậy** hàng đầu Việt Nam, nơi gìn giữ ký ức, kết nối các thế hệ và kiến tạo những giá trị trường tồn.",
-    "Hoa Viên Bình Dương hướng đến hình mẫu hoa viên hiện đại mang chiều sâu văn hóa Việt Nam, hài hòa giữa thiên nhiên, kiến trúc, văn hóa tâm linh, chất lượng công trình, công nghệ quản lý và dịch vụ chuyên nghiệp.",
+    "Hoa Viên Nghĩa Trang Bình Dương hướng đến hình mẫu hoa viên hiện đại mang chiều sâu văn hóa Việt Nam, hài hòa giữa thiên nhiên, kiến trúc, văn hóa tâm linh, chất lượng công trình, công nghệ quản lý và dịch vụ chuyên nghiệp.",
     { heading: "Sứ mệnh" },
     "Kiến tạo nơi an nghỉ trang nghiêm, an yên và bền vững; đồng hành cùng mỗi gia đình chu toàn đạo hiếu, gìn giữ ký ức và trao truyền lòng biết ơn cho các thế hệ mai sau.",
     "Hoa Viên cung cấp các dịch vụ an táng, hỏa táng, lưu tro cốt, xây dựng và chăm sóc mộ phần, tưởng niệm cùng các dịch vụ liên quan trên tinh thần **chuyên nghiệp – tận tâm – minh bạch – tôn trọng**.",
@@ -114,7 +116,7 @@ export const CARING: { title: string; body: string; details: StoryBlock[]; backg
     "Hoa Viên trân trọng niềm tin ấy bằng chất lượng công trình, cảnh quan, dịch vụ và trách nhiệm lâu dài, để hôm nay và nhiều năm sau, nơi an nghỉ của người thân vẫn được chăm sóc chu toàn.",
     { heading: "Tinh thần thương hiệu" },
     { quote: ["Người đã khuất cần một nơi an nghỉ.", "Người ở lại cần một nơi để nhớ.", "Các thế hệ mai sau cần một nơi để trở về."] },
-    "Hoa Viên Bình Dương mong muốn trở thành nơi trở về ấy – nơi ký ức được trân trọng, lòng biết ơn được nuôi dưỡng và đạo hiếu được tiếp nối qua các thế hệ.",
+    "Hoa Viên Nghĩa Trang Bình Dương mong muốn trở thành nơi trở về ấy – nơi ký ức được trân trọng, lòng biết ơn được nuôi dưỡng và đạo hiếu được tiếp nối qua các thế hệ.",
     { heading: "Slogan" },
     { quote: ["Nơi cuộc sống vĩnh hằng"] },
   ],

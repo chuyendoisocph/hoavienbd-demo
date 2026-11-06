@@ -8,9 +8,9 @@ import { ColumbariaTypes } from "@/components/cremation/ColumbariaTypes";
 import { CremationRead } from "@/components/cremation/CremationRead";
 
 export const metadata: Metadata = pageMetadata("/dich-vu/luu-tro-cot", {
-  title: "Dịch Vụ Lưu Tro Cốt | Hoa Viên Bình Dương",
+  title: "Dịch Vụ Lưu Tro Cốt | Hoa Viên Nghĩa Trang Bình Dương",
   description:
-    "Dịch vụ lưu tro cốt tại Chùa Thiên Phước, Hoa Viên Bình Dương với không gian trang nghiêm, hộc lưu cốt riêng và quy trình lưu ký rõ ràng.",
+    "Dịch vụ lưu tro cốt tại Chùa Thiên Phước, Hoa Viên Nghĩa Trang Bình Dương với không gian trang nghiêm, hộc lưu cốt riêng và quy trình lưu ký rõ ràng.",
 });
 
 export default function CremationPage() {

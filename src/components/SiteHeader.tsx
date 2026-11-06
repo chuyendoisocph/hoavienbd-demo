@@ -18,7 +18,7 @@ export function SiteHeader() {
       <div className="relative h-full w-full px-[15px]">
         <Link
           href="/"
-          aria-label="Hoa Viên Bình Dương - trang chủ"
+          aria-label="Hoa Viên Nghĩa Trang Bình Dương - trang chủ"
           className={cn(
             "absolute left-[15px] top-1/2 flex h-[45px] w-auto -translate-y-1/2 items-center gap-2 rounded-sm",
             "min-[980px]:h-[55px] min-[980px]:w-auto min-[980px]:gap-3",
@@ -33,8 +33,10 @@ export function SiteHeader() {
             sizes="55px"
             className="h-[45px] w-[45px] shrink-0 object-contain min-[980px]:h-[55px] min-[980px]:w-[55px]"
           />
-          <span className="whitespace-nowrap font-heading text-[13px] font-bold uppercase leading-none tracking-[0.35px] text-brand min-[980px]:text-[15px] min-[980px]:tracking-[0.5px]">
-            Hoa Viên Bình Dương
+          {/* Tên dài: dưới 1100px xếp hai dòng cạnh logo để không chạm menu hay nút mở menu. */}
+          <span className="whitespace-nowrap font-heading text-[13px] font-bold uppercase leading-[1.25] tracking-[0.35px] text-brand min-[980px]:text-[15px] min-[980px]:tracking-[0.5px] min-[1100px]:leading-none">
+            <span className="block min-[1100px]:inline">Hoa Viên Nghĩa Trang</span>{" "}
+            <span className="block min-[1100px]:inline">Bình Dương</span>
           </span>
         </Link>
 

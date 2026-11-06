@@ -12,12 +12,14 @@ export function CultureSection() {
 
         {/* RIGHT: static text */}
         <div className="mx-auto max-w-[640px] text-center lg:mx-0 lg:max-w-none lg:text-left">
-          <p className="text-[15px] font-normal uppercase tracking-[0.12em] text-[#666]">
-            {CULTURE.eyebrow}
-          </p>
-          <h2 className="mt-3 font-accent text-[30px] font-medium leading-[1.2] md:leading-[1.15] text-brand md:text-[52px]">
-            {CULTURE.title}
+          <h2 className="font-accent text-[30px] font-medium leading-[1.2] text-brand md:text-[52px] md:leading-[1.12]">
+            {CULTURE.title.map((line) => (
+              <span key={line} className="block">
+                {line}
+              </span>
+            ))}
           </h2>
+          <span aria-hidden="true" className="mx-auto mt-6 block h-px w-12 bg-[#c9a24a] lg:mx-0" />
           <p className="mt-6 text-[16px] leading-[1.7] text-[#666]">{CULTURE.body}</p>
           <StoryDialog
             id="culture-story"

@@ -1,4 +1,4 @@
-/** Nội dung trang Chuẩn Bị Từ Sớm — Hoa Viên Bình Dương */
+/** Nội dung trang Chuẩn Bị Từ Sớm — Hoa Viên Nghĩa Trang Bình Dương */
 
 export const PREPLAN_HERO = {
   background: "/images/pre-planning-hero-vietnam.png",
@@ -22,7 +22,7 @@ export const PREPLAN_INTRO = {
       body: [
         "Chủ động chuẩn bị từ sớm là quá trình tìm hiểu, trao đổi và ghi nhận những nguyện vọng quan trọng trước khi nhu cầu thực tế phát sinh. Nội dung có thể bao gồm hình thức an táng hoặc hỏa táng, nơi an nghỉ, nghi thức tưởng niệm, người cần liên hệ và ngân sách dự kiến.",
         "Mỗi gia đình có tín ngưỡng, truyền thống và hoàn cảnh khác nhau. Vì vậy, việc chuẩn bị nên bắt đầu bằng một cuộc trò chuyện cởi mở, sau đó mới tìm hiểu các lựa chọn phù hợp và thống nhất cùng người thân.",
-        "Hoa Viên Bình Dương đồng hành bằng việc cung cấp thông tin và tư vấn rõ ràng, để gia đình có đủ thời gian cân nhắc trước khi đưa ra quyết định.",
+        "Hoa Viên Nghĩa Trang Bình Dương đồng hành bằng việc cung cấp thông tin và tư vấn rõ ràng, để gia đình có đủ thời gian cân nhắc trước khi đưa ra quyết định.",
       ],
       cta: { label: "Xem thêm" },
     },
@@ -92,7 +92,7 @@ export const PREPLAN_RESOURCES = {
   title: "Thông Tin Hữu Ích",
   links: [
     { title: "Tìm hiểu dịch vụ tang lễ", href: "/dich-vu/tang-le" },
-    { title: "Các khu mộ tại Hoa Viên Bình Dương", href: "/dich-vu/phan-mo" },
+    { title: "Các khu mộ tại Hoa Viên Nghĩa Trang Bình Dương", href: "/dich-vu/phan-mo" },
     { title: "Tìm hiểu về dịch vụ lưu tro cốt", href: "/dich-vu/luu-tro-cot" },
   ],
 };

@@ -2,7 +2,7 @@ import { metadata as studioMetadata, viewport as studioViewport } from "next-san
 import { sanityProjectId } from "@/sanity/env";
 import { Studio } from "./Studio";
 
-export const metadata = { ...studioMetadata, title: "Soạn bài | Hoa Viên Bình Dương" };
+export const metadata = { ...studioMetadata, title: "Soạn bài | Hoa Viên Nghĩa Trang Bình Dương" };
 export const viewport = studioViewport;
 
 export default function StudioPage() {

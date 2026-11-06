@@ -8,16 +8,16 @@ import type { Metadata } from "next";
  */
 export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || "https://demo-cphaco.vercel.app").replace(/\/$/, "");
 export const SITE_INDEXABLE = Boolean(process.env.NEXT_PUBLIC_SITE_URL);
-export const SITE_NAME = "Hoa Viên Bình Dương";
-export const SITE_TITLE = "Hoa Viên Bình Dương | Nơi Cuộc Sống Vĩnh Hằng";
+export const SITE_NAME = "Hoa Viên Nghĩa Trang Bình Dương";
+export const SITE_TITLE = "Hoa Viên Nghĩa Trang Bình Dương | Nơi Cuộc Sống Vĩnh Hằng";
 export const SITE_DESCRIPTION =
-  "Hoa Viên Bình Dương – công viên tưởng niệm sinh thái tại phường Chánh Phú Hòa, TP. Hồ Chí Minh, mang đến dịch vụ tang lễ và tưởng niệm toàn diện. Trân trọng từng cuộc đời.";
+  "Hoa Viên Nghĩa Trang Bình Dương – công viên tưởng niệm sinh thái tại phường Chánh Phú Hòa, TP. Hồ Chí Minh, mang đến dịch vụ tang lễ và tưởng niệm toàn diện.";
 
 export const DEFAULT_SOCIAL_IMAGE = {
   url: "/images/hvbd/park-aerial-roundabout.jpg",
   width: 1630,
   height: 965,
-  alt: "Toàn cảnh xanh tại Hoa Viên Bình Dương",
+  alt: "Toàn cảnh xanh tại Hoa Viên Nghĩa Trang Bình Dương",
 };
 
 type SocialImage = { url: string; width?: number; height?: number; alt?: string };

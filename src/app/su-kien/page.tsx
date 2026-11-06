@@ -10,9 +10,9 @@ import { EVENTS_HERO } from "@/lib/events-content";
 
 export const revalidate = 3600;
 
-const title = "Sự Kiện Hoa Viên | Hoa Viên Bình Dương";
+const title = "Sự Kiện Hoa Viên | Hoa Viên Nghĩa Trang Bình Dương";
 const description =
-  "Cập nhật các hoạt động văn hóa thường niên tại Hoa Viên Bình Dương: Lễ Cầu Siêu – Cầu An Tiết Thanh Minh, Giỗ Tổ Hùng Vương, Vu Lan và Tảo Mộ Cuối Năm.";
+  "Cập nhật các hoạt động văn hóa thường niên tại Hoa Viên Nghĩa Trang Bình Dương: Lễ Cầu Siêu – Cầu An Tiết Thanh Minh, Giỗ Tổ Hùng Vương, Vu Lan và Tảo Mộ Cuối Năm.";
 
 export const metadata: Metadata = pageMetadata("/su-kien", {
   title,
@@ -21,7 +21,7 @@ export const metadata: Metadata = pageMetadata("/su-kien", {
     url: "/images/hvbd/dai-le-cau-sieu-cau-an.jpg",
     width: 1448,
     height: 1086,
-    alt: "Đại lễ Cầu Siêu – Cầu An tại Hoa Viên Bình Dương",
+    alt: "Đại lễ Cầu Siêu – Cầu An tại Hoa Viên Nghĩa Trang Bình Dương",
   },
 });
 
@@ -38,7 +38,7 @@ export default async function EventsPage() {
         <AnnualEventsGrid events={events.filter((event) => event !== featured)} />
         <EventsInvitation
           image="/images/hvbd/dai-le-vu-lan.jpg"
-          imageAlt="Gia đình tham dự Đại lễ Vu Lan tại Hoa Viên Bình Dương"
+          imageAlt="Gia đình tham dự Đại lễ Vu Lan tại Hoa Viên Nghĩa Trang Bình Dương"
         />
         <EventsVideo
           title="Một không gian xanh cho những dịp sum vầy"

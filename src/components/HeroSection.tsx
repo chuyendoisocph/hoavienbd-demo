@@ -27,8 +27,13 @@ export function HeroSection() {
         <div className="print-home-overlay absolute inset-0 bg-black/35" />
 
         <div className="relative flex h-full flex-col items-center justify-center px-6 text-center text-white">
-          <h1 data-hero-item className="whitespace-nowrap font-heading text-[8.2vw] leading-[1.15] font-bold text-white [text-shadow:8px_8px_8px_#242424] md:text-[clamp(60px,9vw,100px)] md:leading-[1.2] md:font-medium">
-            {HERO.title}
+          <h1 data-hero-item className="font-heading text-[7.6vw] leading-[1.15] font-bold text-white [text-shadow:8px_8px_8px_#242424] md:text-[clamp(44px,5.4vw,92px)] md:leading-[1.2] md:font-medium">
+            {HERO.title.map((line, index) => (
+              <span key={line} className="block whitespace-nowrap md:inline">
+                {index > 0 && <span className="hidden md:inline"> </span>}
+                {line}
+              </span>
+            ))}
           </h1>
           <p data-hero-item className="font-heading text-[18px] leading-[1.4] font-medium tracking-[0.02em] text-white [text-shadow:4px_4px_8px_#242424] md:text-[40px] md:leading-[52px] md:tracking-[3px]">
             {HERO.subtitle}

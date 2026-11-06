@@ -1,4 +1,4 @@
-/** Kiểu dữ liệu nội dung dùng chung cho website Hoa Viên Bình Dương. */
+/** Kiểu dữ liệu nội dung dùng chung cho website Hoa Viên Nghĩa Trang Bình Dương. */
 
 export interface NavItem {
   label: string;

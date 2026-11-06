@@ -1,10 +1,10 @@
-/** Nội dung trang Hỏi & Đáp — Hoa Viên Bình Dương.
- *  Biên tập từ bộ FAQ thường gặp về nghĩa trang, điều chỉnh cho phù hợp Hoa Viên Bình Dương. */
+/** Nội dung trang Hỏi & Đáp — Hoa Viên Nghĩa Trang Bình Dương.
+ *  Biên tập từ bộ FAQ thường gặp về nghĩa trang, điều chỉnh cho phù hợp Hoa Viên Nghĩa Trang Bình Dương. */
 
 export const FAQ_HERO = {
   background: "/images/hvbd/actual/faq-hero-vinh-hang-dai-expanded.jpg",
   title: "Hỏi & Đáp",
-  subtitle: "Giải đáp những thắc mắc thường gặp tại Hoa Viên Bình Dương",
+  subtitle: "Giải đáp những thắc mắc thường gặp tại Hoa Viên Nghĩa Trang Bình Dương",
 };
 
 export interface FaqItem {
@@ -24,7 +24,7 @@ export const FAQ_GROUPS: FaqGroup[] = [
       {
         q: "Yêu cầu tìm hiểu thông tin có tuân theo quy định bảo mật không?",
         a: [
-          "Có. Hoa Viên Bình Dương tuân thủ nghiêm ngặt quy trình bảo mật thông tin cá nhân. Quý vị vui lòng gọi hotline 0818 555 444 để trao đổi về nhu cầu tra cứu và được hướng dẫn thủ tục phù hợp.",
+          "Có. Hoa Viên Nghĩa Trang Bình Dương tuân thủ nghiêm ngặt quy trình bảo mật thông tin cá nhân. Quý vị vui lòng gọi hotline 0818 555 444 để trao đổi về nhu cầu tra cứu và được hướng dẫn thủ tục phù hợp.",
         ],
       },
       {
@@ -41,7 +41,7 @@ export const FAQ_GROUPS: FaqGroup[] = [
       {
         q: "Tôi muốn xây mộ, làm bia mộ hoặc thực hiện hạng mục xây dựng thì cần làm gì?",
         a: [
-          "Toàn bộ việc xây dựng mộ và lắp đặt bia mộ tại Hoa Viên Bình Dương đều do đội ngũ thợ của Hoa Viên trực tiếp thực hiện, bảo đảm đúng thiết kế, tiêu chuẩn kỹ thuật và sự đồng bộ của cảnh quan.",
+          "Toàn bộ việc xây dựng mộ và lắp đặt bia mộ tại Hoa Viên Nghĩa Trang Bình Dương đều do đội ngũ thợ của Hoa Viên trực tiếp thực hiện, bảo đảm đúng thiết kế, tiêu chuẩn kỹ thuật và sự đồng bộ của cảnh quan.",
           "Quý vị chỉ cần liên hệ bộ phận tiếp nhận để được tư vấn mẫu, vật liệu và chi phí. Sau khi gia đình xác nhận phương án và hoàn tất thanh toán, Hoa Viên sẽ sắp xếp thi công và thông báo tiến độ cụ thể.",
         ],
       },

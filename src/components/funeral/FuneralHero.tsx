@@ -6,7 +6,7 @@ export function FuneralHero() {
     <section className="relative h-[520px] md:h-[765px] overflow-hidden bg-black">
       <Image
         src={FUNERAL_HERO.image}
-        alt="Đội ngũ thực hiện nghi lễ tang lễ tại Hoa Viên Bình Dương"
+        alt="Đội ngũ thực hiện nghi lễ tang lễ tại Hoa Viên Nghĩa Trang Bình Dương"
         fill
         fetchPriority="high"
         loading="eager"

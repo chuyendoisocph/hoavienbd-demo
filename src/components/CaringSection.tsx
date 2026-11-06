@@ -29,7 +29,7 @@ export function CaringSection() {
           <p className="text-base leading-relaxed text-white [text-shadow:0_1px_10px_rgba(0,0,0,0.35)]">{CARING.body}</p>
           <StoryDialog
             id="caring-story"
-            eyebrow="Hoa Viên Bình Dương"
+            eyebrow="Hoa Viên Nghĩa Trang Bình Dương"
             title={CARING.title}
             lead={CARING.body}
             image={CARING.background}

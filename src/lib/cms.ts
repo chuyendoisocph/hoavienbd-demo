@@ -55,15 +55,15 @@ interface SanityArticleDetail extends SanityArticle {
   story?: SanityStoryPart[];
 }
 
-const IMAGE_FIELDS = `"src": image.asset->url, "width": image.asset->metadata.dimensions.width, "height": image.asset->metadata.dimensions.height`;
+const IMAGE_FIELDS = `"alt": coalesce(alt, caption, ""), "src": image.asset->url, "width": image.asset->metadata.dimensions.width, "height": image.asset->metadata.dimensions.height`;
 const ARTICLE_FIELDS = `title, "slug": slug.current, date, category, excerpt, "image": image.asset->url`;
 const ARTICLE_FILTER = `_type == "article" && defined(slug.current) && defined(image.asset)`;
 const EVENT_FILTER = `_type == "event" && defined(slug.current) && defined(image.asset)`;
-const EVENT_FIELDS = `"slug": slug.current, title, occasion, description, "image": image.asset->url, imageAlt, featured, introduction, paragraphs, highlights`;
+const EVENT_FIELDS = `"slug": slug.current, title, occasion, description, "image": image.asset->url, "imageAlt": coalesce(imageAlt, title), featured, introduction, paragraphs, "highlights": coalesce(highlights, [])`;
 
 const ARTICLES_QUERY = `*[${ARTICLE_FILTER}] | order(date desc, _createdAt desc) { ${ARTICLE_FIELDS} }`;
 const ARTICLE_QUERY = `*[${ARTICLE_FILTER} && slug.current == $slug][0] {
-  ${ARTICLE_FIELDS}, format, speakers,
+  ${ARTICLE_FIELDS}, "format": coalesce(format, "standard"), speakers,
   body[] {
     ...,
     _type == "figure" => { ${IMAGE_FIELDS} },
@@ -71,7 +71,7 @@ const ARTICLE_QUERY = `*[${ARTICLE_FILTER} && slug.current == $slug][0] {
   },
   story[] { ..., _type == "storyImage" => { ${IMAGE_FIELDS} } }
 }`;
-const EVENTS_QUERY = `*[${EVENT_FILTER}] | order(order asc) { ${EVENT_FIELDS} }`;
+const EVENTS_QUERY = `*[${EVENT_FILTER}] | order(coalesce(order, 10) asc, _createdAt desc) { ${EVENT_FIELDS} }`;
 const EVENT_QUERY = `*[${EVENT_FILTER} && slug.current == $slug][0] { ${EVENT_FIELDS} }`;
 
 async function query<T>(groq: string, params: Record<string, string> = {}) {

@@ -1,4 +1,4 @@
-/** Chuỗi thẻ thơ "Công cha nghĩa mẹ" trên trang chủ, theo bộ banner của Hoa Viên Bình Dương. */
+/** Chuỗi thẻ thơ "Công cha nghĩa mẹ" trên trang chủ, theo bộ banner của Hoa Viên Nghĩa Trang Bình Dương. */
 
 export interface FilialVerse {
   /** Không có ảnh: thẻ mở đầu chỉ có chữ. */

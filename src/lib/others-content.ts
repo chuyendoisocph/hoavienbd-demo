@@ -1,4 +1,4 @@
-/** Nội dung trang Dịch Vụ Khác — Hoa Viên Bình Dương */
+/** Nội dung trang Dịch Vụ Khác — Hoa Viên Nghĩa Trang Bình Dương */
 
 export const OTHERS_HERO = {
   image: "/images/hvbd/dai-le-vu-lan.jpg",
@@ -21,7 +21,7 @@ export const PRODUCTS: OtherProduct[] = [
     title: "Chăm Sóc Khu Mộ",
     body: [
       "Mỗi ngôi mộ là nơi gia đình gửi gắm lòng tưởng nhớ và sự tri ân đối với người đã khuất. Việc chăm sóc thường xuyên giúp khuôn viên luôn sạch sẽ, trang nghiêm và thuận tiện cho thân nhân mỗi khi đến thăm viếng.",
-      "Hoa Viên Bình Dương cung cấp dịch vụ vệ sinh, chăm sóc cảnh quan và hỗ trợ hoàn thiện khu mộ theo nhu cầu thực tế của gia đình. Các hạng mục được trao đổi rõ ràng trước khi thực hiện.",
+      "Hoa Viên Nghĩa Trang Bình Dương cung cấp dịch vụ vệ sinh, chăm sóc cảnh quan và hỗ trợ hoàn thiện khu mộ theo nhu cầu thực tế của gia đình. Các hạng mục được trao đổi rõ ràng trước khi thực hiện.",
     ],
     images: [
       "/images/hvbd/grave-offering-white.jpg",
@@ -51,7 +51,7 @@ export const SANH_PHAN = {
   title: "Chuẩn Bị Nơi An Nghỉ Từ Sớm",
   intro: [
     "Sanh phần là cách gọi truyền thống cho việc chủ động chuẩn bị nơi an nghỉ khi còn tại thế. Việc chuẩn bị từ sớm giúp mỗi người có thời gian cân nhắc vị trí, hình thức an nghỉ và nguyện vọng của mình trong sự đồng thuận của gia đình.",
-    "Tại Hoa Viên Bình Dương, quý khách có thể tham quan thực tế, tìm hiểu quy hoạch và trao đổi cùng đội ngũ tư vấn trước khi lựa chọn. Những yếu tố phong thủy được trình bày theo quan niệm văn hóa truyền thống và nhu cầu riêng của từng gia đình.",
+    "Tại Hoa Viên Nghĩa Trang Bình Dương, quý khách có thể tham quan thực tế, tìm hiểu quy hoạch và trao đổi cùng đội ngũ tư vấn trước khi lựa chọn. Những yếu tố phong thủy được trình bày theo quan niệm văn hóa truyền thống và nhu cầu riêng của từng gia đình.",
   ],
   images: ["/images/hvbd/khu-gia-toc.jpg", "/images/hvbd/linh-hoa-tue-dan-2.jpg"],
   benefitsTitle: "Những lợi ích khi chuẩn bị từ sớm",

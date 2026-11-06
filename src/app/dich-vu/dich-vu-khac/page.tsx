@@ -9,9 +9,9 @@ import { OthersRead } from "@/components/others/OthersRead";
 import { PRODUCTS } from "@/lib/others-content";
 
 export const metadata: Metadata = pageMetadata("/dich-vu/dich-vu-khac", {
-  title: "Dịch Vụ Khác | Hoa Viên Bình Dương",
+  title: "Dịch Vụ Khác | Hoa Viên Nghĩa Trang Bình Dương",
   description:
-    "Tìm hiểu dịch vụ chăm sóc khu mộ, tư vấn thiết kế xây dựng mộ và sanh phần tại Hoa Viên Bình Dương.",
+    "Tìm hiểu dịch vụ chăm sóc khu mộ, tư vấn thiết kế xây dựng mộ và sanh phần tại Hoa Viên Nghĩa Trang Bình Dương.",
 });
 
 export default function OthersPage() {

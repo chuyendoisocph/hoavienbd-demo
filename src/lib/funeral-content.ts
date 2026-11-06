@@ -1,4 +1,4 @@
-/** Nội dung trang Dịch Vụ Tang Lễ — Hoa Viên Bình Dương */
+/** Nội dung trang Dịch Vụ Tang Lễ — Hoa Viên Nghĩa Trang Bình Dương */
 
 export const FUNERAL_HERO = {
   image: "/images/hvbd/dich-vu-tang-le-3.jpg",
@@ -9,7 +9,7 @@ export const FUNERAL_HERO = {
 export const FUNERAL_INTRO = {
   eyebrow: "DỊCH VỤ TANG LỄ",
   title: "Gói Dịch Vụ Trọn Gói",
-  body: "Lo liệu tang lễ là việc hệ trọng và nhạy cảm. Dù là chuẩn bị trước hay khi hữu sự, việc biết bắt đầu từ đâu và quyết định những gì cần làm có thể khiến nhiều người bối rối, nhất là với những ai chưa từng trực tiếp sắp xếp các nghi thức cần thiết. Với bề dày kinh nghiệm trong lĩnh vực dịch vụ tang lễ, Hoa Viên Bình Dương thấu hiểu sâu sắc nỗi trăn trở này.",
+  body: "Lo liệu tang lễ là việc hệ trọng và nhạy cảm. Dù là chuẩn bị trước hay khi hữu sự, việc biết bắt đầu từ đâu và quyết định những gì cần làm có thể khiến nhiều người bối rối, nhất là với những ai chưa từng trực tiếp sắp xếp các nghi thức cần thiết. Với bề dày kinh nghiệm trong lĩnh vực dịch vụ tang lễ, Hoa Viên Nghĩa Trang Bình Dương thấu hiểu sâu sắc nỗi trăn trở này.",
   details: [
     "Gia đình được hướng dẫn lựa chọn các hạng mục cần thiết theo tín ngưỡng, phong tục, quy mô lễ tang và ngân sách dự kiến. Mỗi phương án được trao đổi rõ ràng trước khi thực hiện để hạn chế những quyết định vội vàng trong lúc tang gia bối rối.",
     "Đội ngũ phụ trách phối hợp xuyên suốt từ tiếp nhận, khâm liệm, nhập quan, chuẩn bị lễ viếng đến di quan, an táng hoặc hỏa táng, giúp gia đình có thêm thời gian ở bên nhau và tưởng nhớ người đã khuất.",
@@ -65,7 +65,7 @@ export const HOW_IT_WORKS = {
 
 export const PARLOURS = {
   title: "Không Gian Nghi Lễ & Tưởng Niệm",
-  body: "Hoa Viên Bình Dương tổ chức và hỗ trợ các nghi lễ tưởng niệm trong không gian trang nghiêm, hài hòa với cảnh quan xanh. Từng khu vực được chuẩn bị chỉn chu để gia đình, thân hữu cùng tiễn biệt người đã khuất theo tín ngưỡng và nguyện vọng đã thống nhất.",
+  body: "Hoa Viên Nghĩa Trang Bình Dương tổ chức và hỗ trợ các nghi lễ tưởng niệm trong không gian trang nghiêm, hài hòa với cảnh quan xanh. Từng khu vực được chuẩn bị chỉn chu để gia đình, thân hữu cùng tiễn biệt người đã khuất theo tín ngưỡng và nguyện vọng đã thống nhất.",
   note: "Không gian và hình thức nghi lễ được tư vấn theo nhu cầu thực tế của từng gia đình.",
   slides: [
     { image: "/images/hvbd/dai-le-cau-sieu-cau-an.jpg", caption: "Không Gian Cầu Siêu – Cầu An" },
@@ -79,9 +79,9 @@ export const FUNERAL_SUPPLIES = {
   eyebrow: "HỖ TRỢ THEO NHU CẦU",
   title: "Vật Dụng Tang Lễ",
   image: "/images/hvbd/dich-vu-tang-le-2.jpg",
-  imageAlt: "Đội ngũ Hoa Viên Bình Dương phối hợp thực hiện nghi thức di quan",
+  imageAlt: "Đội ngũ Hoa Viên Nghĩa Trang Bình Dương phối hợp thực hiện nghi thức di quan",
   body:
-    "Hoa Viên Bình Dương không vận hành danh mục quan tài hoặc bình tro cốt cố định. Khi gia đình có nhu cầu, đội ngũ sẽ tư vấn tiêu chí lựa chọn và phối hợp với đơn vị cung cấp phù hợp.",
+    "Hoa Viên Nghĩa Trang Bình Dương không vận hành danh mục quan tài hoặc bình tro cốt cố định. Khi gia đình có nhu cầu, đội ngũ sẽ tư vấn tiêu chí lựa chọn và phối hợp với đơn vị cung cấp phù hợp.",
   note:
     "Mẫu mã, chất liệu, kích thước, chi phí và khả năng cung ứng được xác nhận theo từng trường hợp trước khi gia đình quyết định.",
   items: [
@@ -95,7 +95,7 @@ export const FUNERAL_SUPPLIES = {
 
 export const REASONS = {
   title: "6 Lý Do",
-  subtitle: "để gia đình an tâm lựa chọn Hoa Viên Bình Dương",
+  subtitle: "để gia đình an tâm lựa chọn Hoa Viên Nghĩa Trang Bình Dương",
   items: [
     { title: "Tiếp nhận và tư vấn kịp thời khi gia đình cần", body: "Đầu mối hỗ trợ tiếp nhận thông tin, giải thích các bước cần thực hiện và giúp gia đình xác định những việc ưu tiên trong thời gian đầu." },
     { title: "Phối hợp trọn gói từ khâm liệm đến di quan", body: "Các hạng mục được phối hợp theo một kế hoạch thống nhất, hạn chế việc gia đình phải tự liên hệ nhiều đơn vị trong lúc bối rối." },
@@ -110,13 +110,13 @@ export const CARE_TEAM = {
   image: "/images/hvbd/dich-vu-tang-le-1.jpg",
   title: "Đội Ngũ Phục Vụ Tận Tâm",
   subtitle: "Đồng hành cùng gia đình trong từng nghi thức",
-  body: "Đội ngũ Hoa Viên Bình Dương đồng hành từ khi tiếp nhận nhu cầu, chuẩn bị khâm liệm, nhập quan và lễ viếng đến điều phối xe tang, di quan, an táng hoặc hỏa táng. Mỗi công việc được thực hiện chỉn chu, tôn trọng phong tục, tín ngưỡng và nguyện vọng riêng của từng gia đình.",
+  body: "Đội ngũ Hoa Viên Nghĩa Trang Bình Dương đồng hành từ khi tiếp nhận nhu cầu, chuẩn bị khâm liệm, nhập quan và lễ viếng đến điều phối xe tang, di quan, an táng hoặc hỏa táng. Mỗi công việc được thực hiện chỉn chu, tôn trọng phong tục, tín ngưỡng và nguyện vọng riêng của từng gia đình.",
   cta: { label: "LIÊN HỆ TƯ VẤN", href: "/lien-he" },
 };
 
 export const PLANS = {
   title: "DỊCH VỤ TANG LỄ TRỌN GÓI",
-  introLead: "Hoa Viên Bình Dương tư vấn giải pháp phù hợp với nhu cầu, tín ngưỡng và điều kiện của từng gia đình. ",
+  introLead: "Hoa Viên Nghĩa Trang Bình Dương tư vấn giải pháp phù hợp với nhu cầu, tín ngưỡng và điều kiện của từng gia đình. ",
   introBold: "Mọi hạng mục sẽ được trao đổi rõ ràng trước khi thực hiện.",
   buttons: [
     { label: "NHẬN TƯ VẤN DỊCH VỤ", href: "/lien-he" },

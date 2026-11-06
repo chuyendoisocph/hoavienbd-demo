@@ -1,4 +1,4 @@
-/** Nội dung trang Khu Mộ & Vị Trí An Nghỉ — Hoa Viên Bình Dương */
+/** Nội dung trang Khu Mộ & Vị Trí An Nghỉ — Hoa Viên Nghĩa Trang Bình Dương */
 
 export const BURIAL_HERO = {
   image: "/images/hvbd/khu-long-phung.jpg",
@@ -21,7 +21,7 @@ export const BURIAL_INTRO = {
 export const COMMITMENT = {
   eyebrow: "XEM VIDEO",
   title: "Lời Cam Kết",
-  body: "Một lời cam kết vượt qua mọi giới hạn được gắn kết bằng tình yêu thương chân thành. Tại Hoa Viên Bình Dương, hãy an tâm rằng việc thực hiện trọn vẹn cam kết đó chính là lời hứa của chúng tôi.",
+  body: "Một lời cam kết vượt qua mọi giới hạn được gắn kết bằng tình yêu thương chân thành. Tại Hoa Viên Nghĩa Trang Bình Dương, hãy an tâm rằng việc thực hiện trọn vẹn cam kết đó chính là lời hứa của chúng tôi.",
   cta: { label: "KHÁM PHÁ", href: "/lien-he" },
   poster: "/images/video-commit-vietnam.png",
   video: "/videos/hero-dji0305-1080.mp4",
@@ -116,7 +116,7 @@ export const FAMILY_PLOT = {
     },
     {
       src: "/images/hvbd/khu-gia-toc.jpg",
-      alt: "Toàn cảnh khu mộ gia tộc tại Hoa Viên Bình Dương",
+      alt: "Toàn cảnh khu mộ gia tộc tại Hoa Viên Nghĩa Trang Bình Dương",
     },
   ],
   facts: [
@@ -130,7 +130,7 @@ export const FAMILY_PLOT = {
 
 export const MEMORIAL_360 = {
   eyebrow: "XEM VIDEO",
-  title: "Hoa Viên Bình Dương",
+  title: "Hoa Viên Nghĩa Trang Bình Dương",
   subtitle: "Video Toàn Cảnh",
   poster: "/images/toan-canh-dji0304-poster-optimized.webp",
   video: "/videos/toan-canh-dji0304-1080.mp4",
@@ -155,7 +155,7 @@ export const CONSIDERATIONS = {
 export const CEMETERIES = {
   title: "Khác biệt giữa hoa viên và nghĩa trang truyền thống",
   image: "/images/hvbd/family-walk.jpg",
-  imageAlt: "Gia đình nhiều thế hệ dạo bước trong không gian xanh tại Hoa Viên Bình Dương",
+  imageAlt: "Gia đình nhiều thế hệ dạo bước trong không gian xanh tại Hoa Viên Nghĩa Trang Bình Dương",
   body: "Khi chuẩn bị nơi an nghỉ cho bản thân hoặc người thân, gia đình có thể bắt gặp các khái niệm “hoa viên” và “nghĩa trang”. Hai cách gọi có cùng chức năng cơ bản, nhưng thường khác nhau về quy hoạch cảnh quan, tiện ích và dịch vụ chăm sóc lâu dài.",
   details: [
     "Nghĩa trang truyền thống thường hình thành qua nhiều giai đoạn nên vị trí, kiểu dáng công trình và lối đi có thể không đồng nhất. Việc quản lý, chăm sóc cảnh quan và hạ tầng cũng tùy thuộc đơn vị hoặc cộng đồng phụ trách.",

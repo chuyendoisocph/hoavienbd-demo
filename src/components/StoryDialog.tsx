@@ -130,7 +130,7 @@ export function StoryDialog({
               )}
               {children}
               <footer className="mt-14 border-t border-[#e6dcc4] pt-8 text-center">
-                <p className="text-[13px] font-semibold uppercase tracking-[0.22em] text-[#b08a35]">Hoa Viên Bình Dương</p>
+                <p className="text-[13px] font-semibold uppercase tracking-[0.22em] text-[#b08a35]">Hoa Viên Nghĩa Trang Bình Dương</p>
               </footer>
             </div>
           </div>

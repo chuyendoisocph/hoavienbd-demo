@@ -6,9 +6,9 @@ import { PrivacyHero } from "@/components/privacy/PrivacyHero";
 import { PrivacyAccordion } from "@/components/privacy/PrivacyAccordion";
 
 export const metadata: Metadata = pageMetadata("/chinh-sach-quyen-rieng-tu", {
-  title: "Chính Sách Quyền Riêng Tư | Hoa Viên Bình Dương",
+  title: "Chính Sách Quyền Riêng Tư | Hoa Viên Nghĩa Trang Bình Dương",
   description:
-    "Cách Hoa Viên Bình Dương thu thập, sử dụng, bảo mật và chia sẻ dữ liệu cá nhân của khách hàng, cùng quyền truy cập và chỉnh sửa dữ liệu của Quý khách.",
+    "Cách Hoa Viên Nghĩa Trang Bình Dương thu thập, sử dụng, bảo mật và chia sẻ dữ liệu cá nhân của khách hàng, cùng quyền truy cập và chỉnh sửa dữ liệu của Quý khách.",
 });
 
 export default function PrivacyPolicyPage() {

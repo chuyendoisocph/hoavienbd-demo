@@ -4,6 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import { ArrowUpRight, ChevronDown, MapPin, Phone } from "lucide-react";
 import { BRANCH_GROUPS, type BranchLocation } from "@/lib/branches-content";
+import { keepNameTogether } from "@/lib/typography";
 
 function LocationCard({ location, index }: { location: BranchLocation; index: number }) {
   return (
@@ -31,7 +32,7 @@ function LocationCard({ location, index }: { location: BranchLocation; index: nu
           {location.image ? "Tham quan hoa viên" : "Liên hệ chi nhánh"}
         </p>
         <h3 className="font-heading text-[22px] leading-[1.35] font-semibold text-[#30343c] md:text-[26px]">
-          {location.name}
+          {keepNameTogether(location.name)}
         </h3>
         <p className="mt-4 flex items-start gap-3 text-[15px] leading-7 text-[#626b78] md:text-[17px]">
           <MapPin className="mt-1 h-[18px] w-[18px] shrink-0 text-brand" aria-hidden="true" />
@@ -81,7 +82,7 @@ export function BranchDirectory() {
             Tìm địa điểm phù hợp
           </h2>
           <p className="mt-5 text-[16px] leading-[1.8] text-[#616a75] md:text-[18px]">
-            Quý khách có thể đến trực tiếp Hoa Viên Bình Dương để tham quan, hoặc liên hệ một trong ba chi nhánh tại TP. Hồ Chí Minh.
+            Quý khách có thể đến trực tiếp Hoa Viên Nghĩa Trang Bình Dương để tham quan, hoặc liên hệ một trong ba chi nhánh tại TP. Hồ Chí Minh.
           </p>
         </div>
 

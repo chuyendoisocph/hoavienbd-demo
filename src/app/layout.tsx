@@ -28,7 +28,7 @@ const displayFont = Newsreader({
   display: "swap",
 });
 
-// Riêng hai tiêu đề "Câu Chuyện Thương Hiệu" và "Hệ Tư Tưởng Thương Hiệu" ở trang chủ:
+// Riêng hai tiêu đề "Câu Chuyện Thương Hiệu" và "Tầm Nhìn & Sứ Mệnh" ở trang chủ:
 // chữ T của Newsreader ở cỡ lớn trông nặng, Playfair Display thanh hơn.
 const accentFont = Playfair_Display({
   variable: "--font-accent-face",

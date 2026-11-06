@@ -1,6 +1,6 @@
 import type { SVGProps } from "react";
 
-/** Biểu tượng dùng trên website Hoa Viên Bình Dương. Kích thước mặc định là 1em. */
+/** Biểu tượng dùng trên website Hoa Viên Nghĩa Trang Bình Dương. Kích thước mặc định là 1em. */
 
 export function SearchIcon(props: SVGProps<SVGSVGElement>) {
   return (

@@ -1,4 +1,4 @@
-/** Nội dung trang Dịch Vụ Lưu Tro Cốt — Hoa Viên Bình Dương */
+/** Nội dung trang Dịch Vụ Lưu Tro Cốt — Hoa Viên Nghĩa Trang Bình Dương */
 
 export const CREMATION_HERO = {
   background: "/images/hvbd/thien-phuoc-courtyard.jpg",
@@ -15,7 +15,7 @@ export const CREMATION_INTRO = {
     "Trước khi lựa chọn, gia đình nên tìm hiểu vị trí, thời hạn lưu giữ, cách thức bàn giao, quy định thăm viếng và phạm vi chăm sóc để bảo đảm phù hợp với nhu cầu lâu dài.",
   ],
   image: "/images/hvbd/thien-phuoc-front.jpg",
-  imageAlt: "Mặt tiền Chùa Thiên Phước tại Hoa Viên Bình Dương",
+  imageAlt: "Mặt tiền Chùa Thiên Phước tại Hoa Viên Nghĩa Trang Bình Dương",
 };
 
 export interface ColumbariaType {

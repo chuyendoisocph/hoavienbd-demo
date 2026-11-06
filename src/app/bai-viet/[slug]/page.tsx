@@ -23,11 +23,11 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   const content = await getArticleContent(slug);
-  if (!content) return { title: "Bài Viết | Hoa Viên Bình Dương" };
+  if (!content) return { title: "Bài Viết | Hoa Viên Nghĩa Trang Bình Dương" };
   const { article } = content;
   return pageMetadata(article.href, {
     // Tiêu đề dài thì bỏ đuôi tên thương hiệu, để Google không cắt mất phần chính.
-    title: article.title.length > 42 ? article.title : `${article.title} | ${SITE_NAME}`,
+    title: article.title.length + SITE_NAME.length > 62 ? article.title : `${article.title} | ${SITE_NAME}`,
     description: article.excerpt,
     image: { url: article.image, alt: article.title },
     type: "article",

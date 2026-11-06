@@ -1,6 +1,6 @@
 import type { PolicyItem } from "@/types";
 
-// Dịch và điều chỉnh từ Privacy Policy của Nirvana Asia cho Hoa Viên Bình Dương.
+// Dịch và điều chỉnh từ Privacy Policy của Nirvana Asia cho Hoa Viên Nghĩa Trang Bình Dương.
 // Cần bộ phận pháp chế rà soát (đặc biệt phần căn cứ pháp luật và đầu mối liên hệ)
 // trước khi đưa lên môi trường chính thức.
 
@@ -20,7 +20,7 @@ export const PRIVACY_ITEMS: PolicyItem[] = [
       {
         type: "p",
         lead: "A.",
-        text: `${COMPANY} (“CPHACO”), đơn vị quản lý và vận hành Hoa Viên Bình Dương, cùng các công ty liên kết và công ty con (gọi chung là “chúng tôi”) cam kết bảo vệ và tôn trọng quyền riêng tư của mỗi cá nhân đối với Dữ liệu cá nhân (theo định nghĩa bên dưới), bảo đảm tuân thủ các yêu cầu của pháp luật Việt Nam về bảo vệ dữ liệu cá nhân (“Pháp luật về quyền riêng tư”).`,
+        text: `${COMPANY} (“CPHACO”), đơn vị quản lý và vận hành Hoa Viên Nghĩa Trang Bình Dương, cùng các công ty liên kết và công ty con (gọi chung là “chúng tôi”) cam kết bảo vệ và tôn trọng quyền riêng tư của mỗi cá nhân đối với Dữ liệu cá nhân (theo định nghĩa bên dưới), bảo đảm tuân thủ các yêu cầu của pháp luật Việt Nam về bảo vệ dữ liệu cá nhân (“Pháp luật về quyền riêng tư”).`,
       },
       {
         type: "p",

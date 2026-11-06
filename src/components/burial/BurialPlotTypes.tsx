@@ -11,13 +11,14 @@ import {
 } from "@/lib/burial-content";
 import { InlineReadMore } from "@/components/InlineReadMore";
 import { cn } from "@/lib/utils";
+import { keepNameTogether } from "@/lib/typography";
 
 export function BurialPlotTypes() {
   // Track active carousel index per plot, keyed by plot index.
   const [activeIndices, setActiveIndices] = useState<number[]>(() =>
     PLOT_TYPES.map(() => 0),
   );
-  const [quoteInterest, setQuoteInterest] = useState("Khu mộ tại Hoa Viên Bình Dương");
+  const [quoteInterest, setQuoteInterest] = useState("Khu mộ tại Hoa Viên Nghĩa Trang Bình Dương");
   const quoteDialogRef = useRef<HTMLDialogElement>(null);
 
   const setActive = (plotIndex: number, imageIndex: number) => {
@@ -213,7 +214,7 @@ function PlotBlock({ plot, activeIndex, onSelect, onRequestQuote }: PlotBlockPro
           dark ? "text-white" : "text-brand",
         )}
       >
-        {plot.title}
+        {keepNameTogether(plot.title)}
       </h3>
       <p
         className={cn(

@@ -8,9 +8,9 @@ import { FaqHero } from "@/components/faq/FaqHero";
 import { FaqAccordion } from "@/components/faq/FaqAccordion";
 
 export const metadata: Metadata = pageMetadata("/hoi-dap", {
-  title: "Hỏi & Đáp | Hoa Viên Bình Dương",
+  title: "Hỏi & Đáp | Hoa Viên Nghĩa Trang Bình Dương",
   description:
-    "Giải đáp những thắc mắc thường gặp về hoa viên: chăm sóc khu mộ, xây mộ & bia mộ, hỏa táng, quyền an táng, thanh toán và phản hồi tại Hoa Viên Bình Dương.",
+    "Giải đáp những thắc mắc thường gặp về hoa viên: chăm sóc khu mộ, xây mộ & bia mộ, hỏa táng, quyền an táng, thanh toán và phản hồi tại Hoa Viên Nghĩa Trang Bình Dương.",
 });
 
 const FAQ_JSON_LD = {

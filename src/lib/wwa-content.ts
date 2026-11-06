@@ -1,4 +1,4 @@
-/** Nội dung trang Về Chúng Tôi — Hoa Viên Bình Dương */
+/** Nội dung trang Về Chúng Tôi — Hoa Viên Nghĩa Trang Bình Dương */
 
 export const WWA_HERO = {
   image: "/images/hvbd/park-aerial-roundabout.jpg",
@@ -6,10 +6,10 @@ export const WWA_HERO = {
 };
 
 export const WWA_INTRO = {
-  title: "Hoa Viên Bình Dương",
+  title: "Hoa Viên Nghĩa Trang Bình Dương",
   eyebrow: "Giới Thiệu",
   body: [
-    "Hoa Viên Bình Dương là công viên nghĩa trang hiện đại, tọa lạc tại phường Chánh Phú Hòa, TP. Hồ Chí Minh. Với cảnh quan xanh mát được quy hoạch bài bản cùng hệ thống công trình tâm linh, nơi đây mang đến chốn an nghỉ trang nghiêm và thanh tịnh cho người đã khuất, đồng thời là không gian tưởng niệm để các thế hệ con cháu tìm về.",
+    "Hoa Viên Nghĩa Trang Bình Dương là công viên nghĩa trang hiện đại, tọa lạc tại phường Chánh Phú Hòa, TP. Hồ Chí Minh. Với cảnh quan xanh mát được quy hoạch bài bản cùng hệ thống công trình tâm linh, nơi đây mang đến chốn an nghỉ trang nghiêm và thanh tịnh cho người đã khuất, đồng thời là không gian tưởng niệm để các thế hệ con cháu tìm về.",
     "Chúng tôi không ngừng nỗ lực nâng cao chất lượng dịch vụ, gìn giữ và phát huy truyền thống hiếu nghĩa của dân tộc, mang đến hệ thống dịch vụ tang lễ và tưởng niệm toàn diện. Mỗi công trình, mỗi mảng xanh đều được chăm chút để tôn vinh và trân trọng từng cuộc đời.",
   ],
   map: "/images/hvbd/park-map.jpg",
@@ -30,7 +30,7 @@ export const WWA_VALUES = {
       title: "Tầm Nhìn",
       body: "Cam kết mang đến dịch vụ chất lượng, tỉ mỉ, chuyên nghiệp và đậm tính cá nhân hóa.",
       details: [
-        "Hoa Viên Bình Dương hướng đến một tổ chức phát triển có trách nhiệm với cộng đồng, đặt sự chu đáo và nhu cầu riêng của từng gia đình làm nền tảng cho chất lượng phục vụ.",
+        "Hoa Viên Nghĩa Trang Bình Dương hướng đến một tổ chức phát triển có trách nhiệm với cộng đồng, đặt sự chu đáo và nhu cầu riêng của từng gia đình làm nền tảng cho chất lượng phục vụ.",
       ],
     },
     {
@@ -44,7 +44,7 @@ export const WWA_VALUES = {
     {
       number: "03",
       title: "Văn Hóa Doanh Nghiệp",
-      body: "Với tinh thần chuyên nghiệp và trách nhiệm đối với nghề nghiệp cao quý này, Hoa Viên Bình Dương luôn nỗ lực vươn tới sự xuất sắc.",
+      body: "Với tinh thần chuyên nghiệp và trách nhiệm đối với nghề nghiệp cao quý này, Hoa Viên Nghĩa Trang Bình Dương luôn nỗ lực vươn tới sự xuất sắc.",
       details: [
         "Sự chính trực, tinh thần phục vụ và thái độ tận tâm là những giá trị được gìn giữ trong từng công việc. Đội ngũ luôn học hỏi và cải tiến để mang đến trải nghiệm chỉn chu, nhân văn hơn cho khách hàng.",
       ],
@@ -75,15 +75,6 @@ export interface Leader {
   quote?: string;
 }
 
-// Phần lãnh đạo hiện không hiển thị trên trang (chờ thông tin thật của Hoa Viên Bình Dương).
+// Phần lãnh đạo hiện không hiển thị trên trang (chờ thông tin thật của Hoa Viên Nghĩa Trang Bình Dương).
 export const WWA_LEADERS: Leader[] = [];
 
-export const WWA_AWARDS = {
-  title: "Giải Thưởng & Ghi Nhận",
-  body: [
-    "Hoa Viên Bình Dương không ngừng phát triển qua từng ngày, nâng cao tiêu chuẩn dịch vụ bằng những đổi mới liên tục.",
-    "Sự tin tưởng và đón nhận của các gia đình chính là động lực để chúng tôi vững bước trên hành trình sẻ chia và tận tâm.",
-    "Đội ngũ Hoa Viên Bình Dương luôn nỗ lực bằng sự cần mẫn và tận tụy để xứng đáng với niềm tin quý khách gửi gắm.",
-  ],
-  images: [] as string[],
-};

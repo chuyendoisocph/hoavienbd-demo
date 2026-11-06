@@ -105,7 +105,7 @@ export const TOUR_SCENES: TourScene[] = [
   {
     id: "cong-1",
     title: "Cổng Hoa Viên",
-    description: "Điểm khởi đầu hành trình tham quan Hoa Viên Bình Dương.",
+    description: "Điểm khởi đầu hành trình tham quan Hoa Viên Nghĩa Trang Bình Dương.",
     panorama: "/images/360/cong-1.webp",
     thumbnail: "/images/360/cong-1-tour-thumb.webp",
     pitch: -30,

@@ -1,10 +1,16 @@
 import { defineArrayMember, defineField, defineType } from "sanity";
+import { slugify } from "./slugify";
 
 const required = { validation: <R extends { required(): R }>(rule: R) => rule.required() };
 
 const imageWithAlt = [
   defineField({ name: "image", title: "Ảnh", type: "image", options: { hotspot: true }, ...required }),
-  defineField({ name: "alt", title: "Mô tả ảnh (cho người khiếm thị và Google)", type: "string", ...required }),
+  defineField({
+    name: "alt",
+    title: "Mô tả ảnh",
+    description: "Không bắt buộc. Một câu ngắn tả ảnh, giúp người khiếm thị và Google hiểu ảnh.",
+    type: "string",
+  }),
 ];
 
 const figure = defineType({
@@ -16,7 +22,15 @@ const figure = defineType({
     defineField({ name: "caption", title: "Chú thích", type: "string" }),
     defineField({ name: "narrow", title: "Hiển thị khổ hẹp (hợp với ảnh dọc)", type: "boolean", initialValue: false }),
   ],
-  preview: { select: { title: "alt", media: "image" } },
+  // Khung ảnh trong bài: nói rõ khi chưa chọn ảnh, thay vì hiện chữ "Untitled".
+  preview: {
+    select: { caption: "caption", alt: "alt", media: "image" },
+    prepare: ({ caption, alt, media }) => ({
+      title: media ? caption || alt || "Ảnh" : "Ảnh — chưa chọn ảnh",
+      subtitle: media ? undefined : "Bấm vào đây để tải ảnh lên",
+      media,
+    }),
+  },
 });
 
 const figurePair = defineType({
@@ -32,7 +46,14 @@ const figurePair = defineType({
       validation: (rule) => rule.required().length(2),
     }),
   ],
-  preview: { prepare: () => ({ title: "Hai ảnh cạnh nhau" }) },
+  preview: {
+    select: { media: "items.0.image", second: "items.1.image" },
+    prepare: ({ media, second }) => ({
+      title: "Hai ảnh cạnh nhau",
+      subtitle: media && second ? undefined : "Bấm vào đây để chọn đủ hai ảnh",
+      media,
+    }),
+  },
 });
 
 const textPart = (name: string, title: string) =>
@@ -75,54 +96,47 @@ const article = defineType({
   name: "article",
   title: "Bài viết",
   type: "document",
-  groups: [
-    { name: "info", title: "Thông tin", default: true },
-    { name: "content", title: "Nội dung" },
-  ],
+  // Mọi ô nằm trên một trang, theo thứ tự người soạn thường điền; phần ít dùng gom vào "Cài đặt thêm".
+  fieldsets: [{ name: "advanced", title: "Cài đặt thêm (thường không cần sửa)", options: { collapsible: true, collapsed: true } }],
   fields: [
-    defineField({ name: "title", title: "Tiêu đề", type: "string", group: "info", ...required }),
     defineField({
-      name: "slug",
-      title: "Đường dẫn",
-      description: "Bấm Generate để tạo từ tiêu đề. Không đổi sau khi đã đăng, vì liên kết cũ sẽ hỏng.",
-      type: "slug",
-      group: "info",
-      options: { source: "title" },
-      ...required,
+      name: "title",
+      title: "Tiêu đề",
+      description: "Nên dưới 60 ký tự để Google hiện đủ.",
+      type: "string",
+      validation: (rule) => [rule.required().error("Cần có tiêu đề."), rule.max(60).warning("Tiêu đề hơi dài, Google có thể cắt bớt.")],
     }),
-    defineField({ name: "date", title: "Ngày đăng", type: "date", group: "info", options: { dateFormat: "DD/MM/YYYY" }, ...required }),
+    defineField({
+      name: "image",
+      title: "Ảnh đại diện",
+      description: "Ảnh ngang, hiện ở đầu bài và ở danh sách bài viết. Nên thu nhỏ ảnh còn khoảng 2.000px trước khi tải lên.",
+      type: "image",
+      options: { hotspot: true },
+      validation: (rule) => rule.required().error("Cần có ảnh đại diện."),
+    }),
     defineField({
       name: "category",
       title: "Chuyên mục",
       type: "string",
-      group: "info",
       options: {
         list: ["Chuẩn bị từ sớm", "Hướng dẫn dành cho gia đình", "Lưu giữ tro cốt", "Chăm sóc khu mộ", "Văn hóa tưởng niệm"],
+        layout: "dropdown",
       },
-      ...required,
+      validation: (rule) => rule.required().error("Chọn một chuyên mục."),
     }),
-    defineField({ name: "excerpt", title: "Tóm tắt", type: "text", rows: 3, group: "info", ...required }),
-    defineField({ name: "image", title: "Ảnh đại diện", type: "image", group: "info", options: { hotspot: true }, ...required }),
     defineField({
-      name: "format",
-      title: "Kiểu bài",
-      type: "string",
-      group: "content",
-      options: {
-        list: [
-          { title: "Bài thường", value: "standard" },
-          { title: "Truyện đối thoại", value: "story" },
-        ],
-        layout: "radio",
-      },
-      initialValue: "standard",
-      ...required,
+      name: "excerpt",
+      title: "Tóm tắt",
+      description: "1–2 câu giới thiệu bài. Hiện ở danh sách bài viết và dưới tiêu đề trên Google.",
+      type: "text",
+      rows: 3,
+      validation: (rule) => [rule.required().error("Cần có tóm tắt."), rule.max(160).warning("Nên dưới 160 ký tự.")],
     }),
     defineField({
       name: "body",
       title: "Nội dung bài",
+      description: "Gõ như soạn văn bản. Bấm nút Ảnh trên thanh công cụ để chèn ảnh, rồi bấm vào khung ảnh vừa chèn để tải ảnh lên. Bấm biểu tượng ⤢ để mở rộng khung soạn.",
       type: "array",
-      group: "content",
       hidden: ({ document }) => document?.format === "story",
       of: [
         defineArrayMember({
@@ -148,7 +162,6 @@ const article = defineType({
       name: "speakers",
       title: "Tên hai nhân vật",
       type: "object",
-      group: "content",
       hidden: ({ document }) => document?.format !== "story",
       fields: [
         defineField({ name: "thay", title: "Nhân vật 1 (người lớn tuổi)", type: "string" }),
@@ -158,8 +171,8 @@ const article = defineType({
     defineField({
       name: "story",
       title: "Nội dung truyện",
+      description: "Bấm Add item để thêm từng phần: lời kể, câu thoại, câu thơ, ảnh…",
       type: "array",
-      group: "content",
       hidden: ({ document }) => document?.format !== "story",
       of: [
         textPart("storyLead", "Câu mở đầu"),
@@ -192,11 +205,44 @@ const article = defineType({
           name: "storyImage",
           title: "Ảnh",
           type: "object",
-          fields: [...imageWithAlt, defineField({ name: "caption", title: "Chú thích", type: "string", ...required })],
-          preview: { select: { title: "alt", media: "image" } },
+          fields: [...imageWithAlt, defineField({ name: "caption", title: "Chú thích", type: "string" })],
+          preview: { select: { title: "caption", media: "image" } },
         }),
         textPart("storyNote", "Ghi chú cuối bài"),
       ],
+    }),
+    defineField({
+      name: "date",
+      title: "Ngày đăng",
+      description: "Tự điền ngày hôm nay.",
+      type: "date",
+      fieldset: "advanced",
+      options: { dateFormat: "DD/MM/YYYY" },
+      initialValue: () => new Date().toISOString().slice(0, 10),
+      validation: (rule) => rule.required().error("Cần có ngày đăng."),
+    }),
+    defineField({
+      name: "format",
+      title: "Kiểu bài",
+      description: "Chỉ đổi sang Truyện đối thoại khi viết bài dạng hai nhân vật trò chuyện.",
+      type: "string",
+      fieldset: "advanced",
+      options: {
+        list: [
+          { title: "Bài thường", value: "standard" },
+          { title: "Truyện đối thoại", value: "story" },
+        ],
+        layout: "radio",
+      },
+      initialValue: "standard",
+    }),
+    defineField({
+      name: "slug",
+      title: "Đường dẫn",
+      description: "Tự tạo từ tiêu đề khi bấm Publish. Không đổi sau khi đã đăng, vì liên kết cũ sẽ hỏng.",
+      type: "slug",
+      fieldset: "advanced",
+      options: { source: "title", slugify },
     }),
   ],
   orderings: [{ title: "Mới nhất", name: "dateDesc", by: [{ field: "date", direction: "desc" }] }],
@@ -207,18 +253,52 @@ const event = defineType({
   name: "event",
   title: "Sự kiện",
   type: "document",
+  fieldsets: [{ name: "advanced", title: "Cài đặt thêm (thường không cần sửa)", options: { collapsible: true, collapsed: true } }],
   fields: [
-    defineField({ name: "title", title: "Tên sự kiện", type: "string", ...required }),
-    defineField({ name: "slug", title: "Đường dẫn", type: "slug", options: { source: "title" }, ...required }),
+    defineField({ name: "title", title: "Tên sự kiện", type: "string", validation: (rule) => rule.required().error("Cần có tên sự kiện.") }),
+    defineField({ name: "image", title: "Ảnh", type: "image", options: { hotspot: true }, validation: (rule) => rule.required().error("Cần có ảnh.") }),
     defineField({ name: "occasion", title: "Thời điểm", description: "Ví dụ: Rằm tháng Bảy Âm lịch", type: "string", ...required }),
-    defineField({ name: "description", title: "Mô tả ngắn", type: "text", rows: 3, ...required }),
-    defineField({ name: "image", title: "Ảnh", type: "image", options: { hotspot: true }, ...required }),
-    defineField({ name: "imageAlt", title: "Mô tả ảnh (cho người khiếm thị và Google)", type: "string", ...required }),
-    defineField({ name: "featured", title: "Sự kiện nổi bật", description: "Hiện ở khối lớn đầu trang Sự kiện.", type: "boolean", initialValue: false }),
-    defineField({ name: "order", title: "Thứ tự hiển thị", description: "Số nhỏ hiện trước.", type: "number", ...required }),
+    defineField({ name: "description", title: "Mô tả ngắn", description: "Hiện ở danh sách sự kiện và trên Google.", type: "text", rows: 3, ...required }),
     defineField({ name: "introduction", title: "Đoạn mở đầu", type: "text", rows: 3, ...required }),
-    defineField({ name: "paragraphs", title: "Các đoạn nội dung", type: "array", of: [defineArrayMember({ type: "text", rows: 4 })], ...required }),
-    defineField({ name: "highlights", title: "Điểm chính", type: "array", of: [defineArrayMember({ type: "string" })], ...required }),
+    defineField({
+      name: "paragraphs",
+      title: "Các đoạn nội dung",
+      description: "Mỗi đoạn một ô. Bấm Add item để thêm đoạn.",
+      type: "array",
+      of: [defineArrayMember({ type: "text", rows: 4 })],
+      ...required,
+    }),
+    defineField({
+      name: "highlights",
+      title: "Điểm chính",
+      description: "Vài dòng ngắn, hiện trong khung bên phải.",
+      type: "array",
+      of: [defineArrayMember({ type: "string" })],
+    }),
+    defineField({
+      name: "imageAlt",
+      title: "Mô tả ảnh",
+      description: "Không bắt buộc. Bỏ trống thì dùng tên sự kiện.",
+      type: "string",
+      fieldset: "advanced",
+    }),
+    defineField({
+      name: "featured",
+      title: "Sự kiện nổi bật",
+      description: "Hiện ở khối lớn đầu trang Sự kiện.",
+      type: "boolean",
+      fieldset: "advanced",
+      initialValue: false,
+    }),
+    defineField({ name: "order", title: "Thứ tự hiển thị", description: "Số nhỏ hiện trước.", type: "number", fieldset: "advanced", initialValue: 10 }),
+    defineField({
+      name: "slug",
+      title: "Đường dẫn",
+      description: "Tự tạo từ tên sự kiện khi bấm Publish.",
+      type: "slug",
+      fieldset: "advanced",
+      options: { source: "title", slugify },
+    }),
   ],
   orderings: [{ title: "Thứ tự hiển thị", name: "orderAsc", by: [{ field: "order", direction: "asc" }] }],
   preview: { select: { title: "title", subtitle: "occasion", media: "image" } },

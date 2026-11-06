@@ -284,7 +284,7 @@ export function VirtualTour() {
   }
 
   return (
-    <div ref={stageRef} className="relative h-[calc(100svh-64px)] min-h-[560px] overflow-hidden bg-[#152f34] text-white min-[980px]:h-[calc(100svh-75px)]" aria-label="Tour tham quan Hoa Viên Bình Dương 360°">
+    <div ref={stageRef} className="relative h-[calc(100svh-64px)] min-h-[560px] overflow-hidden bg-[#152f34] text-white min-[980px]:h-[calc(100svh-75px)]" aria-label="Tour tham quan Hoa Viên Nghĩa Trang Bình Dương 360°">
       <div ref={viewerContainerRef} className="absolute inset-0" aria-label={`Ảnh 360°: ${activeScene.title}`} />
 
       {loading && (
@@ -298,7 +298,7 @@ export function VirtualTour() {
       <div className="pointer-events-none absolute inset-x-0 top-0 z-20 flex items-start justify-between gap-4 p-4 sm:p-6">
         <div className="max-w-[460px]">
           <h1 className="font-heading text-[20px] font-semibold leading-tight sm:text-[27px]">Tham Quan Hoa Viên 360°</h1>
-          <p className="mt-1 text-[12px] leading-relaxed text-white/85 sm:text-[14px]">Kéo để nhìn quanh không gian thực tế tại Hoa Viên Bình Dương.</p>
+          <p className="mt-1 text-[12px] leading-relaxed text-white/85 sm:text-[14px]">Kéo để nhìn quanh không gian thực tế tại Hoa Viên Nghĩa Trang Bình Dương.</p>
           {/* Đặt ở vùng trời phía trên: phần dưới ảnh là lối đi và mũi tên chuyển điểm. */}
           {activeSceneId === "cong-1" && !gateOpen && (
             <button type="button" onClick={() => setGateOpen(true)} aria-expanded={gateOpen} aria-controls="tour-gate" className="pointer-events-auto mt-3 inline-flex min-h-11 items-center gap-2 bg-white px-4 text-[13px] font-semibold text-heading shadow-[0_6px_20px_rgba(0,0,0,0.18)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white sm:hidden">

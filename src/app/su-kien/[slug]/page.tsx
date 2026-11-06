@@ -26,7 +26,7 @@ export async function generateMetadata({
   if (!event) return {};
 
   return pageMetadata(`/su-kien/${event.slug}`, {
-    title: `${event.title} | Hoa Viên Bình Dương`,
+    title: `${event.title} | Hoa Viên Nghĩa Trang Bình Dương`,
     description: event.description,
     image: { url: event.image, alt: event.imageAlt },
   });
