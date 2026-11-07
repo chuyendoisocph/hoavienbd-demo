@@ -1,6 +1,7 @@
 import { Fragment, type ReactNode } from "react";
 
 import type { StoryBlock } from "@/lib/brand-content";
+import { keepNameTogether } from "@/lib/typography";
 
 type LeadBlock = { lead: string; text: string };
 
@@ -84,7 +85,7 @@ function Heading({ text, index }: { text: string; index: number }) {
         <span>Phần {String(index).padStart(2, "0")}</span>
         <span aria-hidden="true" className="h-px w-10 bg-[#d9c79c]" />
       </p>
-      <h2 className="mt-2 font-serif text-[25px] font-medium leading-[1.3] !text-brand md:text-[30px]">{text}</h2>
+      <h2 className="mt-2 font-serif text-[25px] font-medium leading-[1.3] !text-brand md:text-[30px] [text-wrap:balance]">{keepNameTogether(text)}</h2>
     </div>
   );
 }

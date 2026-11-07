@@ -92,7 +92,7 @@ export const CARING: { title: string; body: string; details: StoryBlock[]; backg
   // "Hoa Viên Nghĩa Trang Bình Dương"/"Hoa Viên" và bỏ số thứ tự mục; body là phần mở đầu, details là toàn văn.
   body: "Hoa Viên Nghĩa Trang Bình Dương được xây dựng từ một niềm tin giản dị: mỗi cuộc đời đều xứng đáng được trân trọng, mỗi ký ức đều xứng đáng được gìn giữ. Nơi an nghỉ vì thế không chỉ là điểm khép lại một hành trình, mà còn là nơi tình thân được lưu giữ, lòng biết ơn được trao truyền và các thế hệ tìm thấy sự kết nối với cội nguồn.",
   details: [
-    { heading: "Triết lý thương hiệu" },
+    { heading: "Triết lý của Hoa Viên Nghĩa Trang Bình Dương" },
     { quote: ["Sự sống tiếp nối trong tĩnh lặng"] },
     "Một cuộc đời có thể khép lại, nhưng những giá trị tốt đẹp vẫn tiếp tục sống trong ký ức gia đình và các thế hệ mai sau.",
     "Hoa Viên kiến tạo một không gian trang nghiêm, thanh tịnh và bền vững, nơi người đã khuất được trân trọng, người ở lại tìm thấy sự an yên và con cháu luôn có một nơi để trở về tưởng nhớ.",
@@ -110,11 +110,11 @@ export const CARING: { title: string; body: string; details: StoryBlock[]; backg
     { lead: "TÍN – Trách nhiệm và giữ trọn cam kết.", text: "Nói đúng – Làm đúng – Giữ đúng điều đã cam kết. Minh bạch, trách nhiệm và nhất quán trong chất lượng công trình, dịch vụ và mọi cam kết với khách hàng." },
     { lead: "MỸ – Kiến tạo vẻ đẹp trang nghiêm.", text: "Đẹp trong cảnh quan – Đẹp trong công trình – Đẹp trong cách phục vụ. Chăm chút từ cảnh quan, kiến trúc, nghệ thuật đá đến phong cách phục vụ, tạo nên một không gian hài hòa, thanh tịnh và phù hợp với văn hóa." },
     { lead: "BỀN – Gìn giữ những giá trị trường tồn.", text: "Bền công trình – Bền dịch vụ – Bền ký ức – Bền niềm tin. Hướng đến sự bền vững trong quy hoạch, công trình, cảnh quan, quản lý và chất lượng phục vụ lâu dài." },
-    { heading: "Lời hứa thương hiệu" },
+    { heading: "Lời hứa của Hoa Viên Nghĩa Trang Bình Dương" },
     { quote: ["Mỗi nơi an nghỉ – Một ký ức được gìn giữ"] },
     "Gia đình trao gửi cho Hoa Viên không chỉ một nơi an nghỉ, mà còn trao gửi **niềm tin**.",
     "Hoa Viên trân trọng niềm tin ấy bằng chất lượng công trình, cảnh quan, dịch vụ và trách nhiệm lâu dài, để hôm nay và nhiều năm sau, nơi an nghỉ của người thân vẫn được chăm sóc chu toàn.",
-    { heading: "Tinh thần thương hiệu" },
+    { heading: "Tinh thần của Hoa Viên Nghĩa Trang Bình Dương" },
     { quote: ["Người đã khuất cần một nơi an nghỉ.", "Người ở lại cần một nơi để nhớ.", "Các thế hệ mai sau cần một nơi để trở về."] },
     "Hoa Viên Nghĩa Trang Bình Dương mong muốn trở thành nơi trở về ấy – nơi ký ức được trân trọng, lòng biết ơn được nuôi dưỡng và đạo hiếu được tiếp nối qua các thế hệ.",
     { heading: "Slogan" },
