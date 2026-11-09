@@ -12,7 +12,7 @@ import type {
 export const LOGO = "/images/hvbd/cpha-logo.png";
 
 export const TOP_NAV: NavItem[] = [
-  { label: "Khu Mộ", href: "/dich-vu/phan-mo" },
+  { label: "Tặng Tre Giữ Nghề", href: "https://cphaco.vn/duong-thien-thai-noi-tre-que-nha-hoi-tu/" },
   {
     label: "Hỗ Trợ",
     href: "#",
@@ -26,6 +26,7 @@ export const TOP_NAV: NavItem[] = [
     href: "#",
     children: [
       { label: "Dịch Vụ Tang Lễ", href: "/dich-vu/tang-le" },
+      { label: "Khu Mộ & Vị Trí An Nghỉ", href: "/dich-vu/phan-mo" },
       { label: "Dịch Vụ Lưu Tro Cốt", href: "/dich-vu/luu-tro-cot" },
       { label: "Dịch Vụ Khác", href: "/dich-vu/dich-vu-khac" },
     ],
