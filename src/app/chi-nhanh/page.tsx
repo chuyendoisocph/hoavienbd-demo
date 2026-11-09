@@ -8,7 +8,7 @@ import { BranchDirectory } from "@/components/branches/BranchDirectory";
 export const metadata: Metadata = pageMetadata("/chi-nhanh", {
   title: "Hệ Thống Chi Nhánh | Hoa Viên Nghĩa Trang Bình Dương",
   description:
-    "Địa chỉ Hoa Viên Nghĩa Trang Bình Dương và ba chi nhánh tại TP. Hồ Chí Minh. Xem vị trí trên bản đồ và chọn địa điểm thuận tiện cho quý khách.",
+    "Địa chỉ Hoa Viên Nghĩa Trang Bình Dương cùng các chi nhánh tại Thủ Dầu Một và TP. Hồ Chí Minh. Xem vị trí trên bản đồ và chọn địa điểm thuận tiện cho quý khách.",
 });
 
 export default function BranchesPage() {

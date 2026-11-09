@@ -36,6 +36,7 @@ export function CaringSection() {
             imagePosition="62% 28%"
             theme="dark"
             align="md"
+            showSlogan={false}
           >
             <StoryBlocks blocks={CARING.details} />
           </StoryDialog>

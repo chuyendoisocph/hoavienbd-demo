@@ -61,6 +61,21 @@ Website: cphaco.vn`,
     ],
   },
   {
+    name: "CHI NHÁNH THỦ DẦU MỘT",
+    summary: [
+      "Chi nhánh Thủ Dầu Một",
+      "Số 7 Ngô Văn Trị, Phường Phú Lợi, TP. Hồ Chí Minh",
+    ],
+    explore: "https://maps.app.goo.gl/zodZy16W9EMrV4v56",
+    locations: [
+      {
+        name: "CHI NHÁNH THỦ DẦU MỘT",
+        body: `Số 7 Ngô Văn Trị, Phường Phú Lợi, TP. Hồ Chí Minh.`,
+        mapUrl: "https://maps.app.goo.gl/zodZy16W9EMrV4v56",
+      },
+    ],
+  },
+  {
     name: "CÁC CHI NHÁNH TP. HỒ CHÍ MINH",
     summary: [
       "Ba chi nhánh tại TP. Hồ Chí Minh",

@@ -82,7 +82,7 @@ export function BranchDirectory() {
             Tìm địa điểm phù hợp
           </h2>
           <p className="mt-5 text-[16px] leading-[1.8] text-[#616a75] md:text-[18px]">
-            Quý khách có thể đến trực tiếp Hoa Viên Nghĩa Trang Bình Dương để tham quan, hoặc liên hệ một trong ba chi nhánh tại TP. Hồ Chí Minh.
+            Quý khách có thể đến trực tiếp Hoa Viên Nghĩa Trang Bình Dương để tham quan, hoặc liên hệ các chi nhánh tại Thủ Dầu Một và TP. Hồ Chí Minh.
           </p>
         </div>
 

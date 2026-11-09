@@ -23,6 +23,8 @@ interface StoryDialogProps {
   /** Canh trái nút từ cỡ màn hình nào trở lên (theo cách canh chữ của mục chứa nó). */
   align?: "center" | "md" | "lg";
   theme?: "light" | "dark";
+  /** Câu khẩu hiệu dưới tên ở cuối bài. Bỏ đi khi bài đã kết bằng chính câu này. */
+  showSlogan?: boolean;
 }
 
 /**
@@ -38,6 +40,7 @@ export function StoryDialog({
   image,
   imagePosition = "center",
   label = "Đọc thêm",
+  showSlogan = true,
   align = "lg",
   theme = "light",
 }: StoryDialogProps) {
@@ -130,7 +133,17 @@ export function StoryDialog({
               )}
               {children}
               <footer className="mt-14 border-t border-[#e6dcc4] pt-8 text-center">
-                <p className="text-[13px] font-semibold uppercase tracking-[0.22em] text-[#b08a35]">Hoa Viên Nghĩa Trang Bình Dương</p>
+                {/* Theo bộ nhận diện: tên chữ có chân màu xanh đậm, khẩu hiệu màu vàng trong ngoặc kép, hai bên có vạch vàng. */}
+                <p className="font-serif text-[19px] font-semibold uppercase leading-[1.3] tracking-[0.02em] text-[#1f3f7a] [text-wrap:balance] md:text-[24px]">
+                  Hoa Viên Nghĩa Trang Bình Dương
+                </p>
+                {showSlogan && (
+                  <p className="mt-2 flex items-center justify-center gap-3 font-serif text-[18px] leading-[1.4] text-[#b8862f] md:gap-4 md:text-[22px]">
+                    <span aria-hidden="true" className="h-px w-8 bg-gradient-to-l from-[#daa64a] to-transparent md:w-14" />
+                    <span>“Nơi cuộc sống vĩnh hằng”</span>
+                    <span aria-hidden="true" className="h-px w-8 bg-gradient-to-r from-[#daa64a] to-transparent md:w-14" />
+                  </p>
+                )}
               </footer>
             </div>
           </div>

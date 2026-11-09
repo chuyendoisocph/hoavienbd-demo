@@ -32,6 +32,19 @@ export const BRANCH_GROUPS: BranchGroup[] = [
     ],
   },
   {
+    id: "thu-dau-mot",
+    name: "Chi nhánh Thủ Dầu Một",
+    description: "Chi nhánh tiếp đón và tư vấn tại khu vực Thủ Dầu Một.",
+    locations: [
+      {
+        id: "thu-dau-mot",
+        name: "Chi nhánh Thủ Dầu Một",
+        address: "Số 7 Ngô Văn Trị, Phường Phú Lợi, TP. Hồ Chí Minh",
+        mapUrl: "https://maps.app.goo.gl/zodZy16W9EMrV4v56",
+      },
+    ],
+  },
+  {
     id: "van-phong-tphcm",
     name: "Các chi nhánh tại TP. Hồ Chí Minh",
     description: "Các chi nhánh tiếp đón và tư vấn để quý khách thuận tiện kết nối với Hoa Viên.",
