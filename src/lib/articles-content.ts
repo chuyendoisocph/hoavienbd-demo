@@ -8,6 +8,11 @@ export interface Article {
   slug: string;
   href: string;
   image: string;
+  /**
+   * Ảnh đại diện là ảnh bìa thiết kế sẵn (có chữ, như bài lấy từ cphaco.vn):
+   * không đè tiêu đề lên ảnh mà hiện ảnh trọn vẹn dưới phần tiêu đề.
+   */
+  cover?: { width: number; height: number };
 }
 
 type ArticleInput = Omit<Article, "href">;

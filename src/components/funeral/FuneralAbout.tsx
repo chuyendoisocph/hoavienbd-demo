@@ -4,7 +4,7 @@ import { ABOUT } from "@/lib/funeral-content";
 export function FuneralAbout() {
   return (
     <section
-      className="relative bg-cover bg-center bg-no-repeat py-[90px]"
+      className="relative bg-cover bg-center bg-no-repeat py-[90px] lg:mb-[70px]"
       style={{ backgroundImage: `url(${ABOUT.background})` }}
     >
       <div className="absolute inset-0 bg-[#142a52]/80" />

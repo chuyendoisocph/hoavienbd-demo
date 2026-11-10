@@ -21,7 +21,10 @@ const nextConfig: NextConfig = {
   /* config options here */
   output: "standalone",
   images: {
-    remotePatterns: [{ protocol: "https", hostname: "cdn.sanity.io" }],
+    remotePatterns: [
+      { protocol: "https", hostname: "cdn.sanity.io" },
+      { protocol: "https", hostname: "cphaco.vn" },
+    ],
   },
   async redirects() {
     return Object.entries(LEGACY_ROUTES).map(([source, destination]) => ({

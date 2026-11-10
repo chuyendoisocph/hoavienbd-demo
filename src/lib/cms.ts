@@ -1,10 +1,16 @@
-/** Nguồn nội dung bài viết và sự kiện: Sanity nếu đã cấu hình, nếu không thì dữ liệu trong `src/lib`. */
+/**
+ * Nguồn nội dung bài viết và sự kiện.
+ * Bài viết: bài từ WordPress của cphaco.vn (Blog, Cộng đồng) cộng với bài riêng của web này
+ * (Sanity nếu đã cấu hình, nếu không thì dữ liệu trong `src/lib`).
+ * Sự kiện: Sanity nếu đã cấu hình, nếu không thì dữ liệu trong `src/lib`.
+ */
 
 import { sanityClient } from "@/sanity/client";
 import { ARTICLE_STORIES, type ArticleStory, type StoryLine, type StoryPart } from "./article-stories";
 import { ARTICLE_BODIES } from "./articles-body";
 import { ARTICLES, type Article } from "./articles-content";
 import { HOA_VIEN_EVENTS, type HoaVienEvent } from "./events-content";
+import { getWordPressArticle, getWordPressArticles } from "./wordpress";
 
 /**
  * Website hỏi lại Sanity tối đa 1 giờ một lần cho mỗi trang, để không vượt hạn mức gói miễn phí.
@@ -106,12 +112,26 @@ function toStoryPart(part: SanityStoryPart): StoryPart {
   }
 }
 
-export async function getArticles(): Promise<Article[]> {
+async function getOwnArticles(): Promise<Article[]> {
   if (!sanityClient) return ARTICLES;
   return (await query<SanityArticle[]>(ARTICLES_QUERY)).map(toArticle);
 }
 
-export async function getArticleContent(slug: string): Promise<ArticleContent | null> {
+function sortKey(date: string) {
+  const [day, month, year] = date.split("/");
+  return `${year}-${month}-${day}`;
+}
+
+/** Bài riêng của web này và bài từ cphaco.vn, mới nhất trước. Trùng đường dẫn thì giữ bài riêng. */
+export async function getArticles(): Promise<Article[]> {
+  const [own, wordpress] = await Promise.all([getOwnArticles(), getWordPressArticles()]);
+  const ownSlugs = new Set(own.map((article) => article.slug));
+  return [...own, ...wordpress.map((item) => item.article).filter((article) => !ownSlugs.has(article.slug))].sort(
+    (a, b) => sortKey(b.date).localeCompare(sortKey(a.date)),
+  );
+}
+
+async function getOwnArticleContent(slug: string): Promise<ArticleContent | null> {
   if (!sanityClient) {
     const article = ARTICLES.find((item) => item.slug === slug);
     const bodyHtml = ARTICLE_BODIES[slug];
@@ -126,6 +146,10 @@ export async function getArticleContent(slug: string): Promise<ArticleContent | 
     return { article, story: { speakers: item.speakers, parts: item.story.map(toStoryPart) } };
   }
   return { article, body: item.body ?? [] };
+}
+
+export async function getArticleContent(slug: string): Promise<ArticleContent | null> {
+  return (await getOwnArticleContent(slug)) ?? (await getWordPressArticle(slug));
 }
 
 export async function getEvents(): Promise<HoaVienEvent[]> {

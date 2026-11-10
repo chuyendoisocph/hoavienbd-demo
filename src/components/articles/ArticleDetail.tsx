@@ -12,38 +12,64 @@ interface ArticleDetailProps {
 }
 
 export function ArticleDetail({ article, bodyHtml, children, related }: ArticleDetailProps) {
+  const { cover } = article;
   return (
     <>
-      {/* Hero */}
-      <section className="relative h-[380px] overflow-hidden bg-black md:h-[520px]">
-        <Image
-          src={article.image}
-          alt={article.title}
-          fill
-          sizes="100vw"
-          fetchPriority="high"
-          loading="eager"
-          className="absolute inset-0 z-0 h-full w-full object-cover"
-        />
-        <div className="absolute inset-0 z-[1] bg-black/50" />
-        <div className="relative z-10 mx-auto flex h-full max-w-[900px] flex-col items-center justify-center px-6 text-center text-white">
-          <p className="mb-4 text-[13px] uppercase tracking-[0.12em] text-white/80">
+      {/* Hero theo kiểu bài viết National Geographic: chuyên mục, tiêu đề, lời dẫn căn giữa trên nền trắng,
+          ảnh lớn ngay bên dưới, thấy trọn khung hình thay vì bị cắt và phủ tối. */}
+      <section className="bg-white pt-[118px] md:pt-[140px]">
+        <div className="mx-auto max-w-[860px] px-6 text-center">
+          <p className="inline-block border border-heading px-2.5 py-1 text-[12px] font-semibold uppercase leading-none tracking-[0.18em] text-heading">
             {article.category}
           </p>
           <h1
-            className="font-heading font-medium leading-[1.15] text-white"
-            style={{ fontSize: "clamp(40px, 4.5vw, 48px)", letterSpacing: "0.5px" }}
+            className="mt-6 font-heading font-medium leading-[1.18] text-heading [text-wrap:balance]"
+            style={{ fontSize: "clamp(30px, 3.6vw, 46px)" }}
           >
             {article.title}
           </h1>
-          <p className="mt-5 text-[16px] text-white/80">
-            bởi Hoa Viên Nghĩa Trang Bình Dương | {article.date}
+          {article.excerpt ? (
+            <p className="mx-auto mt-4 max-w-[700px] text-[16px] leading-[1.6] text-[#555] md:text-[17px] [text-wrap:pretty]">
+              {article.excerpt}
+            </p>
+          ) : null}
+          <p className="mt-4 text-[14px] text-[#777]">
+            <span className="block sm:inline">bởi Hoa Viên Nghĩa Trang Bình Dương</span>
+            <span aria-hidden="true" className="mx-2 hidden text-[#b9b9c9] sm:inline">|</span>
+            <span className="mt-1 block sm:mt-0 sm:inline">{article.date}</span>
           </p>
+        </div>
+        <div className="mx-auto mt-8 max-w-[1008px] px-6 md:mt-10">
+          {cover ? (
+            // Ảnh bìa thiết kế sẵn (có chữ) từ cphaco.vn: giữ nguyên tỉ lệ, không cắt.
+            <Image
+              src={article.image}
+              alt={article.title}
+              width={cover.width}
+              height={cover.height}
+              sizes="(max-width: 1008px) 100vw, 960px"
+              fetchPriority="high"
+              loading="eager"
+              className="block h-auto w-full"
+            />
+          ) : (
+            <div className="relative aspect-[3/2] overflow-hidden bg-[#f4f6fa]">
+              <Image
+                src={article.image}
+                alt={article.title}
+                fill
+                sizes="(max-width: 1008px) 100vw, 960px"
+                fetchPriority="high"
+                loading="eager"
+                className="object-cover"
+              />
+            </div>
+          )}
         </div>
       </section>
 
       {/* Body */}
-      <section className="bg-white py-[70px]">
+      <section className="bg-white pb-[70px] pt-[48px] md:pt-[64px]">
         <div className="mx-auto max-w-[820px] px-6">
           {children ? (
             <article>{children}</article>
