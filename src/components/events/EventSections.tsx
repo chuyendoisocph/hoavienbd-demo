@@ -40,7 +40,7 @@ export function FeaturedEvent({ event }: FeaturedEventProps) {
           <Link
             href={`/su-kien/${event.slug}`}
             aria-label={`Xem sự kiện ${event.title}`}
-            className="group relative mt-10 block min-h-[390px] sm:aspect-[16/9] overflow-hidden rounded-[2px] bg-footer-navy shadow-[0_24px_70px_rgba(20,23,54,0.34)] outline-none focus-visible:ring-4 focus-visible:ring-white focus-visible:ring-offset-4 focus-visible:ring-offset-brand sm:min-h-0 lg:mt-12 lg:aspect-[2/1]"
+            className="group relative mt-10 block min-h-[390px] sm:aspect-[16/9] overflow-hidden rounded-[2px] bg-footer-navy shadow-[0_24px_70px_rgba(15,35,71,0.34)] outline-none focus-visible:ring-4 focus-visible:ring-white focus-visible:ring-offset-4 focus-visible:ring-offset-brand sm:min-h-0 lg:mt-12 lg:aspect-[2/1]"
           >
             <Image
               src={event.image}
@@ -49,7 +49,7 @@ export function FeaturedEvent({ event }: FeaturedEventProps) {
               sizes="(max-width: 1199px) 100vw, 1180px"
               className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.035] group-focus-visible:scale-[1.035]"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#111326]/95 via-[#111326]/35 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#0f2347]/95 via-[#0f2347]/35 to-transparent" />
             <div className="absolute inset-x-0 bottom-0 max-w-[780px] p-6 sm:p-9 lg:p-12">
               <p className="text-[12px] font-bold uppercase tracking-[0.18em] text-white/75 sm:text-[13px]">
                 {event.occasion}
@@ -93,7 +93,7 @@ export function AnnualEventsGrid({ events }: AnnualEventsGridProps) {
             <article
               key={event.slug}
               id={event.slug}
-              className="group scroll-mt-28 border border-[#e4e7ef] bg-white shadow-[0_12px_34px_rgba(28,38,75,0.08)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_18px_44px_rgba(28,38,75,0.13)]"
+              className="group scroll-mt-28 border border-[#b9b9c9]/60 bg-white shadow-[0_12px_34px_rgba(28,38,75,0.08)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_18px_44px_rgba(28,38,75,0.13)]"
             >
               <Link
                 href={`/su-kien/${event.slug}`}

@@ -98,7 +98,7 @@ export function StoryDialog({
         onClick={(event) => {
           if (event.target === event.currentTarget) event.currentTarget.close();
         }}
-        className="story-dialog m-auto h-[100dvh] max-h-none w-full max-w-none bg-transparent p-0 text-left backdrop:bg-[#0a0c28]/70 md:h-[min(88vh,900px)] md:w-[calc(100%-48px)] md:max-w-[760px]"
+        className="story-dialog m-auto h-[100dvh] max-h-none w-full max-w-none bg-transparent p-0 text-left backdrop:bg-[#0b1a36]/70 md:h-[min(88vh,900px)] md:w-[calc(100%-48px)] md:max-w-[760px]"
       >
         <div className="relative flex h-full flex-col overflow-hidden bg-white text-[#555] md:rounded-[6px] md:shadow-[0_24px_60px_rgba(0,0,0,0.35)]">
           <button
@@ -111,11 +111,11 @@ export function StoryDialog({
           </button>
           <div className="story-dialog-body flex-1 overflow-y-auto overscroll-contain">
             {/* Ảnh đầu bài: cùng ảnh với mục trên trang chủ, để người đọc thấy mình vẫn ở đúng câu chuyện đó. */}
-            <header className="relative flex min-h-[220px] items-end overflow-hidden bg-[#1b2447] md:min-h-[280px]">
+            <header className="relative flex min-h-[220px] items-end overflow-hidden bg-[#142a52] md:min-h-[280px]">
               {image && (
                 <Image src={image} alt="" fill sizes="(min-width: 768px) 760px, 100vw" className="object-cover" style={{ objectPosition: imagePosition }} />
               )}
-              <div aria-hidden="true" className="absolute inset-0 bg-[linear-gradient(180deg,rgba(10,12,40,0.15)_0%,rgba(10,12,40,0.82)_100%)]" />
+              <div aria-hidden="true" className="absolute inset-0 bg-[linear-gradient(180deg,rgba(11,26,54,0.15)_0%,rgba(11,26,54,0.82)_100%)]" />
               <div className="relative px-5 pb-6 pr-16 md:px-12 md:pb-9">
                 {eyebrow && (
                   <p className="text-[12px] font-semibold uppercase tracking-[0.2em] text-[#e3c98a]">{eyebrow}</p>

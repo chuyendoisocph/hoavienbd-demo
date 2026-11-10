@@ -71,7 +71,7 @@ export function FilialVersesSection() {
   }, []);
 
   const arrowClass = cn(
-    "grid h-11 w-11 shrink-0 place-items-center border border-white/25 text-white transition-colors hover:border-white hover:bg-white hover:text-[#242d73]",
+    "grid h-11 w-11 shrink-0 place-items-center border border-white/25 text-white transition-colors hover:border-white hover:bg-white hover:text-[#1a3566]",
     FOCUS_RING_ON_DARK,
   );
 
@@ -101,7 +101,7 @@ export function FilialVersesSection() {
           role="group"
           aria-roledescription="carousel"
           aria-label={FILIAL_VERSES.title}
-          className="-mx-6 mt-7 bg-[#242d73] shadow-[0_36px_70px_-40px_rgba(23,33,82,0.7)] md:mx-0 md:mt-9"
+          className="-mx-6 mt-7 bg-[#1a3566] shadow-[0_36px_70px_-40px_rgba(20,42,82,0.7)] md:mx-0 md:mt-9"
         >
           {/* Ảnh và thơ liền thành một khối; tràn mép trên điện thoại để thơ đủ chỗ; vuốt ngang để đổi bài. */}
           <div

@@ -7,7 +7,7 @@ export function FuneralAbout() {
       className="relative bg-cover bg-center bg-no-repeat py-[90px]"
       style={{ backgroundImage: `url(${ABOUT.background})` }}
     >
-      <div className="absolute inset-0 bg-[#1b2447]/80" />
+      <div className="absolute inset-0 bg-[#142a52]/80" />
 
       <div className="relative mx-auto max-w-[1200px] px-6">
         <h2 className="text-center font-heading text-[30px] font-medium text-white md:text-[44px]">

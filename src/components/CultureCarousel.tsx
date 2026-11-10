@@ -40,7 +40,7 @@ export function CultureCarousel() {
               sizes="(max-width: 1024px) 410px, 35vw"
               className="absolute inset-0 h-full w-full object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-b from-[#0a0c2877] via-[#0a0c2899] to-[#0a0c28cc]" />
+            <div className="absolute inset-0 bg-gradient-to-b from-[#0b1a3677] via-[#0b1a3699] to-[#0b1a36cc]" />
             <div className="absolute inset-0 flex flex-col items-center justify-center px-[30px] py-10 text-center text-white">
               <p className="text-[20px] md:text-[24px] font-bold leading-[1.3] md:leading-snug text-white">{slide.title}</p>
               {slide.subtitle ? (

@@ -43,7 +43,7 @@ function AdvantageItem({ card }: { card: AdvantageCard }) {
 export function AdvantagesSection() {
   return (
     // Khung trích dẫn của mục kế tiếp chồng ngược lên 12vw trên máy tính: chừa chỗ để không đè nút.
-    <section className="bg-[#F7F9FC] py-[64px] lg:pb-[calc(12vw+48px)] lg:pt-[96px]">
+    <section className="bg-[#f4f6fa] py-[64px] lg:pb-[calc(12vw+48px)] lg:pt-[96px]">
       <div className="mx-auto w-[calc(100%-48px)] max-w-[1140px]">
         <div className="mx-auto max-w-[760px] text-center">
           <p className="text-[13px] font-semibold uppercase tracking-[0.24em] text-brand">{ADVANTAGES.eyebrow}</p>
@@ -89,7 +89,7 @@ export function AdvantagesSection() {
           <ConsultationDialog
             title="Tư vấn chuẩn bị từ sớm"
             interest="chủ động chuẩn bị từ sớm"
-            triggerClassName="mt-10 inline-block rounded-none bg-[#4453C4] px-[30px] py-[18px] text-[16px] font-extrabold tracking-[2px] text-white shadow-[0_10px_20px_rgba(65,84,125,0.24)] transition-transform hover:-translate-y-0.5 lg:mt-12 lg:text-[18px]"
+            triggerClassName="mt-10 inline-block rounded-none bg-[#1f3f7a] px-[30px] py-[18px] text-[16px] font-extrabold tracking-[2px] text-white shadow-[0_10px_20px_rgba(65,84,125,0.24)] transition-transform hover:-translate-y-0.5 lg:mt-12 lg:text-[18px]"
           >
             {ADVANTAGES.cta.label}
           </ConsultationDialog>

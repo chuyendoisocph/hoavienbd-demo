@@ -339,14 +339,14 @@ export function VirtualTour() {
                 key={scene.id}
                 type="button"
                 onClick={() => selectScene(scene.id)}
-                className="flex min-h-12 items-center justify-between gap-1 border border-[#dce3e9] px-2.5 py-2 text-left text-[12px] font-semibold leading-snug transition-colors hover:border-brand hover:bg-[#f4f6fc] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand sm:text-[13px]"
+                className="flex min-h-12 items-center justify-between gap-1 border border-[#b9b9c9]/60 px-2.5 py-2 text-left text-[12px] font-semibold leading-snug transition-colors hover:border-brand hover:bg-[#f4f6fc] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand sm:text-[13px]"
               >
                 <span>{scene.title}</span>
                 <ArrowRight size={15} className="shrink-0 text-brand" aria-hidden="true" />
               </button>
             ))}
           </div>
-          <button type="button" onClick={() => { setGateOpen(false); setRouteOpen(true); }} className="mt-3 text-[12px] font-semibold text-brand underline underline-offset-4 hover:text-[#3543ab] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand sm:text-[13px]">
+          <button type="button" onClick={() => { setGateOpen(false); setRouteOpen(true); }} className="mt-3 text-[12px] font-semibold text-brand underline underline-offset-4 hover:text-[#16305f] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand sm:text-[13px]">
             Xem đầy đủ {TOUR_SCENES.length} điểm tham quan
           </button>
         </div>
@@ -380,11 +380,11 @@ export function VirtualTour() {
       </div>
 
       <aside id="tour-route" aria-label="Sơ đồ và lộ trình tham quan" aria-hidden={!routeOpen} inert={!routeOpen} className={`tour-route-panel absolute bottom-0 right-0 top-0 z-30 flex w-full max-w-none flex-col bg-white text-heading shadow-[-12px_0_40px_rgba(0,0,0,0.18)] transition-transform duration-300 sm:w-[410px] sm:max-w-[410px] ${routeOpen ? "translate-x-0" : "pointer-events-none translate-x-full"}`}>
-        <div className="flex items-start justify-between border-b border-[#dfe5e8] px-5 py-5">
+        <div className="flex items-start justify-between border-b border-[#b9b9c9]/60 px-5 py-5">
           <div><h3 className="font-heading text-[23px] font-semibold">Khám phá Hoa Viên</h3><p className="mt-1 text-[13px] text-[#586772]">Chọn điểm trên sơ đồ hoặc danh sách.</p></div>
           <button ref={routeCloseRef} type="button" onClick={() => setRouteOpen(false)} aria-label="Đóng lộ trình" tabIndex={routeOpen ? 0 : -1} className="grid h-10 w-10 place-items-center hover:bg-[#f0f3f5] focus-visible:outline-2 focus-visible:outline-brand"><X size={19} aria-hidden="true" /></button>
         </div>
-        <div className="grid grid-cols-2 border-b border-[#dfe5e8] px-5 pt-2" aria-label="Cách chọn điểm tham quan">
+        <div className="grid grid-cols-2 border-b border-[#b9b9c9]/60 px-5 pt-2" aria-label="Cách chọn điểm tham quan">
           <button type="button" onClick={() => setRouteView("map")} aria-pressed={routeView === "map"} className={`min-h-11 border-b-2 px-2 text-[13px] font-semibold focus-visible:outline-2 focus-visible:outline-brand ${routeView === "map" ? "border-brand text-brand" : "border-transparent text-[#536879] hover:text-heading"}`}>Sơ đồ điểm chụp</button>
           <button type="button" onClick={() => setRouteView("list")} aria-pressed={routeView === "list"} className={`min-h-11 border-b-2 px-2 text-[13px] font-semibold focus-visible:outline-2 focus-visible:outline-brand ${routeView === "list" ? "border-brand text-brand" : "border-transparent text-[#536879] hover:text-heading"}`}>Danh sách {TOUR_SCENES.length} điểm</button>
         </div>

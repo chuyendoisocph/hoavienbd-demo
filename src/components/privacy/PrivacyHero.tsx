@@ -6,7 +6,7 @@ export function PrivacyHero() {
     <section
       className="relative mt-16 flex h-[244px] items-center justify-center bg-cover bg-center bg-blend-overlay md:h-[272px] min-[980px]:mt-[75px]"
       style={{
-        backgroundImage: `url(${PRIVACY_HERO.background}), linear-gradient(180deg, #474ab6 0%, #9271f6 100%)`,
+        backgroundImage: `url(${PRIVACY_HERO.background}), linear-gradient(180deg, #1f3f7a 0%, #6ea8e1 100%)`,
       }}
     >
       <h1 className="px-[15px] pb-[10px] text-center font-heading text-[40px] font-semibold leading-[1.15] text-white md:text-[52px] md:leading-[1.3]">

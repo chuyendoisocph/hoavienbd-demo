@@ -7,7 +7,7 @@ export function SiteView360() {
   return (
     <section
       id="tham-quan-360"
-      className="scroll-mt-[80px] overflow-hidden bg-[#F7F9FC] px-6 pb-[100px] pt-[82px] md:scroll-mt-[96px] lg:pb-[130px] lg:pt-[108px]"
+      className="scroll-mt-[80px] overflow-hidden bg-[#f4f6fa] px-6 pb-[100px] pt-[82px] md:scroll-mt-[96px] lg:pb-[130px] lg:pt-[108px]"
     >
       <div className="mx-auto max-w-[1180px]">
         <div className="grid items-end gap-6 lg:grid-cols-[1fr_390px] lg:gap-16">
@@ -40,13 +40,13 @@ export function SiteView360() {
             Xem trên YouTube
           </a>
         </p>
-        <div className="mt-9 flex flex-col items-start justify-between gap-5 border-t border-[#dce3ec] pt-7 sm:flex-row sm:items-center">
+        <div className="mt-9 flex flex-col items-start justify-between gap-5 border-t border-[#b9b9c9]/60 pt-7 sm:flex-row sm:items-center">
           <p className="max-w-[58ch] text-[16px] leading-relaxed text-[#4d596b]">
             Muốn tự mình nhìn quanh từng khu vực? Khám phá tour ảnh 360° được chụp thực tế tại Hoa Viên Nghĩa Trang Bình Dương.
           </p>
           <Link
             href="/tham-quan-360"
-            className="inline-flex min-h-12 shrink-0 items-center justify-center bg-brand px-6 py-3 text-[14px] font-bold uppercase tracking-[0.08em] text-white transition-colors hover:bg-[#3543ab] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
+            className="inline-flex min-h-12 shrink-0 items-center justify-center bg-brand px-6 py-3 text-[14px] font-bold uppercase tracking-[0.08em] text-white transition-colors hover:bg-[#16305f] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
           >
             Tham quan 360°
           </Link>

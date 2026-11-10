@@ -51,7 +51,7 @@ export function ConsultationDialog({
         onClick={(event) => {
           if (event.target === event.currentTarget) dialogRef.current?.close();
         }}
-        className="m-auto max-h-[calc(100dvh-32px)] w-[min(92vw,560px)] overflow-y-auto bg-transparent p-0 backdrop:bg-[#151937]/70 backdrop:backdrop-blur-sm"
+        className="m-auto max-h-[calc(100dvh-32px)] w-[min(92vw,560px)] overflow-y-auto bg-transparent p-0 backdrop:bg-[#0f2347]/70 backdrop:backdrop-blur-sm"
       >
         <div className="relative border border-brand/15 bg-white px-6 py-8 shadow-2xl sm:px-10 sm:py-10">
           <form method="dialog">
@@ -89,7 +89,7 @@ export function ConsultationDialog({
             </p>
             <a
               href={HOTLINE_HREF}
-              className="mt-2 inline-flex items-center gap-3 text-[26px] font-semibold tracking-[-0.02em] text-brand transition-colors hover:text-[#3544b8] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand"
+              className="mt-2 inline-flex items-center gap-3 text-[26px] font-semibold tracking-[-0.02em] text-brand transition-colors hover:text-[#16305f] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand"
             >
               <PhoneIcon className="text-[19px]" aria-hidden="true" />
               {HOTLINE}
@@ -102,7 +102,7 @@ export function ConsultationDialog({
           <div className="mt-7 flex flex-col gap-3 sm:flex-row">
             <a
               href={HOTLINE_HREF}
-              className="inline-flex min-h-12 flex-1 items-center justify-center gap-2 bg-brand px-6 py-3 text-[13px] font-semibold uppercase tracking-[0.12em] text-white transition-colors hover:bg-[#3544b8] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
+              className="inline-flex min-h-12 flex-1 items-center justify-center gap-2 bg-brand px-6 py-3 text-[13px] font-semibold uppercase tracking-[0.12em] text-white transition-colors hover:bg-[#16305f] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
             >
               <PhoneIcon className="text-[14px]" aria-hidden="true" />
               Gọi tổng đài

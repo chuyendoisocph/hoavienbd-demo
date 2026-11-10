@@ -8,7 +8,7 @@ import { keepNameTogether } from "@/lib/typography";
 
 function LocationCard({ location, index }: { location: BranchLocation; index: number }) {
   return (
-    <article className="overflow-hidden border border-[#e8ecf4] bg-white shadow-[0_14px_36px_rgba(24,39,87,0.045)] md:grid md:grid-cols-[minmax(0,38%)_1fr]">
+    <article className="overflow-hidden border border-[#b9b9c9]/60 bg-white shadow-[0_14px_36px_rgba(24,39,87,0.045)] md:grid md:grid-cols-[minmax(0,38%)_1fr]">
       {location.image ? (
         <div className="relative aspect-[4/3] overflow-hidden bg-[#e7ebef] md:aspect-auto md:min-h-[260px]">
           <Image
@@ -20,7 +20,7 @@ function LocationCard({ location, index }: { location: BranchLocation; index: nu
           />
         </div>
       ) : (
-        <div className="flex min-h-[132px] items-end justify-between bg-[#eaf0f8] px-6 py-5 text-[#4453c4] md:min-h-[225px] md:flex-col md:items-start md:px-8 md:py-7">
+        <div className="flex min-h-[132px] items-end justify-between bg-[#eaf0f8] px-6 py-5 text-[#1f3f7a] md:min-h-[225px] md:flex-col md:items-start md:px-8 md:py-7">
           <span className="text-[12px] font-semibold tracking-[0.2em] uppercase">Chi nhánh</span>
           <span className="font-display text-[52px] leading-none md:text-[82px]" aria-hidden="true">
             {String(index).padStart(2, "0")}
@@ -58,7 +58,7 @@ function LocationCard({ location, index }: { location: BranchLocation; index: nu
           href={location.mapUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="mt-7 inline-flex min-h-11 w-fit items-center justify-center gap-2 rounded-full bg-brand px-6 py-2.5 text-[13px] font-semibold tracking-[0.08em] text-white uppercase transition-colors hover:bg-[#303c9d] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
+          className="mt-7 inline-flex min-h-11 w-fit items-center justify-center gap-2 rounded-full bg-brand px-6 py-2.5 text-[13px] font-semibold tracking-[0.08em] text-white uppercase transition-colors hover:bg-[#16305f] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
         >
           Xem trên bản đồ
           <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
@@ -99,7 +99,7 @@ export function BranchDirectory() {
                     aria-expanded={isOpen}
                     aria-controls={panelId}
                     onClick={() => setOpenGroup(isOpen ? null : group.id)}
-                    className={`flex min-h-[76px] w-full items-center justify-between gap-5 px-5 py-5 text-left transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand sm:px-7 md:min-h-[94px] md:px-9 ${isOpen ? "bg-[#26315a] text-white" : "bg-[#73839d] text-white hover:bg-[#64768f]"}`}
+                    className={`flex min-h-[76px] w-full items-center justify-between gap-5 px-5 py-5 text-left transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand sm:px-7 md:min-h-[94px] md:px-9 ${isOpen ? "bg-[#142a52] text-white" : "bg-[#73839d] text-white hover:bg-[#64768f]"}`}
                   >
                     <span className="font-heading text-[18px] leading-snug font-semibold sm:text-[21px] md:text-[24px]">
                       {group.name}
@@ -128,9 +128,9 @@ export function BranchDirectory() {
           })}
         </div>
 
-        <div className="mt-12 border-t border-[#dce3ed] pt-8 text-center text-[15px] leading-7 text-[#616a75]">
+        <div className="mt-12 border-t border-[#b9b9c9]/60 pt-8 text-center text-[15px] leading-7 text-[#616a75]">
           Cần được hướng dẫn trước khi đến? Gọi tổng đài tư vấn{" "}
-          <a href="tel:0818555444" className="font-semibold text-brand underline underline-offset-4 hover:text-[#303c9d]">
+          <a href="tel:0818555444" className="font-semibold text-brand underline underline-offset-4 hover:text-[#16305f]">
             0818 555 444
           </a>
           .

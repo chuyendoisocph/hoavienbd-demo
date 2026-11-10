@@ -21,7 +21,7 @@ export function BurialConsiderations() {
       {/* Banner */}
       <div
         className="px-6 py-[60px]"
-        style={{ background: "linear-gradient(131deg, #4453C4 0%, #49497A 100%)" }}
+        style={{ background: "linear-gradient(131deg, #1f3f7a 0%, #142a52 100%)" }}
       >
         <div className="mx-auto grid max-w-[1140px] grid-cols-1 items-center gap-10 lg:grid-cols-2">
           <h2

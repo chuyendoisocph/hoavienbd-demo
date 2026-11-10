@@ -37,7 +37,7 @@ interface TourMapProps {
 export function TourMap({ activeScene, onSelectScene }: TourMapProps) {
   return (
     <div>
-      <div className="relative overflow-hidden border border-[#d8e4dc] bg-[#eaf1ea]">
+      <div className="relative overflow-hidden border border-[#b9b9c9]/60 bg-[#eaf1ea]">
         <svg
           className="block h-auto w-full"
           viewBox={`0 0 ${MAP_WIDTH} ${MAP_HEIGHT}`}
@@ -75,13 +75,13 @@ export function TourMap({ activeScene, onSelectScene }: TourMapProps) {
               >
                 <title>{scene.title}</title>
                 <circle className="tour-map-hit" cx={point.x} cy={point.y} r="19" fill="transparent" />
-                {isActive && <circle cx={point.x} cy={point.y} r="20" fill="#4356c3" opacity="0.16" />}
+                {isActive && <circle cx={point.x} cy={point.y} r="20" fill="#1f3f7a" opacity="0.16" />}
                 <circle
                   className="tour-map-dot"
                   cx={point.x}
                   cy={point.y}
                   r={isActive ? 14 : 12}
-                  fill={isActive ? "#4356c3" : scene.group === "cong-trinh" ? "#214e53" : "#567b64"}
+                  fill={isActive ? "#1f3f7a" : scene.group === "cong-trinh" ? "#214e53" : "#567b64"}
                   stroke="#fff"
                   strokeWidth="2.5"
                 />
@@ -101,7 +101,7 @@ export function TourMap({ activeScene, onSelectScene }: TourMapProps) {
           Chạm vào điểm để tham quan
         </div>
       </div>
-      <div className="mt-3 flex gap-3 border-b border-[#dfe5e8] pb-4">
+      <div className="mt-3 flex gap-3 border-b border-[#b9b9c9]/60 pb-4">
         <div className="relative h-16 w-20 shrink-0 overflow-hidden bg-[#dce7ea]">
           <Image src={activeScene.thumbnail} alt="" fill sizes="80px" className="object-cover" />
         </div>

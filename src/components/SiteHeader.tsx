@@ -28,8 +28,8 @@ export function SiteHeader() {
           <Image
             src={LOGO}
             alt=""
-            width={639}
-            height={639}
+            width={640}
+            height={640}
             sizes="55px"
             className="h-[45px] w-[45px] shrink-0 object-contain min-[980px]:h-[55px] min-[980px]:w-[55px]"
           />

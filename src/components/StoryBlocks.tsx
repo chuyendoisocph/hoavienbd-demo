@@ -22,7 +22,7 @@ function withBold(text: string) {
 function Quote({ lines }: { lines: string[] }) {
   return (
     <figure className="my-12 text-center md:my-14">
-      <span aria-hidden="true" className="mx-auto block h-px w-12 bg-[#c9a24a]" />
+      <span aria-hidden="true" className="mx-auto block h-px w-12 bg-[#daa64a]" />
       <blockquote className="mx-auto mt-6 max-w-[34rem] font-serif text-[19px] font-medium leading-[1.55] text-heading [text-wrap:balance] md:text-[26px]">
         {lines.map((line, index) => (
           <Fragment key={line}>
@@ -31,7 +31,7 @@ function Quote({ lines }: { lines: string[] }) {
           </Fragment>
         ))}
       </blockquote>
-      <span aria-hidden="true" className="mx-auto mt-6 block h-px w-12 bg-[#c9a24a]" />
+      <span aria-hidden="true" className="mx-auto mt-6 block h-px w-12 bg-[#daa64a]" />
     </figure>
   );
 }
@@ -45,11 +45,11 @@ function Poem({ lines, cite }: { lines: string[]; cite: string }) {
     <figure className="relative -mx-5 my-12 overflow-hidden bg-[linear-gradient(180deg,#fbf9f4_0%,#f6f1e6_100%)] px-5 py-10 md:mx-0 md:my-14 md:rounded-[4px] md:px-12 md:py-12">
       <span
         aria-hidden="true"
-        className="pointer-events-none absolute -top-2 left-3 select-none font-serif text-[110px] leading-none text-[#c9a24a]/20 md:left-6 md:top-0 md:text-[150px]"
+        className="pointer-events-none absolute -top-2 left-3 select-none font-serif text-[110px] leading-none text-[#daa64a]/20 md:left-6 md:top-0 md:text-[150px]"
       >
         “
       </span>
-      <span aria-hidden="true" className="mx-auto block h-px w-12 bg-[#c9a24a]" />
+      <span aria-hidden="true" className="mx-auto block h-px w-12 bg-[#daa64a]" />
       <blockquote className="relative mx-auto mt-6 w-fit font-serif text-[17.5px] font-medium leading-[1.9] text-heading md:text-[25px] md:leading-[1.8]">
         {lines.map((line, index) => (
           <p key={line} className={index % 2 === 0 ? "pl-[1.6em]" : undefined}>
@@ -57,7 +57,7 @@ function Poem({ lines, cite }: { lines: string[]; cite: string }) {
           </p>
         ))}
       </blockquote>
-      <figcaption className="mt-6 text-center text-[12px] font-semibold uppercase tracking-[0.22em] text-[#b08a35]">
+      <figcaption className="mt-6 text-center text-[12px] font-semibold uppercase tracking-[0.22em] text-[#a86a3d]">
         — {cite}
       </figcaption>
     </figure>
@@ -81,7 +81,7 @@ function Finale({ lines }: { lines: string[] }) {
 function Heading({ text, index }: { text: string; index: number }) {
   return (
     <div className="mb-5 mt-14 first:mt-0">
-      <p className="flex items-center gap-3 text-[12px] font-semibold uppercase tracking-[0.18em] text-[#b08a35]">
+      <p className="flex items-center gap-3 text-[12px] font-semibold uppercase tracking-[0.18em] text-[#a86a3d]">
         <span>Phần {String(index).padStart(2, "0")}</span>
         <span aria-hidden="true" className="h-px w-10 bg-[#d9c79c]" />
       </p>
@@ -97,7 +97,7 @@ function LeadGrid({ items }: { items: LeadBlock[] }) {
       {items.map((item) => {
         const [name, ...rest] = item.lead.split(" – ");
         return (
-          <div key={item.lead} className="border border-[#e8ecf4] bg-white p-5 shadow-[0_10px_30px_-24px_rgba(24,39,87,0.5)] last:md:col-span-2">
+          <div key={item.lead} className="border border-[#b9b9c9]/60 bg-white p-5 shadow-[0_10px_30px_-24px_rgba(24,39,87,0.5)] last:md:col-span-2">
             <div className="flex items-baseline gap-3">
               <span className="font-serif text-[30px] font-medium leading-none text-brand">{name}</span>
               <span className="h-px flex-1 bg-[#e6dcc4]" aria-hidden="true" />

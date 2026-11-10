@@ -62,12 +62,12 @@
   --background: oklch(1 0 0);
   --foreground: #666666;
   /* Chánh Phú Hòa (Hoa Viên Nghĩa Trang Bình Dương) brand */
-  --brand: #4453c4;
-  --brand-link: #0c71c3;
+  --brand: #1f3f7a;
+  --brand-link: #1f3f7a;
   --heading: #333333;
-  --footer-navy: #171728;
-  --footer-purple: #4f4fb8;
-  --section-light: #f7f9fc;
+  --footer-navy: #0f2347;
+  --footer-purple: #1f3f7a;
+  --section-light: #f4f6fa;
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
@@ -81,7 +81,7 @@
   --accent: oklch(0.97 0 0);
   --accent-foreground: oklch(0.205 0 0);
   --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
+  --border: rgb(185 185 201 / 0.6);
   --input: oklch(0.922 0 0);
   --ring: oklch(0.708 0 0);
   --chart-1: oklch(0.87 0 0);
@@ -446,7 +446,7 @@
     height: auto !important;
     margin: 0 !important;
     padding: 5mm !important;
-    background: #edf1fb !important;
+    background: #f4f6fa !important;
     box-shadow: none !important;
   }
 
@@ -490,7 +490,7 @@
     min-height: 0 !important;
     margin: 6mm 0 0 !important;
     padding: 5mm 0 0 !important;
-    border-top: 1px solid #dce3ed;
+    border-top: 1px solid #b9b9c9;
     background: white !important;
     box-shadow: none !important;
     color: #30343c !important;

@@ -33,7 +33,7 @@ function LinkGroup({
 }) {
   return (
     <div>
-      <h3 className="pb-[10px] text-[20px] leading-[30px] font-medium tracking-[1px] !text-[#aeb7ff]">
+      <h3 className="pb-[10px] text-[20px] leading-[30px] font-medium tracking-[1px] !text-[#6ea8e1]">
         {heading}
       </h3>
       <ul className="space-y-[18px]">
@@ -41,7 +41,7 @@ function LinkGroup({
           <li key={link.label}>
             <a
               href={link.href}
-              className="text-[16px] leading-[1.2] tracking-[1px] text-white transition-colors hover:text-[#8d96ec]"
+              className="text-[16px] leading-[1.2] tracking-[1px] text-white transition-colors hover:text-[#6ea8e1]"
             >
               {link.label}
             </a>
@@ -76,7 +76,7 @@ export function SiteFooter() {
                 href={FOOTER_ADDRESS.mapUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-[8px] inline-block text-white underline transition-colors hover:text-[#8d96ec]"
+                className="mt-[8px] inline-block text-white underline transition-colors hover:text-[#6ea8e1]"
               >
                 Xem bản đồ đường đi
               </a>
@@ -87,7 +87,7 @@ export function SiteFooter() {
                   href={FOOTER_ADDRESS.websiteUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-white underline transition-colors hover:text-[#8d96ec]"
+                  className="text-white underline transition-colors hover:text-[#6ea8e1]"
                 >
                   {FOOTER_ADDRESS.website}
                 </a>

@@ -24,7 +24,7 @@
 
 .tour-scene-hotspot-arrow {
   align-items: center;
-  background: #4356c3;
+  background: #1f3f7a;
   border-radius: 50%;
   color: #fff;
   display: flex;
@@ -40,7 +40,7 @@
 
 .tour-scene-hotspot-arrow::after {
   animation: tour-waypoint-ring 1.3s cubic-bezier(0.16, 1, 0.3, 1) 250ms 2 both;
-  border: 1px solid #4356c3;
+  border: 1px solid #1f3f7a;
   border-radius: 50%;
   content: "";
   inset: -4px;

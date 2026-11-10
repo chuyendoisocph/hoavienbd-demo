@@ -101,7 +101,7 @@ export function StoryArticle({ story }: { story: ArticleStory }) {
             return <Line key={index} line={part.line} speakers={story.speakers} />;
           case "highlight":
             return (
-              <div key={index} className="my-8 bg-[#eef1fb] px-5 py-4 md:-mx-8 md:px-8 md:py-6">
+              <div key={index} className="my-8 bg-[#f4f6fa] px-5 py-4 md:-mx-8 md:px-8 md:py-6">
                 {part.lines.map((item, i) => (
                   <Line key={i} line={item} speakers={story.speakers} emphasis={part.key} />
                 ))}
@@ -109,7 +109,7 @@ export function StoryArticle({ story }: { story: ArticleStory }) {
             );
           case "verse":
             return (
-              <figure key={index} className="my-12 bg-[#F7F9FC] px-6 py-10 text-center md:-mx-8 md:py-14">
+              <figure key={index} className="my-12 bg-[#f4f6fa] px-6 py-10 text-center md:-mx-8 md:py-14">
                 <figcaption className="text-[14px] text-[#8a8f99]">{part.cue}</figcaption>
                 <blockquote className="mt-5 font-serif text-[23px] font-medium leading-[1.6] text-heading md:text-[30px]">
                   {part.lines.map((verse) => (
@@ -130,14 +130,14 @@ export function StoryArticle({ story }: { story: ArticleStory }) {
             );
           case "note":
             return (
-              <div key={index} className="mt-14 border-t border-[#e3e7f0] pt-10 text-center">
+              <div key={index} className="mt-14 border-t border-[#b9b9c9]/60 pt-10 text-center">
                 <p className="mx-auto max-w-[600px] text-[16px] leading-[1.8] text-[#666]">{part.text}</p>
                 <p className="mt-6 text-[13px] font-semibold uppercase tracking-[0.2em] text-heading">
                   Hoa Viên Nghĩa Trang Bình Dương – Nơi cuộc sống vĩnh hằng
                 </p>
                 <Link
                   href="/ho-tro/chuan-bi-tu-som"
-                  className="mt-8 inline-block bg-[#4453C4] px-[30px] py-[16px] text-[15px] font-extrabold tracking-[2px] text-white shadow-[0_10px_20px_rgba(65,84,125,0.24)] transition-transform hover:-translate-y-0.5"
+                  className="mt-8 inline-block bg-[#1f3f7a] px-[30px] py-[16px] text-[15px] font-extrabold tracking-[2px] text-white shadow-[0_10px_20px_rgba(65,84,125,0.24)] transition-transform hover:-translate-y-0.5"
                 >
                   TÌM HIỂU CHUẨN BỊ TỪ SỚM
                 </Link>

@@ -87,7 +87,7 @@ function FamilyPlotFeature({ onRequestQuote }: { onRequestQuote: (interest: stri
   const [activeImage, setActiveImage] = useState(0);
 
   return (
-    <div id="khu-mo-gia-toc" className="scroll-mt-24 bg-[#e8eef9] px-6 py-[80px] md:py-[96px]">
+    <div id="khu-mo-gia-toc" className="scroll-mt-24 bg-[#eaf1fa] px-6 py-[80px] md:py-[96px]">
       <div className="mx-auto max-w-[1200px]">
         <div className="mx-auto mb-10 max-w-[780px] text-center">
           <p className="mb-4 text-[13px] font-medium uppercase tracking-[0.14em] text-brand/70">
@@ -96,7 +96,7 @@ function FamilyPlotFeature({ onRequestQuote }: { onRequestQuote: (interest: stri
           <h2 className="font-heading text-[36px] font-medium leading-[1.15] text-brand md:text-[52px]">
             {FAMILY_PLOT.title}
           </h2>
-          <p className="mt-4 text-[17px] font-medium leading-[1.7] text-[#3f4a77] md:text-[19px]">
+          <p className="mt-4 text-[17px] font-medium leading-[1.7] text-[#1f3f7a] md:text-[19px]">
             {FAMILY_PLOT.tagline}
           </p>
         </div>
@@ -259,7 +259,7 @@ function PlotBlock({ plot, activeIndex, onSelect, onRequestQuote }: PlotBlockPro
     <div
       className={cn(
         "flex flex-col",
-        dark && "bg-brand p-5 shadow-[0_16px_32px_-18px_rgba(32,45,112,0.65)]",
+        dark && "bg-brand p-5 shadow-[0_16px_32px_-18px_rgba(31,63,122,0.65)]",
       )}
     >
       {plot.imageFirst ? (
@@ -290,7 +290,7 @@ function QuoteDialog({ dialogRef, interest }: QuoteDialogProps) {
       onClick={(event) => {
         if (event.target === event.currentTarget) dialogRef.current?.close();
       }}
-      className="m-auto max-h-[calc(100dvh-32px)] w-[min(92vw,560px)] overflow-y-auto bg-transparent p-0 backdrop:bg-[#151937]/70 backdrop:backdrop-blur-sm"
+      className="m-auto max-h-[calc(100dvh-32px)] w-[min(92vw,560px)] overflow-y-auto bg-transparent p-0 backdrop:bg-[#0f2347]/70 backdrop:backdrop-blur-sm"
     >
       <div className="relative border border-brand/15 bg-white px-6 py-8 shadow-2xl sm:px-10 sm:py-10">
         <form method="dialog">
@@ -319,7 +319,7 @@ function QuoteDialog({ dialogRef, interest }: QuoteDialogProps) {
           </p>
           <a
             href="tel:0818555444"
-            className="mt-2 inline-flex items-center gap-3 text-[26px] font-semibold tracking-[-0.02em] text-brand transition-colors hover:text-[#3544b8] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand"
+            className="mt-2 inline-flex items-center gap-3 text-[26px] font-semibold tracking-[-0.02em] text-brand transition-colors hover:text-[#16305f] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand"
           >
             <Phone aria-hidden="true" className="h-5 w-5" />
             0818 555 444
@@ -332,7 +332,7 @@ function QuoteDialog({ dialogRef, interest }: QuoteDialogProps) {
         <div className="mt-7 flex flex-col gap-3 sm:flex-row">
           <a
             href="tel:0818555444"
-            className="inline-flex min-h-12 flex-1 items-center justify-center gap-2 bg-brand px-6 py-3 text-[13px] font-semibold uppercase tracking-[0.12em] text-white transition-colors hover:bg-[#3544b8] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
+            className="inline-flex min-h-12 flex-1 items-center justify-center gap-2 bg-brand px-6 py-3 text-[13px] font-semibold uppercase tracking-[0.12em] text-white transition-colors hover:bg-[#16305f] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
           >
             <Phone aria-hidden="true" className="h-4 w-4" />
             Gọi để nhận báo giá

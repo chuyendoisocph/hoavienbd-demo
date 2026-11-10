@@ -9,7 +9,7 @@ import type {
   FooterLinkColumn,
 } from "@/types";
 
-export const LOGO = "/images/hvbd/cpha-logo.png";
+export const LOGO = "/images/hvbd/cpha-logo-2026.png";
 
 export const TOP_NAV: NavItem[] = [
   { label: "Tặng Tre Giữ Nghề", href: "https://cphaco.vn/duong-thien-thai-noi-tre-que-nha-hoi-tu/" },

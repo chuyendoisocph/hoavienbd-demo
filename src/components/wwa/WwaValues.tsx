@@ -7,7 +7,7 @@ export function WwaValues() {
       className="relative bg-cover bg-center bg-no-repeat py-[90px]"
       style={{ backgroundImage: `url(${WWA_VALUES.background})` }}
     >
-      <div className="absolute inset-0 bg-[#1b2447]/80" />
+      <div className="absolute inset-0 bg-[#142a52]/80" />
 
       <div className="relative mx-auto grid max-w-[1200px] grid-cols-1 gap-12 px-6 md:grid-cols-3">
         {WWA_VALUES.cards.map((card, index) => (

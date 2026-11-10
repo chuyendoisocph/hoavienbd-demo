@@ -15,7 +15,7 @@ interface EventsVideoProps {
 export function EventsInvitation({ image, imageAlt }: EventsInvitationProps) {
   return (
     <section className="bg-[#f5f4ef] py-16 md:py-24 lg:py-28">
-      <div className="mx-auto grid w-[min(1180px,calc(100%-32px))] overflow-hidden bg-white shadow-[0_24px_70px_-48px_rgba(26,34,78,0.45)] md:w-[min(1180px,calc(100%-64px))] lg:grid-cols-[1.08fr_0.92fr]">
+      <div className="mx-auto grid w-[min(1180px,calc(100%-32px))] overflow-hidden bg-white shadow-[0_24px_70px_-48px_rgba(20,42,82,0.45)] md:w-[min(1180px,calc(100%-64px))] lg:grid-cols-[1.08fr_0.92fr]">
         <div className="relative min-h-[290px] sm:min-h-[400px] lg:min-h-[560px]">
           <Image
             src={image}
@@ -43,7 +43,7 @@ export function EventsInvitation({ image, imageAlt }: EventsInvitationProps) {
             title="Liên hệ lịch sự kiện"
             interest="lịch sự kiện tại Hoa Viên Nghĩa Trang Bình Dương"
             description="Đội ngũ Hoa Viên sẽ cung cấp lịch tổ chức, nội dung chương trình và hướng dẫn tham dự phù hợp với nhu cầu của gia đình."
-            triggerClassName="mt-8 inline-flex min-h-12 w-fit items-center justify-center bg-brand px-7 py-3 text-[13px] font-semibold uppercase tracking-[0.12em] text-white transition-colors hover:bg-[#3544b8]"
+            triggerClassName="mt-8 inline-flex min-h-12 w-fit items-center justify-center bg-brand px-7 py-3 text-[13px] font-semibold uppercase tracking-[0.12em] text-white transition-colors hover:bg-[#16305f]"
           >
             LIÊN HỆ LỊCH SỰ KIỆN
           </ConsultationDialog>
@@ -66,7 +66,7 @@ export function EventsVideo({ title, video, poster }: EventsVideoProps) {
           </h2>
         </div>
 
-        <div className="mt-9 overflow-hidden bg-[#151937] shadow-[0_24px_70px_-40px_rgba(21,25,55,0.6)] md:mt-12">
+        <div className="mt-9 overflow-hidden bg-[#0f2347] shadow-[0_24px_70px_-40px_rgba(15,35,71,0.6)] md:mt-12">
           <video
             controls
             preload="metadata"

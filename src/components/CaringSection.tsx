@@ -5,7 +5,7 @@ import { StoryDialog } from "@/components/StoryDialog";
 
 export function CaringSection() {
   return (
-    <section className="print-caring relative overflow-hidden bg-[#242d73] md:flex md:min-h-[798px] md:items-center md:py-20">
+    <section className="print-caring relative overflow-hidden bg-[#1a3566] md:flex md:min-h-[798px] md:items-center md:py-20">
       {/* Điện thoại: ảnh ở trên, chữ trên nền xanh ở dưới để không đè lên người trong ảnh. Máy tính: chữ phủ lên ảnh. */}
       <div className="relative aspect-[4/3] overflow-hidden md:absolute md:inset-0 md:aspect-auto">
         <Image

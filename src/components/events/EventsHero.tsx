@@ -14,7 +14,7 @@ export function EventsHero({
   imageAlt,
 }: EventsHeroProps) {
   return (
-    <section className="relative mt-16 h-[430px] overflow-hidden bg-[#171728] min-[980px]:mt-[75px] md:h-[560px]">
+    <section className="relative mt-16 h-[430px] overflow-hidden bg-[#0f2347] min-[980px]:mt-[75px] md:h-[560px]">
       <Image
         src={image}
         alt={imageAlt}

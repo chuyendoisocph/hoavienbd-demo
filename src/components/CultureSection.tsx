@@ -19,7 +19,7 @@ export function CultureSection() {
               </span>
             ))}
           </h2>
-          <span aria-hidden="true" className="mx-auto mt-6 block h-px w-12 bg-[#c9a24a] lg:mx-0" />
+          <span aria-hidden="true" className="mx-auto mt-6 block h-px w-12 bg-[#daa64a] lg:mx-0" />
           <p className="mt-6 text-[16px] leading-[1.7] text-[#666]">{CULTURE.body}</p>
           <StoryDialog
             id="culture-story"

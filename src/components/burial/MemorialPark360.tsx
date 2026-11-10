@@ -7,7 +7,7 @@ import { keepNameTogether } from "@/lib/typography";
 
 export function MemorialPark360() {
   return (
-    <section className="bg-[#4f6aa6] py-[70px]">
+    <section className="bg-[#142a52] py-[70px]">
       <div className="mx-auto max-w-[1280px] px-4">
         <div className="text-center text-white">
           <p className="mb-[10px] text-[14px] uppercase tracking-[0.12em] text-white/90">

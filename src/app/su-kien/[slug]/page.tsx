@@ -41,7 +41,7 @@ export default async function EventDetailPage({ params }: EventDetailPageProps) 
     <>
       <SiteHeader />
       <main className="flex-1 pt-16 min-[980px]:pt-[75px]">
-        <section className="relative min-h-[440px] overflow-hidden bg-[#171728] md:min-h-[560px]">
+        <section className="relative min-h-[440px] overflow-hidden bg-[#0f2347] md:min-h-[560px]">
           <Image
             src={event.image}
             alt={event.imageAlt}
@@ -50,7 +50,7 @@ export default async function EventDetailPage({ params }: EventDetailPageProps) 
             sizes="100vw"
             className="object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#11142f]/90 via-[#151937]/45 to-black/20" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0f2347]/90 via-[#0f2347]/45 to-black/20" />
           <div className="relative mx-auto flex min-h-[440px] max-w-5xl flex-col items-center justify-end px-5 pb-14 text-center text-white md:min-h-[560px] md:pb-20">
             <p className="text-[12px] font-semibold uppercase tracking-[0.2em] text-white/80 md:text-[13px]">
               {event.occasion}
@@ -64,7 +64,7 @@ export default async function EventDetailPage({ params }: EventDetailPageProps) 
         <article className="mx-auto max-w-[1120px] px-5 py-16 md:px-8 md:py-24">
           <Link
             href="/su-kien"
-            className="inline-flex items-center gap-2 text-[13px] font-semibold uppercase tracking-[0.14em] text-brand transition-colors hover:text-[#3544b8] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand"
+            className="inline-flex items-center gap-2 text-[13px] font-semibold uppercase tracking-[0.14em] text-brand transition-colors hover:text-[#16305f] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand"
           >
             <span aria-hidden="true">←</span> Tất cả sự kiện
           </Link>
@@ -97,7 +97,7 @@ export default async function EventDetailPage({ params }: EventDetailPageProps) 
                 title="Liên hệ lịch sự kiện"
                 interest={event.title}
                 description="Quý khách vui lòng liên hệ để được cập nhật thời gian, hướng dẫn tham dự và các thông tin mới nhất của sự kiện."
-                triggerClassName="mt-7 inline-flex min-h-12 w-full items-center justify-center bg-brand px-5 py-3 text-[12px] font-semibold uppercase tracking-[0.12em] text-white transition-colors hover:bg-[#3544b8]"
+                triggerClassName="mt-7 inline-flex min-h-12 w-full items-center justify-center bg-brand px-5 py-3 text-[12px] font-semibold uppercase tracking-[0.12em] text-white transition-colors hover:bg-[#16305f]"
               >
                 Liên hệ lịch sự kiện
               </ConsultationDialog>

@@ -68,7 +68,7 @@ function RegionBlock({ region }: { region: Region }) {
                         href={loc.mapUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="mb-5 inline-block text-[14px] font-semibold text-brand underline underline-offset-4 hover:text-[#303c9d] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
+                        className="mb-5 inline-block text-[14px] font-semibold text-brand underline underline-offset-4 hover:text-[#16305f] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
                       >
                         Xem trên bản đồ
                       </a>
