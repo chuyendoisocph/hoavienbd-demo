@@ -8,7 +8,6 @@ interface HeroVideoProps {
   mobileSrc: string;
   /** Bản nét hơn cho máy tính (1080p). */
   desktopSrc: string;
-  poster: string;
   className?: string;
 }
 
@@ -21,16 +20,23 @@ interface NetworkInformation {
  * Video nền hero. Điện thoại và máy tính bảng (dưới 1024px) tải bản 720p,
  * máy tính tải bản 1080p.
  *
- * Video bị bỏ qua, chỉ còn ảnh poster, trong ba trường hợp:
+ * Ảnh tĩnh nằm sẵn ở lớp dưới (next/image, đã nén và tải ưu tiên). Video không có
+ * `poster` riêng và trong suốt cho tới khi thật sự chạy, rồi mới hiện dần lên. Nhờ vậy
+ * ảnh không bị tải hai lần (bản gốc qua `poster`), và Google đo tốc độ hiển thị (LCP)
+ * theo ảnh đã nén thay vì chờ thẻ video.
+ *
+ * Video bị bỏ qua, chỉ còn ảnh tĩnh, trong ba trường hợp:
  * 1. Người dùng bật "giảm chuyển động".
  * 2. Người dùng bật chế độ tiết kiệm dữ liệu.
- * 3. Mạng 2G hoặc 3G chậm.
+ * 3. Mạng 2G chậm.
  * Ngoài ra nếu trình duyệt từ chối tự phát (ví dụ iPhone đang ở chế độ nguồn điện
- * thấp), poster vẫn hiển thị nên hero không bao giờ trống.
+ * thấp), video không bao giờ hiện lên và ảnh tĩnh vẫn ở đó, hero không bao giờ trống.
  */
-export function HeroVideo({ mobileSrc, desktopSrc, poster, className }: HeroVideoProps) {
+export function HeroVideo({ mobileSrc, desktopSrc, className }: HeroVideoProps) {
   const [allowVideo, setAllowVideo] = useState(false);
   const [compact, setCompact] = useState(true);
+  // Nguồn đang thực sự chạy: đổi nguồn (xoay máy) thì video tự ẩn lại cho tới khi nguồn mới chạy.
+  const [playingSrc, setPlayingSrc] = useState<string | null>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
@@ -52,11 +58,15 @@ export function HeroVideo({ mobileSrc, desktopSrc, poster, className }: HeroVide
 
     const update = () => setAllowVideo(!reduceMotion.matches && !slowNetwork);
 
-    update();
+    // Chỉ tải video khi trang đã tải xong (sự kiện load): video vài MB tải song song sẽ
+    // chiếm đường truyền của ảnh hero, làm ảnh hiện chậm trên mạng di động.
+    if (document.readyState === "complete") update();
+    else window.addEventListener("load", update, { once: true });
     reduceMotion.addEventListener("change", update);
 
     return () => {
       small.removeEventListener("change", pickSource);
+      window.removeEventListener("load", update);
       reduceMotion.removeEventListener("change", update);
     };
   }, []);
@@ -65,7 +75,7 @@ export function HeroVideo({ mobileSrc, desktopSrc, poster, className }: HeroVide
     if (!allowVideo) return;
 
     // Safari trên iOS đôi khi bỏ qua thuộc tính autoplay, cần gọi play() tay.
-    // Nếu bị từ chối thì giữ nguyên poster, không cần xử lý gì thêm.
+    // Nếu bị từ chối thì video vẫn trong suốt, ảnh tĩnh bên dưới vẫn hiển thị.
     const video = videoRef.current;
     if (!video) return;
 
@@ -75,6 +85,8 @@ export function HeroVideo({ mobileSrc, desktopSrc, poster, className }: HeroVide
 
   if (!allowVideo) return null;
 
+  const src = compact ? mobileSrc : desktopSrc;
+
   return (
     <video
       ref={videoRef}
@@ -83,11 +95,11 @@ export function HeroVideo({ mobileSrc, desktopSrc, poster, className }: HeroVide
       muted
       playsInline
       preload="metadata"
-      poster={poster}
       aria-hidden="true"
-      className={cn(className)}
+      onPlaying={() => setPlayingSrc(src)}
+      className={cn(className, "opacity-0 transition-opacity duration-700 ease-out", playingSrc === src && "opacity-100")}
     >
-      <source src={compact ? mobileSrc : desktopSrc} type="video/mp4" />
+      <source src={src} type="video/mp4" />
     </video>
   );
 }

@@ -28,9 +28,11 @@ export function SiteHeader() {
           <Image
             src={LOGO}
             alt=""
-            width={640}
-            height={640}
-            sizes="55px"
+            width={192}
+            height={192}
+            // File đã cắt sẵn 192px WebP (đủ nét cho màn hình 3x). Bỏ qua bộ tối ưu ảnh:
+            // với logo này, bộ tối ưu bị treo khi nén WebP ở cỡ 64px.
+            unoptimized
             className="h-[45px] w-[45px] shrink-0 object-contain min-[980px]:h-[55px] min-[980px]:w-[55px]"
           />
           {/* Tên dài: dưới 1100px xếp hai dòng cạnh logo để không chạm menu hay nút mở menu. */}

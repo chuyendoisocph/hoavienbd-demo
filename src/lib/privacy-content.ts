@@ -5,7 +5,7 @@ import type { PolicyItem } from "@/types";
 // trước khi đưa lên môi trường chính thức.
 
 export const PRIVACY_HERO = {
-  title: "Chính Sách",
+  title: "Chính Sách Quyền Riêng Tư",
   background: "/images/hvbd/thien-phuoc-yellow-blossom.jpg",
 };
 

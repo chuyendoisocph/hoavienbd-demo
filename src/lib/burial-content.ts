@@ -3,7 +3,7 @@
 export const BURIAL_HERO = {
   image: "/images/hvbd/khu-long-phung.jpg",
   video: "/videos/hero-dji0305-1080.mp4",
-  videoMobile: "/videos/hero-dji0305-720.mp4",
+  videoMobile: "/videos/hero-dji0305-mobile.mp4",
   title: "Khu Mộ & Vị Trí An Nghỉ",
   subtitle: "Tĩnh lặng tự nhiên, vẻ đẹp an yên",
 };

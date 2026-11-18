@@ -9,7 +9,7 @@ export function PrivacyHero() {
         backgroundImage: `url(${PRIVACY_HERO.background}), linear-gradient(180deg, #1f3f7a 0%, #6ea8e1 100%)`,
       }}
     >
-      <h1 className="px-[15px] pb-[10px] text-center font-heading text-[40px] font-semibold leading-[1.15] text-white md:text-[52px] md:leading-[1.3]">
+      <h1 className="px-[15px] pb-[10px] text-center font-heading text-[40px] font-semibold leading-[1.15] text-white md:text-[52px] md:leading-[1.3] [text-wrap:balance]">
         {PRIVACY_HERO.title}
       </h1>
     </section>

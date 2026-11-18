@@ -125,3 +125,6 @@ sanity-seed/
 
 # Local high-resolution source media (not deployed or versioned)
 source-assets/videos/
+
+# Ảnh chụp và log của trình duyệt tự động (Playwright MCP)
+.playwright-mcp/

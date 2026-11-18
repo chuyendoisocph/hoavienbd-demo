@@ -9,7 +9,7 @@ import type {
   FooterLinkColumn,
 } from "@/types";
 
-export const LOGO = "/images/hvbd/cpha-logo-2026.png";
+export const LOGO = "/images/hvbd/cpha-logo-2026-v2.webp";
 
 export const TOP_NAV: NavItem[] = [
   { label: "Tặng Tre Giữ Nghề", href: "https://cphaco.vn/duong-thien-thai-noi-tre-que-nha-hoi-tu/" },
@@ -51,7 +51,7 @@ export const CARELINE = "0818 555 444";
 
 export const HERO = {
   video: "/videos/hero-dji0305-1080.mp4",
-  videoMobile: "/videos/hero-dji0305-720.mp4",
+  videoMobile: "/videos/hero-dji0305-mobile.mp4",
   image: "/images/hero-dji0305-poster-optimized.webp",
   // Hai dòng trên điện thoại, một dòng trên màn hình rộng; chỉ ngắt giữa "Nghĩa Trang" và "Bình Dương".
   title: ["Hoa Viên Nghĩa Trang", "Bình Dương"],

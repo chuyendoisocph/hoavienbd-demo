@@ -17,7 +17,6 @@ export function BurialHero() {
       <HeroVideo
         mobileSrc={BURIAL_HERO.videoMobile}
         desktopSrc={BURIAL_HERO.video}
-        poster={BURIAL_HERO.image}
         className="absolute inset-0 z-0 h-full w-full object-cover motion-reduce:hidden"
       />
 

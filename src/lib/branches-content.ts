@@ -26,6 +26,8 @@ export const BRANCH_GROUPS: BranchGroup[] = [
         name: "Hoa Viên Nghĩa Trang Bình Dương",
         address: "Khu phố Bông Trang, phường Chánh Phú Hòa, TP. Hồ Chí Minh",
         mapUrl: "https://maps.app.goo.gl/UGsyaCrNZpi6F3yY6",
+        // Số của Ban Quản Trang, theo bảng hotline chính thức.
+        phones: ["(0274) 3.543.444", "076.999.0126"],
         image: "/images/hvbd/vinh-hoa-mon.jpg",
         imageAlt: "Cổng Vĩnh Hoa Môn tại Hoa Viên Nghĩa Trang Bình Dương",
       },
@@ -41,6 +43,7 @@ export const BRANCH_GROUPS: BranchGroup[] = [
         name: "Chi nhánh Thủ Dầu Một",
         address: "Số 7 Ngô Văn Trị, Phường Phú Lợi, TP. Hồ Chí Minh",
         mapUrl: "https://maps.app.goo.gl/zodZy16W9EMrV4v56",
+        phones: ["(0274) 3.897.425", "0569.555.444"],
       },
     ],
   },

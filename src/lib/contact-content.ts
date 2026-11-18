@@ -70,7 +70,8 @@ Website: cphaco.vn`,
     locations: [
       {
         name: "CHI NHÁNH THỦ DẦU MỘT",
-        body: `Số 7 Ngô Văn Trị, Phường Phú Lợi, TP. Hồ Chí Minh.`,
+        body: `Số 7 Ngô Văn Trị, Phường Phú Lợi, TP. Hồ Chí Minh.
+ĐIỆN THOẠI: (0274) 3.897.425 - 0569.555.444`,
         mapUrl: "https://maps.app.goo.gl/zodZy16W9EMrV4v56",
       },
     ],

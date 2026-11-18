@@ -20,7 +20,6 @@ export function HeroSection() {
         <HeroVideo
           mobileSrc={HERO.videoMobile}
           desktopSrc={HERO.video}
-          poster={HERO.image}
           className="absolute inset-0 h-full w-full object-cover motion-reduce:hidden"
         />
 
